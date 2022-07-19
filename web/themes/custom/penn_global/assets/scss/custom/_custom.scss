@@ -1006,6 +1006,14 @@ drupal-entity {
       font-size: 4.8rem;
     }
   }
+  //Center the background between small and large,
+  //basically a fix for off-center images on smaller vertical devices.
+  //This can be toggled on/off on the entity.
+  &.bg-position--center {
+    @media #{$small-up} and #{$large-down} {
+      background-position: center;
+    }
+  }
 }
 
 /**

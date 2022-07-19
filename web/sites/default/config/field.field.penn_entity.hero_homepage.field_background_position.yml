@@ -1,0 +1,21 @@
+uuid: 6ec4e31b-d0e5-45e7-bf07-0d1d1b80a245
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_background_position
+    - penn_entity.penn_entity_type.hero_homepage
+  module:
+    - options
+id: penn_entity.hero_homepage.field_background_position
+field_name: field_background_position
+entity_type: penn_entity
+bundle: hero_homepage
+label: 'Background Position'
+description: "Applies to the 5:3 image on smaller screens only.<br>\r\n\"None\" is the default.<br>\r\n\"Center\" may fix images that become chopped-off on smaller screens such as vertical iPad."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

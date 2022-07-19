@@ -1,0 +1,24 @@
+uuid: 66ed9f5b-1fb3-4d61-aa95-42aa5d366873
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_background_position
+field_name: field_background_position
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bg-position--center
+      label: Center
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -13242,6 +13242,12 @@ drupal-entity {
   }
 }
 
+@media (min-width: 640px) and (max-width: 1023px) {
+  .hero.bg-position--center {
+    background-position: center;
+  }
+}
+
 /**
  * Page Quote Hero
  */

@@ -3,7 +3,7 @@
   {% set hero_homepage_video_class = 'hero-homepage-video' %}
 {% endif %}
 
-<section class="{{ content.field_hero_style}} {{ content.field_text_align }} {{ hero_homepage_video_class }}" data-hero="hero1">
+<section class="{{ content.field_hero_style}} {{ content.field_text_align }} {{ hero_homepage_video_class }} {{ content.field_background_position }}" data-hero="hero1">
   <div class="hero__shadows"></div>
   {# show video if source url field is set #}
   {% if content.field_video_source_url_has_value %}
