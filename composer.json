@@ -27,7 +27,7 @@
         "drupal/ctools": "3.9.0",
         "drupal/devel": "^5.0",
         "drupal/dropzonejs": "^2.5",
-        "drupal/emptyparagraphkiller": "^1.0@alpha",
+        "drupal/emptyparagraphkiller": "^2.0",
         "drupal/entity_browser": "^2.5",
         "drupal/entity_embed": "^1.1",
         "drupal/entity_usage": "^2.0@beta",
