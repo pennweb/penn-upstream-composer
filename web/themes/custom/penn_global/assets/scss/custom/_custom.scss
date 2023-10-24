@@ -507,8 +507,8 @@ body:not(.homepage) {
 
 #block-penn-global-local-tasks,
 #block-penn-starter-local-tasks {
-  z-index: 10;
-  top: 200px;
+  z-index: 1000;
+  top: 300px;
   right: 0;
   background: white;
   position: absolute;
