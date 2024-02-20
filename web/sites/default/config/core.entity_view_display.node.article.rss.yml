@@ -1,13 +1,15 @@
 uuid: 99329e01-dda2-48da-91df-6b397b099e84
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.rss
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_date
     - field.field.node.article.field_image
     - field.field.node.article.field_penn_entity
+    - field.field.node.article.field_sort_date
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -25,6 +27,8 @@ content:
 hidden:
   body: true
   comment: true
+  field_date: true
   field_image: true
   field_penn_entity: true
+  field_sort_date: true
   field_tags: true

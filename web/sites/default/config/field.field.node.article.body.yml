@@ -14,7 +14,7 @@ field_name: body
 entity_type: node
 bundle: article
 label: Body
-description: ''
+description: 'The body of the article. Include a summary ("Edit summary") to be used as a preview of the article on other pages. '
 required: false
 translatable: true
 default_value: {  }
