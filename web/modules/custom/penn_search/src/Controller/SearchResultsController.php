@@ -45,6 +45,10 @@ class SearchResultsController extends ControllerBase {
   public function pennSearchResults() {
     $config = $this->config('penn_search.settings');
     $search_query_parameter = $config->get('search_query_parameter');
+    //If it's empty then set to empty string. Can't pass null to Xss::filter().
+    $search_query_parameter = empty($search_query_parameter) ? '' : $search_query_parameter;
+    $search_terms = $this->requestStack->getCurrentRequest()->query->get($search_query_parameter);
+    $search_terms = empty($search_terms) ? '' : $search_terms;
 
     $build['results'] = [
       '#type' => 'markup',
@@ -53,7 +57,7 @@ class SearchResultsController extends ControllerBase {
       '#penn_search_label' => $config->get('penn_search_label'),
       '#site_name' => $this->config('system.site')->get('name'),
       '#search_query_parameter' => $search_query_parameter,
-      '#search_terms' => Xss::filter($this->requestStack->getCurrentRequest()->query->get($search_query_parameter)),
+      '#search_terms' => $search_terms,
       '#search_pg_title' => $config->get('search_pg_title'),
       '#refined_search_title' => $config->get('refined_search_title'),
       '#global_search_title' => $config->get('global_search_title'),
