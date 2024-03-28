@@ -4,7 +4,7 @@ description: 'Customizable Penn Global Starter Theme'
 package: Other
 base theme: penn_global
 core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 libraries:
   - penn_starter/style-overrides
 

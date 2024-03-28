@@ -2,5 +2,5 @@ name: 'Penn API'
 type: module
 description: 'Requests and themes Penn API feeds'
 core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: 'Penn'
