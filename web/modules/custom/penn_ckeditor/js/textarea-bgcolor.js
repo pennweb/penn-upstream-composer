@@ -10,7 +10,7 @@
  * https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_dom_element.html
  */
 
-(function ($, Drupal, window, document) {
+ (function ($, Drupal, window, document) {
 
     'use strict';
 
@@ -40,7 +40,7 @@
         selectedColor = classPrefix + $colorDropdown.val();
 
         // Make a list of all potential classses, so that we can find & remove them in switchColor()
-        $colorDropdown.once('processed-colors').find('option').each(function() {
+        $(once('processed-colors', $colorDropdown)).find('option').each(function() {
             var newClasses = $(this).val().split(' ');
             for (var j in newClasses) {
                 if($.inArray(newClasses[j], potentialColors) === -1) {
