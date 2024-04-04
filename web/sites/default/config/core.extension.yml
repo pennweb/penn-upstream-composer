@@ -1,10 +1,6 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG1L7MgsLvfBIMAvi_skumNFQwkDc
 module:
-  mysql: 0
-  penn_shortcuts: 0
-  simplesamlphp_auth: 0
-  structure_sync: 0
   admin_toolbar: 1
   adminimal_admin_toolbar: 1
   automated_cron: 1
@@ -60,9 +56,11 @@ module:
   metatag_open_graph: 1
   metatag_twitter_cards: 1
   metatag_verification: 1
+  mysql: 1
   node: 1
   options: 1
   page_cache: 1
+  paragraphs: 1
   paragraphs_type_permissions: 1
   path: 1
   path_alias: 1
@@ -72,14 +70,17 @@ module:
   penn_cron: 1
   penn_entity: 1
   penn_search: 1
+  penn_shortcuts: 1
   quickedit: 1
   rdf: 1
   redis: 1
   search: 1
   shortcut: 1
+  simplesamlphp_auth: 1
   simplify_menu: 1
   sophron: 1
   standard: 1
+  structure_sync: 1
   system: 1
   taxonomy: 1
   text: 1
@@ -92,12 +93,11 @@ module:
   views: 1
   views_ui: 1
   xmlsitemap: 1
-  paragraphs: 11
 theme:
-  stable: 1
-  bartik: 1
-  seven: 1
-  penn_global: 1
   adminimal_theme: 1
-  penn_starter: 0
+  bartik: 1
+  penn_global: 1
+  penn_starter: 1
+  seven: 1
+  stable: 1
 profile: standard
