@@ -16,7 +16,6 @@ module:
   crop: 1
   datetime: 1
   dblog: 1
-  devel: 1
   dropzonejs: 1
   dropzonejs_eb_widget: 1
   dynamic_page_cache: 1
