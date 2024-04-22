@@ -243,6 +243,7 @@ function penn_global_preprocess_breadcrumb(&$variables) {
       $variables['breadcrumb'][] = [
         'text' => $page_title,
       ];
+      $variables['#cache']['contexts'][] = 'url';  
     }
   }
 }
