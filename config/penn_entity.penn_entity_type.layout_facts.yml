@@ -1,0 +1,6 @@
+uuid: 36700615-63c1-427e-95e7-214cecaf6c76
+langcode: en
+status: true
+dependencies: {  }
+id: layout_facts
+label: 'Layout - Facts'

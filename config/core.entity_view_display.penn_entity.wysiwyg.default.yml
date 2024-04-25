@@ -1,0 +1,23 @@
+uuid: 4caa31bc-ca85-4196-bb9c-758e56bb8fa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.wysiwyg.field_wysiwyg
+    - penn_entity.penn_entity_type.wysiwyg
+  module:
+    - text
+id: penn_entity.wysiwyg.default
+targetEntityType: penn_entity
+bundle: wysiwyg
+mode: default
+content:
+  field_wysiwyg:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  name: true

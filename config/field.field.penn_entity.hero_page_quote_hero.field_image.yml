@@ -1,0 +1,28 @@
+uuid: 4885cfe9-3105-480d-b3a5-208ef1658fe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.hero_page_quote_hero
+id: penn_entity.hero_page_quote_hero.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: hero_page_quote_hero
+label: Image
+description: "Requires (1:1) crop.<br>\r\nA quote will overlay the image.<br>\r\nChoose an image that is suitable as a background for white text."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

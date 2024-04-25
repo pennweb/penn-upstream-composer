@@ -1,0 +1,43 @@
+uuid: 1f2a63a1-b4dd-4b8f-90a2-891a27d709e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - emptyparagraphkiller
+    - entity_embed
+    - media
+name: 'Entity Embed'
+format: entity_embed
+weight: 0
+filters:
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 100
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<br> <em> <strong> <cite> <blockquote cite class="text-cta__quote"> <code> <ul class type> <ol start type> <li class> <dl> <dt> <dd> <h2 class id> <h3 class id> <h4 id> <h5 id> <h6 id> <a href hreflang class="btn btn--outline btn--outline-white btn--secondary cta cta--arrow a-to-z__link"> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p class="featured large intro"> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <div class data-letter> <section class><drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-langcode alt title>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types:
+        image: image
+  emptyparagraphkiller:
+    id: emptyparagraphkiller
+    provider: emptyparagraphkiller
+    status: true
+    weight: 0
+    settings: {  }

@@ -1,0 +1,28 @@
+uuid: c6ac00be-4555-4a15-98dd-b55d79b3787e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image_mobile
+    - media.type.image
+    - penn_entity.penn_entity_type.layout_featured_story
+id: penn_entity.layout_featured_story.field_image_mobile
+field_name: field_image_mobile
+entity_type: penn_entity
+bundle: layout_featured_story
+label: 'Mobile Image'
+description: 'Requires (3:4) crop.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

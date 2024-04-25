@@ -1,0 +1,6 @@
+uuid: 607b7f8e-05bf-459f-8996-fe3fada8932b
+langcode: en
+status: true
+dependencies: {  }
+id: event_listing
+label: 'Layout - Events - Event Listing (3-Across, Heading Left)'

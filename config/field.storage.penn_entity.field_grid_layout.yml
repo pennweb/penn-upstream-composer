@@ -1,0 +1,30 @@
+uuid: d7951eb3-aebe-4f9b-9919-216aa2fc7bb3
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_grid_layout
+field_name: field_grid_layout
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: grid__content--2
+      label: '2 items per row'
+    -
+      value: grid__content--3
+      label: '3 items per row'
+    -
+      value: grid__content--4
+      label: '4 items per row'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

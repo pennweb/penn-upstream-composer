@@ -1,0 +1,28 @@
+uuid: 44b0f88d-da42-44da-9299-5a9f490cbeb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero
+    - node.type.homepage
+    - penn_entity.penn_entity_type.hero_homepage
+id: node.homepage.field_hero
+field_name: field_hero
+entity_type: node
+bundle: homepage
+label: Hero
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      hero_homepage: hero_homepage
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: hero_homepage
+field_type: entity_reference

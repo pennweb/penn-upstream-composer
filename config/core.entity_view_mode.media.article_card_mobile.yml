@@ -1,0 +1,10 @@
+uuid: 9a8eafe5-0b04-45e5-9e10-b084c1c6a3d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.article_card_mobile
+label: 'Article Card Mobile (3:2)'
+targetEntityType: media
+cache: true

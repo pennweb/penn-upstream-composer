@@ -1,0 +1,6 @@
+uuid: 94aa742e-3401-4241-bec7-ca24efc48426
+langcode: en
+status: true
+dependencies: {  }
+id: card_listing_card
+label: 'Card - Listing Card '

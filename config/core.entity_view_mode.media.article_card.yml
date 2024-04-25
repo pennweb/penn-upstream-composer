@@ -1,0 +1,10 @@
+uuid: 616e1cf4-c1ef-49f8-9bc9-391fd5995d29
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.article_card
+label: 'Article Card (3:2)'
+targetEntityType: media
+cache: true

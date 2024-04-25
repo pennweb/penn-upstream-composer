@@ -1,0 +1,39 @@
+uuid: 2f4e1cb7-0d08-4fab-a904-8e257c8fc448
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.accordion_column.field_penn_entity_reference
+    - field.field.penn_entity.accordion_column.field_title
+    - penn_entity.penn_entity_type.accordion_column
+id: penn_entity.accordion_column.default
+targetEntityType: penn_entity
+bundle: accordion_column
+mode: default
+content:
+  field_penn_entity_reference:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

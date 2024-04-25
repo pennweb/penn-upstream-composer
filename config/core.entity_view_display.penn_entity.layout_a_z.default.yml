@@ -1,0 +1,44 @@
+uuid: 921301e1-2c71-409c-80e7-c168a053ca28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_a_z.field_a_z_link
+    - field.field.penn_entity.layout_a_z.field_title
+    - penn_entity.penn_entity_type.layout_a_z
+  module:
+    - link
+id: penn_entity.layout_a_z.default
+targetEntityType: penn_entity
+bundle: layout_a_z
+mode: default
+content:
+  field_a_z_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

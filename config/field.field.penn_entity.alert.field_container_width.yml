@@ -1,0 +1,23 @@
+uuid: d9a30a47-b840-480c-9d4c-4ee2c87d025f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_container_width
+    - penn_entity.penn_entity_type.alert
+  module:
+    - options
+id: penn_entity.alert.field_container_width
+field_name: field_container_width
+entity_type: penn_entity
+bundle: alert
+label: 'Container Width'
+description: "Sets the width of the text container.. \"Medium\" is the default.<br>\r\nSet to \"None\" for full width."
+required: false
+translatable: true
+default_value:
+  -
+    value: contain
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,30 @@
+uuid: e368fc96-aa1f-4c27-888b-162aec6be3c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_background_color
+field_name: field_background_color
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'bg-color bg-red'
+      label: Red
+    -
+      value: 'bg-color bg-blue'
+      label: Blue
+    -
+      value: 'bg-color bg-gray'
+      label: Gray
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

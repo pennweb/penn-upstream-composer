@@ -1,0 +1,6 @@
+uuid: 7e7a2f53-42de-4dd7-b22b-2c24ab78712f
+langcode: en
+status: true
+dependencies: {  }
+id: fact_item
+label: 'Fact - Fact Item'

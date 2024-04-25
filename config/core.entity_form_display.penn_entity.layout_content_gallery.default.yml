@@ -1,0 +1,95 @@
+uuid: e38857a8-b664-4e8c-8e66-927d6a29cd40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_content_gallery.field_borders
+    - field.field.penn_entity.layout_content_gallery.field_description_formatted
+    - field.field.penn_entity.layout_content_gallery.field_gallery_reference
+    - field.field.penn_entity.layout_content_gallery.field_link_list_reference
+    - field.field.penn_entity.layout_content_gallery.field_subtitle
+    - field.field.penn_entity.layout_content_gallery.field_title
+    - penn_entity.penn_entity_type.layout_content_gallery
+  module:
+    - inline_entity_form
+    - text
+id: penn_entity.layout_content_gallery.default
+targetEntityType: penn_entity
+bundle: layout_content_gallery
+mode: default
+content:
+  field_borders:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description_formatted:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_gallery_reference:
+    type: inline_entity_form_complex
+    weight: 5
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Gallery
+      label_plural: Galleries
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+  field_link_list_reference:
+    type: inline_entity_form_complex
+    weight: 4
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Link List'
+      label_plural: 'Link Lists'
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_subtitle:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

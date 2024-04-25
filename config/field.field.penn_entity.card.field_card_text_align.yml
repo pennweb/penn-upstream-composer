@@ -1,0 +1,23 @@
+uuid: f2d59c7d-7f03-48f4-9ffc-6870e0bacc5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_card_text_align
+    - penn_entity.penn_entity_type.card
+  module:
+    - options
+id: penn_entity.card.field_card_text_align
+field_name: field_card_text_align
+entity_type: penn_entity
+bundle: card
+label: 'Text Align'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: card--align-center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

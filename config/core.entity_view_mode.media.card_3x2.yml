@@ -1,0 +1,10 @@
+uuid: 7189f2f5-7bea-4824-bd09-19186e3c14ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.card_3x2
+label: 'Card (3:2)'
+targetEntityType: media
+cache: true

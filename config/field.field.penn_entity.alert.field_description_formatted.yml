@@ -1,0 +1,21 @@
+uuid: 32af8ee8-8f81-4c9a-b394-fa06ff1a9c01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_description_formatted
+    - penn_entity.penn_entity_type.alert
+  module:
+    - text
+id: penn_entity.alert.field_description_formatted
+field_name: field_description_formatted
+entity_type: penn_entity
+bundle: alert
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

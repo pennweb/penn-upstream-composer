@@ -1,0 +1,23 @@
+uuid: 23c76f8e-eb21-4113-bb19-f0fa23afecaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fact_percentage
+    - paragraphs.paragraphs_type.fact_bar_item_paragraph
+id: paragraph.fact_bar_item_paragraph.field_fact_percentage
+field_name: field_fact_percentage
+entity_type: paragraph
+bundle: fact_bar_item_paragraph
+label: 'Fact Percentage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

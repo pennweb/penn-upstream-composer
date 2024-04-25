@@ -1,0 +1,6 @@
+uuid: cab45cce-690a-4aaa-b5e0-d97713e478c3
+langcode: en
+status: true
+dependencies: {  }
+id: aside_testimonial
+label: 'Aside - Testimonial'

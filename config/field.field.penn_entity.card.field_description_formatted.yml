@@ -1,0 +1,21 @@
+uuid: 0575abd5-a8b6-467e-924a-49593a27ea56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_description_formatted
+    - penn_entity.penn_entity_type.card
+  module:
+    - text
+id: penn_entity.card.field_description_formatted
+field_name: field_description_formatted
+entity_type: penn_entity
+bundle: card
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

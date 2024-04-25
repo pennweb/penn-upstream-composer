@@ -1,0 +1,21 @@
+uuid: b1e54353-22cf-4b7a-817c-b7f20ec87fc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_borders
+    - penn_entity.penn_entity_type.layout_container
+  module:
+    - options
+id: penn_entity.layout_container.field_borders
+field_name: field_borders
+entity_type: penn_entity
+bundle: layout_container
+label: Borders
+description: 'Add borders to the container'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,20 @@
+uuid: 4d92551b-147a-4227-84b2-de4617b3e37e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - penn_global
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: penn_global_local_actions
+theme: penn_global
+region: hidden
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 9f8201d8-429a-406e-b44c-0c7cc5d27324
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_boolean
+    - penn_entity.penn_entity_type.hero_article_card_hero
+id: penn_entity.hero_article_card_hero.field_boolean
+field_name: field_boolean
+entity_type: penn_entity
+bundle: hero_article_card_hero
+label: 'Hide Borders'
+description: 'Hide the decorative borders around the Article Card entity. The default is OFF.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

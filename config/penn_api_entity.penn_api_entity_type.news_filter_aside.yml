@@ -1,0 +1,6 @@
+uuid: 7ae210d4-98f9-4f79-867c-ec79ecf593f5
+langcode: en
+status: true
+dependencies: {  }
+id: news_filter_aside
+label: 'Layout - News Feed with Filter and Sidebar Feed'

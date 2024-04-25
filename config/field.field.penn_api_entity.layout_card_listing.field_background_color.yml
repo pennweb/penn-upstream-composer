@@ -1,0 +1,21 @@
+uuid: ac4e6606-3ab8-4a96-a51d-4d903158bb47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_background_color
+    - penn_api_entity.penn_api_entity_type.layout_card_listing
+  module:
+    - options
+id: penn_api_entity.layout_card_listing.field_background_color
+field_name: field_background_color
+entity_type: penn_api_entity
+bundle: layout_card_listing
+label: 'Background Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

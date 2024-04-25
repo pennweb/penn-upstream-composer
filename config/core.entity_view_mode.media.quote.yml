@@ -1,0 +1,10 @@
+uuid: 06eb02cb-9c77-4c82-9141-41811e5d0b36
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.quote
+label: 'Quote (1:1)'
+targetEntityType: media
+cache: true

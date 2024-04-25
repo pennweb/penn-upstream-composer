@@ -1,0 +1,10 @@
+uuid: 597c3eb5-cf1a-467f-878a-6d48f5461f37
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.subpage_listing_card
+label: 'Card - Subpage Listing Card (5:3)'
+targetEntityType: media
+cache: true

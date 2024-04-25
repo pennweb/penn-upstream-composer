@@ -1,0 +1,28 @@
+uuid: 36d6d3ad-edd8-4f6a-8959-ea9d03d52117
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.card_social_instagram
+id: penn_entity.card_social_instagram.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: card_social_instagram
+label: Image
+description: 'Requires (1:1) crop.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

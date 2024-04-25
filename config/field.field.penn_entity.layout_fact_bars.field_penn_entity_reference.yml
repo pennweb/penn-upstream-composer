@@ -1,0 +1,28 @@
+uuid: 25b1cbda-9cdf-4cad-9912-4cc836be09ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.fact_bar
+    - penn_entity.penn_entity_type.layout_fact_bars
+id: penn_entity.layout_fact_bars.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: layout_fact_bars
+label: 'Fact Bars'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      fact_bar: fact_bar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

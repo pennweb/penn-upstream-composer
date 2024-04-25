@@ -1,0 +1,44 @@
+uuid: cc98e3a8-6975-40fe-9ab8-58640ba51a07
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.quote_overlay
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - image.style.quote_overlay_5x3
+    - media.type.image
+  module:
+    - fences
+    - image
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.quote_overlay
+targetEntityType: media
+bundle: image
+mode: quote_overlay
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: quote_overlay_5x3
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  name: true
+  thumbnail: true
+  uid: true

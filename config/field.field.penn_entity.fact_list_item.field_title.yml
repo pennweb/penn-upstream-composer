@@ -1,0 +1,19 @@
+uuid: f44ba320-d494-4cec-9772-6ce679be03ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.fact_list_item
+id: penn_entity.fact_list_item.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: fact_list_item
+label: 'Fact Figure'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

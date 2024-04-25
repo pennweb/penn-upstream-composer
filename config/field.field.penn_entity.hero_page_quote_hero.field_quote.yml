@@ -1,0 +1,19 @@
+uuid: 0c7fcab0-2b28-4856-8abd-fa31aa07d74b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_quote
+    - penn_entity.penn_entity_type.hero_page_quote_hero
+id: penn_entity.hero_page_quote_hero.field_quote
+field_name: field_quote
+entity_type: penn_entity
+bundle: hero_page_quote_hero
+label: Quote
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,6 @@
+uuid: e3cd6450-3d4c-47e1-8ba9-02203da439d7
+langcode: en
+status: true
+dependencies: {  }
+id: event_calendar
+label: 'Layout - Events - Event Calendar (Sidebar)'

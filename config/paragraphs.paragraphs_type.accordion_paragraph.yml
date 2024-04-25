@@ -1,0 +1,10 @@
+uuid: 913b9176-5e7a-422b-a6b9-302f0d366f18
+langcode: en
+status: true
+dependencies: {  }
+id: accordion_paragraph
+label: 'Accordion Item (Don''t use, Delete)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

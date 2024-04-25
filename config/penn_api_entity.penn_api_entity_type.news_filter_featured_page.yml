@@ -1,0 +1,6 @@
+uuid: 2e8ad24e-bf6f-4135-8b7c-092a9cbbba5f
+langcode: en
+status: true
+dependencies: {  }
+id: news_filter_featured_page
+label: 'News Filter Item (Featured Layout)'

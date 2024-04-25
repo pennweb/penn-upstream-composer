@@ -1,0 +1,6 @@
+uuid: d05e45b2-e3db-4a92-bbfe-6daeb88a609f
+langcode: en
+status: true
+dependencies: {  }
+id: card_feat_initiative_card_group
+label: 'Layout - Featured Initiative Card Group'

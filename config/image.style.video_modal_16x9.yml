@@ -1,0 +1,25 @@
+uuid: 2aa82025-877b-4a9e-916e-f08196f6602e
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_16x9
+  module:
+    - crop
+name: video_modal_16x9
+label: 'Video Modal Poster (16:9)'
+effects:
+  57d8f670-bb84-43ff-bd8a-5a01c2286049:
+    uuid: 57d8f670-bb84-43ff-bd8a-5a01c2286049
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_16x9
+  8f149987-4b0e-4d30-bd44-56cd2b485f03:
+    uuid: 8f149987-4b0e-4d30-bd44-56cd2b485f03
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

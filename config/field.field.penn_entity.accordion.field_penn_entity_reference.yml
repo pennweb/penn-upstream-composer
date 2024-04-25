@@ -1,0 +1,28 @@
+uuid: bf4436fe-a57d-4e11-9d42-21a3fecc4f45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.accordion
+    - penn_entity.penn_entity_type.accordion_item
+id: penn_entity.accordion.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: accordion
+label: 'Accordion Items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      accordion_item: accordion_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

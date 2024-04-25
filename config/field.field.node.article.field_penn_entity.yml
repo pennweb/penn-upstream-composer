@@ -1,0 +1,21 @@
+uuid: c2084853-596d-4d76-aee7-5544ecc94bed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_penn_entity
+    - node.type.article
+id: node.article.field_penn_entity
+field_name: field_penn_entity
+entity_type: node
+bundle: article
+label: 'Penn Entity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

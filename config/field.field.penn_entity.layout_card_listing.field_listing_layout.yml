@@ -1,0 +1,21 @@
+uuid: 49e90c8c-0b9a-4743-a191-a9a3665fcfe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_listing_layout
+    - penn_entity.penn_entity_type.layout_card_listing
+  module:
+    - options
+id: penn_entity.layout_card_listing.field_listing_layout
+field_name: field_listing_layout
+entity_type: penn_entity
+bundle: layout_card_listing
+label: 'Listing Layout'
+description: 'Choose a 2-across large card layout, or a 3-across smaller card layout.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

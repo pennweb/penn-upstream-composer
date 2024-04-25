@@ -1,0 +1,10 @@
+uuid: 438ee2a8-4901-4afb-b036-9c5d81cd5165
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_api_entity
+id: penn_api_entity.full
+label: Default
+targetEntityType: penn_api_entity
+cache: true

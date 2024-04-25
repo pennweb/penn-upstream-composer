@@ -1,0 +1,28 @@
+uuid: 53cab3a3-362b-4776-8be1-3be52cf537c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.layout_offset_card_with_image
+id: penn_entity.layout_offset_card_with_image.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: layout_offset_card_with_image
+label: Image
+description: 'Requires (16:9) crop'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

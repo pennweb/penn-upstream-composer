@@ -1,0 +1,62 @@
+uuid: d842cfac-558b-456e-b26e-69b05adc9d12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_event_cards.field_link
+    - field.field.penn_entity.layout_event_cards.field_penn_entity_reference
+    - field.field.penn_entity.layout_event_cards.field_title
+    - penn_entity.penn_entity_type.layout_event_cards
+  module:
+    - fences
+    - link
+id: penn_entity.layout_event_cards.default
+targetEntityType: penn_entity
+bundle: layout_event_cards
+mode: default
+content:
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_penn_entity_reference:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: -3
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

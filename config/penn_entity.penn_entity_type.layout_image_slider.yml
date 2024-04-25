@@ -1,0 +1,6 @@
+uuid: a40eeec8-ba76-43ac-abe1-ee7dab09a2a4
+langcode: en
+status: true
+dependencies: {  }
+id: layout_image_slider
+label: 'Layout - Image Slider'

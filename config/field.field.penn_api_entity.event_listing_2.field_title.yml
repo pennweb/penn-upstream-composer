@@ -1,0 +1,19 @@
+uuid: 5217ccfa-6074-4ae0-a974-b28796796954
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_title
+    - penn_api_entity.penn_api_entity_type.event_listing_2
+id: penn_api_entity.event_listing_2.field_title
+field_name: field_title
+entity_type: penn_api_entity
+bundle: event_listing_2
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

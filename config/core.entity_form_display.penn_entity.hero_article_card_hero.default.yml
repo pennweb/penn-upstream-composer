@@ -1,0 +1,104 @@
+uuid: 5311a06b-8db2-4b1e-9097-8190962f48ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.hero_article_card_hero.field_boolean
+    - field.field.penn_entity.hero_article_card_hero.field_description_formatted
+    - field.field.penn_entity.hero_article_card_hero.field_image
+    - field.field.penn_entity.hero_article_card_hero.field_image_mobile
+    - field.field.penn_entity.hero_article_card_hero.field_link
+    - field.field.penn_entity.hero_article_card_hero.field_penn_entity_reference
+    - field.field.penn_entity.hero_article_card_hero.field_subtitle
+    - field.field.penn_entity.hero_article_card_hero.field_subtitle_link
+    - field.field.penn_entity.hero_article_card_hero.field_title
+    - field.field.penn_entity.hero_article_card_hero.field_video_source_url
+    - penn_entity.penn_entity_type.hero_article_card_hero
+  module:
+    - link
+    - media_library
+    - text
+id: penn_entity.hero_article_card_hero.default
+targetEntityType: penn_entity
+bundle: hero_article_card_hero
+mode: default
+content:
+  field_boolean:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_description_formatted:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 7
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_image_mobile:
+    type: media_library_widget
+    weight: 8
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_subtitle:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subtitle_link:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video_source_url:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_penn_entity_reference: true

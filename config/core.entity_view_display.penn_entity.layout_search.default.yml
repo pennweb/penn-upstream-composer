@@ -1,0 +1,64 @@
+uuid: 0801dfbf-0351-4335-b9f4-e6cba3d836a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_search.field_background_color
+    - field.field.penn_entity.layout_search.field_borders
+    - field.field.penn_entity.layout_search.field_description_formatted
+    - field.field.penn_entity.layout_search.field_padding
+    - field.field.penn_entity.layout_search.field_title
+    - penn_entity.penn_entity_type.layout_search
+  module:
+    - options
+    - text
+id: penn_entity.layout_search.default
+targetEntityType: penn_entity
+bundle: layout_search
+mode: default
+content:
+  field_background_color:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_borders:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_description_formatted:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_padding:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

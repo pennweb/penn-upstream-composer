@@ -1,0 +1,21 @@
+uuid: 5aa58d88-b472-4d56-9d3a-dd979c89e45d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_description_formatted
+    - penn_entity.penn_entity_type.card_hero_card
+  module:
+    - text
+id: penn_entity.card_hero_card.field_description_formatted
+field_name: field_description_formatted
+entity_type: penn_entity
+bundle: card_hero_card
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

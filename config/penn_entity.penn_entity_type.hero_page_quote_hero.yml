@@ -1,0 +1,6 @@
+uuid: fd0467d0-d226-434f-9b35-64f5961cce24
+langcode: en
+status: true
+dependencies: {  }
+id: hero_page_quote_hero
+label: 'Hero - Page Quote Hero'

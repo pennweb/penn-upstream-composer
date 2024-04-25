@@ -1,0 +1,25 @@
+uuid: d087bba5-6d8f-4c6f-945a-02a8229b16d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - penn_global
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: penn_global_branding
+theme: penn_global
+region: hidden
+weight: -3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,36 @@
+uuid: db2fc182-173c-45a5-8c1c-131cd5bb1c59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.card_grid_card
+    - penn_entity.penn_entity_type.card_grid_card_portrait
+    - penn_entity.penn_entity_type.fact_list
+    - penn_entity.penn_entity_type.layout_columns
+    - penn_entity.penn_entity_type.layout_container
+    - penn_entity.penn_entity_type.layout_facts
+id: penn_entity.layout_columns.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: layout_columns
+label: Columns
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      card_grid_card: card_grid_card
+      card_grid_card_portrait: card_grid_card_portrait
+      layout_container: layout_container
+      fact_list: fact_list
+      layout_facts: layout_facts
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: fact_list
+field_type: entity_reference

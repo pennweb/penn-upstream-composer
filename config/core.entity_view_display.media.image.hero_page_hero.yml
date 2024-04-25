@@ -1,0 +1,44 @@
+uuid: ddfb8e89-93f4-4024-8e80-d967b2e701ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.hero_page_hero
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - image.style.page_hero_1x1
+    - media.type.image
+  module:
+    - fences
+    - image
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.hero_page_hero
+targetEntityType: media
+bundle: image
+mode: hero_page_hero
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: page_hero_1x1
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  name: true
+  thumbnail: true
+  uid: true

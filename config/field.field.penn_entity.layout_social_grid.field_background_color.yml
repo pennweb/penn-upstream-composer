@@ -1,0 +1,23 @@
+uuid: 434b9833-0309-4ce2-bf4f-79474bd6f3c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_background_color
+    - penn_entity.penn_entity_type.layout_social_grid
+  module:
+    - options
+id: penn_entity.layout_social_grid.field_background_color
+field_name: field_background_color
+entity_type: penn_entity
+bundle: layout_social_grid
+label: 'Background Color'
+description: 'Set the background color of the social grid. The default is gray.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'bg-color bg-gray'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

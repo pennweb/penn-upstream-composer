@@ -1,0 +1,31 @@
+uuid: 47e87add-91a8-4cef-8cc4-f46efb839a74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.card_social_instagram
+    - penn_entity.penn_entity_type.card_social_twitter
+    - penn_entity.penn_entity_type.layout_social_grid
+id: penn_entity.layout_social_grid.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: layout_social_grid
+label: 'Social Card'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      card_social_instagram: card_social_instagram
+      card_social_twitter: card_social_twitter
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: card_social_instagram
+field_type: entity_reference

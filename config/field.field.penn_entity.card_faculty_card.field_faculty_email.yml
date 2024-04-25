@@ -1,0 +1,19 @@
+uuid: 9d6525c1-6fd8-4bd1-a179-bf974349d4e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_faculty_email
+    - penn_entity.penn_entity_type.card_faculty_card
+id: penn_entity.card_faculty_card.field_faculty_email
+field_name: field_faculty_email
+entity_type: penn_entity
+bundle: card_faculty_card
+label: 'Faculty Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

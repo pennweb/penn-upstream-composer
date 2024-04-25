@@ -1,0 +1,29 @@
+uuid: 74e884be-41d8-4b62-937f-b2f58517a855
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fact_sidebar_item_paragraph.field_description_plain
+    - field.field.paragraph.fact_sidebar_item_paragraph.field_title
+    - paragraphs.paragraphs_type.fact_sidebar_item_paragraph
+id: paragraph.fact_sidebar_item_paragraph.default
+targetEntityType: paragraph
+bundle: fact_sidebar_item_paragraph
+mode: default
+content:
+  field_description_plain:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

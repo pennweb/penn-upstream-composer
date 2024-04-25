@@ -1,0 +1,25 @@
+uuid: ba892f6a-60e6-4ed5-8d2f-4d61a732059b
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.3x2
+  module:
+    - crop
+name: gallery_card
+label: 'Gallery Card (3:2)'
+effects:
+  d04b214d-6a72-43c1-9d8a-545729dd4bce:
+    uuid: d04b214d-6a72-43c1-9d8a-545729dd4bce
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 3x2
+  42c43dfe-9cb1-469b-93ec-c72612786e8e:
+    uuid: 42c43dfe-9cb1-469b-93ec-c72612786e8e
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 400
+      upscale: true

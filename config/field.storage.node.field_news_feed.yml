@@ -1,0 +1,20 @@
+uuid: 257129a5-e9ab-4406-b1b4-870704b0008b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - penn_api_entity
+id: node.field_news_feed
+field_name: field_news_feed
+entity_type: node
+type: entity_reference
+settings:
+  target_type: penn_api_entity
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

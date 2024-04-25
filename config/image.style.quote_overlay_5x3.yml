@@ -1,0 +1,25 @@
+uuid: f3a0e967-383b-4f4c-96e2-030de41e9a05
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_5_3
+  module:
+    - crop
+name: quote_overlay_5x3
+label: 'Quote Overlay (5:3)'
+effects:
+  6249006b-5dd2-4526-993a-f969a4db9156:
+    uuid: 6249006b-5dd2-4526-993a-f969a4db9156
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_5_3
+  5fd1eb68-10d7-4fee-82db-c27fc5be1078:
+    uuid: 5fd1eb68-10d7-4fee-82db-c27fc5be1078
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

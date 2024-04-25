@@ -1,0 +1,24 @@
+uuid: e697e49c-0300-4f68-98fa-6c39af128153
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.alert
+  module:
+    - views
+  theme:
+    - penn_global
+id: views_block__alert_block
+theme: penn_global
+region: alert
+weight: 0
+provider: null
+plugin: 'views_block:alert-alert_block'
+settings:
+  id: 'views_block:alert-alert_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

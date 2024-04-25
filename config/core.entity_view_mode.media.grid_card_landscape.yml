@@ -1,0 +1,10 @@
+uuid: 7f912105-1a86-41dc-bae8-76dafcd0242b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.grid_card_landscape
+label: 'Card - Grid Card - Landscape (3:2)'
+targetEntityType: media
+cache: true

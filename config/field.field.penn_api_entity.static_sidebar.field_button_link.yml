@@ -1,0 +1,23 @@
+uuid: db1fb28f-839e-4338-a2e8-10218cdb7107
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_button_link
+    - penn_api_entity.penn_api_entity_type.static_sidebar
+  module:
+    - link
+id: penn_api_entity.static_sidebar.field_button_link
+field_name: field_button_link
+entity_type: penn_api_entity
+bundle: static_sidebar
+label: 'Button Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

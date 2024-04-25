@@ -1,0 +1,21 @@
+uuid: 634bf23a-35ce-43e0-9056-94046a609fcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_padding
+    - penn_entity.penn_entity_type.layout_container
+  module:
+    - options
+id: penn_entity.layout_container.field_padding
+field_name: field_padding
+entity_type: penn_entity
+bundle: layout_container
+label: Padding
+description: 'Add padding to container.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

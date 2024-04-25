@@ -1,0 +1,25 @@
+uuid: 58f3d187-3523-48fc-a2d7-986ecf2d7cb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.3x2
+  module:
+    - crop
+name: image_slider_card_3x2
+label: 'Image Slider Card (3x2)'
+effects:
+  87924d1f-a81b-4f46-b863-cabfd41d810f:
+    uuid: 87924d1f-a81b-4f46-b863-cabfd41d810f
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 3x2
+  7139e58a-8b26-42f4-8065-8878a3211bad:
+    uuid: 7139e58a-8b26-42f4-8065-8878a3211bad
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

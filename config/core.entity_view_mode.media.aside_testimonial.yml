@@ -1,0 +1,10 @@
+uuid: dfb3d906-360e-43d6-aad5-5701479ab041
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.aside_testimonial
+label: 'Aside Testimonial (3:2)'
+targetEntityType: media
+cache: true

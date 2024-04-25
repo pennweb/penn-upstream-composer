@@ -1,0 +1,23 @@
+uuid: 19bcf0dd-c702-4fc3-81c0-14ac071c77f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_justify
+    - penn_entity.penn_entity_type.card_hero_card
+  module:
+    - options
+id: penn_entity.card_hero_card.field_justify
+field_name: field_justify
+entity_type: penn_entity
+bundle: card_hero_card
+label: Align
+description: "Align the body content to the top, center or bottom of the card. The default is \"Center\".\r\n"
+required: false
+translatable: false
+default_value:
+  -
+    value: justify--center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

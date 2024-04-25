@@ -1,0 +1,19 @@
+uuid: 11b8d825-1b4d-4f81-87d5-1001df36efd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.hero_full_width
+id: penn_entity.hero_full_width.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: hero_full_width
+label: 'Hero Title'
+description: 'An optional, large text title appearing at the top of the hero.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

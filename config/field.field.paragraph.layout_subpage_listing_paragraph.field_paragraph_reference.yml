@@ -1,0 +1,52 @@
+uuid: 51b35a1a-1981-443f-a5c9-ef6f7ba3fff5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_reference
+    - paragraphs.paragraphs_type.layout_subpage_listing_paragraph
+    - paragraphs.paragraphs_type.subpage_listing_paragraph
+  module:
+    - entity_reference_revisions
+id: paragraph.layout_subpage_listing_paragraph.field_paragraph_reference
+field_name: field_paragraph_reference
+entity_type: paragraph
+bundle: layout_subpage_listing_paragraph
+label: Items
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      subpage_listing_paragraph: subpage_listing_paragraph
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_item_paragraph:
+        weight: 9
+        enabled: false
+      accordion_paragraph:
+        weight: 10
+        enabled: false
+      fact_bar_item_paragraph:
+        weight: 11
+        enabled: false
+      fact_item_paragraph:
+        weight: 12
+        enabled: false
+      fact_list_item_paragraph:
+        weight: 13
+        enabled: false
+      fact_sidebar_item_paragraph:
+        weight: 14
+        enabled: false
+      layout_subpage_listing_paragraph:
+        weight: 15
+        enabled: false
+      subpage_listing_paragraph:
+        weight: 16
+        enabled: true
+field_type: entity_reference_revisions

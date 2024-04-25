@@ -1,0 +1,28 @@
+uuid: ce3e37ad-9b82-4e62-b14d-877722a993a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - media.type.image
+    - paragraphs.paragraphs_type.subpage_listing_paragraph
+id: paragraph.subpage_listing_paragraph.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: subpage_listing_paragraph
+label: Image
+description: 'Requires (3:2) crop.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

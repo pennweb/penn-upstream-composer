@@ -1,0 +1,6 @@
+uuid: 2de3b95b-c240-444f-af80-4cd33ace10cc
+langcode: en
+status: true
+dependencies: {  }
+id: fact_bar
+label: 'Fact - Fact Bar Item'

@@ -1,0 +1,23 @@
+uuid: c5bb5f30-56c3-403f-a311-4fea2390e4b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_link
+    - penn_entity.penn_entity_type.card_faculty_card
+  module:
+    - link
+id: penn_entity.card_faculty_card.field_link
+field_name: field_link
+entity_type: penn_entity
+bundle: card_faculty_card
+label: 'Faculty Link'
+description: 'An optional link to a detailed page for this faculty member. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

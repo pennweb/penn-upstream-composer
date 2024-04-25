@@ -1,0 +1,30 @@
+uuid: 73c3b631-b17c-4bad-9b3d-c2ba863ea5ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_accordion_item_background_
+field_name: field_accordion_item_background_
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: acc-gray
+      label: Gray
+    -
+      value: acc-red
+      label: Red
+    -
+      value: acc-white
+      label: White
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

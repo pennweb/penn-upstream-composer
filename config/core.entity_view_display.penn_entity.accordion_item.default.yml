@@ -1,0 +1,56 @@
+uuid: b0d8595b-4fd0-421d-8bb8-95117d67ae66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.accordion_item.field_accordion_item_background_
+    - field.field.penn_entity.accordion_item.field_description_formatted
+    - field.field.penn_entity.accordion_item.field_title
+    - penn_entity.penn_entity_type.accordion_item
+  module:
+    - fences
+    - options
+    - text
+id: penn_entity.accordion_item.default
+targetEntityType: penn_entity
+bundle: accordion_item
+mode: default
+content:
+  field_accordion_item_background_:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 1
+    region: content
+  field_description_formatted:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

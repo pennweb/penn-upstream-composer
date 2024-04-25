@@ -1,0 +1,6 @@
+uuid: 0c3eec7a-23de-4c01-8569-efa4b36e3397
+langcode: en
+status: true
+dependencies: {  }
+id: layout_card_slider
+label: 'Layout - Card Slider'

@@ -1,0 +1,6 @@
+uuid: f88884e3-810d-4998-b2cd-d78fde636117
+langcode: en
+status: true
+dependencies: {  }
+id: slider_gallery_slider
+label: 'Slider - Gallery Slider'

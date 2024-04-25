@@ -1,0 +1,14 @@
+uuid: b1503000-d8c1-4d16-a84a-9b13040d67c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.social
+  module:
+    - user
+id: user_remove_role_action.social
+label: 'Remove the Social Media Management role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: social

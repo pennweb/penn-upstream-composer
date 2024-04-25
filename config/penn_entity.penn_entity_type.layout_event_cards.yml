@@ -1,0 +1,6 @@
+uuid: c96be124-e41e-4b88-b969-62bd2100a79b
+langcode: en
+status: true
+dependencies: {  }
+id: layout_event_cards
+label: 'Layout - Event Cards'

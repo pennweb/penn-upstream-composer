@@ -1,0 +1,19 @@
+uuid: 09aa5013-9373-4f09-917a-8caec81bad94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_filter_title
+    - penn_api_entity.penn_api_entity_type.news_with_filter
+id: penn_api_entity.news_with_filter.field_filter_title
+field_name: field_filter_title
+entity_type: penn_api_entity
+bundle: news_with_filter
+label: 'Filter Label'
+description: 'The default label shown in the dropdown. For Example: "Topics".'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

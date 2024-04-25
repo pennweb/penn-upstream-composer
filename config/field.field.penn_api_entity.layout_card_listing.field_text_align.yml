@@ -1,0 +1,23 @@
+uuid: 2475b6cd-abdc-40d5-b3bb-e5d05e915492
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_text_align
+    - penn_api_entity.penn_api_entity_type.layout_card_listing
+  module:
+    - options
+id: penn_api_entity.layout_card_listing.field_text_align
+field_name: field_text_align
+entity_type: penn_api_entity
+bundle: layout_card_listing
+label: 'Text Align'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

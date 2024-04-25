@@ -1,0 +1,21 @@
+uuid: 82b39954-36df-478f-8174-d5a900f04ed3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_description_formatted
+    - penn_entity.penn_entity_type.card_faculty_card
+  module:
+    - text
+id: penn_entity.card_faculty_card.field_description_formatted
+field_name: field_description_formatted
+entity_type: penn_entity
+bundle: card_faculty_card
+label: 'Faculty Description'
+description: 'Additional faculty information. For example: School, Address and Phone. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

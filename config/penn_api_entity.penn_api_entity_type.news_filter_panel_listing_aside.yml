@@ -1,0 +1,6 @@
+uuid: ccff7432-fa89-4f93-84e6-5604894181f7
+langcode: en
+status: true
+dependencies: {  }
+id: news_filter_panel_listing_aside
+label: 'News Filter Item (Article Listing with Aside)'

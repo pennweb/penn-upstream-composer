@@ -1,0 +1,27 @@
+uuid: 711bf17a-d385-4455-a4a2-b6112deffd5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_text_align
+field_name: field_text_align
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hero--text-left
+      label: Left
+    -
+      value: hero--text-right
+      label: Right
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

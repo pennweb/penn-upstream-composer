@@ -1,0 +1,25 @@
+uuid: abfd6bb2-a1b5-4301-a9a4-43dbb5c95a90
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.3x2
+  module:
+    - crop
+name: grid_card_landscape
+label: 'Grid Card Landscape (3:2)'
+effects:
+  2874303d-bd4e-4908-a9f4-8be0161e03c9:
+    uuid: 2874303d-bd4e-4908-a9f4-8be0161e03c9
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 3x2
+  7d969324-a07e-4902-9ff1-1508d5d053e2:
+    uuid: 7d969324-a07e-4902-9ff1-1508d5d053e2
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

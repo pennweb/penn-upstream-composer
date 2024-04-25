@@ -1,0 +1,6 @@
+uuid: 65caf3e5-f4b1-4ef5-a932-f81fafcaadb8
+langcode: en
+status: true
+dependencies: {  }
+id: aside_card_sidebar_slider
+label: 'Aside - Card Sidebar Slider'

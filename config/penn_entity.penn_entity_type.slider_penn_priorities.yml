@@ -1,0 +1,6 @@
+uuid: cff2bd02-4523-4a04-9434-c66eebe9dc96
+langcode: en
+status: true
+dependencies: {  }
+id: slider_penn_priorities
+label: 'Layout - Penn Priorities'

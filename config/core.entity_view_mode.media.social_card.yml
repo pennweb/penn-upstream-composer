@@ -1,0 +1,10 @@
+uuid: 27a06e6a-5bfd-41ba-a5c3-674f4d78cd50
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.social_card
+label: 'Card - Social Card (1:1)'
+targetEntityType: media
+cache: true

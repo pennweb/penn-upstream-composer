@@ -1,0 +1,23 @@
+uuid: 1c7a4348-b1a7-489d-9594-dc1b375b4275
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_video_transcript
+    - penn_entity.penn_entity_type.video_inline_poster_controls
+  module:
+    - link
+id: penn_entity.video_inline_poster_controls.field_video_transcript
+field_name: field_video_transcript
+entity_type: penn_entity
+bundle: video_inline_poster_controls
+label: 'Video Transcript'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

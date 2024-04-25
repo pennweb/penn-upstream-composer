@@ -1,0 +1,21 @@
+uuid: 479513b9-4eb5-49d8-ad39-7bd70494d2d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_description_formatted
+    - penn_entity.penn_entity_type.card_image_slider_card
+  module:
+    - text
+id: penn_entity.card_image_slider_card.field_description_formatted
+field_name: field_description_formatted
+entity_type: penn_entity
+bundle: card_image_slider_card
+label: Description
+description: 'Add an optional description. This appears below the title/link.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,33 @@
+uuid: b21a2972-0001-4565-abd9-82a8205238a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_contact_card_background
+field_name: field_contact_card_background
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '--blue'
+      label: Blue
+    -
+      value: '--red'
+      label: Red
+    -
+      value: '--gray'
+      label: Gray
+    -
+      value: '--white'
+      label: White
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 05889f9a-7e12-434d-a9f4-0e9b46d7463a
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+id: penn_entity.field_gallery_reference
+field_name: field_gallery_reference
+entity_type: penn_entity
+type: entity_reference
+settings:
+  target_type: penn_entity
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

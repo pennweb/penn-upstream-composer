@@ -1,0 +1,23 @@
+uuid: 4ccc9def-6b55-4638-8528-6b1f2dc9f973
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_button_link
+    - penn_entity.penn_entity_type.layout_facts
+  module:
+    - link
+id: penn_entity.layout_facts.field_button_link
+field_name: field_button_link
+entity_type: penn_entity
+bundle: layout_facts
+label: 'Button Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

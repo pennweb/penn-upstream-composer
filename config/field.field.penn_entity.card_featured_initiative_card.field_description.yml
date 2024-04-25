@@ -1,0 +1,19 @@
+uuid: 005da265-d24b-4586-952b-527030508f68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_description
+    - penn_entity.penn_entity_type.card_featured_initiative_card
+id: penn_entity.card_featured_initiative_card.field_description
+field_name: field_description
+entity_type: penn_entity
+bundle: card_featured_initiative_card
+label: 'Description (deprecated)'
+description: 'Deprecated, do not use. Use the formatted description instead.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

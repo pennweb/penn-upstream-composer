@@ -1,0 +1,21 @@
+uuid: e61e8291-0f28-4b6c-a397-86764096c56c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_padding
+    - penn_entity.penn_entity_type.layout_grid
+  module:
+    - options
+id: penn_entity.layout_grid.field_padding
+field_name: field_padding
+entity_type: penn_entity
+bundle: layout_grid
+label: Padding
+description: 'Add padding to the item.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

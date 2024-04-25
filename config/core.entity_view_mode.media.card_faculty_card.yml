@@ -1,0 +1,10 @@
+uuid: 48863b46-e03c-4d6b-a0c8-7a292155069e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.card_faculty_card
+label: 'Card - Faculty Card'
+targetEntityType: media
+cache: true

@@ -1,0 +1,21 @@
+uuid: 7d38fa9b-4bea-4628-a7e0-e5735e756220
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_description_formatted
+    - penn_entity.penn_entity_type.accordion_item
+  module:
+    - text
+id: penn_entity.accordion_item.field_description_formatted
+field_name: field_description_formatted
+entity_type: penn_entity
+bundle: accordion_item
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

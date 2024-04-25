@@ -1,0 +1,77 @@
+uuid: ca40ebec-301c-4ff6-a879-25d1ed5928bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_content_gallery.field_borders
+    - field.field.penn_entity.layout_content_gallery.field_description_formatted
+    - field.field.penn_entity.layout_content_gallery.field_gallery_reference
+    - field.field.penn_entity.layout_content_gallery.field_link_list_reference
+    - field.field.penn_entity.layout_content_gallery.field_subtitle
+    - field.field.penn_entity.layout_content_gallery.field_title
+    - penn_entity.penn_entity_type.layout_content_gallery
+  module:
+    - options
+    - text
+id: penn_entity.layout_content_gallery.default
+targetEntityType: penn_entity
+bundle: layout_content_gallery
+mode: default
+content:
+  field_borders:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_description_formatted:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_gallery_reference:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link_list_reference:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 070ed328-0daa-4e5a-bc3f-03a3951f3b93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.layout_student_spotlight
+id: penn_entity.layout_student_spotlight.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: layout_student_spotlight
+label: 'Student Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,6 @@
+uuid: 34d5d201-941d-4412-bc89-003a548e9628
+langcode: en
+status: true
+dependencies: {  }
+id: tabs_item
+label: 'Tabs Item'

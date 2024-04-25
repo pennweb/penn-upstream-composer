@@ -1,0 +1,21 @@
+uuid: 5d4b2ab2-6ebf-4281-b6aa-59d1a9fd808b
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+id: penn_entity.field_faculty_department
+field_name: field_faculty_department
+entity_type: penn_entity
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

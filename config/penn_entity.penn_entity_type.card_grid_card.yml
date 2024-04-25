@@ -1,0 +1,6 @@
+uuid: ea871807-759b-4c88-81be-9476a9b5bdd9
+langcode: en
+status: true
+dependencies: {  }
+id: card_grid_card
+label: 'Card - Grid Card - Landscape'

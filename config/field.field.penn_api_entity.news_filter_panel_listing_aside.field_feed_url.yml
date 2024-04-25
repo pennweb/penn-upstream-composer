@@ -1,0 +1,19 @@
+uuid: 25cd9bbb-b6a2-46f4-8bcc-45d876651690
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_feed_url
+    - penn_api_entity.penn_api_entity_type.news_filter_panel_listing_aside
+id: penn_api_entity.news_filter_panel_listing_aside.field_feed_url
+field_name: field_feed_url
+entity_type: penn_api_entity
+bundle: news_filter_panel_listing_aside
+label: 'Primary Feed URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

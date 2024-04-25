@@ -1,0 +1,106 @@
+uuid: 640621aa-325e-49be-82d7-30f3330ebab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_content_spotlight.field_background_color
+    - field.field.penn_entity.layout_content_spotlight.field_borders
+    - field.field.penn_entity.layout_content_spotlight.field_button_link
+    - field.field.penn_entity.layout_content_spotlight.field_description_formatted
+    - field.field.penn_entity.layout_content_spotlight.field_image
+    - field.field.penn_entity.layout_content_spotlight.field_subtitle
+    - field.field.penn_entity.layout_content_spotlight.field_title
+    - field.field.penn_entity.layout_content_spotlight.field_video_source_url
+    - penn_entity.penn_entity_type.layout_content_spotlight
+  module:
+    - fences
+    - link
+    - options
+    - text
+id: penn_entity.layout_content_spotlight.default
+targetEntityType: penn_entity
+bundle: layout_content_spotlight
+mode: default
+content:
+  field_background_color:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_borders:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_button_link:
+    type: link_separate
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_description_formatted:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: card_3x2
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 4
+    region: content
+  field_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_video_source_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,29 @@
+uuid: 6f0ade06-b727-47f0-bce5-b3029e035db6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.card_hero_card
+id: penn_entity.card_hero_card.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: card_hero_card
+label: 'Background Image'
+description: 'Set the (3:2) crop.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

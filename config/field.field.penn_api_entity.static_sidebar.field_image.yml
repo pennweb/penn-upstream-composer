@@ -1,0 +1,28 @@
+uuid: 1f914d52-c8fc-4e55-be18-e59335711404
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_image
+    - media.type.image
+    - penn_api_entity.penn_api_entity_type.static_sidebar
+id: penn_api_entity.static_sidebar.field_image
+field_name: field_image
+entity_type: penn_api_entity
+bundle: static_sidebar
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

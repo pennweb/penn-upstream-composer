@@ -1,0 +1,6 @@
+uuid: 502406ed-d9d8-4521-81c9-d00db934635b
+langcode: en
+status: true
+dependencies: {  }
+id: static_sidebar
+label: Sidebar

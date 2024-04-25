@@ -1,0 +1,18 @@
+uuid: 7e504daa-84c3-4348-ab94-9fada5bf7a2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+id: penn_entity.field_total
+field_name: field_total
+entity_type: penn_entity
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

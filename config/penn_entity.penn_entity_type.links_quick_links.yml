@@ -1,0 +1,6 @@
+uuid: 3d7f0fe6-bcbf-473e-a2aa-de761df582de
+langcode: en
+status: true
+dependencies: {  }
+id: links_quick_links
+label: 'Aside - Quicklinks'

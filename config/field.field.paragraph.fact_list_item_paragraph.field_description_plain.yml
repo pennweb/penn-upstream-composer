@@ -1,0 +1,19 @@
+uuid: cf4cb2ec-9715-49ab-9bbb-1dc9b5a93bf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_plain
+    - paragraphs.paragraphs_type.fact_list_item_paragraph
+id: paragraph.fact_list_item_paragraph.field_description_plain
+field_name: field_description_plain
+entity_type: paragraph
+bundle: fact_list_item_paragraph
+label: 'Fact Caption'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,55 @@
+uuid: 9e10d5f1-bde8-492a-bb01-3453d8723cff
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - views.view.media_entity_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+_core:
+  default_config_hash: R9WRMEJZt-oC18igXrWiv_yywFhm_ugH3Oj71M_Zk5U
+name: media_entity_browser
+label: 'Media Entity Browser'
+display: iframe
+display_configuration:
+  width: '1070'
+  height: '500'
+  link_text: 'Select media'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  6586703a-6976-4124-8a49-cbb07ceaa3b1:
+    id: view
+    uuid: 6586703a-6976-4124-8a49-cbb07ceaa3b1
+    label: 'Choose existing media'
+    weight: -9
+    settings:
+      submit_text: 'Select media'
+      auto_select: false
+      view: media_entity_browser
+      view_display: media_browser_all
+  ed6fd4af-e354-4d2e-b1e0-32ec995a69f6:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: ed6fd4af-e354-4d2e-b1e0-32ec995a69f6
+    label: Upload
+    weight: -10
+    settings:
+      submit_text: 'Select entities'
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 100M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      media_type: image
+      form_mode: wysiwyg

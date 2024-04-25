@@ -1,0 +1,28 @@
+uuid: 492cfe70-119f-4184-bbba-5bcf8d17fd28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_link
+    - penn_api_entity.penn_api_entity_type.news_filter_page
+  module:
+    - link
+id: penn_api_entity.news_filter_page.field_link
+field_name: field_link
+entity_type: penn_api_entity
+bundle: news_filter_page
+label: 'Text Link'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://penntoday.upenn.edu'
+    title: 'VISIT PENN TODAY'
+    options: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

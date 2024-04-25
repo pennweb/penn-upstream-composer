@@ -1,0 +1,21 @@
+uuid: 37c34843-bef1-445e-8a01-6abb74013ef5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_split_content_column
+    - penn_entity.penn_entity_type.layout_split_content
+  module:
+    - text
+id: penn_entity.layout_split_content.field_split_content_column
+field_name: field_split_content_column
+entity_type: penn_entity
+bundle: layout_split_content
+label: Columns
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

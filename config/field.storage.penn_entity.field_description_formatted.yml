@@ -1,0 +1,19 @@
+uuid: 97c6fddd-07b6-4176-8a19-0ab066faf0e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+    - text
+id: penn_entity.field_description_formatted
+field_name: field_description_formatted
+entity_type: penn_entity
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

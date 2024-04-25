@@ -1,0 +1,21 @@
+uuid: b7a8deb6-14f3-4434-b6b0-c1668ed49937
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_description_formatted
+    - penn_entity.penn_entity_type.hero_full_width
+  module:
+    - text
+id: penn_entity.hero_full_width.field_description_formatted
+field_name: field_description_formatted
+entity_type: penn_entity
+bundle: hero_full_width
+label: 'Hero Body'
+description: 'A full wysiwyg for custom hero content'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

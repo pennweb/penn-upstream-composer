@@ -1,0 +1,17 @@
+uuid: 5fa1a9b0-d029-4b02-af51-fcf2f3154dd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.3x2
+  module:
+    - crop
+name: priority_card_3x2
+label: 'Priority Card (3:2)'
+effects:
+  149eddfa-8fcf-4c69-afb0-4732ac7e2a22:
+    uuid: 149eddfa-8fcf-4c69-afb0-4732ac7e2a22
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 3x2

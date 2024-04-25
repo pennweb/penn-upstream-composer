@@ -1,0 +1,19 @@
+uuid: e91e2b0c-067c-42f7-ada3-a984191c9458
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_subtitle
+    - penn_entity.penn_entity_type.card_faculty_card
+id: penn_entity.card_faculty_card.field_subtitle
+field_name: field_subtitle
+entity_type: penn_entity
+bundle: card_faculty_card
+label: 'Faculty Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

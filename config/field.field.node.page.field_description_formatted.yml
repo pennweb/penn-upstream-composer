@@ -1,0 +1,21 @@
+uuid: 688b9ba7-ee7b-42f6-98d7-40f5eebb9aaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_formatted
+    - node.type.page
+  module:
+    - text
+id: node.page.field_description_formatted
+field_name: field_description_formatted
+entity_type: node
+bundle: page
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

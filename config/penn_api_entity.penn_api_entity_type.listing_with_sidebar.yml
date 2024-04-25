@@ -1,0 +1,6 @@
+uuid: 932b98ed-19a2-454e-9b5d-749694e4cb5f
+langcode: en
+status: true
+dependencies: {  }
+id: listing_with_sidebar
+label: 'Layout - News Feed with Static Sidebar Card'

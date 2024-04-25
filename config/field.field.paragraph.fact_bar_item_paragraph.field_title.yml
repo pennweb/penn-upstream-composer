@@ -1,0 +1,19 @@
+uuid: 3f0ad1d1-cc2a-4a7d-953d-4a39e8c8e2f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.fact_bar_item_paragraph
+id: paragraph.fact_bar_item_paragraph.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: fact_bar_item_paragraph
+label: 'Fact Figure'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,28 @@
+uuid: a087c733-d1a6-4e6e-b59e-06d985833989
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.card_faculty_card
+id: penn_entity.card_faculty_card.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: card_faculty_card
+label: 'Faculty Image'
+description: 'Uses 1:1 crop.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

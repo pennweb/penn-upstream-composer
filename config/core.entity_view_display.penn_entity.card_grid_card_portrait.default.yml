@@ -1,0 +1,79 @@
+uuid: 01285431-d227-4746-a2df-4eb1c79f7b23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.card_grid_card_portrait.field_description
+    - field.field.penn_entity.card_grid_card_portrait.field_grid_borders
+    - field.field.penn_entity.card_grid_card_portrait.field_image
+    - field.field.penn_entity.card_grid_card_portrait.field_link
+    - field.field.penn_entity.card_grid_card_portrait.field_title
+    - penn_entity.penn_entity_type.card_grid_card_portrait
+  module:
+    - fences
+    - link
+id: penn_entity.card_grid_card_portrait.default
+targetEntityType: penn_entity
+bundle: card_grid_card_portrait
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: grid_card_portrait
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 3
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 4
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_grid_borders: true

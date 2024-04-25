@@ -1,0 +1,23 @@
+uuid: ba9a5c29-9c71-44f3-90d0-41ca37eb61e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_margins
+    - penn_entity.penn_entity_type.layout_quote
+  module:
+    - options
+id: penn_entity.layout_quote.field_margins
+field_name: field_margins
+entity_type: penn_entity
+bundle: layout_quote
+label: Margins
+description: 'Add margins to the item.'
+required: false
+translatable: true
+default_value:
+  -
+    value: section-margin
+default_value_callback: ''
+settings: {  }
+field_type: list_string

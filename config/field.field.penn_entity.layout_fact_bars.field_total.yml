@@ -1,0 +1,23 @@
+uuid: b8e2e07e-557a-4391-a610-bd82448a6fe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_total
+    - penn_entity.penn_entity_type.layout_fact_bars
+id: penn_entity.layout_fact_bars.field_total
+field_name: field_total
+entity_type: penn_entity
+bundle: layout_fact_bars
+label: Total
+description: 'The total of all items in the bar graph. For example, 11870 for the total Undergraduate Students enrolled.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0001
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

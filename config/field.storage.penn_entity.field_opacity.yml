@@ -1,0 +1,48 @@
+uuid: db609519-e96b-4bfd-9f15-e659b4a90b85
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_opacity
+field_name: field_opacity
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: opacity__0
+      label: 0%
+    -
+      value: opacity__5
+      label: 5%
+    -
+      value: opacity__10
+      label: 10%
+    -
+      value: opacity__15
+      label: 15%
+    -
+      value: opacity__25
+      label: 25%
+    -
+      value: opacity__35
+      label: 35%
+    -
+      value: opacity__50
+      label: 50%
+    -
+      value: opacity__75
+      label: 75%
+    -
+      value: opacity__100
+      label: 100%
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

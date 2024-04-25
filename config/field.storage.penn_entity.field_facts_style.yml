@@ -1,0 +1,27 @@
+uuid: 88c1bb1d-2be4-47f4-8ad6-3765dba5f6e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_facts_style
+field_name: field_facts_style
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: center
+      label: Centered
+    -
+      value: left
+      label: 'Left Aligned'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

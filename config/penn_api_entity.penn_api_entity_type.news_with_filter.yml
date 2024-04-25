@@ -1,0 +1,6 @@
+uuid: 31b69b3b-867c-4e78-9522-10e256f98076
+langcode: en
+status: true
+dependencies: {  }
+id: news_with_filter
+label: 'Layout - News Feed with Filter'

@@ -1,0 +1,24 @@
+uuid: c55e6fd5-5ecf-486b-990a-71c676dfe121
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_header_hero_paragraph.field_image
+    - paragraphs.paragraphs_type.page_header_hero_paragraph
+  module:
+    - media_library
+id: paragraph.page_header_hero_paragraph.default
+targetEntityType: paragraph
+bundle: page_header_hero_paragraph
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

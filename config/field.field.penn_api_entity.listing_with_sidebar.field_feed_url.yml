@@ -1,0 +1,19 @@
+uuid: 1b5f4e51-69c6-4f4b-8e36-3c4646eb1357
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_feed_url
+    - penn_api_entity.penn_api_entity_type.listing_with_sidebar
+id: penn_api_entity.listing_with_sidebar.field_feed_url
+field_name: field_feed_url
+entity_type: penn_api_entity
+bundle: listing_with_sidebar
+label: 'Feed URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

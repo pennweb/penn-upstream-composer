@@ -1,0 +1,28 @@
+uuid: 4c9e967f-e2ac-415d-bfd6-8dbb8d1544ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.hero_article_card_hero
+id: penn_entity.hero_article_card_hero.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: hero_article_card_hero
+label: Image
+description: 'Requires (3:2) crop.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

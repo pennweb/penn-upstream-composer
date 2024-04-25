@@ -1,0 +1,94 @@
+uuid: d7a4d3bb-ff31-44b5-a3c0-3591711ed7ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.card_hero_card.field_custom_height
+    - field.field.penn_entity.card_hero_card.field_description_formatted
+    - field.field.penn_entity.card_hero_card.field_image
+    - field.field.penn_entity.card_hero_card.field_justify
+    - field.field.penn_entity.card_hero_card.field_link
+    - field.field.penn_entity.card_hero_card.field_opacity
+    - penn_entity.penn_entity_type.card_hero_card
+  module:
+    - fences
+    - link
+    - options
+    - text
+id: penn_entity.card_hero_card.default
+targetEntityType: penn_entity
+bundle: card_hero_card
+mode: default
+content:
+  field_custom_height:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description_formatted:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: card_hero_card
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: -2
+    region: content
+  field_justify:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 2
+    region: content
+  field_opacity:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

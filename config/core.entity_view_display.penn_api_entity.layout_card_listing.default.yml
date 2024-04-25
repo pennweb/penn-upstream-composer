@@ -1,0 +1,119 @@
+uuid: 2a3c1122-af4c-4f76-9142-e00e35c39c23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_api_entity.layout_card_listing.field_background_color
+    - field.field.penn_api_entity.layout_card_listing.field_button_link
+    - field.field.penn_api_entity.layout_card_listing.field_container_width
+    - field.field.penn_api_entity.layout_card_listing.field_description_formatted
+    - field.field.penn_api_entity.layout_card_listing.field_feed_url
+    - field.field.penn_api_entity.layout_card_listing.field_listing_layout
+    - field.field.penn_api_entity.layout_card_listing.field_margins
+    - field.field.penn_api_entity.layout_card_listing.field_padding
+    - field.field.penn_api_entity.layout_card_listing.field_text_align
+    - field.field.penn_api_entity.layout_card_listing.field_title
+    - penn_api_entity.penn_api_entity_type.layout_card_listing
+  module:
+    - link
+    - options
+    - text
+    - user
+id: penn_api_entity.layout_card_listing.default
+targetEntityType: penn_api_entity
+bundle: layout_card_listing
+mode: default
+content:
+  field_background_color:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_button_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_container_width:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_description_formatted:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_feed_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_listing_layout:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_margins:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_padding:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_text_align:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  user_id:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

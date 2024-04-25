@@ -1,0 +1,33 @@
+uuid: 46956b29-2998-4e8d-9aad-48842a356564
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_api_entity.tabs_item.field_entity_reference
+    - field.field.penn_api_entity.tabs_item.field_title
+    - penn_api_entity.penn_api_entity_type.tabs_item
+id: penn_api_entity.tabs_item.default
+targetEntityType: penn_api_entity
+bundle: tabs_item
+mode: default
+content:
+  field_entity_reference:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  name: true
+  user_id: true

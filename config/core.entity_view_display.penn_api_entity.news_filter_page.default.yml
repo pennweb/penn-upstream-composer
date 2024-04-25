@@ -1,0 +1,87 @@
+uuid: b4220cec-506b-4dec-bcef-d4f4f06ae9c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_api_entity.news_filter_page.field_active
+    - field.field.penn_api_entity.news_filter_page.field_button_link
+    - field.field.penn_api_entity.news_filter_page.field_feed_url
+    - field.field.penn_api_entity.news_filter_page.field_filter_title
+    - field.field.penn_api_entity.news_filter_page.field_link
+    - field.field.penn_api_entity.news_filter_page.field_title
+    - penn_api_entity.penn_api_entity_type.news_filter_page
+  module:
+    - link
+id: penn_api_entity.news_filter_page.default
+targetEntityType: penn_api_entity
+bundle: news_filter_page
+mode: default
+content:
+  field_active:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_button_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_feed_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_filter_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  user_id: true

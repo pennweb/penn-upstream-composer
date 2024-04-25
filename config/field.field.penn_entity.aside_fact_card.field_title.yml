@@ -1,0 +1,19 @@
+uuid: 88bfaa6d-797c-44fe-ab69-75fc46964578
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.aside_fact_card
+id: penn_entity.aside_fact_card.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: aside_fact_card
+label: 'Fact Figure'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

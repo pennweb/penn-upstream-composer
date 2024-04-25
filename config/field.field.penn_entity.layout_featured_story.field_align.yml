@@ -1,0 +1,23 @@
+uuid: 2d54f3b6-7705-498f-9d20-6a06bf74bd43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_align
+    - penn_entity.penn_entity_type.layout_featured_story
+  module:
+    - options
+id: penn_entity.layout_featured_story.field_align
+field_name: field_align
+entity_type: penn_entity
+bundle: layout_featured_story
+label: 'Card Align'
+description: 'Align the card overlay.'
+required: false
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

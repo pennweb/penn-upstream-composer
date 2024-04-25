@@ -1,0 +1,40 @@
+uuid: 9e7f6f87-4b7b-4f3c-bd06-d211ac9d8c79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.card_feat_initiative_card_group.field_penn_entity_reference
+    - penn_entity.penn_entity_type.card_feat_initiative_card_group
+  module:
+    - inline_entity_form
+id: penn_entity.card_feat_initiative_card_group.default
+targetEntityType: penn_entity
+bundle: card_feat_initiative_card_group
+mode: default
+content:
+  field_penn_entity_reference:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Featured Initiative Card'
+      label_plural: 'Featured Initiative Cards'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: true
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

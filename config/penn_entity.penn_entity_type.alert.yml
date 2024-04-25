@@ -1,0 +1,6 @@
+uuid: 260c4c20-d83c-4aaf-b42e-88a7a3e9d59d
+langcode: en
+status: true
+dependencies: {  }
+id: alert
+label: Alert

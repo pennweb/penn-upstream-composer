@@ -1,0 +1,23 @@
+uuid: e08501a0-3c89-4dcf-b17b-b00d849bb2e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_link
+    - penn_entity.penn_entity_type.card_social_twitter
+  module:
+    - link
+id: penn_entity.card_social_twitter.field_link
+field_name: field_link
+entity_type: penn_entity
+bundle: card_social_twitter
+label: Link
+description: 'A link to the tweet.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

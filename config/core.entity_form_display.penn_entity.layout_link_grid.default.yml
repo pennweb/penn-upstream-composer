@@ -1,0 +1,49 @@
+uuid: 15e440ad-43d0-493c-a0f2-c313bf28d2bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_link_grid.field_penn_entity_reference
+    - field.field.penn_entity.layout_link_grid.field_title
+    - penn_entity.penn_entity_type.layout_link_grid
+  module:
+    - inline_entity_form
+id: penn_entity.layout_link_grid.default
+targetEntityType: penn_entity
+bundle: layout_link_grid
+mode: default
+content:
+  field_penn_entity_reference:
+    type: inline_entity_form_complex
+    weight: 4
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

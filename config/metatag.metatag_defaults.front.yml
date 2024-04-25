@@ -1,0 +1,22 @@
+uuid: 4e4b1771-8a8e-479b-80d3-13c737e66bf4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  shortlink: '[site:url]'
+  canonical_url: '[site:url]'
+  description: 'As America’s first university, Penn has a history that dates back to 1740 and shares many ties with the colonial city of Philadelphia and the birth of our nation.'
+  og_image_width: '1200'
+  og_image: /themes/custom/penn_global/assets/img/penn-graphic.jpg
+  og_image_height: '800'
+  og_image_alt: 'Penn Logo'
+  twitter_cards_image: /themes/custom/penn_global/assets/img/penn-graphic.jpg
+  twitter_cards_site: '@Penn'
+  twitter_cards_description: 'As America’s first university, Penn has a history that dates back to 1740 and shares many ties with the colonial city of Philadelphia and the birth of our nation.'
+  twitter_cards_image_alt: 'Penn Logo'
+  twitter_cards_type: summary_large_image
+  twitter_cards_title: 'University of Pennsylvania'

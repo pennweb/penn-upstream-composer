@@ -1,0 +1,19 @@
+uuid: 71215545-4519-406f-bd4d-7972a10eaa0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.card_featured_initiative_card
+id: penn_entity.card_featured_initiative_card.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: card_featured_initiative_card
+label: Title
+description: 'Set a title even when using an image title. The text will be hidden but available for screen readers.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: d49edcbb-1b8e-4a2b-b5d5-cc1bfd54ff44
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.hero_homepage_mobile
+label: 'Hero - Homepage Mobile (1:2)'
+targetEntityType: media
+cache: true

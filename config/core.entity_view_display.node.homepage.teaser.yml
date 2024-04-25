@@ -1,0 +1,46 @@
+uuid: e3e493ce-4763-4be7-ab34-ce27639a21a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage.body
+    - field.field.node.homepage.field_events_feed
+    - field.field.node.homepage.field_featured_initiatives
+    - field.field.node.homepage.field_featured_story
+    - field.field.node.homepage.field_hero
+    - field.field.node.homepage.field_news_feed
+    - field.field.node.homepage.field_nondiscrimination
+    - field.field.node.homepage.field_penn_priorities
+    - field.field.node.homepage.field_social_grid
+    - node.type.homepage
+  module:
+    - text
+    - user
+id: node.homepage.teaser
+targetEntityType: node
+bundle: homepage
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_events_feed: true
+  field_featured_initiatives: true
+  field_featured_story: true
+  field_hero: true
+  field_news_feed: true
+  field_nondiscrimination: true
+  field_penn_priorities: true
+  field_social_grid: true

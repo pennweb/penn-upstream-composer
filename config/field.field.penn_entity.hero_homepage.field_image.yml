@@ -1,0 +1,29 @@
+uuid: 1adcb9a0-6046-4668-a6cd-93b912b5fabe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.hero_homepage
+id: penn_entity.hero_homepage.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: hero_homepage
+label: 'Desktop Image'
+description: 'Requires (5:3) crop.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

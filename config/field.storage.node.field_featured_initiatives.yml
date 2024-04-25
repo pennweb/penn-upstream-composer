@@ -1,0 +1,20 @@
+uuid: 5abccb06-dcb6-45b8-8196-481a677ee665
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - penn_entity
+id: node.field_featured_initiatives
+field_name: field_featured_initiatives
+entity_type: node
+type: entity_reference
+settings:
+  target_type: penn_entity
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

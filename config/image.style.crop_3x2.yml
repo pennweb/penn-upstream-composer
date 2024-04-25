@@ -1,0 +1,25 @@
+uuid: 6525d601-d091-4d71-96ff-5bc3eddee20b
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.3x2
+  module:
+    - crop
+name: crop_3x2
+label: 'Crop (3:2)'
+effects:
+  0971e3cf-e171-4d3b-bbf4-6192e370bb83:
+    uuid: 0971e3cf-e171-4d3b-bbf4-6192e370bb83
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 3x2
+  7cdad67d-59be-44d5-8cd4-c51815eb0985:
+    uuid: 7cdad67d-59be-44d5-8cd4-c51815eb0985
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

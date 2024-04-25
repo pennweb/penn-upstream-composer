@@ -1,0 +1,23 @@
+uuid: 71f26009-fd78-4f8d-bcdd-94f3c431ef71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_opacity
+    - penn_entity.penn_entity_type.hero_full_width
+  module:
+    - options
+id: penn_entity.hero_full_width.field_opacity
+field_name: field_opacity
+entity_type: penn_entity
+bundle: hero_full_width
+label: Opacity
+description: 'Set the opacity for shadows overlay. 25% is the default.'
+required: false
+translatable: false
+default_value:
+  -
+    value: opacity__25
+default_value_callback: ''
+settings: {  }
+field_type: list_string

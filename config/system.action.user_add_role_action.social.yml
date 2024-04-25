@@ -1,0 +1,14 @@
+uuid: d92d0a9b-131d-46d7-8838-fa4c7669c456
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.social
+  module:
+    - user
+id: user_add_role_action.social
+label: 'Add the Social Media Management role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: social

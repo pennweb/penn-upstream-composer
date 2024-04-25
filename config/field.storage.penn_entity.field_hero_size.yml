@@ -1,0 +1,63 @@
+uuid: 61b0d78a-46a6-4900-b9d6-d69bc5c251b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_hero_size
+field_name: field_hero_size
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hero-full-width__10
+      label: 10vh
+    -
+      value: hero-full-width__20
+      label: 20vh
+    -
+      value: hero-full-width__30
+      label: 30vh
+    -
+      value: hero-full-width__40
+      label: 40vh
+    -
+      value: hero-full-width__50
+      label: 50vh
+    -
+      value: hero-full-width__60
+      label: 60vh
+    -
+      value: hero-full-width__70
+      label: 70vh
+    -
+      value: hero-full-width__80
+      label: 80vh
+    -
+      value: hero-full-width__90
+      label: 90vh
+    -
+      value: hero-full-width__100
+      label: 100vh
+    -
+      value: hero-full-width__small
+      label: 'Small (70vh)'
+    -
+      value: hero-full-width__medium
+      label: 'Medium (80vh)'
+    -
+      value: hero-full-width__large
+      label: 'Large (90vh)'
+    -
+      value: hero-full-width__x-large
+      label: 'X-Large (100vh)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: 65e184bb-ffc5-43aa-bee8-b8a870ecac47
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_3_4
+  module:
+    - crop
+name: crop_3x4
+label: 'Crop (3:4)'
+effects:
+  42c32aee-00a4-4b83-8ed0-70e53ef4fcf6:
+    uuid: 42c32aee-00a4-4b83-8ed0-70e53ef4fcf6
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_3_4
+  3df80b4d-bd7d-44b9-bdc7-e042343a93c5:
+    uuid: 3df80b4d-bd7d-44b9-bdc7-e042343a93c5
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

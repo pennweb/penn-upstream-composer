@@ -1,0 +1,6 @@
+uuid: 0dc17f81-3d64-4819-aa87-782b74d5cbce
+langcode: en
+status: true
+dependencies: {  }
+id: hero_article_card_hero
+label: 'Layout - Article Card Hero'

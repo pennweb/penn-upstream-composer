@@ -1,0 +1,23 @@
+uuid: 1204c2f2-8e6b-4bc4-bdf5-da3efc2e31ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - penn_starter
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: penn_starter_search
+theme: penn_starter
+region: hidden
+weight: 4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

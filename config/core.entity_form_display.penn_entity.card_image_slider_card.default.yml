@@ -1,0 +1,59 @@
+uuid: abb12fcd-bf16-4bed-8cc8-15e998fa6f04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.card_image_slider_card.field_caption
+    - field.field.penn_entity.card_image_slider_card.field_description_formatted
+    - field.field.penn_entity.card_image_slider_card.field_image
+    - field.field.penn_entity.card_image_slider_card.field_link
+    - penn_entity.penn_entity_type.card_image_slider_card
+  module:
+    - link
+    - media_library
+    - text
+id: penn_entity.card_image_slider_card.default
+targetEntityType: penn_entity
+bundle: card_image_slider_card
+mode: default
+content:
+  field_caption:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_description_formatted:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

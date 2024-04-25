@@ -1,0 +1,10 @@
+uuid: 65b73fe6-bac7-4e34-accd-acd8cb8656d1
+langcode: en
+status: true
+dependencies: {  }
+id: page_header_quote_hero_paragraph
+label: 'Page Header Quote Hero '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,33 @@
+uuid: 1adf37c8-027b-4c6f-bd57-df4d8ecc9574
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_bar_scale
+field_name: field_bar_scale
+entity_type: penn_entity
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: normal
+    -
+      value: 2
+      label: medium
+    -
+      value: 3
+      label: large
+    -
+      value: 4
+      label: x-large
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

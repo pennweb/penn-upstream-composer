@@ -1,0 +1,28 @@
+uuid: b6daec57-e817-45cc-9d2a-5168498190b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.fact_list
+    - penn_entity.penn_entity_type.fact_list_item
+id: penn_entity.fact_list.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: fact_list
+label: Facts
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      fact_list_item: fact_list_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

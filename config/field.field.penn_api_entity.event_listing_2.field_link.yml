@@ -1,0 +1,23 @@
+uuid: 9792c612-622a-4885-ae95-44418f39cadd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_link
+    - penn_api_entity.penn_api_entity_type.event_listing_2
+  module:
+    - link
+id: penn_api_entity.event_listing_2.field_link
+field_name: field_link
+entity_type: penn_api_entity
+bundle: event_listing_2
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

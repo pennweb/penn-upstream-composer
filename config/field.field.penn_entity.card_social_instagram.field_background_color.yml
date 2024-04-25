@@ -1,0 +1,23 @@
+uuid: b75d19ed-b0b9-4b1c-823f-93d4199f09a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_background_color
+    - penn_entity.penn_entity_type.card_social_instagram
+  module:
+    - options
+id: penn_entity.card_social_instagram.field_background_color
+field_name: field_background_color
+entity_type: penn_entity
+bundle: card_social_instagram
+label: 'Background Color'
+description: 'Choose the background color.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'bg-color bg-red'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

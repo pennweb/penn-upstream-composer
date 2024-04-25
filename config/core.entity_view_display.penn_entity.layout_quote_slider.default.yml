@@ -1,0 +1,48 @@
+uuid: 5c758bb0-28b2-481f-82e6-dce480a49d68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_quote_slider.field_borders
+    - field.field.penn_entity.layout_quote_slider.field_padding
+    - field.field.penn_entity.layout_quote_slider.field_penn_entity_reference
+    - penn_entity.penn_entity_type.layout_quote_slider
+  module:
+    - options
+id: penn_entity.layout_quote_slider.default
+targetEntityType: penn_entity
+bundle: layout_quote_slider
+mode: default
+content:
+  field_borders:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_padding:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_penn_entity_reference:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

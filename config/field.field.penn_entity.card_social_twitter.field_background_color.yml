@@ -1,0 +1,23 @@
+uuid: 251e8b1e-5cd7-4fc8-8f7b-3370181eb674
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_background_color
+    - penn_entity.penn_entity_type.card_social_twitter
+  module:
+    - options
+id: penn_entity.card_social_twitter.field_background_color
+field_name: field_background_color
+entity_type: penn_entity
+bundle: card_social_twitter
+label: 'Background Color'
+description: 'Set the background color of the social card.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'bg-color bg-blue'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

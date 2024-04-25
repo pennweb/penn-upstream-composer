@@ -1,0 +1,23 @@
+uuid: dc7715fd-5726-4f72-84fc-5359792648b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_boolean
+    - penn_entity.penn_entity_type.alert
+id: penn_entity.alert.field_boolean
+field_name: field_boolean
+entity_type: penn_entity
+bundle: alert
+label: 'Persistent Close'
+description: 'Once closed, keep the alert from displaying again until the browser is closed and reopened.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: a4322cd2-56bf-4a35-9065-bcedb9f45579
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.slider_gallery_slider.field_penn_entity_reference
+    - penn_entity.penn_entity_type.slider_gallery_slider
+id: penn_entity.slider_gallery_slider.default
+targetEntityType: penn_entity
+bundle: slider_gallery_slider
+mode: default
+content:
+  field_penn_entity_reference:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  name: true

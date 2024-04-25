@@ -1,0 +1,27 @@
+uuid: 82ac3d28-728a-4a3f-a381-8fb012dd57b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_quote_background_color
+field_name: field_quote_background_color
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: quote-overlay__picture--red
+      label: Red
+    -
+      value: quote-overlay__picture--blue
+      label: Blue
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,39 @@
+uuid: ac503779-49b0-4f32-9664-d413a9f9416b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_link_grid.field_penn_entity_reference
+    - field.field.penn_entity.layout_link_grid.field_title
+    - penn_entity.penn_entity_type.layout_link_grid
+id: penn_entity.layout_link_grid.default
+targetEntityType: penn_entity
+bundle: layout_link_grid
+mode: default
+content:
+  field_penn_entity_reference:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

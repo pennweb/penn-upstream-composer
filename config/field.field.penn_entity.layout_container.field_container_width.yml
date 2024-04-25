@@ -1,0 +1,23 @@
+uuid: d7ef3dcf-f657-42d8-ad27-ddedd86d9a68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_container_width
+    - penn_entity.penn_entity_type.layout_container
+  module:
+    - options
+id: penn_entity.layout_container.field_container_width
+field_name: field_container_width
+entity_type: penn_entity
+bundle: layout_container
+label: 'Container Width'
+description: 'Set the container content width. '
+required: false
+translatable: false
+default_value:
+  -
+    value: contain
+default_value_callback: ''
+settings: {  }
+field_type: list_string

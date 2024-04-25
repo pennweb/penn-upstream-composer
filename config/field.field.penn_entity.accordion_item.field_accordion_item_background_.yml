@@ -1,0 +1,21 @@
+uuid: 782b7c86-9ebb-44dd-83c0-61892b27b6f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_accordion_item_background_
+    - penn_entity.penn_entity_type.accordion_item
+  module:
+    - options
+id: penn_entity.accordion_item.field_accordion_item_background_
+field_name: field_accordion_item_background_
+entity_type: penn_entity
+bundle: accordion_item
+label: 'Accordion Item Background Color'
+description: 'Choose a background color for the item. Leave , "None" selected for the default blue background.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

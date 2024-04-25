@@ -1,0 +1,6 @@
+uuid: b57c104e-b79c-4891-93ea-f8aae79c94d6
+langcode: en
+status: true
+dependencies: {  }
+id: layout_featured_story
+label: 'Layout - Featured Story'

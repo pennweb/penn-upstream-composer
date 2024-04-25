@@ -1,0 +1,23 @@
+uuid: 1b2b6f9e-d95a-417d-b319-7bac4a32b6ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_link
+    - penn_api_entity.penn_api_entity_type.news_filter_featured_page
+  module:
+    - link
+id: penn_api_entity.news_filter_featured_page.field_link
+field_name: field_link
+entity_type: penn_api_entity
+bundle: news_filter_featured_page
+label: 'Text Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

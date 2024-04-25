@@ -1,0 +1,21 @@
+uuid: 189a6e59-c026-4aee-87a7-5a37965e2fa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_api_entity
+id: penn_api_entity.field_secondary_feed_url
+field_name: field_secondary_feed_url
+entity_type: penn_api_entity
+type: string
+settings:
+  max_length: 512
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,6 @@
+uuid: c2f370ba-7b57-48f1-b5c7-7b190db577fe
+langcode: en
+status: true
+dependencies: {  }
+id: layout_link_grid
+label: 'Layout - Link Grid'

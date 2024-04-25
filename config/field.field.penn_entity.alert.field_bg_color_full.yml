@@ -1,0 +1,21 @@
+uuid: 77a23ad6-8cf4-488e-9f34-875b07021c9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_bg_color_full
+    - penn_entity.penn_entity_type.alert
+  module:
+    - options
+id: penn_entity.alert.field_bg_color_full
+field_name: field_bg_color_full
+entity_type: penn_entity
+bundle: alert
+label: 'Background Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

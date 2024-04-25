@@ -1,0 +1,19 @@
+uuid: 8eb2de6e-1c86-4024-bca1-138323b2aa8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - penn_entity
+id: penn_entity.field_video_transcript
+field_name: field_video_transcript
+entity_type: penn_entity
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

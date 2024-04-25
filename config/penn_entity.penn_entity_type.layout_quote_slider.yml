@@ -1,0 +1,6 @@
+uuid: 0b570f95-153d-4297-b050-c6b4060ac09f
+langcode: en
+status: true
+dependencies: {  }
+id: layout_quote_slider
+label: 'Layout - Quote Slider'

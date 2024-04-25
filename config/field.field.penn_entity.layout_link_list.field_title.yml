@@ -1,0 +1,19 @@
+uuid: c3969611-1335-4f80-a34e-8be10fa23b74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.layout_link_list
+id: penn_entity.layout_link_list.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: layout_link_list
+label: Title
+description: 'The title of the link list. Example: "Explore"'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

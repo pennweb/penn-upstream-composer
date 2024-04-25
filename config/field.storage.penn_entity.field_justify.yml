@@ -1,0 +1,30 @@
+uuid: 8f09540d-eddf-4dea-9559-24fdf829ba9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_justify
+field_name: field_justify
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: justify--flex-start
+      label: Top
+    -
+      value: justify--center
+      label: Center
+    -
+      value: justify--flex-end
+      label: Bottom
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

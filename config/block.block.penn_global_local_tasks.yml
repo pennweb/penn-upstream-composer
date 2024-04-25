@@ -1,0 +1,22 @@
+uuid: 0529cacf-aaf0-4309-8dfd-045d45bb04c0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - penn_global
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: penn_global_local_tasks
+theme: penn_global
+region: prefix
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

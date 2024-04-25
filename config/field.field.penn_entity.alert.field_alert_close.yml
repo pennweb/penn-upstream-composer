@@ -1,0 +1,23 @@
+uuid: c164254a-d0e1-4949-a630-03cdf857f52a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_alert_close
+    - penn_entity.penn_entity_type.alert
+id: penn_entity.alert.field_alert_close
+field_name: field_alert_close
+entity_type: penn_entity
+bundle: alert
+label: 'Alert Close'
+description: 'Show a close button for the alert.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

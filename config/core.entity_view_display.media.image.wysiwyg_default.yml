@@ -1,0 +1,51 @@
+uuid: ec5ebc58-f4f8-4e67-b198-d8840276be26
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wysiwyg_default
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - image.style.default
+    - media.type.image
+  module:
+    - fences
+    - image
+    - text
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.wysiwyg_default
+targetEntityType: media
+bundle: image
+mode: wysiwyg_default
+content:
+  field_caption:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: default
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

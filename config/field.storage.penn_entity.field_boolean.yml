@@ -1,0 +1,18 @@
+uuid: 77e6df41-5a5b-438d-a299-bcab8a4b9ff0
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+id: penn_entity.field_boolean
+field_name: field_boolean
+entity_type: penn_entity
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: cead34ed-188d-4afa-b8f2-f81137f300ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.wysiwyg_default
+label: Default
+targetEntityType: media
+cache: true

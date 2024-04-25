@@ -1,0 +1,19 @@
+uuid: a478e171-2442-4e88-b7e3-d8196df9f490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.links_quick_links_wide
+id: penn_entity.links_quick_links_wide.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: links_quick_links_wide
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

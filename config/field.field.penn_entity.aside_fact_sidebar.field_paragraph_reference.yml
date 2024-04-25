@@ -1,0 +1,46 @@
+uuid: afedade9-3804-4628-ab50-caf26290b5de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_paragraph_reference
+    - paragraphs.paragraphs_type.fact_sidebar_item_paragraph
+    - penn_entity.penn_entity_type.aside_fact_sidebar
+  module:
+    - entity_reference_revisions
+id: penn_entity.aside_fact_sidebar.field_paragraph_reference
+field_name: field_paragraph_reference
+entity_type: penn_entity
+bundle: aside_fact_sidebar
+label: 'Fact Item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      fact_sidebar_item_paragraph: fact_sidebar_item_paragraph
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_item_paragraph:
+        weight: 7
+        enabled: false
+      accordion_paragraph:
+        weight: 8
+        enabled: false
+      fact_bar_item_paragraph:
+        weight: 9
+        enabled: false
+      fact_item_paragraph:
+        weight: 10
+        enabled: false
+      fact_list_item_paragraph:
+        weight: 11
+        enabled: false
+      fact_sidebar_item_paragraph:
+        weight: 12
+        enabled: true
+field_type: entity_reference_revisions

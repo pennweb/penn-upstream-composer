@@ -1,0 +1,19 @@
+uuid: 39d57076-c3ee-4a4d-a65a-a3168ccb07ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_quote_author
+    - penn_entity.penn_entity_type.hero_page_quote_hero
+id: penn_entity.hero_page_quote_hero.field_quote_author
+field_name: field_quote_author
+entity_type: penn_entity
+bundle: hero_page_quote_hero
+label: 'Quote Author'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

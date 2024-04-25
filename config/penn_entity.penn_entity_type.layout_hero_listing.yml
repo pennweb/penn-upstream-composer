@@ -1,0 +1,6 @@
+uuid: 351682c0-0bf4-40a6-a35c-ab0ad70c6dba
+langcode: en
+status: true
+dependencies: {  }
+id: layout_hero_listing
+label: 'Layout - Subpage Listing'

@@ -1,0 +1,10 @@
+uuid: 11db4e63-ae38-4e3f-90a9-a90ba1324c21
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.wysiwyg_align_right
+label: 'Align Right'
+targetEntityType: media
+cache: true

@@ -1,0 +1,10 @@
+uuid: 79b007ad-86d5-4cfb-a77d-6168fec5f41f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.grid_card_portrait
+label: 'Card - Grid Card - Portrait (3:4)'
+targetEntityType: media
+cache: true

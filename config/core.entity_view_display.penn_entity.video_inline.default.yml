@@ -1,0 +1,43 @@
+uuid: e612cd24-4ff7-4e2f-b264-198bbe68286b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.video_inline.field_video_source
+    - penn_entity.penn_entity_type.video_inline
+  module:
+    - fences
+    - link
+id: penn_entity.video_inline.default
+targetEntityType: penn_entity
+bundle: video_inline
+mode: default
+content:
+  field_video_source:
+    type: link
+    label: above
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: -2
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

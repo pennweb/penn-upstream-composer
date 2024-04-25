@@ -1,0 +1,66 @@
+uuid: 58310669-d95a-4e7a-b068-78d33d2f0854
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_faculty_grid.field_description_formatted
+    - field.field.penn_entity.layout_faculty_grid.field_margins
+    - field.field.penn_entity.layout_faculty_grid.field_padding
+    - field.field.penn_entity.layout_faculty_grid.field_penn_entity_reference
+    - field.field.penn_entity.layout_faculty_grid.field_title
+    - penn_entity.penn_entity_type.layout_faculty_grid
+  module:
+    - options
+    - text
+id: penn_entity.layout_faculty_grid.default
+targetEntityType: penn_entity
+bundle: layout_faculty_grid
+mode: default
+content:
+  field_description_formatted:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_margins:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_padding:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_penn_entity_reference:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

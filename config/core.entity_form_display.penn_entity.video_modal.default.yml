@@ -1,0 +1,68 @@
+uuid: 8c89371b-fc05-4726-8d63-4c260d1f6a78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.video_modal.field_featured_initiative_card
+    - field.field.penn_entity.video_modal.field_image
+    - field.field.penn_entity.video_modal.field_video_source
+    - field.field.penn_entity.video_modal.field_video_transcript
+    - penn_entity.penn_entity_type.video_modal
+  module:
+    - inline_entity_form
+    - link
+    - media_library
+id: penn_entity.video_modal.default
+targetEntityType: penn_entity
+bundle: video_modal
+mode: default
+content:
+  field_featured_initiative_card:
+    type: inline_entity_form_complex
+    weight: 5
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 6
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_video_source:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_video_transcript:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

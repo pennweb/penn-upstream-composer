@@ -1,0 +1,10 @@
+uuid: d838387a-714f-4ef4-b3a9-87baf10df14c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.url_to_image
+label: 'URL to image'
+targetEntityType: media
+cache: true

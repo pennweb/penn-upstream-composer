@@ -1,0 +1,29 @@
+uuid: cf78f915-fc4f-456e-9d12-36aec6c5e1fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.card_event_card
+id: penn_entity.card_event_card.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: card_event_card
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: bce2d39f-ad8f-401c-9a04-c41fb318a42d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_opacity
+    - penn_entity.penn_entity_type.card_hero_card
+  module:
+    - options
+id: penn_entity.card_hero_card.field_opacity
+field_name: field_opacity
+entity_type: penn_entity
+bundle: card_hero_card
+label: Opacity
+description: "Set the opacity on the background gradient.\r\n<br>The default is 25%. Set to 0% for no gradient."
+required: false
+translatable: true
+default_value:
+  -
+    value: opacity__25
+default_value_callback: ''
+settings: {  }
+field_type: list_string

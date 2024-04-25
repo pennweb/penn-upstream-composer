@@ -1,0 +1,10 @@
+uuid: 6f06f9c1-2ba4-467b-8228-69e42de6fae9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.priority_card
+label: 'Card - Priority Card (3:2)'
+targetEntityType: media
+cache: true

@@ -1,0 +1,57 @@
+uuid: 66952997-0ac1-4795-a55e-6e2f54b16aa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_header_quote_hero_paragraph.field_image
+    - field.field.paragraph.page_header_quote_hero_paragraph.field_quote
+    - field.field.paragraph.page_header_quote_hero_paragraph.field_quote_author
+    - field.field.paragraph.page_header_quote_hero_paragraph.field_select_list
+    - paragraphs.paragraphs_type.page_header_quote_hero_paragraph
+  module:
+    - fences
+    - options
+id: paragraph.page_header_quote_hero_paragraph.default
+targetEntityType: paragraph
+bundle: page_header_quote_hero_paragraph
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: hero_page_hero
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 0
+    region: content
+  field_quote:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_quote_author:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_select_list:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

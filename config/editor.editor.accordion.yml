@@ -1,0 +1,51 @@
+uuid: e757f72d-56bd-4201-ad7b-3b1f3cf81885
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.accordion
+  module:
+    - ckeditor
+format: accordion
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Format
+            - Styles
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+        -
+          name: Tools
+          items:
+            - Source
+  plugins:
+    stylescombo:
+      styles: 'a.btn.btn--outline-white|Button Link (Outline White)'
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

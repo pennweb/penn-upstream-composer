@@ -1,0 +1,23 @@
+uuid: 8cbea579-32e1-4195-9473-6f5408ddce23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_container_width
+    - penn_entity.penn_entity_type.layout_callout
+  module:
+    - options
+id: penn_entity.layout_callout.field_container_width
+field_name: field_container_width
+entity_type: penn_entity
+bundle: layout_callout
+label: 'Container Width'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'contain contain--sm'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

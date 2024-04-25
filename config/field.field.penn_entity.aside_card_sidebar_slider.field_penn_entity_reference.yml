@@ -1,0 +1,28 @@
+uuid: e420559e-ad39-416d-ba0b-5ab19f46a38f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.aside_card_sidebar_slider
+    - penn_entity.penn_entity_type.card
+id: penn_entity.aside_card_sidebar_slider.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: aside_card_sidebar_slider
+label: Slides
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      card: card
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: card_default
+field_type: entity_reference

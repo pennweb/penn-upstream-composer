@@ -1,0 +1,6 @@
+uuid: 8c4554f4-89be-4504-88b9-f33186419454
+langcode: en
+status: true
+dependencies: {  }
+id: card_image_slider_card
+label: 'Card - Image Slider Card'

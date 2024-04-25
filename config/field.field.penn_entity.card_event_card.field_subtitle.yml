@@ -1,0 +1,19 @@
+uuid: 26d718da-195a-491f-b6cb-757addf42e53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_subtitle
+    - penn_entity.penn_entity_type.card_event_card
+id: penn_entity.card_event_card.field_subtitle
+field_name: field_subtitle
+entity_type: penn_entity
+bundle: card_event_card
+label: Subtitle
+description: 'Appears along the bottom of the event image. Typically used as an event category such as "Special Events".'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

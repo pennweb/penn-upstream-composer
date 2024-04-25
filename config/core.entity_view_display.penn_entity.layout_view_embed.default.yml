@@ -1,0 +1,82 @@
+uuid: 65c562eb-94d5-4195-97ee-0e8f35b9e8f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_view_embed.field_container_width
+    - field.field.penn_entity.layout_view_embed.field_description_formatted
+    - field.field.penn_entity.layout_view_embed.field_margins
+    - field.field.penn_entity.layout_view_embed.field_padding
+    - field.field.penn_entity.layout_view_embed.field_title
+    - field.field.penn_entity.layout_view_embed.field_view_display_name
+    - field.field.penn_entity.layout_view_embed.field_view_name
+    - penn_entity.penn_entity_type.layout_view_embed
+  module:
+    - options
+    - text
+id: penn_entity.layout_view_embed.default
+targetEntityType: penn_entity
+bundle: layout_view_embed
+mode: default
+content:
+  field_container_width:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_description_formatted:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_margins:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_padding:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_view_display_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_view_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

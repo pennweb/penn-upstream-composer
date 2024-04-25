@@ -1,0 +1,10 @@
+uuid: 95339152-58e6-41ac-a28b-bec7c86564ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.card_image_slider_card
+label: 'Card - Image Slider Card (3:2)'
+targetEntityType: media
+cache: true

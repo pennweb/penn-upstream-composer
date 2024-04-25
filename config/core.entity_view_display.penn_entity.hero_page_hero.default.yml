@@ -1,0 +1,32 @@
+uuid: ad08640b-0cf7-4bc4-8570-69a92eabfd98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.hero_page_hero.field_image
+    - penn_entity.penn_entity_type.hero_page_hero
+  module:
+    - fences
+id: penn_entity.hero_page_hero.default
+targetEntityType: penn_entity
+bundle: hero_page_hero
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: hero_page_hero
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 0
+    region: content
+hidden:
+  name: true

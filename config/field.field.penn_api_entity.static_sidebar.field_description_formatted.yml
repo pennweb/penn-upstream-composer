@@ -1,0 +1,21 @@
+uuid: 37fdd4c2-71a3-4977-bec5-a8a1aa2cc76c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_description_formatted
+    - penn_api_entity.penn_api_entity_type.static_sidebar
+  module:
+    - text
+id: penn_api_entity.static_sidebar.field_description_formatted
+field_name: field_description_formatted
+entity_type: penn_api_entity
+bundle: static_sidebar
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,31 @@
+uuid: d0e2b48d-2e14-40ad-b1bd-3917abb81c26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.video_inline.field_video_source
+    - penn_entity.penn_entity_type.video_inline
+  module:
+    - link
+id: penn_entity.video_inline.default
+targetEntityType: penn_entity
+bundle: video_inline
+mode: default
+content:
+  field_video_source:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

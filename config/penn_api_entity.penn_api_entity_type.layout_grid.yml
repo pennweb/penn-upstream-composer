@@ -1,0 +1,6 @@
+uuid: 8595cc9b-015c-43fb-997c-795f9434f485
+langcode: en
+status: true
+dependencies: {  }
+id: layout_grid
+label: 'Layout - News Feed Grid'

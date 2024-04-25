@@ -1,0 +1,6 @@
+uuid: 78e6f6fe-b017-417e-a628-3ec07f84a1dc
+langcode: en
+status: true
+dependencies: {  }
+id: card_contact_information
+label: 'Card - Contact Information'

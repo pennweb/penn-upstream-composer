@@ -1,0 +1,26 @@
+uuid: 7d522a60-e5a9-486d-acd5-28d78460f884
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - penn_api_entity
+    - penn_entity
+    - penn_search
+    - search
+    - system
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'search content'
+  - use_penn_search
+  - 'view media'
+  - 'view published accordion entities'
+  - 'view published card entity entities'
+  - 'view published penn api entity entities'
+  - 'view published penn entity entities'

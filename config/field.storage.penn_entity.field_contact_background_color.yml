@@ -1,0 +1,27 @@
+uuid: 4e8ffc11-a11c-4e5a-8b6c-cf5e6c999e0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_contact_background_color
+field_name: field_contact_background_color
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'bg-color bg-white'
+      label: White
+    -
+      value: 'bg-color bg-gray'
+      label: Gray
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

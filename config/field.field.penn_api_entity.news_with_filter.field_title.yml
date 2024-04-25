@@ -1,0 +1,19 @@
+uuid: 76c30ad6-3769-449b-a215-040e5f61021e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_title
+    - penn_api_entity.penn_api_entity_type.news_with_filter
+id: penn_api_entity.news_with_filter.field_title
+field_name: field_title
+entity_type: penn_api_entity
+bundle: news_with_filter
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

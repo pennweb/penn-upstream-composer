@@ -1,0 +1,21 @@
+uuid: 6dfb71d3-23cf-4ef3-9214-ed3cd034d75e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_contact_card_column
+    - penn_entity.penn_entity_type.card_contact_information
+  module:
+    - text
+id: penn_entity.card_contact_information.field_contact_card_column
+field_name: field_contact_card_column
+entity_type: penn_entity
+bundle: card_contact_information
+label: Columns
+description: 'Choose a one or two column contact information layout.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

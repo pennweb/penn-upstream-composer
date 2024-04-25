@@ -1,0 +1,10 @@
+uuid: 2f7d4b65-35ad-49a4-b9e4-c13a1d7bdb2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.hero_homepage
+label: 'Hero - Homepage (5:3)'
+targetEntityType: media
+cache: true

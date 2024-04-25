@@ -1,0 +1,23 @@
+uuid: f550cb40-12c0-4ea8-802e-d8e8e145d14c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_borders
+    - penn_entity.penn_entity_type.layout_quote_slider
+  module:
+    - options
+id: penn_entity.layout_quote_slider.field_borders
+field_name: field_borders
+entity_type: penn_entity
+bundle: layout_quote_slider
+label: Borders
+description: 'Add borders to the item.'
+required: false
+translatable: true
+default_value:
+  -
+    value: border-top
+default_value_callback: ''
+settings: {  }
+field_type: list_string

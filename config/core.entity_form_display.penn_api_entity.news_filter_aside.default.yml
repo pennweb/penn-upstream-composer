@@ -1,0 +1,69 @@
+uuid: dda09c14-4e28-43d7-bedd-ad01f8047405
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_api_entity.news_filter_aside.field_filter_page
+    - field.field.penn_api_entity.news_filter_aside.field_filter_title
+    - field.field.penn_api_entity.news_filter_aside.field_margins
+    - field.field.penn_api_entity.news_filter_aside.field_title
+    - penn_api_entity.penn_api_entity_type.news_filter_aside
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+id: penn_api_entity.news_filter_aside.default
+targetEntityType: penn_api_entity
+bundle: news_filter_aside
+mode: default
+content:
+  field_filter_page:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Item
+      label_plural: Items
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+  field_filter_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_margins:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true

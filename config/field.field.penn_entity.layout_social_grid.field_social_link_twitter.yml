@@ -1,0 +1,19 @@
+uuid: fa22c537-cc9f-43bd-b7ec-0b45f16302d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_social_link_twitter
+    - penn_entity.penn_entity_type.layout_social_grid
+id: penn_entity.layout_social_grid.field_social_link_twitter
+field_name: field_social_link_twitter
+entity_type: penn_entity
+bundle: layout_social_grid
+label: 'Social Link - Twitter'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

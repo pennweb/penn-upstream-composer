@@ -1,0 +1,6 @@
+uuid: 9af177f2-9a4c-4200-bef0-84f4366b1f78
+langcode: en
+status: true
+dependencies: {  }
+id: card_grid_card_portrait
+label: 'Card - Grid Card - Portrait'

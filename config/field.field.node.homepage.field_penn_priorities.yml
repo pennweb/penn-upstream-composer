@@ -1,0 +1,28 @@
+uuid: 0d90d403-43d7-47e4-9ac4-b011f829f3c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_penn_priorities
+    - node.type.homepage
+    - penn_entity.penn_entity_type.slider_penn_priorities
+id: node.homepage.field_penn_priorities
+field_name: field_penn_priorities
+entity_type: node
+bundle: homepage
+label: 'Penn Priorities'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      slider_penn_priorities: slider_penn_priorities
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

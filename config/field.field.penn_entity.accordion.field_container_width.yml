@@ -1,0 +1,21 @@
+uuid: 001d1603-108e-41a8-93e9-fe1b9ff892c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_container_width
+    - penn_entity.penn_entity_type.accordion
+  module:
+    - options
+id: penn_entity.accordion.field_container_width
+field_name: field_container_width
+entity_type: penn_entity
+bundle: accordion
+label: 'Container Width'
+description: 'Set the width of the item container. Set to none for no container.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

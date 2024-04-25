@@ -1,0 +1,6 @@
+uuid: d4d68ca4-a304-466e-86c5-053f8d62ca57
+langcode: en
+status: true
+dependencies: {  }
+id: news_filter_page
+label: 'News Filter Item (3x3 Grid Layout)'

@@ -1,0 +1,17 @@
+uuid: e2227d7b-79a2-46b4-8df1-6e61b3aee2b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1_1
+  module:
+    - crop
+name: faculty_card
+label: 'Faculty Card'
+effects:
+  9a28306d-a07b-4857-ab6c-102b25604247:
+    uuid: 9a28306d-a07b-4857-ab6c-102b25604247
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_1_1

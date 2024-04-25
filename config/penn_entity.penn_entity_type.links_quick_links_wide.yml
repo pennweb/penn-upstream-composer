@@ -1,0 +1,6 @@
+uuid: a6652d7e-3962-4e20-8285-900b9e3052fb
+langcode: en
+status: true
+dependencies: {  }
+id: links_quick_links_wide
+label: 'Layout - Content-Width Quicklinks'

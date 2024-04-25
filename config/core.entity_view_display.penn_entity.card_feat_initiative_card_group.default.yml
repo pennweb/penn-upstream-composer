@@ -1,0 +1,32 @@
+uuid: b1da8a7a-70ac-40a7-84b1-4a1da3dd1fef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.card_feat_initiative_card_group.field_penn_entity_reference
+    - penn_entity.penn_entity_type.card_feat_initiative_card_group
+  module:
+    - fences
+id: penn_entity.card_feat_initiative_card_group.default
+targetEntityType: penn_entity
+bundle: card_feat_initiative_card_group
+mode: default
+content:
+  field_penn_entity_reference:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 0
+    region: content
+hidden:
+  name: true

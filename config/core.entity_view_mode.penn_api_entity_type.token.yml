@@ -1,0 +1,10 @@
+uuid: 88a5c7ae-024d-4769-b413-5d0822cd02d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_api_entity
+id: penn_api_entity_type.token
+label: Token
+targetEntityType: penn_api_entity_type
+cache: true

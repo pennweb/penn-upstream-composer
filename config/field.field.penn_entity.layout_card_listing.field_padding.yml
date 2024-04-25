@@ -1,0 +1,23 @@
+uuid: a8836828-abdf-458f-969b-3b3601d2fd16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_padding
+    - penn_entity.penn_entity_type.layout_card_listing
+  module:
+    - options
+id: penn_entity.layout_card_listing.field_padding
+field_name: field_padding
+entity_type: penn_entity
+bundle: layout_card_listing
+label: Padding
+description: 'Add padding.'
+required: false
+translatable: false
+default_value:
+  -
+    value: section-padding
+default_value_callback: ''
+settings: {  }
+field_type: list_string

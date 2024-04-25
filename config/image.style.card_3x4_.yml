@@ -1,0 +1,25 @@
+uuid: 5e7e2cd3-a3f1-42c9-9866-a68fa0d61a87
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_3_4
+  module:
+    - crop
+name: card_3x4_
+label: 'Card (3x4)'
+effects:
+  bcef97f6-1a48-434d-a863-c2386de21f6b:
+    uuid: bcef97f6-1a48-434d-a863-c2386de21f6b
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_3_4
+  f7ab1365-c328-4fa9-9ad1-6a6467a8f314:
+    uuid: f7ab1365-c328-4fa9-9ad1-6a6467a8f314
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

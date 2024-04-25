@@ -1,0 +1,21 @@
+uuid: e1be22e7-4acc-4b1d-bef5-ffeae1439168
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.card_social_twitter
+id: penn_entity.card_social_twitter.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: card_social_twitter
+label: 'Account Name'
+description: 'The name of the Twitter account. For example: @penn.'
+required: false
+translatable: true
+default_value:
+  -
+    value: '@penn'
+default_value_callback: ''
+settings: {  }
+field_type: string

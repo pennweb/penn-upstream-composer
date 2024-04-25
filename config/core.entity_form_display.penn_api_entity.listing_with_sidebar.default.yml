@@ -1,0 +1,80 @@
+uuid: 0a1d9a26-585b-4130-8603-8a83b8bccf53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_api_entity.listing_with_sidebar.field_borders
+    - field.field.penn_api_entity.listing_with_sidebar.field_feed_url
+    - field.field.penn_api_entity.listing_with_sidebar.field_margins
+    - field.field.penn_api_entity.listing_with_sidebar.field_padding
+    - field.field.penn_api_entity.listing_with_sidebar.field_sidebar
+    - field.field.penn_api_entity.listing_with_sidebar.field_title
+    - penn_api_entity.penn_api_entity_type.listing_with_sidebar
+  module:
+    - inline_entity_form
+id: penn_api_entity.listing_with_sidebar.default
+targetEntityType: penn_api_entity
+bundle: listing_with_sidebar
+mode: default
+content:
+  field_borders:
+    type: options_select
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_feed_url:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_margins:
+    type: options_select
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_padding:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sidebar:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: true
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true

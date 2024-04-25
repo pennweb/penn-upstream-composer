@@ -1,0 +1,22 @@
+uuid: d00f3704-5985-4cc9-84ad-cd7cfcdbdd6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - penn_starter
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: penn_starter_help
+theme: penn_starter
+region: hidden
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

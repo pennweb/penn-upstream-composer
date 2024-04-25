@@ -1,0 +1,80 @@
+uuid: 0389a25f-3d54-4e56-a099-bec15bf8bb1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.accordion
+    - penn_entity.penn_entity_type.card_feat_initiative_card_group
+    - penn_entity.penn_entity_type.layout_accordion_columns
+    - penn_entity.penn_entity_type.layout_callout
+    - penn_entity.penn_entity_type.layout_card_listing
+    - penn_entity.penn_entity_type.layout_card_slider
+    - penn_entity.penn_entity_type.layout_columns
+    - penn_entity.penn_entity_type.layout_contact_information
+    - penn_entity.penn_entity_type.layout_container
+    - penn_entity.penn_entity_type.layout_content_aside
+    - penn_entity.penn_entity_type.layout_content_gallery
+    - penn_entity.penn_entity_type.layout_content_spotlight
+    - penn_entity.penn_entity_type.layout_facts
+    - penn_entity.penn_entity_type.layout_featured_story
+    - penn_entity.penn_entity_type.layout_grid
+    - penn_entity.penn_entity_type.layout_horizontal_links
+    - penn_entity.penn_entity_type.layout_image_slider
+    - penn_entity.penn_entity_type.layout_link_list
+    - penn_entity.penn_entity_type.layout_listing_cards
+    - penn_entity.penn_entity_type.layout_quote_slider
+    - penn_entity.penn_entity_type.layout_social_grid
+    - penn_entity.penn_entity_type.layout_split_content
+    - penn_entity.penn_entity_type.layout_student_spotlight
+    - penn_entity.penn_entity_type.links_quick_links_wide
+    - penn_entity.penn_entity_type.tabs_item
+    - penn_entity.penn_entity_type.video_inline
+    - penn_entity.penn_entity_type.video_inline_poster_controls
+    - penn_entity.penn_entity_type.video_modal
+id: penn_entity.tabs_item.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: tabs_item
+label: 'Tab Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      layout_accordion_columns: layout_accordion_columns
+      accordion: accordion
+      layout_callout: layout_callout
+      layout_card_listing: layout_card_listing
+      layout_card_slider: layout_card_slider
+      layout_columns: layout_columns
+      layout_contact_information: layout_contact_information
+      layout_container: layout_container
+      links_quick_links_wide: links_quick_links_wide
+      layout_content_aside: layout_content_aside
+      layout_content_gallery: layout_content_gallery
+      layout_content_spotlight: layout_content_spotlight
+      layout_facts: layout_facts
+      card_feat_initiative_card_group: card_feat_initiative_card_group
+      layout_featured_story: layout_featured_story
+      layout_grid: layout_grid
+      layout_horizontal_links: layout_horizontal_links
+      layout_image_slider: layout_image_slider
+      layout_link_list: layout_link_list
+      layout_listing_cards: layout_listing_cards
+      layout_quote_slider: layout_quote_slider
+      layout_social_grid: layout_social_grid
+      layout_split_content: layout_split_content
+      layout_student_spotlight: layout_student_spotlight
+      video_inline_poster_controls: video_inline_poster_controls
+      video_inline: video_inline
+      video_modal: video_modal
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: layout_listing_cards
+field_type: entity_reference

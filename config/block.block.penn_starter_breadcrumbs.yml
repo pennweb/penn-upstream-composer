@@ -1,0 +1,22 @@
+uuid: 06f5a2f8-2bf7-4075-8c83-fc807ec8ba66
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - penn_starter
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: penn_starter_breadcrumbs
+theme: penn_starter
+region: hidden
+weight: 5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

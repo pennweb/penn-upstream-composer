@@ -1,0 +1,19 @@
+uuid: 56037979-fbc4-4b75-afe9-ef8adfa11e5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_title
+    - penn_api_entity.penn_api_entity_type.event_calendar
+id: penn_api_entity.event_calendar.field_title
+field_name: field_title
+entity_type: penn_api_entity
+bundle: event_calendar
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

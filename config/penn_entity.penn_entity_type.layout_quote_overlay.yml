@@ -1,0 +1,6 @@
+uuid: 28793099-2763-4fd6-a1d3-f0b466ca75cd
+langcode: en
+status: true
+dependencies: {  }
+id: layout_quote_overlay
+label: 'Layout - Quote Overlay'

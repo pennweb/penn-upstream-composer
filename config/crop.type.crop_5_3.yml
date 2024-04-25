@@ -1,0 +1,12 @@
+uuid: c3daad67-6af9-40b2-828b-5dbaffb9b25b
+langcode: en
+status: true
+dependencies: {  }
+label: 'Crop 5:3'
+id: crop_5_3
+description: ''
+aspect_ratio: '5:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

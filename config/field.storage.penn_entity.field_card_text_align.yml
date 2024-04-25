@@ -1,0 +1,30 @@
+uuid: b5b5d138-6c3f-4c09-9e82-81bf0cd34bac
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_card_text_align
+field_name: field_card_text_align
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: card--align-left
+      label: left
+    -
+      value: card--align-center
+      label: center
+    -
+      value: card--align-right
+      label: right
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

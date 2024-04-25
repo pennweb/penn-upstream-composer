@@ -1,0 +1,6 @@
+uuid: b36d3667-205b-44a2-974b-66f4da2141de
+langcode: en
+status: true
+dependencies: {  }
+id: fact_sidebar_item
+label: 'Fact - Fact Sidebar Item'

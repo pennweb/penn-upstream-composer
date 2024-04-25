@@ -1,0 +1,23 @@
+uuid: 411835ed-34b2-465b-8598-c12d0d603bbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_contact_card_background
+    - penn_entity.penn_entity_type.card_contact_information
+  module:
+    - options
+id: penn_entity.card_contact_information.field_contact_card_background
+field_name: field_contact_card_background
+entity_type: penn_entity
+bundle: card_contact_information
+label: 'Background Color'
+description: 'Choose a background color for item.'
+required: false
+translatable: false
+default_value:
+  -
+    value: '--blue'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

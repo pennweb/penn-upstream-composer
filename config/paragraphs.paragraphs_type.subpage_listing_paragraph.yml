@@ -1,0 +1,10 @@
+uuid: 3fd7cdfd-2e22-4d7a-8e05-09fe1ec60961
+langcode: en
+status: true
+dependencies: {  }
+id: subpage_listing_paragraph
+label: 'Subpage Listing'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

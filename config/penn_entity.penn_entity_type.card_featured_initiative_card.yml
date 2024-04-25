@@ -1,0 +1,6 @@
+uuid: dd9eb1c1-6780-4d11-9bcf-b37147388a69
+langcode: en
+status: true
+dependencies: {  }
+id: card_featured_initiative_card
+label: 'Card - Featured Initiative Card'

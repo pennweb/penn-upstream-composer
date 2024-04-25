@@ -1,0 +1,23 @@
+uuid: e14b7402-bc40-43e3-aea5-3a10b59ae5a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_links
+    - penn_entity.penn_entity_type.layout_horizontal_links
+  module:
+    - link
+id: penn_entity.layout_horizontal_links.field_links
+field_name: field_links
+entity_type: penn_entity
+bundle: layout_horizontal_links
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

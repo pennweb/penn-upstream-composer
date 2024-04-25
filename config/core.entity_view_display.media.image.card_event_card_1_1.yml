@@ -1,0 +1,44 @@
+uuid: 662f5773-a5b7-4d1b-8a55-1d86eb39724c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.card_event_card_1_1
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - image.style.event_card_1_1
+    - media.type.image
+  module:
+    - fences
+    - image
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.card_event_card_1_1
+targetEntityType: media
+bundle: image
+mode: card_event_card_1_1
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: event_card_1_1
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  name: true
+  thumbnail: true
+  uid: true

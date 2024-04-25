@@ -1,0 +1,84 @@
+uuid: 32ac3e00-9148-46bc-aca4-668d5f5c8d9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_custom_height
+field_name: field_custom_height
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: height--0
+      label: 0%
+    -
+      value: height--10
+      label: 10%
+    -
+      value: height--20
+      label: 20%
+    -
+      value: height--30
+      label: 30%
+    -
+      value: height--40
+      label: 40%
+    -
+      value: height--50
+      label: 50%
+    -
+      value: height--60
+      label: 60%
+    -
+      value: height--70
+      label: 70%
+    -
+      value: height--80
+      label: 80%
+    -
+      value: height--90
+      label: 90%
+    -
+      value: height--100
+      label: 100%
+    -
+      value: height--110
+      label: 110%
+    -
+      value: height--120
+      label: 120%
+    -
+      value: height--130
+      label: 130%
+    -
+      value: height--140
+      label: 140%
+    -
+      value: height--150
+      label: 150%
+    -
+      value: height--160
+      label: 160%
+    -
+      value: height--170
+      label: 170%
+    -
+      value: height--180
+      label: 180%
+    -
+      value: height--190
+      label: 190%
+    -
+      value: height--200
+      label: 200%
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

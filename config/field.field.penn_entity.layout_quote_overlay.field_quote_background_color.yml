@@ -1,0 +1,23 @@
+uuid: 60cc60a1-483e-4964-89df-6540ffda4020
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_quote_background_color
+    - penn_entity.penn_entity_type.layout_quote_overlay
+  module:
+    - options
+id: penn_entity.layout_quote_overlay.field_quote_background_color
+field_name: field_quote_background_color
+entity_type: penn_entity
+bundle: layout_quote_overlay
+label: 'Background Color'
+description: 'Upload a grayscale image and choose a red or blue background. This will overlay the image with slightly transparent Penn blue or red. Or select none for no color overlay.'
+required: false
+translatable: false
+default_value:
+  -
+    value: quote-overlay__picture--red
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,22 @@
+uuid: ca9e054d-6233-45fc-b6aa-80562e806a69
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - penn_starter
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: penn_starter_content
+theme: penn_starter
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

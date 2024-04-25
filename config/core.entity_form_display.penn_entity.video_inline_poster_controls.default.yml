@@ -1,0 +1,49 @@
+uuid: 027dfa17-3e9b-49e4-9afa-f31e65aace2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.video_inline_poster_controls.field_image
+    - field.field.penn_entity.video_inline_poster_controls.field_video_source
+    - field.field.penn_entity.video_inline_poster_controls.field_video_transcript
+    - penn_entity.penn_entity_type.video_inline_poster_controls
+  module:
+    - link
+    - media_library
+id: penn_entity.video_inline_poster_controls.default
+targetEntityType: penn_entity
+bundle: video_inline_poster_controls
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_video_source:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_video_transcript:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

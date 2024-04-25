@@ -1,0 +1,6 @@
+uuid: 013457b0-9d27-4588-bc0b-01602af83a9f
+langcode: en
+status: true
+dependencies: {  }
+id: layout_callout
+label: 'Layout - Callout'

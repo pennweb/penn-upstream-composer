@@ -1,0 +1,30 @@
+uuid: 8f135956-286a-4908-a6dc-200c27f372eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.accordion
+    - penn_entity.penn_entity_type.accordion_column
+    - penn_entity.penn_entity_type.layout_accordion_columns
+id: penn_entity.layout_accordion_columns.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: layout_accordion_columns
+label: 'Accordion Columns'
+description: 'Add one or more accordion columns.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      accordion_column: accordion_column
+      accordion: accordion
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: accordion
+field_type: entity_reference

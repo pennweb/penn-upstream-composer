@@ -1,0 +1,19 @@
+uuid: a665d50e-4e66-4025-9bb5-2241efa8bac3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_feed_url
+    - penn_api_entity.penn_api_entity_type.news_filter_item_4_across_cards
+id: penn_api_entity.news_filter_item_4_across_cards.field_feed_url
+field_name: field_feed_url
+entity_type: penn_api_entity
+bundle: news_filter_item_4_across_cards
+label: 'Feed URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

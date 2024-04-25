@@ -1,0 +1,6 @@
+uuid: 6b4fb6b9-b821-499e-9b13-7f6a8ce75670
+langcode: en
+status: true
+dependencies: {  }
+id: layout_social_grid
+label: 'Layout - Social Grid'

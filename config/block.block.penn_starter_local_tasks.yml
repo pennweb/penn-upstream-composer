@@ -1,0 +1,22 @@
+uuid: 26fccd8b-92fd-423d-9572-981867b715ee
+langcode: en
+status: true
+dependencies:
+  theme:
+    - penn_starter
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: penn_starter_local_tasks
+theme: penn_starter
+region: prefix
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

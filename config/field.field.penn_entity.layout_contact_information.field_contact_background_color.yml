@@ -1,0 +1,23 @@
+uuid: b8c41e1a-2aa3-407b-ae9d-e8962d4673a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_contact_background_color
+    - penn_entity.penn_entity_type.layout_contact_information
+  module:
+    - options
+id: penn_entity.layout_contact_information.field_contact_background_color
+field_name: field_contact_background_color
+entity_type: penn_entity
+bundle: layout_contact_information
+label: 'Background Color'
+description: 'Choose a background color for the item.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'bg-color bg-gray'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

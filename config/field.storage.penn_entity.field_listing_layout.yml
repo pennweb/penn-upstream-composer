@@ -1,0 +1,27 @@
+uuid: 053af936-a6dc-4849-9d5c-7cf643609608
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_listing_layout
+field_name: field_listing_layout
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '2'
+      label: '2 Across Cards'
+    -
+      value: '3'
+      label: '3 Across Cards'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

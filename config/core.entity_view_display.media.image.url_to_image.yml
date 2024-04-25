@@ -1,0 +1,40 @@
+uuid: e9e2421b-96ec-4e47-8d71-8674145c6003
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.url_to_image
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - media.type.image
+  module:
+    - fences
+    - image
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.url_to_image
+targetEntityType: media
+bundle: image
+mode: url_to_image
+content:
+  field_media_image:
+    type: image_url
+    label: visually_hidden
+    settings:
+      image_style: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  name: true
+  thumbnail: true
+  uid: true

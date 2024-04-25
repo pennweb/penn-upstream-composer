@@ -1,0 +1,28 @@
+uuid: 69766524-599d-4330-90dd-9bc19e3351c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_grid
+    - node.type.homepage
+    - penn_entity.penn_entity_type.layout_social_grid
+id: node.homepage.field_social_grid
+field_name: field_social_grid
+entity_type: node
+bundle: homepage
+label: 'Social Grid'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      layout_social_grid: layout_social_grid
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

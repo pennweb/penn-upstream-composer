@@ -1,0 +1,6 @@
+uuid: f6d32a81-4c56-4df5-b043-ebecb59e7661
+langcode: en
+status: true
+dependencies: {  }
+id: aside_fact_sidebar
+label: 'Aside - Sidebar Fact List'

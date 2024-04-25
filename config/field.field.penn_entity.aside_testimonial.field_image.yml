@@ -1,0 +1,28 @@
+uuid: f151312d-a327-47c6-9462-8844c86bd09e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.aside_testimonial
+id: penn_entity.aside_testimonial.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: aside_testimonial
+label: Image
+description: 'Requires (3:2) crop.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

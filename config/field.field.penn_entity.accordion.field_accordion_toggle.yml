@@ -1,0 +1,21 @@
+uuid: 3655b479-27eb-4c58-a6fd-ffb69cbae345
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_accordion_toggle
+    - penn_entity.penn_entity_type.accordion
+  module:
+    - options
+id: penn_entity.accordion.field_accordion_toggle
+field_name: field_accordion_toggle
+entity_type: penn_entity
+bundle: accordion
+label: 'Accordion Toggle'
+description: 'Show a toggle to expand/collapse all accordion items simultaneously.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,10 @@
+uuid: 91754fc2-9ce9-4f0c-a0b4-8bece3613851
+langcode: en
+status: true
+dependencies: {  }
+id: fact_list_item_paragraph
+label: 'Fact List Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

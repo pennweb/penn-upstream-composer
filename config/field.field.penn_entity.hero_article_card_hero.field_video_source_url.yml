@@ -1,0 +1,19 @@
+uuid: ce153b19-4fc5-4e4d-8f8b-beaa26549b13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_video_source_url
+    - penn_entity.penn_entity_type.hero_article_card_hero
+id: penn_entity.hero_article_card_hero.field_video_source_url
+field_name: field_video_source_url
+entity_type: penn_entity
+bundle: hero_article_card_hero
+label: 'Video Source'
+description: "Optionally  use a video in place of the image.<br>\r\nExample: https://player.vimeo.com/external/413692024.hd.mp4?s=5635931c672e7e3eaaa63b21e738607e12045513&profile_id=175"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

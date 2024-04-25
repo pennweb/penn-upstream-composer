@@ -1,0 +1,21 @@
+uuid: f0dd0717-222d-46b3-96c3-d1ac3f4f9ab6
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_quote_author
+field_name: field_quote_author
+entity_type: paragraph
+type: string
+settings:
+  max_length: 512
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

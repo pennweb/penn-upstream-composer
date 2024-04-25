@@ -1,0 +1,10 @@
+uuid: ba752693-5273-4877-a2e4-407cd52c961b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.quote_overlay
+label: 'Quote Overlay (5:3)'
+targetEntityType: media
+cache: true

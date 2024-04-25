@@ -1,0 +1,19 @@
+uuid: 4b6509d1-f0d6-4012-8c16-d702678bfb4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_social_link_youtube
+    - penn_entity.penn_entity_type.layout_social_grid
+id: penn_entity.layout_social_grid.field_social_link_youtube
+field_name: field_social_link_youtube
+entity_type: penn_entity
+bundle: layout_social_grid
+label: 'Social Link - YouTube'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

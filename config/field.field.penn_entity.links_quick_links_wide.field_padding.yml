@@ -1,0 +1,21 @@
+uuid: 42c0c755-e7d9-41d8-8099-818e96173e5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_padding
+    - penn_entity.penn_entity_type.links_quick_links_wide
+  module:
+    - options
+id: penn_entity.links_quick_links_wide.field_padding
+field_name: field_padding
+entity_type: penn_entity
+bundle: links_quick_links_wide
+label: Padding
+description: 'Add padding to the item.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

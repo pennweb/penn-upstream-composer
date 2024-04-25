@@ -1,0 +1,19 @@
+uuid: 74b4b395-a774-4d16-9c90-8d730fc41c96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_description
+    - penn_entity.penn_entity_type.fact_item
+id: penn_entity.fact_item.field_description
+field_name: field_description
+entity_type: penn_entity
+bundle: fact_item
+label: 'Fact Caption'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

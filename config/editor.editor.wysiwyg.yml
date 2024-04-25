@@ -1,0 +1,70 @@
+uuid: 6dd2f1a8-b053-4687-afcc-700452c710a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.wysiwyg
+  module:
+    - ckeditor
+format: wysiwyg
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - Format
+        -
+          name: Styles
+          items:
+            - Styles
+        -
+          name: Quote
+          items:
+            - Blockquote
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Table
+          items:
+            - Table
+        -
+          name: Media
+          items:
+            - media_entity_embed
+        -
+          name: 'Penn Entity'
+          items:
+            - penn_api
+            - penn_entity
+        -
+          name: Tools
+          items:
+            - Source
+            - Maximize
+  plugins:
+    stylescombo:
+      styles: "h1.plain|h1 no underline\r\nh1.text--margins--none|h1 no margins\r\nh1.plain.text--margins--none|h1 no underline, no margins\r\nh2.plain|h2 no underline\r\nh2.text--margins--none|h2 no margins\r\nh2.plain.text--margins--none|h2 no underline, no margins\r\nh3.text--margins--none|h3 no margins\r\nh4.text--margins--none|h4 no margins\r\nh5.text--margins--none|h5 no margins\r\nh6.text--margins--none|h6 no margins\r\nh3.subtitle|h3 subtitle\r\np.featured|Paragraph Featured\r\np.large|Paragraph Large\r\np.intro|Paragraph Intro\r\np.text--margins--none|Paragraph no margins\r\na.btn|Button (Blue, for light background)\r\na.btn.btn--secondary|Button (Red, for light backgrounds)\r\na.btn.btn--outline|Button (Outlined, Blue Hover, for light backgrounds)\r\na.btn.btn--outline-secondary|Button (Outlined, Red Hover, for light backgrounds)\r\na.btn.btn--outline-white|Button (Outlined, White Hover/Blue Text, for dark backgrounds)\r\na.btn.btn--outline-white-secondary|Button (Outlined, White Hover/Red Text, for dark backgrounds)\r\na.cta|Link (CTA)\r\na.cta.cta--arrow|Link (CTA with arrow)\r\nblockquote.text-cta__quote|CTA Blockquote\r\nul.list-blue|Blue List\r\nul.list-red|Red List\r\nspan.text--blue|Blue Text\r\nspan.text--red|Red Text\r\nspan.text--black|Black Text\r\nspan.text--white|White Text\r\nspan.text--light-gray|Light Gray Text\r\nspan.text--dark-gray|Dark Gray Text\r\nspan.text--light-blue|Light Blue Text\r\nspan.text--yellow|Yellow Text\r\nspan.text--sans-serif|Sans Serif Text\r\nspan.text--serif|Serif Text\r\nspan.text--x-large|X-Large Text"
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: '10 MB'
+  max_dimensions:
+    width: null
+    height: null

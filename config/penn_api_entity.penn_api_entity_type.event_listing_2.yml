@@ -1,0 +1,6 @@
+uuid: 6a339b17-2bbf-4c9b-9d4a-3ce9de55e4f8
+langcode: en
+status: true
+dependencies: {  }
+id: event_listing_2
+label: 'Layout - Events - Upcoming Events  (3-Across, Heading Top)'

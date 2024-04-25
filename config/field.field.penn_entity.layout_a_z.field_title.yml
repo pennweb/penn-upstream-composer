@@ -1,0 +1,19 @@
+uuid: 73ad0f47-f499-4bc4-ace8-3680668a6864
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.layout_a_z
+id: penn_entity.layout_a_z.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: layout_a_z
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

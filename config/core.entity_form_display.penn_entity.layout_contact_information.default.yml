@@ -1,0 +1,61 @@
+uuid: 4e269244-999e-49cb-b61c-ae582c57ed2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_contact_information.field_contact_background_color
+    - field.field.penn_entity.layout_contact_information.field_container_width
+    - field.field.penn_entity.layout_contact_information.field_padding
+    - field.field.penn_entity.layout_contact_information.field_penn_entity_reference
+    - penn_entity.penn_entity_type.layout_contact_information
+  module:
+    - inline_entity_form
+id: penn_entity.layout_contact_information.default
+targetEntityType: penn_entity
+bundle: layout_contact_information
+mode: default
+content:
+  field_contact_background_color:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_container_width:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_padding:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_penn_entity_reference:
+    type: inline_entity_form_complex
+    weight: 4
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: true
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

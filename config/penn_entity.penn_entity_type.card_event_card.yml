@@ -1,0 +1,6 @@
+uuid: e81831bc-394a-4668-a084-82cf2b6a821f
+langcode: en
+status: true
+dependencies: {  }
+id: card_event_card
+label: 'Card - Event Card'

@@ -1,0 +1,21 @@
+uuid: 6a023622-aff2-4d3f-9d22-59978498e2f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+id: penn_entity.field_subtitle_secondary
+field_name: field_subtitle_secondary
+entity_type: penn_entity
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

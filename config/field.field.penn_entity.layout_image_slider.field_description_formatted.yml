@@ -1,0 +1,21 @@
+uuid: 2d96b880-8bde-4b17-91c3-cab32e30c6f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_description_formatted
+    - penn_entity.penn_entity_type.layout_image_slider
+  module:
+    - text
+id: penn_entity.layout_image_slider.field_description_formatted
+field_name: field_description_formatted
+entity_type: penn_entity
+bundle: layout_image_slider
+label: Description
+description: 'Add an optional description.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

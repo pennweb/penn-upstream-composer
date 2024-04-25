@@ -1,0 +1,23 @@
+uuid: a4a192ad-5bb2-4dae-879c-af1dbf73064b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_margins
+    - penn_entity.penn_entity_type.layout_callout
+  module:
+    - options
+id: penn_entity.layout_callout.field_margins
+field_name: field_margins
+entity_type: penn_entity
+bundle: layout_callout
+label: Margins
+description: 'Add margins above and below the item.'
+required: false
+translatable: false
+default_value:
+  -
+    value: section-margin
+default_value_callback: ''
+settings: {  }
+field_type: list_string

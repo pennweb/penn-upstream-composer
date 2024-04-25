@@ -1,0 +1,77 @@
+uuid: 9aae53df-f02e-4f81-9cdf-d5f39fd9d6ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.accordion.field_accordion_toggle
+    - field.field.penn_entity.accordion.field_borders
+    - field.field.penn_entity.accordion.field_container_width
+    - field.field.penn_entity.accordion.field_margins
+    - field.field.penn_entity.accordion.field_penn_entity_reference
+    - field.field.penn_entity.accordion.field_title
+    - penn_entity.penn_entity_type.accordion
+  module:
+    - inline_entity_form
+id: penn_entity.accordion.default
+targetEntityType: penn_entity
+bundle: accordion
+mode: default
+content:
+  field_accordion_toggle:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_borders:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_container_width:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_margins:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_penn_entity_reference:
+    type: inline_entity_form_complex
+    weight: 6
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Item
+      label_plural: Items
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

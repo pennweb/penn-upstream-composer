@@ -1,0 +1,29 @@
+uuid: 81d4c9c9-7d8f-4c98-aa52-392792596207
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fact_list_item_paragraph.field_description_plain
+    - field.field.paragraph.fact_list_item_paragraph.field_title
+    - paragraphs.paragraphs_type.fact_list_item_paragraph
+id: paragraph.fact_list_item_paragraph.default
+targetEntityType: paragraph
+bundle: fact_list_item_paragraph
+mode: default
+content:
+  field_description_plain:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

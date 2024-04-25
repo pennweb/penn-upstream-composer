@@ -1,0 +1,19 @@
+uuid: d58751b6-d290-4604-8d7e-c9b9d4b4b0ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_description
+    - penn_entity.penn_entity_type.slider_penn_priorities
+id: penn_entity.slider_penn_priorities.field_description
+field_name: field_description
+entity_type: penn_entity
+bundle: slider_penn_priorities
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

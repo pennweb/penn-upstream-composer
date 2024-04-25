@@ -1,0 +1,27 @@
+uuid: 292ab1f6-d6e3-4a82-8115-4c0745052ed4
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_select_list
+field_name: field_select_list
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: page-header-hero__picture--red
+      label: Red
+    -
+      value: page-header-hero__picture--blue
+      label: Blue
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

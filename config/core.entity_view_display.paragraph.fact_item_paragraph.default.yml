@@ -1,0 +1,44 @@
+uuid: b641856b-5490-481c-a07f-a2b7ea54bfcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fact_item_paragraph.field_button_link
+    - field.field.paragraph.fact_item_paragraph.field_description_plain
+    - field.field.paragraph.fact_item_paragraph.field_title
+    - paragraphs.paragraphs_type.fact_item_paragraph
+  module:
+    - link
+id: paragraph.fact_item_paragraph.default
+targetEntityType: paragraph
+bundle: fact_item_paragraph
+mode: default
+content:
+  field_button_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_description_plain:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

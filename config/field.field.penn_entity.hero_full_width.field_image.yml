@@ -1,0 +1,29 @@
+uuid: ce2319bf-bc0a-41aa-9c7a-5a6440f2bde1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.hero_full_width
+id: penn_entity.hero_full_width.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: hero_full_width
+label: 'Desktop Image'
+description: '<b>Set the (5:3) crop.</b>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

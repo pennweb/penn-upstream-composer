@@ -1,0 +1,19 @@
+uuid: f5094b57-92fc-4481-9b6f-68ab6dfd51b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_feed_url
+    - penn_api_entity.penn_api_entity_type.event_listing_2
+id: penn_api_entity.event_listing_2.field_feed_url
+field_name: field_feed_url
+entity_type: penn_api_entity
+bundle: event_listing_2
+label: 'Feed URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

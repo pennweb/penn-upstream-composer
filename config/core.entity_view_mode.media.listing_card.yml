@@ -1,0 +1,10 @@
+uuid: 86f83e13-e9e1-4003-8757-49397674ab5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.listing_card
+label: 'Card - Listing Card (3:2)'
+targetEntityType: media
+cache: true

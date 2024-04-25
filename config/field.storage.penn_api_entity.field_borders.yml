@@ -1,0 +1,30 @@
+uuid: 276dcf49-9747-4ef1-9f04-dcf7f8f39d7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_api_entity
+id: penn_api_entity.field_borders
+field_name: field_borders
+entity_type: penn_api_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: border-top
+      label: 'Border top'
+    -
+      value: border-bottom
+      label: 'Border bottom'
+    -
+      value: 'border-top border-bottom'
+      label: 'Borders top and bottom'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

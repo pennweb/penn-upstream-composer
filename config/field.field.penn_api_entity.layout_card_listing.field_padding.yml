@@ -1,0 +1,21 @@
+uuid: 4c8284f8-3220-4d92-a7d2-98e9855ace67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_padding
+    - penn_api_entity.penn_api_entity_type.layout_card_listing
+  module:
+    - options
+id: penn_api_entity.layout_card_listing.field_padding
+field_name: field_padding
+entity_type: penn_api_entity
+bundle: layout_card_listing
+label: Padding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: ede0e77f-8acd-4e1d-8310-2e34c29f272d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_active
+    - penn_api_entity.penn_api_entity_type.news_filter_panel_listing_aside
+id: penn_api_entity.news_filter_panel_listing_aside.field_active
+field_name: field_active
+entity_type: penn_api_entity
+bundle: news_filter_panel_listing_aside
+label: Active
+description: 'Make this feed the default shown.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,21 @@
+uuid: 98b7584f-dbe0-4c30-ac03-0e10cfdd0221
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_select_list
+    - penn_entity.penn_entity_type.hero_page_quote_hero
+  module:
+    - options
+id: penn_entity.hero_page_quote_hero.field_select_list
+field_name: field_select_list
+entity_type: penn_entity
+bundle: hero_page_quote_hero
+label: 'Background Color'
+description: 'Upload a grayscale image and choose a red or blue background. This will overlay the image with Penn blue or red. Or select none for no color overlay.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

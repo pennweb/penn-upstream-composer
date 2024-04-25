@@ -1,0 +1,41 @@
+uuid: 295228e6-2e33-464e-9b3c-d9ebc7054f99
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.article_card_mobile
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - image.style.card_3x2
+    - media.type.image
+  module:
+    - fences
+    - image
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.article_card_mobile
+targetEntityType: media
+bundle: image
+mode: article_card_mobile
+content:
+  field_media_image:
+    type: image_url
+    label: visually_hidden
+    settings:
+      image_style: card_3x2
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  name: true
+  thumbnail: true
+  uid: true

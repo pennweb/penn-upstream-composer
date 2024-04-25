@@ -1,0 +1,23 @@
+uuid: a981a12b-bfda-4c9e-9bf4-b595d33f4153
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_background_position
+    - penn_entity.penn_entity_type.hero_full_width
+  module:
+    - options
+id: penn_entity.hero_full_width.field_background_position
+field_name: field_background_position
+entity_type: penn_entity
+bundle: hero_full_width
+label: 'Background Align'
+description: "Align the focal point of the background image to the top, center or bottom.<br>\r\nThis is useful for making certain images fit better in the hero space, especially as the window size shrinks.<br>\r\n\"Top\" is the default."
+required: false
+translatable: true
+default_value:
+  -
+    value: background--center-top
+default_value_callback: ''
+settings: {  }
+field_type: list_string

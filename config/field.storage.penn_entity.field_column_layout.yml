@@ -1,0 +1,30 @@
+uuid: 84c4987b-a85a-4db0-91a5-ddd233626d64
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_column_layout
+field_name: field_column_layout
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: layout--50-50
+      label: '2 Column'
+    -
+      value: layout--28-28-28
+      label: '3 Column'
+    -
+      value: layout--20-20-20-20
+      label: '4 Column'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

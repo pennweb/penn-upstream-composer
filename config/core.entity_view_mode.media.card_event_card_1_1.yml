@@ -1,0 +1,10 @@
+uuid: 47f12196-f218-4e20-ad3c-e3d01fe8c363
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.card_event_card_1_1
+label: 'Card - Event Card (1:1)'
+targetEntityType: media
+cache: true

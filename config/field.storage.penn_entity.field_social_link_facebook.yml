@@ -1,0 +1,21 @@
+uuid: cc1d62d4-19de-4e16-b55c-eb3c0691c472
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+id: penn_entity.field_social_link_facebook
+field_name: field_social_link_facebook
+entity_type: penn_entity
+type: string
+settings:
+  max_length: 512
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

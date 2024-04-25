@@ -1,0 +1,19 @@
+uuid: 86e935c4-22c3-4c31-bdaf-366dd55ecb68
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - penn_entity
+id: penn_entity.field_links
+field_name: field_links
+entity_type: penn_entity
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+uuid: 268a6db2-6de7-41ed-aebb-940b26d72e31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_featured_initiative_card
+    - penn_entity.penn_entity_type.card_featured_initiative_card
+    - penn_entity.penn_entity_type.video_modal
+id: penn_entity.video_modal.field_featured_initiative_card
+field_name: field_featured_initiative_card
+entity_type: penn_entity
+bundle: video_modal
+label: 'Featured Initiative Card'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      card_featured_initiative_card: card_featured_initiative_card
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

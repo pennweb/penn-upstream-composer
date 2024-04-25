@@ -1,0 +1,19 @@
+uuid: dca6bed4-03b4-435f-844d-eed0fa97b8bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_filter_title
+    - penn_api_entity.penn_api_entity_type.news_filter_item_4_across_cards
+id: penn_api_entity.news_filter_item_4_across_cards.field_filter_title
+field_name: field_filter_title
+entity_type: penn_api_entity
+bundle: news_filter_item_4_across_cards
+label: 'Filter Label'
+description: 'The label shown in the filter dropdown. For example: "Science & Technology".'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

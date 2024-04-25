@@ -1,0 +1,23 @@
+uuid: d49f744e-7c69-444e-9664-b32397b450ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_text_align
+    - penn_entity.penn_entity_type.hero_homepage
+  module:
+    - options
+id: penn_entity.hero_homepage.field_text_align
+field_name: field_text_align
+entity_type: penn_entity
+bundle: hero_homepage
+label: 'Text align'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: hero--text-right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

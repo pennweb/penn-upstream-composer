@@ -1,0 +1,44 @@
+uuid: 567c6393-1867-41d9-b829-c53f8a24c59e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.penn_api_entity.full
+    - penn_api_entity.penn_api_entity_type.event_calendar
+    - penn_api_entity.penn_api_entity_type.event_listing
+    - penn_api_entity.penn_api_entity_type.event_listing_2
+    - penn_api_entity.penn_api_entity_type.layout_card_listing
+    - penn_api_entity.penn_api_entity_type.layout_grid
+    - penn_api_entity.penn_api_entity_type.layout_tabs
+    - penn_api_entity.penn_api_entity_type.listing_with_sidebar
+    - penn_api_entity.penn_api_entity_type.news_feed_sidebar
+    - penn_api_entity.penn_api_entity_type.news_filter_aside
+    - penn_api_entity.penn_api_entity_type.news_with_filter
+  module:
+    - entity_embed
+    - penn_api_entity
+label: 'Penn API Feed'
+id: penn_api
+type_id: entity
+type_settings:
+  entity_type: penn_api_entity
+  bundles:
+    - layout_card_listing
+    - event_calendar
+    - event_listing
+    - event_listing_2
+    - layout_grid
+    - news_feed_sidebar
+    - news_with_filter
+    - news_filter_aside
+    - listing_with_sidebar
+    - layout_tabs
+  display_plugins:
+    - 'view_mode:penn_api_entity.full'
+  entity_browser: ''
+  entity_browser_settings:
+    display_review: false
+icon:
+  uri: 'public://embed_buttons/feed-32.png'
+  data: iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABs0lEQVRYhe2Xv0oDQRDGf2pII7GxsFVsAorESklAsFQ7xVfIa9iZ2IhofBBTayNY2NgoYmEh+YdIbMQmKCrBOVx39nJJ7s5Y5INlycw3M1/m5nYThvhvSAJ7QAP4jHjVgaLU8EUxhsL2KvgVR1S2SVnlCY8cP53whac2Lqj8o4OewYELSCjLb1SASWlbFXgEzoET4EqxI4D9jFxT7K07YAsY6aGsmoEgwiwwLisNrAEl6YbHvQCmVSY3ehbgh/bsbAMPwm8Cqz7cUB0IQgooS0wLWAngRy4A6caRxD0BM4oRQsAl8Ay8AjfAATCvor5FlI2Z8BvMngW4pv9dvrF9qUwYl9imyuzOr2ATssZbsCSFW8I5dYjIi+9WZe5TgAsZoCa8Q8ufMHwZR2xkQ7gonWg/jjnLdyw5dlRUxG9BSbj7ln1D7Gcqog8B63LqVeUUNLEs3GvLnjaO6tACzCO3YnFTYn/p0u7KH8l1/GZ9/pB9TDEdCBKQNx5B3vItyH5v2adkb6psXUC1KGKo/HYHGrLnYiju5ez4o7TgOHqjXruqqoGkiKjHULgmxTv+MRnibwF8AVXQ9ZotP8ZGAAAAAElFTkSuQmCC
+icon_uuid: null

@@ -1,0 +1,23 @@
+uuid: 5dc88fae-429f-4cd1-ba54-c4552ee32b85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_container_width
+    - penn_entity.penn_entity_type.layout_listing_cards
+  module:
+    - options
+id: penn_entity.layout_listing_cards.field_container_width
+field_name: field_container_width
+entity_type: penn_entity
+bundle: layout_listing_cards
+label: 'Container Width'
+description: 'Set the width of the item container. Set to none for no container.'
+required: false
+translatable: true
+default_value:
+  -
+    value: contain
+default_value_callback: ''
+settings: {  }
+field_type: list_string

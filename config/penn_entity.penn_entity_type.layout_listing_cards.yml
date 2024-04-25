@@ -1,0 +1,6 @@
+uuid: 83a1e31d-9d6c-4047-9595-442ec9ad0fcc
+langcode: en
+status: true
+dependencies: {  }
+id: layout_listing_cards
+label: 'Layout - Listing Cards'

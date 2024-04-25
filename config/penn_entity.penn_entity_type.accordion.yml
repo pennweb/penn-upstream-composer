@@ -1,0 +1,6 @@
+uuid: f50dcf3a-9b7e-49d0-8875-8d7c9fa3d6c3
+langcode: en
+status: true
+dependencies: {  }
+id: accordion
+label: 'Layout - Accordion Single'

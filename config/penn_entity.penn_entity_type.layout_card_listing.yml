@@ -1,0 +1,6 @@
+uuid: 27923b9c-3110-41d0-841f-a621b2dfc35c
+langcode: en
+status: true
+dependencies: {  }
+id: layout_card_listing
+label: 'Layout - Card Listing (2 & 3 Across Cards)'

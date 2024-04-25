@@ -1,0 +1,28 @@
+uuid: acd52822-ea7d-4e40-a68a-06d372cf6545
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_gallery_reference
+    - penn_entity.penn_entity_type.layout_content_gallery
+    - penn_entity.penn_entity_type.slider_gallery_slider
+id: penn_entity.layout_content_gallery.field_gallery_reference
+field_name: field_gallery_reference
+entity_type: penn_entity
+bundle: layout_content_gallery
+label: Gallery
+description: 'A gallery can be one or more slides. Multiple slides will automatically become a slideshow.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      slider_gallery_slider: slider_gallery_slider
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: card_gallery_card
+field_type: entity_reference

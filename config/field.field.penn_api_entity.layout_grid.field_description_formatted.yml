@@ -1,0 +1,21 @@
+uuid: 020b451e-83cd-442f-8702-cbf7eab326f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_description_formatted
+    - penn_api_entity.penn_api_entity_type.layout_grid
+  module:
+    - text
+id: penn_api_entity.layout_grid.field_description_formatted
+field_name: field_description_formatted
+entity_type: penn_api_entity
+bundle: layout_grid
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

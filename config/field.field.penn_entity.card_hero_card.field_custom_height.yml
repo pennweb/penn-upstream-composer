@@ -1,0 +1,23 @@
+uuid: 9ed069df-5196-48f3-b804-98bac4695c78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_custom_height
+    - penn_entity.penn_entity_type.card_hero_card
+  module:
+    - options
+id: penn_entity.card_hero_card.field_custom_height
+field_name: field_custom_height
+entity_type: penn_entity
+bundle: card_hero_card
+label: 'Card Height'
+description: "Set the card height.<br>\r\nThe default is 100% (400px)."
+required: false
+translatable: false
+default_value:
+  -
+    value: height--100
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,6 @@
+uuid: 9defd923-615f-44e8-bcf0-749b07bf1c51
+langcode: en
+status: true
+dependencies: {  }
+id: news_filter_item_3_across_cards
+label: 'News Filter Item (3 Across Cards)'

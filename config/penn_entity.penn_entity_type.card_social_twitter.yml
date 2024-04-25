@@ -1,0 +1,6 @@
+uuid: 03e053a4-1201-40d1-a2fc-26888048cbb9
+langcode: en
+status: true
+dependencies: {  }
+id: card_social_twitter
+label: 'Social Card - Twitter'

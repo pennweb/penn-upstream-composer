@@ -1,0 +1,17 @@
+uuid: a08fe74c-94c8-4f4f-ba53-7dd5cd393889
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1_1
+  module:
+    - crop
+name: event_card_1_1
+label: 'Event Card (1:1)'
+effects:
+  e611661d-aa14-4465-96eb-cfce5f133102:
+    uuid: e611661d-aa14-4465-96eb-cfce5f133102
+    id: crop_crop
+    weight: -9
+    data:
+      crop_type: crop_1_1

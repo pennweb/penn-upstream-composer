@@ -1,0 +1,81 @@
+uuid: c9128ffc-b732-427d-8f2e-f6c790c9dea6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_quote_overlay.field_borders
+    - field.field.penn_entity.layout_quote_overlay.field_image
+    - field.field.penn_entity.layout_quote_overlay.field_padding
+    - field.field.penn_entity.layout_quote_overlay.field_quote
+    - field.field.penn_entity.layout_quote_overlay.field_quote_author
+    - field.field.penn_entity.layout_quote_overlay.field_quote_background_color
+    - penn_entity.penn_entity_type.layout_quote_overlay
+  module:
+    - fences
+    - options
+id: penn_entity.layout_quote_overlay.default
+targetEntityType: penn_entity
+bundle: layout_quote_overlay
+mode: default
+content:
+  field_borders:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: quote_overlay
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 2
+    region: content
+  field_padding:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_quote:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  field_quote_author:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_quote_background_color:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

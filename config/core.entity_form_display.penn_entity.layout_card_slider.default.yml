@@ -1,0 +1,76 @@
+uuid: c2feaf00-7f9b-45c2-bf90-2da06b33791f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_card_slider.field_background_color
+    - field.field.penn_entity.layout_card_slider.field_borders
+    - field.field.penn_entity.layout_card_slider.field_description_formatted
+    - field.field.penn_entity.layout_card_slider.field_penn_entity_reference
+    - field.field.penn_entity.layout_card_slider.field_title
+    - penn_entity.penn_entity_type.layout_card_slider
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+    - text
+id: penn_entity.layout_card_slider.default
+targetEntityType: penn_entity
+bundle: layout_card_slider
+mode: default
+content:
+  field_background_color:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_borders:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description_formatted:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_penn_entity_reference:
+    type: inline_entity_form_complex
+    weight: 6
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Slide
+      label_plural: Slides
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: true
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

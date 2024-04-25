@@ -1,0 +1,28 @@
+uuid: b27b693d-317f-4cc1-96ae-85cc6fc4541f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.card
+id: penn_entity.card.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: card
+label: Image
+description: 'Requires (3:2) crop.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 6b0c9f62-141e-4e58-a9c1-e583fedccf32
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+    - text
+id: penn_entity.field_contact_card_column
+field_name: field_contact_card_column
+entity_type: penn_entity
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

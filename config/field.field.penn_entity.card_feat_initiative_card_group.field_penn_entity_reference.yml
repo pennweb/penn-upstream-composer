@@ -1,0 +1,28 @@
+uuid: 333038db-e2b0-4949-9818-bcefa80e2a44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.card_feat_initiative_card_group
+    - penn_entity.penn_entity_type.card_featured_initiative_card
+id: penn_entity.card_feat_initiative_card_group.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: card_feat_initiative_card_group
+label: 'Featured Initiative Cards'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      card_featured_initiative_card: card_featured_initiative_card
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: card_featured_initiative_card
+field_type: entity_reference

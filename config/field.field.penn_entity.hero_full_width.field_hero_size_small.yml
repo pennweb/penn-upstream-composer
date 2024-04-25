@@ -1,0 +1,23 @@
+uuid: 96ca4456-275d-4902-803b-1b73e473dc49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_hero_size_small
+    - penn_entity.penn_entity_type.hero_full_width
+  module:
+    - options
+id: penn_entity.hero_full_width.field_hero_size_small
+field_name: field_hero_size_small
+entity_type: penn_entity
+bundle: hero_full_width
+label: 'Hero Size - Mobile'
+description: 'Sets the hero height for mobile.<br>(1:2) crop will generally look good at 40vh.'
+required: false
+translatable: false
+default_value:
+  -
+    value: hero-full-width--on-small__auto
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,6 @@
+uuid: dd839d13-c7db-488c-8779-82e77a11dc30
+langcode: en
+status: true
+dependencies: {  }
+id: accordion_column
+label: 'Accordion Column'

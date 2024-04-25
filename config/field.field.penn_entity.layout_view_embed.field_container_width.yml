@@ -1,0 +1,23 @@
+uuid: 358cc379-a14c-492f-b274-b1c63659f8e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_container_width
+    - penn_entity.penn_entity_type.layout_view_embed
+  module:
+    - options
+id: penn_entity.layout_view_embed.field_container_width
+field_name: field_container_width
+entity_type: penn_entity
+bundle: layout_view_embed
+label: 'Container Width'
+description: 'Set the container width. "Medium" is the default.'
+required: false
+translatable: true
+default_value:
+  -
+    value: contain
+default_value_callback: ''
+settings: {  }
+field_type: list_string

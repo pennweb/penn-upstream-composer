@@ -1,0 +1,28 @@
+uuid: e52cd902-a4c7-4385-a605-dcf9c19f9088
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image
+    - media.type.image
+    - penn_entity.penn_entity_type.video_modal
+id: penn_entity.video_modal.field_image
+field_name: field_image
+entity_type: penn_entity
+bundle: video_modal
+label: 'Video Poster'
+description: 'Requires (16:9) crop.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

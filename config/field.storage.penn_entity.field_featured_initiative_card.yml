@@ -1,0 +1,19 @@
+uuid: 1c81a3bc-518a-4562-94b7-1b6bfe650431
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+id: penn_entity.field_featured_initiative_card
+field_name: field_featured_initiative_card
+entity_type: penn_entity
+type: entity_reference
+settings:
+  target_type: penn_entity
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

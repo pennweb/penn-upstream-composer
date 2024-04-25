@@ -1,0 +1,58 @@
+uuid: f5492395-dd9f-4ffe-8bfb-d861c78847c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subpage_listing_paragraph
+    - node.type.page
+    - paragraphs.paragraphs_type.layout_subpage_listing_paragraph
+  module:
+    - entity_reference_revisions
+id: node.page.field_subpage_listing_paragraph
+field_name: field_subpage_listing_paragraph
+entity_type: node
+bundle: page
+label: 'Subpage Listing (Paragraphs, deprecated)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      layout_subpage_listing_paragraph: layout_subpage_listing_paragraph
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_item_paragraph:
+        weight: 9
+        enabled: false
+      accordion_paragraph:
+        weight: 10
+        enabled: false
+      fact_bar_item_paragraph:
+        weight: 11
+        enabled: false
+      fact_item_paragraph:
+        weight: 12
+        enabled: false
+      fact_list_item_paragraph:
+        weight: 13
+        enabled: false
+      fact_sidebar_item_paragraph:
+        weight: 14
+        enabled: false
+      layout_subpage_listing_paragraph:
+        weight: 15
+        enabled: true
+      page_header_hero_paragraph:
+        weight: 18
+        enabled: false
+      page_header_quote_hero_paragraph:
+        weight: 19
+        enabled: false
+      subpage_listing_paragraph:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

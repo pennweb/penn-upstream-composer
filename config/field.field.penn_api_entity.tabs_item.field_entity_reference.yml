@@ -1,0 +1,28 @@
+uuid: 5c3b4e69-f2a8-4863-9cff-b7dd7e8dd8ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_entity_reference
+    - penn_api_entity.penn_api_entity_type.layout_card_listing
+    - penn_api_entity.penn_api_entity_type.tabs_item
+id: penn_api_entity.tabs_item.field_entity_reference
+field_name: field_entity_reference
+entity_type: penn_api_entity
+bundle: tabs_item
+label: 'Tab Items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_api_entity'
+  handler_settings:
+    target_bundles:
+      layout_card_listing: layout_card_listing
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 0e812815-98f0-406e-9026-0a6bb5489bb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.card_social_instagram
+id: penn_entity.card_social_instagram.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: card_social_instagram
+label: 'Account Name'
+description: 'The name of the Instagram account. For example: @uofpenn.'
+required: false
+translatable: true
+default_value:
+  -
+    value: '@uofpenn'
+default_value_callback: ''
+settings: {  }
+field_type: string

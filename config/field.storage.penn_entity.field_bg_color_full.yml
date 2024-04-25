@@ -1,0 +1,39 @@
+uuid: 6b8ee9c0-d779-40da-88ba-91d13ffdcd5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_bg_color_full
+field_name: field_bg_color_full
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bg-color--red
+      label: Red
+    -
+      value: bg-color--blue
+      label: Blue
+    -
+      value: bg-color--gray
+      label: Gray
+    -
+      value: bg-color--light-blue
+      label: 'Light Blue'
+    -
+      value: bg-color--yellow
+      label: Yellow
+    -
+      value: bg-color--black
+      label: Black
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,85 @@
+uuid: 6b8939e4-1a16-43d6-bd60-1a9c2913b96e
+langcode: en
+status: true
+dependencies:
+  module:
+    - editor
+    - entity_embed
+    - media
+name: Accordion
+format: accordion
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -50
+    settings:
+      allowed_html: '<br> <em> <strong> <cite> <blockquote cite class="text-cta__quote"> <code> <ul class type> <ol start type> <li class> <dl> <dt> <dd> <h2 id> <h3 class id> <h4 id> <h5 id> <h6 id> <a href hreflang class="btn btn--outline btn--outline-white btn--secondary cta cta--arrow a-to-z__link"> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p class="featured large intro"> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <div class data-letter> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-langcode alt title>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: -47
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types: {  }
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: -48
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: -49
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: false
+    weight: -45
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: false
+    weight: -41
+    settings:
+      filter_url_length: 72
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: false
+    weight: -43
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: false
+    weight: -44
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: false
+    weight: -42
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: false
+    weight: -40
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -46
+    settings: {  }

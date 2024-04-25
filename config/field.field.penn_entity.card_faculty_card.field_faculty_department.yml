@@ -1,0 +1,19 @@
+uuid: f6d4edda-6db3-4f68-8902-7e8f75a6cff1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_faculty_department
+    - penn_entity.penn_entity_type.card_faculty_card
+id: penn_entity.card_faculty_card.field_faculty_department
+field_name: field_faculty_department
+entity_type: penn_entity
+bundle: card_faculty_card
+label: 'Faculty Department'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,86 @@
+uuid: 4bcd0901-bfcb-417a-977a-b59958e8320f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.card_event_card.field_day
+    - field.field.penn_entity.card_event_card.field_description_formatted
+    - field.field.penn_entity.card_event_card.field_image
+    - field.field.penn_entity.card_event_card.field_link
+    - field.field.penn_entity.card_event_card.field_month
+    - field.field.penn_entity.card_event_card.field_subtitle
+    - field.field.penn_entity.card_event_card.field_title
+    - penn_entity.penn_entity_type.card_event_card
+  module:
+    - link
+    - media_library
+    - text
+id: penn_entity.card_event_card.default
+targetEntityType: penn_entity
+bundle: card_event_card
+mode: default
+content:
+  field_day:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description_formatted:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 7
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_month:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subtitle:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

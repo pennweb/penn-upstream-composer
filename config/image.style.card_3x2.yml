@@ -1,0 +1,25 @@
+uuid: e11f123c-a24c-434a-88bb-efc159d1e82c
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.3x2
+  module:
+    - crop
+name: card_3x2
+label: 'Card (3x2)'
+effects:
+  01cbae76-0a3a-4e85-ad12-69282841e0c8:
+    uuid: 01cbae76-0a3a-4e85-ad12-69282841e0c8
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 3x2
+  67a41c62-df1b-48fe-a9bb-f8b4adf12d0f:
+    uuid: 67a41c62-df1b-48fe-a9bb-f8b4adf12d0f
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

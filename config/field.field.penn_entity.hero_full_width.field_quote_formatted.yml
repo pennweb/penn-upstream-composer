@@ -1,0 +1,21 @@
+uuid: b0ff0e31-f3b6-4712-8cfd-b71298eccad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_quote_formatted
+    - penn_entity.penn_entity_type.hero_full_width
+  module:
+    - text
+id: penn_entity.hero_full_width.field_quote_formatted
+field_name: field_quote_formatted
+entity_type: penn_entity
+bundle: hero_full_width
+label: Quote
+description: 'An optional quote'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

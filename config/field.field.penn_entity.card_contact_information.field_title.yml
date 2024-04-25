@@ -1,0 +1,19 @@
+uuid: 137c15ea-7d75-4a76-a1f3-1a9f2d2f24da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.card_contact_information
+id: penn_entity.card_contact_information.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: card_contact_information
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

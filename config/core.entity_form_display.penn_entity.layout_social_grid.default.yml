@@ -1,0 +1,117 @@
+uuid: 5bf3877b-4f37-4ce5-a618-39eb60d8da4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_social_grid.field_background_color
+    - field.field.penn_entity.layout_social_grid.field_padding
+    - field.field.penn_entity.layout_social_grid.field_penn_entity_reference
+    - field.field.penn_entity.layout_social_grid.field_social_link_facebook
+    - field.field.penn_entity.layout_social_grid.field_social_link_flickr
+    - field.field.penn_entity.layout_social_grid.field_social_link_instagram
+    - field.field.penn_entity.layout_social_grid.field_social_link_linkedin
+    - field.field.penn_entity.layout_social_grid.field_social_link_twitter
+    - field.field.penn_entity.layout_social_grid.field_social_link_youtube
+    - field.field.penn_entity.layout_social_grid.field_title
+    - penn_entity.penn_entity_type.layout_social_grid
+  module:
+    - inline_entity_form
+id: penn_entity.layout_social_grid.default
+targetEntityType: penn_entity
+bundle: layout_social_grid
+mode: default
+content:
+  field_background_color:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_padding:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_penn_entity_reference:
+    type: inline_entity_form_complex
+    weight: 4
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Social Card'
+      label_plural: 'Social Cards'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_social_link_facebook:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_social_link_flickr:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_social_link_instagram:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_social_link_linkedin:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_social_link_twitter:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_social_link_youtube:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 655af1e7-848d-4379-a36b-0d0c7a4760fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_alert_type_2
+    - penn_entity.penn_entity_type.alert
+  module:
+    - options
+id: penn_entity.alert.field_alert_type_2
+field_name: field_alert_type_2
+entity_type: penn_entity
+bundle: alert
+label: 'Alert Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

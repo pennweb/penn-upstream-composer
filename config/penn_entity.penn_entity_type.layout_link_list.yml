@@ -1,0 +1,6 @@
+uuid: 4f8197af-42ee-40f4-ad22-edd78214f734
+langcode: en
+status: true
+dependencies: {  }
+id: layout_link_list
+label: 'Layout - Link List'

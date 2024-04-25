@@ -1,0 +1,27 @@
+uuid: 2da151d9-436c-4a25-868c-613adc83bbc4
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_accordion_toggle
+field_name: field_accordion_toggle
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'on'
+      label: 'On'
+    -
+      value: 'off'
+      label: 'Off'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

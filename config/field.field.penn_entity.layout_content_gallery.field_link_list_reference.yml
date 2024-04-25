@@ -1,0 +1,28 @@
+uuid: 4bfab0ca-da52-4f63-992f-6e439de9adaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_link_list_reference
+    - penn_entity.penn_entity_type.layout_content_gallery
+    - penn_entity.penn_entity_type.layout_link_list
+id: penn_entity.layout_content_gallery.field_link_list_reference
+field_name: field_link_list_reference
+entity_type: penn_entity
+bundle: layout_content_gallery
+label: 'Link List'
+description: 'A brief link list that appears below the description'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      layout_link_list: layout_link_list
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: layout_link_list
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: ad31dbcc-fabc-4d5e-bb12-b28326d313d8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  google: wMVhrhQ0FNh9ETGCvvg_KXypGcfnBgLKY4R-TGxR7Yo
+  canonical_url: '[current-page:url]'
+  title: '[current-page:title] | [site:name]'
+  fb_pages: '98508878775'
+  facebook_domain_verification: 8abfjuxvt0wvpf1c7pslz0nzbeph5y

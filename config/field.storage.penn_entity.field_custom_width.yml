@@ -1,0 +1,60 @@
+uuid: b95d43cf-ce51-48ae-bed7-2cb4061c266d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_custom_width
+field_name: field_custom_width
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'custom-width width--100'
+      label: 100%
+    -
+      value: 'custom-width width--95'
+      label: 95%
+    -
+      value: 'custom-width width--90'
+      label: 90%
+    -
+      value: 'custom-width width--85'
+      label: 85%
+    -
+      value: 'custom-width width--80'
+      label: 80%
+    -
+      value: 'custom-width width--75'
+      label: 75%
+    -
+      value: 'custom-width width--70'
+      label: 70%
+    -
+      value: 'custom-width width--65'
+      label: 65%
+    -
+      value: 'custom-width width--60'
+      label: 60%
+    -
+      value: 'custom-width width--55'
+      label: 55%
+    -
+      value: 'custom-width width--50'
+      label: 50%
+    -
+      value: 'custom-width width--45'
+      label: 45%
+    -
+      value: 'custom-width width--40'
+      label: 40%
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

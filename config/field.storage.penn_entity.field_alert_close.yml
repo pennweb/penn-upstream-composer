@@ -1,0 +1,18 @@
+uuid: 3f0fc7ee-10c2-4d85-a088-157edf2f836e
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+id: penn_entity.field_alert_close
+field_name: field_alert_close
+entity_type: penn_entity
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

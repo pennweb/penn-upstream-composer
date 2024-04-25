@@ -1,0 +1,104 @@
+uuid: 62349f3d-83ff-4a2e-91e8-295688ad7881
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.card_faculty_card.field_description_formatted
+    - field.field.penn_entity.card_faculty_card.field_faculty_department
+    - field.field.penn_entity.card_faculty_card.field_faculty_email
+    - field.field.penn_entity.card_faculty_card.field_faculty_fax
+    - field.field.penn_entity.card_faculty_card.field_faculty_phone
+    - field.field.penn_entity.card_faculty_card.field_image
+    - field.field.penn_entity.card_faculty_card.field_link
+    - field.field.penn_entity.card_faculty_card.field_subtitle
+    - field.field.penn_entity.card_faculty_card.field_title
+    - penn_entity.penn_entity_type.card_faculty_card
+  module:
+    - link
+    - media_library
+    - text
+id: penn_entity.card_faculty_card.default
+targetEntityType: penn_entity
+bundle: card_faculty_card
+mode: default
+content:
+  field_description_formatted:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_faculty_department:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_faculty_email:
+    type: email_default
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_faculty_fax:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_faculty_phone:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 7
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_subtitle:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

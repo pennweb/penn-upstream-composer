@@ -1,0 +1,19 @@
+uuid: cf8d9f7b-19e6-400e-b3f6-0c3c011a6ed8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_title
+    - penn_entity.penn_entity_type.hero_homepage
+id: penn_entity.hero_homepage.field_title
+field_name: field_title
+entity_type: penn_entity
+bundle: hero_homepage
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

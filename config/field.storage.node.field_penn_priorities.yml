@@ -1,0 +1,20 @@
+uuid: 14521b63-a56a-4be8-9fc4-246af5a48f4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - penn_entity
+id: node.field_penn_priorities
+field_name: field_penn_priorities
+entity_type: node
+type: entity_reference
+settings:
+  target_type: penn_entity
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

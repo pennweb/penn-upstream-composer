@@ -1,0 +1,6 @@
+uuid: 2a339ce8-0ae5-4980-8f2d-803b61473a86
+langcode: en
+status: true
+dependencies: {  }
+id: fact_list_item
+label: 'Fact - Fact List Item'

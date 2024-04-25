@@ -1,0 +1,25 @@
+uuid: 92ab800b-3cda-4cde-8689-dcee4abce32c
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_3_4
+  module:
+    - crop
+name: featured_story_mobile
+label: 'Featured Story Mobile'
+effects:
+  033805a2-abcc-4739-9f69-19677c82ef06:
+    uuid: 033805a2-abcc-4739-9f69-19677c82ef06
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: crop_3_4
+  5b33c62b-136c-4108-aaf4-b9b2c9199451:
+    uuid: 5b33c62b-136c-4108-aaf4-b9b2c9199451
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

@@ -1,0 +1,79 @@
+uuid: 8f1c4be7-164d-44cd-9ed4-285c865dae7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.card_social_instagram.field_background_color
+    - field.field.penn_entity.card_social_instagram.field_description
+    - field.field.penn_entity.card_social_instagram.field_image
+    - field.field.penn_entity.card_social_instagram.field_link
+    - field.field.penn_entity.card_social_instagram.field_title
+    - penn_entity.penn_entity_type.card_social_instagram
+  module:
+    - fences
+    - link
+    - options
+id: penn_entity.card_social_instagram.default
+targetEntityType: penn_entity
+bundle: card_social_instagram
+mode: default
+content:
+  field_background_color:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: social_card
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 2
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  name: true

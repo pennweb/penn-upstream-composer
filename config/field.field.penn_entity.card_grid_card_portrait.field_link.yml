@@ -1,0 +1,23 @@
+uuid: 9af0b59c-4798-49a4-8a77-5dcb5e5bf0b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_link
+    - penn_entity.penn_entity_type.card_grid_card_portrait
+  module:
+    - link
+id: penn_entity.card_grid_card_portrait.field_link
+field_name: field_link
+entity_type: penn_entity
+bundle: card_grid_card_portrait
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

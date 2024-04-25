@@ -1,0 +1,12 @@
+uuid: 4619689b-c1b2-4c9a-8ed1-884a827b292e
+langcode: en
+status: true
+dependencies: {  }
+label: 'Crop 3:4'
+id: crop_3_4
+description: ''
+aspect_ratio: '3:4'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

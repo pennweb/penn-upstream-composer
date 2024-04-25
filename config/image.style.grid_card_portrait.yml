@@ -1,0 +1,25 @@
+uuid: fe104012-d5aa-4b8c-b303-8ecc33660aff
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_3_4
+  module:
+    - crop
+name: grid_card_portrait
+label: 'Grid Card Portrait (3:4)'
+effects:
+  975ad2fb-ab3b-45c3-8cf3-577982c79cb2:
+    uuid: 975ad2fb-ab3b-45c3-8cf3-577982c79cb2
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_3_4
+  be1bc33f-920e-46e8-9334-6cb9d1b5da21:
+    uuid: be1bc33f-920e-46e8-9334-6cb9d1b5da21
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

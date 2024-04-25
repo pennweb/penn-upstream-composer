@@ -1,0 +1,6 @@
+uuid: 201397b2-62de-45ec-8b4a-a25361fc3de8
+langcode: en
+status: true
+dependencies: {  }
+id: aside_fact_card
+label: 'Aside - Fact Card'

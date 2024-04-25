@@ -1,0 +1,23 @@
+uuid: 6705e9ad-5c69-4495-a3d3-b5518a3d7725
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_background_color
+    - penn_entity.penn_entity_type.layout_callout
+  module:
+    - options
+id: penn_entity.layout_callout.field_background_color
+field_name: field_background_color
+entity_type: penn_entity
+bundle: layout_callout
+label: 'Background Color'
+description: 'Choose a background color for the item. Select -None- for a white background.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'bg-color bg-red'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

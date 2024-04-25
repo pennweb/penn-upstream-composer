@@ -1,0 +1,69 @@
+uuid: 15b1db62-e54a-4680-b2ac-9028fed8a12c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_quote_overlay.field_borders
+    - field.field.penn_entity.layout_quote_overlay.field_image
+    - field.field.penn_entity.layout_quote_overlay.field_padding
+    - field.field.penn_entity.layout_quote_overlay.field_quote
+    - field.field.penn_entity.layout_quote_overlay.field_quote_author
+    - field.field.penn_entity.layout_quote_overlay.field_quote_background_color
+    - penn_entity.penn_entity_type.layout_quote_overlay
+  module:
+    - media_library
+id: penn_entity.layout_quote_overlay.default
+targetEntityType: penn_entity
+bundle: layout_quote_overlay
+mode: default
+content:
+  field_borders:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_padding:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_quote:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_quote_author:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_quote_background_color:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

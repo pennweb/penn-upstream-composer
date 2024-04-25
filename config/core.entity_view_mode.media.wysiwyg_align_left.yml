@@ -1,0 +1,10 @@
+uuid: 49475749-180d-4742-9fed-45f8db74baa1
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.wysiwyg_align_left
+label: 'Align Left'
+targetEntityType: media
+cache: true

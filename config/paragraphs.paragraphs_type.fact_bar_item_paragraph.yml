@@ -1,0 +1,10 @@
+uuid: d14ae7ee-c86b-46ea-acb7-19ab9518eef2
+langcode: en
+status: true
+dependencies: {  }
+id: fact_bar_item_paragraph
+label: 'Fact Bar Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

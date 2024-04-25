@@ -1,0 +1,21 @@
+uuid: fc07d8ff-657c-4d11-87bb-10d6a5289761
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_api_entity
+id: penn_api_entity.field_title
+field_name: field_title
+entity_type: penn_api_entity
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

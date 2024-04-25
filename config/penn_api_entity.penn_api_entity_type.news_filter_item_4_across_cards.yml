@@ -1,0 +1,6 @@
+uuid: c3595546-2970-431d-8411-a7ecbb633dbc
+langcode: en
+status: true
+dependencies: {  }
+id: news_filter_item_4_across_cards
+label: 'News Filter Item (4 Across Cards)'

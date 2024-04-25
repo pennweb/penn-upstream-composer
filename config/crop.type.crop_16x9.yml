@@ -1,0 +1,12 @@
+uuid: 3c78643e-5d24-4a49-80e6-acee7ba0e2a9
+langcode: en
+status: true
+dependencies: {  }
+label: 'Crop 16:9'
+id: crop_16x9
+description: ''
+aspect_ratio: '16:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

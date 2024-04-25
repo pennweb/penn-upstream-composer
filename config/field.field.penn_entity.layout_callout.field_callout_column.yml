@@ -1,0 +1,21 @@
+uuid: aa99a993-ec2a-4188-be43-d9a8480e3a43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_callout_column
+    - penn_entity.penn_entity_type.layout_callout
+  module:
+    - text
+id: penn_entity.layout_callout.field_callout_column
+field_name: field_callout_column
+entity_type: penn_entity
+bundle: layout_callout
+label: 'Callout Columns'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

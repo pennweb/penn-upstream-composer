@@ -1,0 +1,17 @@
+uuid: 628eeb14-0d0e-490e-b1d7-f762b200bf03
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1x2
+  module:
+    - crop
+name: crop_1x2
+label: 'Crop (1:2)'
+effects:
+  ac68ca45-63c9-4b53-869d-8cadcf79daea:
+    uuid: ac68ca45-63c9-4b53-869d-8cadcf79daea
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_1x2

@@ -1,0 +1,47 @@
+uuid: 7a2e4768-9589-46dc-a6fa-c832497950e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_api_entity.tabs_item_slider.field_active
+    - field.field.penn_api_entity.tabs_item_slider.field_feed_url
+    - field.field.penn_api_entity.tabs_item_slider.field_filter_title
+    - penn_api_entity.penn_api_entity_type.tabs_item_slider
+id: penn_api_entity.tabs_item_slider.default
+targetEntityType: penn_api_entity
+bundle: tabs_item_slider
+mode: default
+content:
+  field_active:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_feed_url:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_filter_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true

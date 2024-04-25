@@ -1,0 +1,6 @@
+uuid: 8b090909-a132-4959-9c81-d4db69d98140
+langcode: en
+status: true
+dependencies: {  }
+id: layout_contact_information
+label: 'Layout - Contact Information'

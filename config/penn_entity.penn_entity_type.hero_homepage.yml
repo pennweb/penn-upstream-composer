@@ -1,0 +1,6 @@
+uuid: 03912856-cb97-40dc-914d-4fd1d21995d3
+langcode: en
+status: true
+dependencies: {  }
+id: hero_homepage
+label: 'Hero - Homepage'

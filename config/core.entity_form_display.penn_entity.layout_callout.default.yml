@@ -1,0 +1,52 @@
+uuid: 560c1829-3a45-4d9b-9f4a-26d474aa19d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_callout.field_background_color
+    - field.field.penn_entity.layout_callout.field_callout_column
+    - field.field.penn_entity.layout_callout.field_container_width
+    - field.field.penn_entity.layout_callout.field_margins
+    - penn_entity.penn_entity_type.layout_callout
+  module:
+    - text
+id: penn_entity.layout_callout.default
+targetEntityType: penn_entity
+bundle: layout_callout
+mode: default
+content:
+  field_background_color:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_callout_column:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_container_width:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_margins:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: 6d6ee7f3-d9d2-4ae6-bd92-c33169d5e2d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page
+  module:
+    - text
+_core:
+  default_config_hash: rUop-8b6hvxxDYbv-KobTfNIBNbPY9qOPl8f6kBNSpw
+id: node.page.body
+field_name: body
+entity_type: node
+bundle: page
+label: Body
+description: "Manage entities by double clicking on them in the wysiwyg, or from the <a href=\"http://penn-flagship-ci.lndo.site/admin/structure/penn-entity-management\">Penn Entity Management</a> page.\r\n"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

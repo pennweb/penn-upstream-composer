@@ -1,0 +1,10 @@
+uuid: b904de9b-2c1b-4e02-a0f9-41d5ba3af17f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.video_modal_poster
+label: 'Video Modal Poster (16:9)'
+targetEntityType: media
+cache: true

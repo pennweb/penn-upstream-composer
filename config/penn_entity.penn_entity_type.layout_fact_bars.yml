@@ -1,0 +1,6 @@
+uuid: d8c70fc1-2f00-494e-a643-b35b8d956b89
+langcode: en
+status: true
+dependencies: {  }
+id: layout_fact_bars
+label: 'Layout - Fact Bars'

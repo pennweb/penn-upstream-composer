@@ -1,0 +1,30 @@
+uuid: ab6ea056-0caf-4b8c-b661-f97c14c3a8d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_fi_background_color
+field_name: field_fi_background_color
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: featured-initiative-card--blue
+      label: Blue
+    -
+      value: featured-initiative-card--red
+      label: Red
+    -
+      value: featured-initiative-card--gray
+      label: Gray
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

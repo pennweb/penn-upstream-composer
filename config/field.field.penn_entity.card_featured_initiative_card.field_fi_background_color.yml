@@ -1,0 +1,23 @@
+uuid: 66f3dad0-3421-4780-a1d7-6e5e24964150
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_fi_background_color
+    - penn_entity.penn_entity_type.card_featured_initiative_card
+  module:
+    - options
+id: penn_entity.card_featured_initiative_card.field_fi_background_color
+field_name: field_fi_background_color
+entity_type: penn_entity
+bundle: card_featured_initiative_card
+label: 'Background Color'
+description: 'Choose a background color. Blue is the default.'
+required: false
+translatable: false
+default_value:
+  -
+    value: featured-initiative-card--blue
+default_value_callback: ''
+settings: {  }
+field_type: list_string

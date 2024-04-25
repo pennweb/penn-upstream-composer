@@ -1,0 +1,37 @@
+uuid: 90f241a5-110c-45f7-9e72-8a06d46d2f39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.aside_fact_card.field_description
+    - field.field.penn_entity.aside_fact_card.field_title
+    - penn_entity.penn_entity_type.aside_fact_card
+id: penn_entity.aside_fact_card.default
+targetEntityType: penn_entity
+bundle: aside_fact_card
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

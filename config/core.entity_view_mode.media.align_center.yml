@@ -1,0 +1,10 @@
+uuid: 52da17d4-20f6-437e-b9f0-3858ca308e91
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.align_center
+label: 'Align Center'
+targetEntityType: media
+cache: true

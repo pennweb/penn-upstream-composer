@@ -1,0 +1,6 @@
+uuid: 809d8c40-b75b-47fe-b89b-79de0ebb2440
+langcode: en
+status: true
+dependencies: {  }
+id: layout_tabs
+label: 'Layout - Tabs'

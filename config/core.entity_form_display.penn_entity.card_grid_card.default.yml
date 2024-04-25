@@ -1,0 +1,60 @@
+uuid: 50b5da38-4bd0-4969-8010-ba264b75a109
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.card_grid_card.field_description
+    - field.field.penn_entity.card_grid_card.field_grid_borders
+    - field.field.penn_entity.card_grid_card.field_image
+    - field.field.penn_entity.card_grid_card.field_link
+    - field.field.penn_entity.card_grid_card.field_title
+    - penn_entity.penn_entity_type.card_grid_card
+  module:
+    - link
+    - media_library
+id: penn_entity.card_grid_card.default
+targetEntityType: penn_entity
+bundle: card_grid_card
+mode: default
+content:
+  field_description:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_grid_borders: true

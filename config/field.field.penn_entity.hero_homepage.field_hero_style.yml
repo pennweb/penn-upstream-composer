@@ -1,0 +1,23 @@
+uuid: 059f68b0-72e6-435b-84ed-603a7096cc1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_hero_style
+    - penn_entity.penn_entity_type.hero_homepage
+  module:
+    - options
+id: penn_entity.hero_homepage.field_hero_style
+field_name: field_hero_style
+entity_type: penn_entity
+bundle: hero_homepage
+label: 'Hero Style'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: hero
+default_value_callback: ''
+settings: {  }
+field_type: list_string

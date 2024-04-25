@@ -1,0 +1,6 @@
+uuid: 494a8046-b1af-429e-9ec9-a67c16201b5b
+langcode: en
+status: true
+dependencies: {  }
+id: layout_accordion_columns
+label: 'Layout - Accordion Columns'

@@ -1,0 +1,21 @@
+uuid: 070a0815-10e6-4804-b0fa-4662274d3894
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.penn_update
+  module:
+    - datetime
+id: node.penn_update.field_date
+field_name: field_date
+entity_type: node
+bundle: penn_update
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

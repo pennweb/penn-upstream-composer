@@ -1,0 +1,29 @@
+uuid: e42cc973-f21a-414f-8d7a-6be1253dcf90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.card_event_card
+    - penn_entity.penn_entity_type.layout_event_cards
+id: penn_entity.layout_event_cards.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: layout_event_cards
+label: 'Event Cards'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      card_event_card: card_event_card
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

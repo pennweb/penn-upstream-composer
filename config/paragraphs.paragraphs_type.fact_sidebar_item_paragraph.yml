@@ -1,0 +1,10 @@
+uuid: ae2386ce-732c-484a-bb95-e7b40a3d2a26
+langcode: en
+status: true
+dependencies: {  }
+id: fact_sidebar_item_paragraph
+label: 'Fact Sidebar Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,29 @@
+uuid: b39a1fef-5db4-49c6-90a9-9068096b551e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nondiscrimination
+    - node.type.homepage
+    - penn_entity.penn_entity_type.layout_container
+id: node.homepage.field_nondiscrimination
+field_name: field_nondiscrimination
+entity_type: node
+bundle: homepage
+label: 'Nondiscrimination Statement'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      layout_container: layout_container
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

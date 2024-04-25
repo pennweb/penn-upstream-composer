@@ -1,0 +1,31 @@
+uuid: 1746c7ae-388a-492c-8cc0-4ebd8bf52df9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_header_hero_paragraph.field_image
+    - paragraphs.paragraphs_type.page_header_hero_paragraph
+  module:
+    - fences
+id: paragraph.page_header_hero_paragraph.default
+targetEntityType: paragraph
+bundle: page_header_hero_paragraph
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: hero_page_hero
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 0
+    region: content
+hidden: {  }

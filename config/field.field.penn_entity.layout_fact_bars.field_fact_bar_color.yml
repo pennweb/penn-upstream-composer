@@ -1,0 +1,23 @@
+uuid: b3bac412-a8fa-458e-a01b-bd6844e6e970
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_fact_bar_color
+    - penn_entity.penn_entity_type.layout_fact_bars
+  module:
+    - options
+id: penn_entity.layout_fact_bars.field_fact_bar_color
+field_name: field_fact_bar_color
+entity_type: penn_entity
+bundle: layout_fact_bars
+label: 'Bar Color'
+description: 'Set the background color of the bar graph.'
+required: false
+translatable: false
+default_value:
+  -
+    value: fact-bars--blue
+default_value_callback: ''
+settings: {  }
+field_type: list_string

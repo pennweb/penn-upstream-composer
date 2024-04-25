@@ -1,0 +1,6 @@
+uuid: 3fadcaa8-3d9b-48f0-86aa-bf075b890196
+langcode: en
+status: true
+dependencies: {  }
+id: card_featured_article_card_full
+label: 'Card - Featured Article Card'

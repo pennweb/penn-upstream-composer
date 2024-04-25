@@ -1,0 +1,47 @@
+uuid: e1e25559-00f2-42ee-af0a-859ec27d3731
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.accordion
+    - penn_entity.penn_entity_type.aside_card_sidebar_slider
+    - penn_entity.penn_entity_type.aside_fact_card
+    - penn_entity.penn_entity_type.aside_fact_sidebar
+    - penn_entity.penn_entity_type.aside_testimonial
+    - penn_entity.penn_entity_type.card
+    - penn_entity.penn_entity_type.card_contact_information
+    - penn_entity.penn_entity_type.card_event_card
+    - penn_entity.penn_entity_type.layout_container
+    - penn_entity.penn_entity_type.layout_content_aside
+    - penn_entity.penn_entity_type.links_quick_links
+id: penn_entity.layout_content_aside.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: layout_content_aside
+label: Aside
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      aside_card_sidebar_slider: aside_card_sidebar_slider
+      aside_fact_card: aside_fact_card
+      links_quick_links: links_quick_links
+      aside_fact_sidebar: aside_fact_sidebar
+      aside_testimonial: aside_testimonial
+      card: card
+      card_contact_information: card_contact_information
+      card_event_card: card_event_card
+      accordion: accordion
+      layout_container: layout_container
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: aside_testimonial
+field_type: entity_reference

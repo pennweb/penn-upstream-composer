@@ -1,0 +1,49 @@
+uuid: d621ccc4-a4e1-46bb-b561-da7ccda74f2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.link_grid_item.field_image
+    - field.field.penn_entity.link_grid_item.field_link
+    - field.field.penn_entity.link_grid_item.field_title
+    - penn_entity.penn_entity_type.link_grid_item
+  module:
+    - link
+    - media_library
+id: penn_entity.link_grid_item.default
+targetEntityType: penn_entity
+bundle: link_grid_item
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

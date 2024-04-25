@@ -1,0 +1,24 @@
+uuid: 1cf8b398-5a37-4a57-87f7-f58f49bd5dd5
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_padding
+field_name: field_padding
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: section-padding
+      label: 'Padding top and bottom'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,6 @@
+uuid: 3692c674-da62-4ec4-8cc7-56be1a709f74
+langcode: en
+status: true
+dependencies: {  }
+id: tabs_item_slider
+label: 'Tabs Item (3-Across Slider)'

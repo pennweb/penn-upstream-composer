@@ -1,0 +1,55 @@
+uuid: af1b8ac2-6e4d-4be7-942a-b6de40ca6c81
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.penn_api_entity.full
+    - field.field.penn_api_entity.event_calendar.field_feed_url
+    - field.field.penn_api_entity.event_calendar.field_link
+    - field.field.penn_api_entity.event_calendar.field_title
+    - penn_api_entity.penn_api_entity_type.event_calendar
+  module:
+    - link
+id: penn_api_entity.event_calendar.full
+targetEntityType: penn_api_entity
+bundle: event_calendar
+mode: full
+content:
+  field_feed_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  user_id: true

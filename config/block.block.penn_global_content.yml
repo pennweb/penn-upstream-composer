@@ -1,0 +1,22 @@
+uuid: 3a39eea2-748f-4b40-9db7-8b6c3bf581b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - penn_global
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: penn_global_content
+theme: penn_global
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

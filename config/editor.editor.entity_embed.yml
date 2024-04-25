@@ -1,0 +1,59 @@
+uuid: 12eaf065-231b-4d05-9740-9993b4707678
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.entity_embed
+  module:
+    - ckeditor
+format: entity_embed
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Format
+            - Styles
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - media_entity_embed
+        -
+          name: 'Penn API Entity'
+          items:
+            - penn_api
+        -
+          name: 'Penn Entity'
+          items:
+            - penn_entity
+        -
+          name: Tools
+          items:
+            - Source
+            - Maximize
+  plugins:
+    stylescombo:
+      styles: "p.featured|Paragraph Featured\r\np.large|Paragraph Large\r\np.intro|Paragraph Intro\r\na.btn.btn--outline|Button (Outline)\r\na.btn.btn--outline-white|Button Outline (White)\r\na.btn|Button (Blue)\r\na.btn.btn--secondary|Button (Red)\r\na.cta|Link (CTA)\r\na.cta.cta--arrow|Link (CTA with arrow)\r\nblockquote.text-cta__quote|CTA Blockquote\r\nul.list-blue|Blue List\r\nul.list-red|Red List"
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

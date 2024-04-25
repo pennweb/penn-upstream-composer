@@ -1,0 +1,23 @@
+uuid: e03f70b2-947a-4163-8684-25a380d4fb88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_subtitle_link
+    - penn_entity.penn_entity_type.hero_article_card_hero
+  module:
+    - link
+id: penn_entity.hero_article_card_hero.field_subtitle_link
+field_name: field_subtitle_link
+entity_type: penn_entity
+bundle: hero_article_card_hero
+label: 'Subtitle Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

@@ -1,0 +1,25 @@
+uuid: 6236897f-a4db-43eb-9cfb-8e5ee3cade83
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1_1
+  module:
+    - crop
+name: quote_1x1
+label: 'Quote (1:1)'
+effects:
+  204411e2-37ac-49fa-bfee-d29dee45bcc1:
+    uuid: 204411e2-37ac-49fa-bfee-d29dee45bcc1
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_1_1
+  2d3e5e0f-f4dd-4202-9dfd-b3efc1c4af3d:
+    uuid: 2d3e5e0f-f4dd-4202-9dfd-b3efc1c4af3d
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

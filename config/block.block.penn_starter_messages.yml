@@ -1,0 +1,22 @@
+uuid: 89286c19-319c-4ad7-8299-0635e5e74a92
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - penn_starter
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: penn_starter_messages
+theme: penn_starter
+region: hidden
+weight: 1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

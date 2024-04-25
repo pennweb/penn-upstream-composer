@@ -1,0 +1,6 @@
+uuid: 9d8668b6-9f2d-4367-a324-1c2c0ba4bb84
+langcode: en
+status: true
+dependencies: {  }
+id: layout_quote
+label: 'Layout - Quote'

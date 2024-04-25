@@ -1,0 +1,19 @@
+uuid: 4b3d709b-ee21-4976-b8f8-b3c97b23804e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_title
+    - penn_api_entity.penn_api_entity_type.tabs_item
+id: penn_api_entity.tabs_item.field_title
+field_name: field_title
+entity_type: penn_api_entity
+bundle: tabs_item
+label: 'Tab Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

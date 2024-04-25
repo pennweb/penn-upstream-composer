@@ -1,0 +1,58 @@
+uuid: 99a6fd70-94d9-4118-85a6-b67c11e3861b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.cta_text.field_description_formatted
+    - field.field.penn_entity.cta_text.field_subtitle
+    - field.field.penn_entity.cta_text.field_subtitle_secondary
+    - field.field.penn_entity.cta_text.field_title
+    - penn_entity.penn_entity_type.cta_text
+  module:
+    - text
+id: penn_entity.cta_text.default
+targetEntityType: penn_entity
+bundle: cta_text
+mode: default
+content:
+  field_description_formatted:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_subtitle:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subtitle_secondary:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

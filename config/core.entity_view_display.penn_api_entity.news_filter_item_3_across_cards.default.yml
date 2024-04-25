@@ -1,0 +1,50 @@
+uuid: 3b90728a-05b7-4751-811d-a4e781a2eb4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_api_entity.news_filter_item_3_across_cards.field_active
+    - field.field.penn_api_entity.news_filter_item_3_across_cards.field_feed_url
+    - field.field.penn_api_entity.news_filter_item_3_across_cards.field_filter_title
+    - penn_api_entity.penn_api_entity_type.news_filter_item_3_across_cards
+id: penn_api_entity.news_filter_item_3_across_cards.default
+targetEntityType: penn_api_entity
+bundle: news_filter_item_3_across_cards
+mode: default
+content:
+  field_active:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_feed_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_filter_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  user_id: true

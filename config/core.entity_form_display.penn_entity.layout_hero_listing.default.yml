@@ -1,0 +1,43 @@
+uuid: f5badae0-fb89-4133-b142-dd5bbe2c0ce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_hero_listing.field_penn_entity_reference
+    - penn_entity.penn_entity_type.layout_hero_listing
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+id: penn_entity.layout_hero_listing.default
+targetEntityType: penn_entity
+bundle: layout_hero_listing
+mode: default
+content:
+  field_penn_entity_reference:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Subpage Listing'
+      label_plural: 'Subpage Listings'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

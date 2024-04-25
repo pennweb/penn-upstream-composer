@@ -1,0 +1,6 @@
+uuid: 7227bfd5-2e4e-4bd5-a697-5a7d80a394d2
+langcode: en
+status: true
+dependencies: {  }
+id: card_gallery_card
+label: 'Card - Gallery Card'

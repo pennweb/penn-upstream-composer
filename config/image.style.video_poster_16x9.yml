@@ -1,0 +1,25 @@
+uuid: 319a04d2-c826-4cba-92ed-c3a302922f7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_16x9
+  module:
+    - crop
+name: video_poster_16x9
+label: 'Video Poster (16:9)'
+effects:
+  e6a7a426-b810-45f2-bf24-024315f65214:
+    uuid: e6a7a426-b810-45f2-bf24-024315f65214
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_16x9
+  823c0fcd-0f14-4623-8299-eb68e645080f:
+    uuid: 823c0fcd-0f14-4623-8299-eb68e645080f
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

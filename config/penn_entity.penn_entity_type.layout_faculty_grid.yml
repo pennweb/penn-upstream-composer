@@ -1,0 +1,6 @@
+uuid: b3587ab1-3a9f-459e-a47a-9bffb9b61013
+langcode: en
+status: true
+dependencies: {  }
+id: layout_faculty_grid
+label: 'Layout - Faculty Grid'

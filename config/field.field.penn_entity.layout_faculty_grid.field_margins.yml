@@ -1,0 +1,21 @@
+uuid: de5c5d2e-32a2-429e-9295-785554cba1cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_margins
+    - penn_entity.penn_entity_type.layout_faculty_grid
+  module:
+    - options
+id: penn_entity.layout_faculty_grid.field_margins
+field_name: field_margins
+entity_type: penn_entity
+bundle: layout_faculty_grid
+label: Margins
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: 366249aa-2e3c-464a-bb04-51ef531d7e1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_quote
+    - penn_entity.penn_entity_type.layout_quote_overlay
+id: penn_entity.layout_quote_overlay.field_quote
+field_name: field_quote
+entity_type: penn_entity
+bundle: layout_quote_overlay
+label: Quote
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

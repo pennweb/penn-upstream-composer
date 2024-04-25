@@ -1,0 +1,6 @@
+uuid: 8fde00c7-bcc8-481c-bcb6-fb4c65008be3
+langcode: en
+status: true
+dependencies: {  }
+id: cta_text
+label: 'CTA - Text CTA'

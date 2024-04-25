@@ -1,0 +1,28 @@
+uuid: 82db2110-debe-451e-abf9-4217891cff2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alert
+    - node.type.alert
+    - penn_entity.penn_entity_type.alert
+id: node.alert.field_alert
+field_name: field_alert
+entity_type: node
+bundle: alert
+label: Alert
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      alert: alert
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

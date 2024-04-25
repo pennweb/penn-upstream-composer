@@ -1,0 +1,19 @@
+uuid: 1689c931-f497-4ac5-a161-bfa702a9959f
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+    - text
+id: penn_entity.field_callout_column
+field_name: field_callout_column
+entity_type: penn_entity
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

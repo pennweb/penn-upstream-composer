@@ -1,0 +1,6 @@
+uuid: b5987599-3238-4bdf-8c19-15e2e2601d06
+langcode: en
+status: true
+dependencies: {  }
+id: video_inline_poster_controls
+label: 'Layout - Video - Inline video with poster and controls'

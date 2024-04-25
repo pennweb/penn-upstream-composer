@@ -1,0 +1,25 @@
+uuid: 3c5a99a7-85e3-4b2d-8ba5-e26f3bad326a
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.3x2
+  module:
+    - crop
+name: aside_testimonial_3x2
+label: 'Aside Testimonial (3:2)'
+effects:
+  73412220-6772-4d3a-9201-4be47fc8c7bf:
+    uuid: 73412220-6772-4d3a-9201-4be47fc8c7bf
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 3x2
+  2317f294-8259-488f-82aa-0393942ccf9d:
+    uuid: 2317f294-8259-488f-82aa-0393942ccf9d
+    id: image_scale
+    weight: 2
+    data:
+      width: 1600
+      height: null
+      upscale: false

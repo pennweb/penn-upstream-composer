@@ -1,0 +1,30 @@
+uuid: 927c0c0f-b4bd-4b98-9c65-ab6d1577ebca
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_alert_type
+field_name: field_alert_type
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: primary
+      label: 'Primary (Light Blue)'
+    -
+      value: secondary
+      label: 'Secondary (Yellow)'
+    -
+      value: emergency
+      label: 'Emergency (Dark Blue, Full Screen)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

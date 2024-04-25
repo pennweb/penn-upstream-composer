@@ -1,0 +1,23 @@
+uuid: f7c3005d-8b3d-4f0c-a233-53eec0ef0eac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_container_width
+    - penn_api_entity.penn_api_entity_type.layout_card_listing
+  module:
+    - options
+id: penn_api_entity.layout_card_listing.field_container_width
+field_name: field_container_width
+entity_type: penn_api_entity
+bundle: layout_card_listing
+label: 'Container Width'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: contain
+default_value_callback: ''
+settings: {  }
+field_type: list_string

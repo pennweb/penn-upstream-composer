@@ -1,0 +1,10 @@
+uuid: 8f892d6b-d831-42a6-8958-413482a366dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+id: penn_entity.featured_story_card
+label: 'Featured Story Card'
+targetEntityType: penn_entity
+cache: true

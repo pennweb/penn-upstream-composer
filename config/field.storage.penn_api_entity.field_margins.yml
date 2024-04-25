@@ -1,0 +1,30 @@
+uuid: c7da185a-753f-473d-b6b3-a999b082ed77
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_api_entity
+id: penn_api_entity.field_margins
+field_name: field_margins
+entity_type: penn_api_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: section-margin-top
+      label: 'Margin top'
+    -
+      value: section-margin-bottom
+      label: 'Margin bottom'
+    -
+      value: section-margin
+      label: 'Margins top and bottom'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

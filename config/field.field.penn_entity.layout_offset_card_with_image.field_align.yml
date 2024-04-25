@@ -1,0 +1,23 @@
+uuid: ba3473b3-bbbf-42f7-97a1-43bf929cd9e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_align
+    - penn_entity.penn_entity_type.layout_offset_card_with_image
+  module:
+    - options
+id: penn_entity.layout_offset_card_with_image.field_align
+field_name: field_align
+entity_type: penn_entity
+bundle: layout_offset_card_with_image
+label: 'Card Align'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

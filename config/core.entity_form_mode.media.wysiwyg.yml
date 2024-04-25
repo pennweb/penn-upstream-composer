@@ -1,0 +1,10 @@
+uuid: 04ae6908-6212-49d2-837b-2ff67969922e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.wysiwyg
+label: Wysiwyg
+targetEntityType: media
+cache: true

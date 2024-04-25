@@ -1,0 +1,27 @@
+uuid: 01f36c49-4c37-4d79-9b01-a5fafa88b5dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_hero_style
+field_name: field_hero_style
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hero
+      label: 'Hero for normal to dark images'
+    -
+      value: 'hero hero--light'
+      label: 'Hero for lighter images'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

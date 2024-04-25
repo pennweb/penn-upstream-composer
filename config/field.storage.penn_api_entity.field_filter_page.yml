@@ -1,0 +1,19 @@
+uuid: 28d08f19-2aa3-4eb3-a694-0a755a5976e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_api_entity
+id: penn_api_entity.field_filter_page
+field_name: field_filter_page
+entity_type: penn_api_entity
+type: entity_reference
+settings:
+  target_type: penn_api_entity
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

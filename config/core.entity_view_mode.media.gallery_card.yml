@@ -1,0 +1,10 @@
+uuid: a8bc1979-b64e-41df-89cb-0073daf85b31
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.gallery_card
+label: 'Card - Gallery Card (3:2)'
+targetEntityType: media
+cache: true

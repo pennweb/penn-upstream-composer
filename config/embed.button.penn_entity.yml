@@ -1,0 +1,116 @@
+uuid: e65a6179-0e5c-4508-9c14-79d58a8fd293
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.penn_entity.penn_entity_default
+    - penn_entity.penn_entity_type.accordion
+    - penn_entity.penn_entity_type.aside_fact_card
+    - penn_entity.penn_entity_type.aside_fact_sidebar
+    - penn_entity.penn_entity_type.aside_testimonial
+    - penn_entity.penn_entity_type.card_feat_initiative_card_group
+    - penn_entity.penn_entity_type.fact_list
+    - penn_entity.penn_entity_type.hero_article_card_hero
+    - penn_entity.penn_entity_type.hero_full_width
+    - penn_entity.penn_entity_type.layout_accordion_columns
+    - penn_entity.penn_entity_type.layout_callout
+    - penn_entity.penn_entity_type.layout_card_listing
+    - penn_entity.penn_entity_type.layout_card_slider
+    - penn_entity.penn_entity_type.layout_columns
+    - penn_entity.penn_entity_type.layout_contact_information
+    - penn_entity.penn_entity_type.layout_container
+    - penn_entity.penn_entity_type.layout_content_aside
+    - penn_entity.penn_entity_type.layout_content_gallery
+    - penn_entity.penn_entity_type.layout_content_spotlight
+    - penn_entity.penn_entity_type.layout_event_cards
+    - penn_entity.penn_entity_type.layout_fact_bars
+    - penn_entity.penn_entity_type.layout_facts
+    - penn_entity.penn_entity_type.layout_faculty_grid
+    - penn_entity.penn_entity_type.layout_featured_story
+    - penn_entity.penn_entity_type.layout_grid
+    - penn_entity.penn_entity_type.layout_hero_listing
+    - penn_entity.penn_entity_type.layout_horizontal_links
+    - penn_entity.penn_entity_type.layout_image_slider
+    - penn_entity.penn_entity_type.layout_link_grid
+    - penn_entity.penn_entity_type.layout_link_list
+    - penn_entity.penn_entity_type.layout_listing_cards
+    - penn_entity.penn_entity_type.layout_offset_card_with_image
+    - penn_entity.penn_entity_type.layout_quote
+    - penn_entity.penn_entity_type.layout_quote_overlay
+    - penn_entity.penn_entity_type.layout_quote_slider
+    - penn_entity.penn_entity_type.layout_search
+    - penn_entity.penn_entity_type.layout_social_grid
+    - penn_entity.penn_entity_type.layout_split_content
+    - penn_entity.penn_entity_type.layout_student_spotlight
+    - penn_entity.penn_entity_type.layout_tabs
+    - penn_entity.penn_entity_type.layout_view_embed
+    - penn_entity.penn_entity_type.links_quick_links
+    - penn_entity.penn_entity_type.links_quick_links_wide
+    - penn_entity.penn_entity_type.slider_penn_priorities
+    - penn_entity.penn_entity_type.video_inline
+    - penn_entity.penn_entity_type.video_inline_poster_controls
+    - penn_entity.penn_entity_type.video_modal
+    - penn_entity.penn_entity_type.video_vimeo
+  module:
+    - entity_embed
+    - penn_entity
+label: 'Penn Entity'
+id: penn_entity
+type_id: entity
+type_settings:
+  entity_type: penn_entity
+  bundles:
+    - aside_fact_card
+    - links_quick_links
+    - aside_fact_sidebar
+    - aside_testimonial
+    - hero_full_width
+    - layout_accordion_columns
+    - accordion
+    - hero_article_card_hero
+    - layout_callout
+    - layout_card_listing
+    - layout_card_slider
+    - layout_columns
+    - layout_contact_information
+    - layout_container
+    - links_quick_links_wide
+    - layout_content_aside
+    - layout_content_gallery
+    - layout_content_spotlight
+    - layout_event_cards
+    - layout_fact_bars
+    - fact_list
+    - layout_facts
+    - layout_faculty_grid
+    - card_feat_initiative_card_group
+    - layout_featured_story
+    - layout_grid
+    - layout_horizontal_links
+    - layout_image_slider
+    - layout_link_grid
+    - layout_link_list
+    - layout_listing_cards
+    - layout_offset_card_with_image
+    - slider_penn_priorities
+    - layout_quote
+    - layout_quote_overlay
+    - layout_quote_slider
+    - layout_search
+    - layout_social_grid
+    - layout_split_content
+    - layout_student_spotlight
+    - layout_hero_listing
+    - layout_tabs
+    - video_inline_poster_controls
+    - video_inline
+    - video_modal
+    - video_vimeo
+    - layout_view_embed
+  display_plugins:
+    - 'view_mode:penn_entity.penn_entity_default'
+  entity_browser: ''
+  entity_browser_settings:
+    display_review: false
+icon: {  }
+icon_uuid: null

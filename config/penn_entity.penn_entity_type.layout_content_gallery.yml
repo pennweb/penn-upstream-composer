@@ -1,0 +1,6 @@
+uuid: 853f86b8-8e22-455c-8cac-051a9c0b824f
+langcode: en
+status: true
+dependencies: {  }
+id: layout_content_gallery
+label: 'Layout - Content Gallery'

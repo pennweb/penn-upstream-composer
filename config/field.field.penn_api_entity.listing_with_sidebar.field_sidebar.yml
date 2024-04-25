@@ -1,0 +1,28 @@
+uuid: f35e40af-f323-469c-a7f9-857105a50ee4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_sidebar
+    - penn_api_entity.penn_api_entity_type.listing_with_sidebar
+    - penn_api_entity.penn_api_entity_type.static_sidebar
+id: penn_api_entity.listing_with_sidebar.field_sidebar
+field_name: field_sidebar
+entity_type: penn_api_entity
+bundle: listing_with_sidebar
+label: Sidebar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_api_entity'
+  handler_settings:
+    target_bundles:
+      static_sidebar: static_sidebar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

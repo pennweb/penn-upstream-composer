@@ -1,0 +1,10 @@
+uuid: 1596b056-c781-4fcd-b9a0-c6348efa95f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.crop_3x4
+label: 'Crop (3:4)'
+targetEntityType: media
+cache: true

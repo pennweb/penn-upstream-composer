@@ -1,0 +1,21 @@
+uuid: db0b23c1-ed3f-4612-92c6-298982ad2c84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_margins
+    - penn_entity.penn_entity_type.card_listing_card
+  module:
+    - options
+id: penn_entity.card_listing_card.field_margins
+field_name: field_margins
+entity_type: penn_entity
+bundle: card_listing_card
+label: Margins
+description: 'Add margins to the item.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

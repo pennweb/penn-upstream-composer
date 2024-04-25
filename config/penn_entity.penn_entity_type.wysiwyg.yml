@@ -1,0 +1,6 @@
+uuid: e02c0206-4e1c-46d1-a02b-419924e321ce
+langcode: en
+status: true
+dependencies: {  }
+id: wysiwyg
+label: Wysiwyg

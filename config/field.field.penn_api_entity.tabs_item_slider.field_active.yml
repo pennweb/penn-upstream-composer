@@ -1,0 +1,23 @@
+uuid: 2db9b147-adfa-4160-9f6a-969178805bc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_active
+    - penn_api_entity.penn_api_entity_type.tabs_item_slider
+id: penn_api_entity.tabs_item_slider.field_active
+field_name: field_active
+entity_type: penn_api_entity
+bundle: tabs_item_slider
+label: Active
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: 096531bf-5e39-4767-a3f5-77fb3b8fe7fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_subtitle
+    - penn_entity.penn_entity_type.hero_article_card_hero
+id: penn_entity.hero_article_card_hero.field_subtitle
+field_name: field_subtitle
+entity_type: penn_entity
+bundle: hero_article_card_hero
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

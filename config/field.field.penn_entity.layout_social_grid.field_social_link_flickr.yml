@@ -1,0 +1,19 @@
+uuid: 28f96805-176e-41e2-8844-4936dbf4d121
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_social_link_flickr
+    - penn_entity.penn_entity_type.layout_social_grid
+id: penn_entity.layout_social_grid.field_social_link_flickr
+field_name: field_social_link_flickr
+entity_type: penn_entity
+bundle: layout_social_grid
+label: 'Social Link - Flickr'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

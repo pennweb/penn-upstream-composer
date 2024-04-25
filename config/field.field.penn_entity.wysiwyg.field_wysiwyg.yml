@@ -1,0 +1,21 @@
+uuid: cddf717e-1602-411b-9843-c2dc5586fe63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_wysiwyg
+    - penn_entity.penn_entity_type.wysiwyg
+  module:
+    - text
+id: penn_entity.wysiwyg.field_wysiwyg
+field_name: field_wysiwyg
+entity_type: penn_entity
+bundle: wysiwyg
+label: wysiwyg
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

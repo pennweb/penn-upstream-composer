@@ -1,0 +1,6 @@
+uuid: ee175328-f55e-475a-b5c1-2e704c55733f
+langcode: en
+status: true
+dependencies: {  }
+id: card_hero_card
+label: 'Card - Hero Card'

@@ -1,0 +1,28 @@
+uuid: 9586b94b-e65a-4c76-805d-29e755e53580
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.card_image_slider_card
+    - penn_entity.penn_entity_type.layout_image_slider
+id: penn_entity.layout_image_slider.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: layout_image_slider
+label: Slides
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      card_image_slider_card: card_image_slider_card
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

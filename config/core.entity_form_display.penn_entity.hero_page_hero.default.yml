@@ -1,0 +1,30 @@
+uuid: 40e64706-6398-437d-b125-4aecac15ea8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.hero_page_hero.field_image
+    - penn_entity.penn_entity_type.hero_page_hero
+  module:
+    - media_library
+id: penn_entity.hero_page_hero.default
+targetEntityType: penn_entity
+bundle: hero_page_hero
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

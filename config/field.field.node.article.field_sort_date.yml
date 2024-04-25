@@ -1,0 +1,24 @@
+uuid: 89ac87a7-81e0-42d9-941e-472e05d4b9d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_date
+    - node.type.article
+  module:
+    - datetime
+id: node.article.field_sort_date
+field_name: field_sort_date
+entity_type: node
+bundle: article
+label: 'Sort Date'
+description: "The date used to sort the article. This is not displayed on the article. It is used for sorting within a list of articles.\r\n<br><br>"
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

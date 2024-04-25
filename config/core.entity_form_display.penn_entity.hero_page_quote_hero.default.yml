@@ -1,0 +1,55 @@
+uuid: 8b7e0d4d-adb5-434e-9cb4-9a7d87cbb9ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.hero_page_quote_hero.field_image
+    - field.field.penn_entity.hero_page_quote_hero.field_quote
+    - field.field.penn_entity.hero_page_quote_hero.field_quote_author
+    - field.field.penn_entity.hero_page_quote_hero.field_select_list
+    - penn_entity.penn_entity_type.hero_page_quote_hero
+  module:
+    - media_library
+id: penn_entity.hero_page_quote_hero.default
+targetEntityType: penn_entity
+bundle: hero_page_quote_hero
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_quote:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_quote_author:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_select_list:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

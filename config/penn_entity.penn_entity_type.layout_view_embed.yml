@@ -1,0 +1,6 @@
+uuid: 06b64e4d-ef0f-46c4-9774-0834c2b0b20e
+langcode: en
+status: true
+dependencies: {  }
+id: layout_view_embed
+label: 'Layout - View Embed'

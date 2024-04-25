@@ -1,0 +1,6 @@
+uuid: 0ab43c46-9370-47a0-9e35-98120475b81a
+langcode: en
+status: true
+dependencies: {  }
+id: layout_student_spotlight
+label: 'Layout - Student Spotlight'

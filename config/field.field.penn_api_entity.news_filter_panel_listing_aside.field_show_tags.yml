@@ -1,0 +1,23 @@
+uuid: 933cb1f5-a7be-42d9-8126-a808f2fcc0b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_show_tags
+    - penn_api_entity.penn_api_entity_type.news_filter_panel_listing_aside
+id: penn_api_entity.news_filter_panel_listing_aside.field_show_tags
+field_name: field_show_tags
+entity_type: penn_api_entity
+bundle: news_filter_panel_listing_aside
+label: 'Show Tags'
+description: 'Show topic and subtopic tags below the story summary.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

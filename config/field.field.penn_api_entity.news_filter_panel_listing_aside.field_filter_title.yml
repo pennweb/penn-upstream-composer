@@ -1,0 +1,19 @@
+uuid: aac0fdd6-e7f7-4322-8711-73cf0e47ee92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_filter_title
+    - penn_api_entity.penn_api_entity_type.news_filter_panel_listing_aside
+id: penn_api_entity.news_filter_panel_listing_aside.field_filter_title
+field_name: field_filter_title
+entity_type: penn_api_entity
+bundle: news_filter_panel_listing_aside
+label: 'Filter Label'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

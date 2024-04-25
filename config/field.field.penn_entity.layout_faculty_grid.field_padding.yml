@@ -1,0 +1,21 @@
+uuid: 41c876ef-11c1-4582-9100-c27ecf8b252d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_padding
+    - penn_entity.penn_entity_type.layout_faculty_grid
+  module:
+    - options
+id: penn_entity.layout_faculty_grid.field_padding
+field_name: field_padding
+entity_type: penn_entity
+bundle: layout_faculty_grid
+label: Padding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

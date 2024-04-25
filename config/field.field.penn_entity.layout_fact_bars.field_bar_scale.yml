@@ -1,0 +1,23 @@
+uuid: e975d202-6cb7-4122-9980-c4cf5578856c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_bar_scale
+    - penn_entity.penn_entity_type.layout_fact_bars
+  module:
+    - options
+id: penn_entity.layout_fact_bars.field_bar_scale
+field_name: field_bar_scale
+entity_type: penn_entity
+bundle: layout_fact_bars
+label: 'Bar Scale'
+description: 'Increases the horizontal scale of the bar coloring. A larger scale makes the bar graph appear fuller.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

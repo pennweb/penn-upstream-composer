@@ -1,0 +1,23 @@
+uuid: 5047b27c-01ad-46fe-99dc-6e8ba40b4f21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_hero_size
+    - penn_entity.penn_entity_type.hero_full_width
+  module:
+    - options
+id: penn_entity.hero_full_width.field_hero_size
+field_name: field_hero_size
+entity_type: penn_entity
+bundle: hero_full_width
+label: 'Hero Size'
+description: 'Sets the hero height. Medium (80vh) is the default.'
+required: false
+translatable: false
+default_value:
+  -
+    value: hero-full-width__medium
+default_value_callback: ''
+settings: {  }
+field_type: list_string

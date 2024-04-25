@@ -1,0 +1,30 @@
+uuid: bcc23fee-199b-4f57-b0f3-075fe764d223
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_penn_entity_reference
+    - penn_entity.penn_entity_type.card_grid_card
+    - penn_entity.penn_entity_type.card_grid_card_portrait
+    - penn_entity.penn_entity_type.layout_grid
+id: penn_entity.layout_grid.field_penn_entity_reference
+field_name: field_penn_entity_reference
+entity_type: penn_entity
+bundle: layout_grid
+label: Items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      card_grid_card: card_grid_card
+      card_grid_card_portrait: card_grid_card_portrait
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: card_grid_card
+field_type: entity_reference

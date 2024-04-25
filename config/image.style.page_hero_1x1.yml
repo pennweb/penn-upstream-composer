@@ -1,0 +1,25 @@
+uuid: 07f82ff1-6754-456c-a418-1244fd7ce1af
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1_1
+  module:
+    - crop
+name: page_hero_1x1
+label: 'Page Hero (1:1)'
+effects:
+  103c03c1-851d-4898-a089-8b34bb018deb:
+    uuid: 103c03c1-851d-4898-a089-8b34bb018deb
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_1_1
+  269fb27d-c91a-4f79-8e22-18b6c1ed5fe5:
+    uuid: 269fb27d-c91a-4f79-8e22-18b6c1ed5fe5
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 711
+      upscale: true

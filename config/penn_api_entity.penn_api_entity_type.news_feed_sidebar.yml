@@ -1,0 +1,6 @@
+uuid: 133fad8d-ade7-43a9-9072-fe509d4566d5
+langcode: en
+status: true
+dependencies: {  }
+id: news_feed_sidebar
+label: 'Layout - News Feed Sidebar Slider'

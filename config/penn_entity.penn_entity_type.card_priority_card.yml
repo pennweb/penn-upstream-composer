@@ -1,0 +1,6 @@
+uuid: 4a257304-d617-4915-bf2b-f7e5c8487401
+langcode: en
+status: true
+dependencies: {  }
+id: card_priority_card
+label: 'Card - Priority Card'

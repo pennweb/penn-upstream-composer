@@ -1,0 +1,28 @@
+uuid: 17d1e345-bd22-43f1-a3ce-f69ac9db8670
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_story
+    - node.type.homepage
+    - penn_entity.penn_entity_type.layout_featured_story
+id: node.homepage.field_featured_story
+field_name: field_featured_story
+entity_type: node
+bundle: homepage
+label: 'Featured Story'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      layout_featured_story: layout_featured_story
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

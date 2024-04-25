@@ -1,0 +1,6 @@
+uuid: eb2191b2-174a-4445-96de-b531cb89fd8c
+langcode: en
+status: true
+dependencies: {  }
+id: layout_offset_card_with_image
+label: 'Layout - Offset Card with Image'

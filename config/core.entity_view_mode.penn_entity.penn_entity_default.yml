@@ -1,0 +1,10 @@
+uuid: d642db49-0f9a-4321-a79d-b4285d49c5b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - penn_entity
+id: penn_entity.penn_entity_default
+label: Default
+targetEntityType: penn_entity
+cache: true

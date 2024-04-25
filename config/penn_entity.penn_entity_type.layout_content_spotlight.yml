@@ -1,0 +1,6 @@
+uuid: 180470a4-42b0-4d3d-8df4-040bb8b10768
+langcode: en
+status: true
+dependencies: {  }
+id: layout_content_spotlight
+label: 'Layout - Content Spotlight'

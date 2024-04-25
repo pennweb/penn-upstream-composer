@@ -1,0 +1,6 @@
+uuid: eea39135-b987-4b26-87cd-fbe8cf49b2d2
+langcode: en
+status: true
+dependencies: {  }
+id: video_inline
+label: 'Layout - Video - Looping autoplaying inline video'

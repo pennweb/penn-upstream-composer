@@ -1,0 +1,30 @@
+uuid: 11ef7854-2d1c-4739-9065-e312955796b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_api_entity
+id: penn_api_entity.field_container_width
+field_name: field_container_width
+entity_type: penn_api_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'contain contain--sm'
+      label: Small
+    -
+      value: contain
+      label: Medium
+    -
+      value: 'contain contain--wide'
+      label: Large
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

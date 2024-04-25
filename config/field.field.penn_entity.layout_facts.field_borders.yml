@@ -1,0 +1,21 @@
+uuid: f3e0dd70-b7f3-4139-adf7-4b5f9946562f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_borders
+    - penn_entity.penn_entity_type.layout_facts
+  module:
+    - options
+id: penn_entity.layout_facts.field_borders
+field_name: field_borders
+entity_type: penn_entity
+bundle: layout_facts
+label: Borders
+description: 'Add borders above and below the item.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

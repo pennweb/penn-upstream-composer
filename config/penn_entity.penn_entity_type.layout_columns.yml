@@ -1,0 +1,6 @@
+uuid: 626831a1-6e4d-46f6-943f-003aa3e568e5
+langcode: en
+status: true
+dependencies: {  }
+id: layout_columns
+label: 'Layout - Columns'

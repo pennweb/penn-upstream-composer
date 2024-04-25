@@ -1,0 +1,29 @@
+uuid: 4b0218ca-6705-4322-b520-5be540dd3990
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.video_vimeo.field_video_source_url
+    - penn_entity.penn_entity_type.video_vimeo
+id: penn_entity.video_vimeo.default
+targetEntityType: penn_entity
+bundle: video_vimeo
+mode: default
+content:
+  field_video_source_url:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,27 @@
+uuid: 026baf59-4cf9-4cca-9762-62972c34beb4
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - penn_entity
+id: penn_entity.field_grid_borders
+field_name: field_grid_borders
+entity_type: penn_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: grid-card--borders
+      label: 'Show grid borders'
+    -
+      value: grid-card--plain
+      label: 'Don''t show grid borders'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: 86bb3a2c-fc47-4a3d-b2c0-77693330cfd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1_1
+  module:
+    - crop
+name: social_card_1x1
+label: 'Social Card (1:1)'
+effects:
+  0fa1f668-98c0-4639-8a00-b39db3487b80:
+    uuid: 0fa1f668-98c0-4639-8a00-b39db3487b80
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_1_1
+  b8aab9d9-1191-4f4e-a2e5-e522828e8329:
+    uuid: b8aab9d9-1191-4f4e-a2e5-e522828e8329
+    id: image_scale
+    weight: 2
+    data:
+      width: 800
+      height: null
+      upscale: false

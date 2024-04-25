@@ -1,0 +1,154 @@
+uuid: cf384d2a-7d76-4ab1-bf3e-059da9f822a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.hero_article_card_hero.field_boolean
+    - field.field.penn_entity.hero_article_card_hero.field_description_formatted
+    - field.field.penn_entity.hero_article_card_hero.field_image
+    - field.field.penn_entity.hero_article_card_hero.field_image_mobile
+    - field.field.penn_entity.hero_article_card_hero.field_link
+    - field.field.penn_entity.hero_article_card_hero.field_penn_entity_reference
+    - field.field.penn_entity.hero_article_card_hero.field_subtitle
+    - field.field.penn_entity.hero_article_card_hero.field_subtitle_link
+    - field.field.penn_entity.hero_article_card_hero.field_title
+    - field.field.penn_entity.hero_article_card_hero.field_video_source_url
+    - penn_entity.penn_entity_type.hero_article_card_hero
+  module:
+    - fences
+    - link
+    - text
+id: penn_entity.hero_article_card_hero.default
+targetEntityType: penn_entity
+bundle: hero_article_card_hero
+mode: default
+content:
+  field_boolean:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_description_formatted:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: article_card
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: -2
+    region: content
+  field_image_mobile:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: article_card_mobile
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: -1
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 3
+    region: content
+  field_penn_entity_reference:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  field_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_subtitle_link:
+    type: link
+    label: above
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 4
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_video_source_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

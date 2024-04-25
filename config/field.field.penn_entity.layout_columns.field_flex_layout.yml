@@ -1,0 +1,23 @@
+uuid: b394a36b-6d40-4bb0-a70a-dc5afe954d99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_flex_layout
+    - penn_entity.penn_entity_type.layout_columns
+  module:
+    - options
+id: penn_entity.layout_columns.field_flex_layout
+field_name: field_flex_layout
+entity_type: penn_entity
+bundle: layout_columns
+label: 'Flex Layout'
+description: 'Choose to center content horizontally and vertically inside each column. '
+required: false
+translatable: false
+default_value:
+  -
+    value: layout__flex--justify-between
+default_value_callback: ''
+settings: {  }
+field_type: list_string

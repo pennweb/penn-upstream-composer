@@ -1,0 +1,28 @@
+uuid: 2fb93e91-d923-46d9-93e7-332bf3c79da7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events_feed
+    - node.type.homepage
+    - penn_api_entity.penn_api_entity_type.event_listing_2
+id: node.homepage.field_events_feed
+field_name: field_events_feed
+entity_type: node
+bundle: homepage
+label: 'Upcoming Events'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_api_entity'
+  handler_settings:
+    target_bundles:
+      event_listing_2: event_listing_2
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

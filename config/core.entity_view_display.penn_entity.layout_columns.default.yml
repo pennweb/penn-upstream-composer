@@ -1,0 +1,81 @@
+uuid: cd1f04d1-888f-4955-a6f2-87210ca1be34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.penn_entity.layout_columns.field_borders
+    - field.field.penn_entity.layout_columns.field_column_layout
+    - field.field.penn_entity.layout_columns.field_description
+    - field.field.penn_entity.layout_columns.field_flex_layout
+    - field.field.penn_entity.layout_columns.field_margins
+    - field.field.penn_entity.layout_columns.field_penn_entity_reference
+    - field.field.penn_entity.layout_columns.field_title
+    - penn_entity.penn_entity_type.layout_columns
+  module:
+    - options
+id: penn_entity.layout_columns.default
+targetEntityType: penn_entity
+bundle: layout_columns
+mode: default
+content:
+  field_borders:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_column_layout:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_flex_layout:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_margins:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_penn_entity_reference:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden: {  }

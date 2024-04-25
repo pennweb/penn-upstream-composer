@@ -1,0 +1,6 @@
+uuid: 4eec007c-c3c8-4525-924b-de759b9fd16b
+langcode: en
+status: true
+dependencies: {  }
+id: layout_split_content
+label: 'Layout - Split Content'

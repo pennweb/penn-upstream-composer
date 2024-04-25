@@ -1,0 +1,6 @@
+uuid: 2865e2be-9357-4989-a7ea-fd15f57afc64
+langcode: en
+status: true
+dependencies: {  }
+id: hero_page_hero
+label: 'Hero - Page Hero'

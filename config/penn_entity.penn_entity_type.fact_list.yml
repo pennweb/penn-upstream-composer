@@ -1,0 +1,6 @@
+uuid: a8a58bfd-026c-4555-97fb-44fee150ed38
+langcode: en
+status: true
+dependencies: {  }
+id: fact_list
+label: 'Layout - Fact List'

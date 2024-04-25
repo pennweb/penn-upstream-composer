@@ -1,0 +1,23 @@
+uuid: 835a4107-61d5-4cd4-a86e-8e160b826222
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_grid_borders
+    - penn_entity.penn_entity_type.card_grid_card
+  module:
+    - options
+id: penn_entity.card_grid_card.field_grid_borders
+field_name: field_grid_borders
+entity_type: penn_entity
+bundle: card_grid_card
+label: 'Grid Borders'
+description: 'Choose to show borders between grid items.'
+required: false
+translatable: false
+default_value:
+  -
+    value: grid-card--borders
+default_value_callback: ''
+settings: {  }
+field_type: list_string

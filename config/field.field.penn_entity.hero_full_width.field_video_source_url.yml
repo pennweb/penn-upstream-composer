@@ -1,0 +1,19 @@
+uuid: 01e86fa8-78b6-47c2-a257-b409d880cc6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_video_source_url
+    - penn_entity.penn_entity_type.hero_full_width
+id: penn_entity.hero_full_width.field_video_source_url
+field_name: field_video_source_url
+entity_type: penn_entity
+bundle: hero_full_width
+label: 'Video Source'
+description: "Provide a video source. The video will play on larger devices only. Also provide the image uploads for smaller devices.<br>\r\nExample: https://player.vimeo.com/external/413692024.hd.mp4?s=5635931c672e7e3eaaa63b21e738607e12045513&profile_id=175"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

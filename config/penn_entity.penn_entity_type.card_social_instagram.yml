@@ -1,0 +1,6 @@
+uuid: 6ce16490-d2b4-4b77-9425-0a2feee605d8
+langcode: en
+status: true
+dependencies: {  }
+id: card_social_instagram
+label: 'Social Card - Instagram'

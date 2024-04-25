@@ -1,0 +1,65 @@
+uuid: 1e6eb41d-da25-43d4-863f-013d6bccfe95
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
+format: basic_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+        -
+          name: 'Block Formatting'
+          items:
+            - Format
+            - Styles
+        -
+          name: Tools
+          items:
+            - Source
+        -
+          name: 'Penn Entities'
+          items:
+            - penn_entity
+            - penn_api
+        -
+          name: Maximize
+          items:
+            - Maximize
+  plugins:
+    stylescombo:
+      styles: "p.featured|Paragraph Featured\r\np.large|Paragraph Large\r\na.btn.btn--outline|Button (Outlined)\r\na.btn.btn--outline-white|Button (White)\r\na.btn|Button (Blue)\r\na.btn.btn--secondary|Button (Red)\r\na.cta|Link (CTA)\r\na.cta.cta--arrow|Link (CTA with arrow)"
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

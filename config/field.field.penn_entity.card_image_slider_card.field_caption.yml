@@ -1,0 +1,19 @@
+uuid: aed00b4d-304a-4ecb-8bb8-76b8823fb7b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_caption
+    - penn_entity.penn_entity_type.card_image_slider_card
+id: penn_entity.card_image_slider_card.field_caption
+field_name: field_caption
+entity_type: penn_entity
+bundle: card_image_slider_card
+label: Caption
+description: 'Add a plain-text caption below the image.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

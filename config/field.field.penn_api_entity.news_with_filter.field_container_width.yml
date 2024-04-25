@@ -1,0 +1,23 @@
+uuid: aaa17514-4e96-4f32-ad9e-dd015245ad9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_container_width
+    - penn_api_entity.penn_api_entity_type.news_with_filter
+  module:
+    - options
+id: penn_api_entity.news_with_filter.field_container_width
+field_name: field_container_width
+entity_type: penn_api_entity
+bundle: news_with_filter
+label: 'Container Width'
+description: 'Set the width of the item container.'
+required: false
+translatable: true
+default_value:
+  -
+    value: contain
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,6 @@
+uuid: ba1314e5-3fd8-4da5-ad8e-2db759760548
+langcode: en
+status: true
+dependencies: {  }
+id: social-media-management
+label: 'Social Media Management'

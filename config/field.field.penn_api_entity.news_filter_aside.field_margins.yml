@@ -1,0 +1,23 @@
+uuid: ffbd18ae-5491-4354-a9fd-cae072ce1350
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_margins
+    - penn_api_entity.penn_api_entity_type.news_filter_aside
+  module:
+    - options
+id: penn_api_entity.news_filter_aside.field_margins
+field_name: field_margins
+entity_type: penn_api_entity
+bundle: news_filter_aside
+label: Margins
+description: 'Add margins to the item.'
+required: false
+translatable: true
+default_value:
+  -
+    value: section-margin
+default_value_callback: ''
+settings: {  }
+field_type: list_string

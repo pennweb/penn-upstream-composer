@@ -1,0 +1,19 @@
+uuid: 9206ab44-25fc-46bc-a964-d596345a1073
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_video_source_url
+    - penn_entity.penn_entity_type.video_vimeo
+id: penn_entity.video_vimeo.field_video_source_url
+field_name: field_video_source_url
+entity_type: penn_entity
+bundle: video_vimeo
+label: 'Video Source ID'
+description: 'Provide the Vimeo video ID only (<i>not</i> the full URL to the video). For example, if the URL is https://vimeo.com/604042359, then the ID is <b>604042359</b>.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

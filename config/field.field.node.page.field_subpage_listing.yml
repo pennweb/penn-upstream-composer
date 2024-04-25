@@ -1,0 +1,28 @@
+uuid: 3a797aa9-0775-44ee-a0ae-8b642d23a0cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subpage_listing
+    - node.type.page
+    - penn_entity.penn_entity_type.card_subpage_listing_card
+id: node.page.field_subpage_listing
+field_name: field_subpage_listing
+entity_type: node
+bundle: page
+label: 'Subpage Listings'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:penn_entity'
+  handler_settings:
+    target_bundles:
+      card_subpage_listing_card: card_subpage_listing_card
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

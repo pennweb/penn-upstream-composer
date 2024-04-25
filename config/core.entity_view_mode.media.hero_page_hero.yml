@@ -1,0 +1,10 @@
+uuid: 5f34fc87-f681-4be3-8651-c93428520727
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.hero_page_hero
+label: 'Hero - Page Hero (1:1)'
+targetEntityType: media
+cache: true

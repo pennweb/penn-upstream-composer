@@ -1,0 +1,6 @@
+uuid: 570575e7-f469-4107-b830-ecfe934c8fef
+langcode: en
+status: true
+dependencies: {  }
+id: video_modal
+label: 'Layout - Video - Video with Card (opens in Modal)'

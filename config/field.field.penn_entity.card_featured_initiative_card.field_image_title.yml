@@ -1,0 +1,28 @@
+uuid: 3fa37245-950c-4cf5-90ea-566591ed036a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_image_title
+    - media.type.image
+    - penn_entity.penn_entity_type.card_featured_initiative_card
+id: penn_entity.card_featured_initiative_card.field_image_title
+field_name: field_image_title
+entity_type: penn_entity
+bundle: card_featured_initiative_card
+label: 'Title Image'
+description: 'Optionally use an image for the title.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

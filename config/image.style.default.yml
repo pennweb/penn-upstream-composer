@@ -1,0 +1,15 @@
+uuid: 430c114a-03b9-47be-8430-ee5b111d76db
+langcode: en
+status: true
+dependencies: {  }
+name: default
+label: Default
+effects:
+  a23eb731-361e-4bd3-9224-5bb82fdb5438:
+    uuid: a23eb731-361e-4bd3-9224-5bb82fdb5438
+    id: image_scale
+    weight: 1
+    data:
+      width: 1600
+      height: null
+      upscale: false

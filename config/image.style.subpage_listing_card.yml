@@ -1,0 +1,25 @@
+uuid: aa4f7c8e-56ad-4435-9301-5560ec02fc3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.3x2
+  module:
+    - crop
+name: subpage_listing_card
+label: 'Subpage Listing Card (3:2)'
+effects:
+  174916df-366a-4e7a-b906-3902d49a10c5:
+    uuid: 174916df-366a-4e7a-b906-3902d49a10c5
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 3x2
+  587b4b83-f09c-4ec5-8034-d7a108eeaa3c:
+    uuid: 587b4b83-f09c-4ec5-8034-d7a108eeaa3c
+    id: image_scale
+    weight: 2
+    data:
+      width: 110
+      height: null
+      upscale: false

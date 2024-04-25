@@ -1,0 +1,20 @@
+uuid: d8885f2a-84a1-400f-8f2f-13725b5ab2c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - penn_entity
+id: node.field_hero
+field_name: field_hero
+entity_type: node
+type: entity_reference
+settings:
+  target_type: penn_entity
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
