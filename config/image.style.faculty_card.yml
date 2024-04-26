@@ -15,3 +15,4 @@ effects:
     weight: 1
     data:
       crop_type: crop_1_1
+      automatic_crop_provider: null

@@ -23,3 +23,4 @@ effects:
     weight: 2
     data:
       crop_type: 3x2
+      automatic_crop_provider: null
