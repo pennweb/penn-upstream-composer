@@ -8,7 +8,6 @@ module:
   block_content: 1
   breakpoint: 1
   ckeditor: 1
-  color: 1
   comment: 1
   config: 1
   contact: 1
@@ -69,8 +68,6 @@ module:
   penn_entity: 1
   penn_search: 1
   penn_shortcuts: 1
-  quickedit: 1
-  rdf: 1
   redis: 1
   search: 1
   shortcut: 1
@@ -84,7 +81,6 @@ module:
   text: 1
   token: 1
   toolbar: 1
-  tour: 1
   twig_tweak: 1
   update: 1
   user: 1
@@ -92,11 +88,7 @@ module:
   views_ui: 1
   xmlsitemap: 1
 theme:
-  adminimal_theme: 1
-  bartik: 1
   penn_global: 1
   penn_starter: 1
-  seven: 1
-  stable: 1
   claro: 0
 profile: standard
