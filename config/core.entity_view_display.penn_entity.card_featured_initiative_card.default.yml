@@ -57,21 +57,21 @@ content:
     region: content
   field_description_formatted:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 10
     region: content
   field_fi_background_color:
     type: list_key
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 9
     region: content
   field_image_title:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: url_to_image
       link: false
@@ -87,7 +87,7 @@ content:
     region: content
   field_link:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: null
       url_only: true
