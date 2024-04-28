@@ -20,7 +20,7 @@ mode: featured_story_mobile
 content:
   field_media_image:
     type: image
-    label: visually_hidden
+    label: hidden
     settings:
       image_link: ''
       image_style: featured_story_mobile

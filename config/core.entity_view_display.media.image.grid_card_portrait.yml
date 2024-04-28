@@ -20,7 +20,7 @@ mode: grid_card_portrait
 content:
   field_media_image:
     type: image
-    label: visually_hidden
+    label: hidden
     settings:
       image_link: ''
       image_style: grid_card_portrait

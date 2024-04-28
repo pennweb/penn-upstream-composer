@@ -20,7 +20,7 @@ mode: article_card
 content:
   field_media_image:
     type: image
-    label: visually_hidden
+    label: hidden
     settings:
       image_link: ''
       image_style: article_card_3x2
