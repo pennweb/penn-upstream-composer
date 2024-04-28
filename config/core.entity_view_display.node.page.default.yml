@@ -6,11 +6,9 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_description_formatted
     - field.field.node.page.field_hero
-    - field.field.node.page.field_hero_paragraph
     - field.field.node.page.field_hide_breadcrumb
     - field.field.node.page.field_hide_title
     - field.field.node.page.field_subpage_listing
-    - field.field.node.page.field_subpage_listing_paragraph
     - node.type.page
   module:
     - text
@@ -79,6 +77,4 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
-hidden:
-  field_hero_paragraph: true
-  field_subpage_listing_paragraph: true
+hidden: {  }

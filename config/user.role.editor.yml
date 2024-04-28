@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.accordion
     - filter.format.entity_embed
     - filter.format.full_html
     - filter.format.wysiwyg
     - media.type.document
     - media.type.image
     - node.type.alert
+    - node.type.article
     - node.type.homepage
     - node.type.page
     - node.type.penn_update
@@ -21,7 +21,6 @@ dependencies:
     - filter
     - media
     - node
-    - paragraphs_type_permissions
     - path
     - penn_entity
     - shortcut
@@ -45,50 +44,37 @@ permissions:
   - 'administer penn entity entities'
   - 'bypass node access'
   - 'create alert content'
+  - 'create article content'
   - 'create document media'
   - 'create homepage content'
   - 'create image media'
   - 'create media'
   - 'create page content'
-  - 'create paragraph content accordion_item_paragraph'
-  - 'create paragraph content fact_bar_item_paragraph'
-  - 'create paragraph content fact_item_paragraph'
-  - 'create paragraph content fact_list_item_paragraph'
-  - 'create paragraph content fact_sidebar_item_paragraph'
-  - 'create paragraph content layout_subpage_listing_paragraph'
-  - 'create paragraph content page_header_hero_paragraph'
-  - 'create paragraph content page_header_quote_hero_paragraph'
-  - 'create paragraph content subpage_listing_paragraph'
   - 'create penn_update content'
   - 'create url aliases'
   - 'delete any alert content'
+  - 'delete any article content'
   - 'delete any document media'
   - 'delete any homepage content'
   - 'delete any image media'
   - 'delete any page content'
   - 'delete any penn_update content'
   - 'delete own alert content'
+  - 'delete own article content'
   - 'delete own homepage content'
   - 'delete own page content'
   - 'delete own penn_update content'
-  - 'delete paragraph content accordion_item_paragraph'
-  - 'delete paragraph content fact_bar_item_paragraph'
-  - 'delete paragraph content fact_item_paragraph'
-  - 'delete paragraph content fact_list_item_paragraph'
-  - 'delete paragraph content fact_sidebar_item_paragraph'
-  - 'delete paragraph content layout_subpage_listing_paragraph'
-  - 'delete paragraph content page_header_hero_paragraph'
-  - 'delete paragraph content page_header_quote_hero_paragraph'
-  - 'delete paragraph content subpage_listing_paragraph'
   - 'delete penn entity entities'
   - 'dropzone upload files'
   - 'edit any alert content'
+  - 'edit any article content'
   - 'edit any document media'
   - 'edit any homepage content'
   - 'edit any image media'
   - 'edit any page content'
   - 'edit any penn_update content'
   - 'edit own alert content'
+  - 'edit own article content'
   - 'edit own document media'
   - 'edit own homepage content'
   - 'edit own image media'
@@ -98,16 +84,6 @@ permissions:
   - 'revert all revisions'
   - 'update any media'
   - 'update media'
-  - 'update paragraph content accordion_item_paragraph'
-  - 'update paragraph content fact_bar_item_paragraph'
-  - 'update paragraph content fact_item_paragraph'
-  - 'update paragraph content fact_list_item_paragraph'
-  - 'update paragraph content fact_sidebar_item_paragraph'
-  - 'update paragraph content layout_subpage_listing_paragraph'
-  - 'update paragraph content page_header_hero_paragraph'
-  - 'update paragraph content page_header_quote_hero_paragraph'
-  - 'update paragraph content subpage_listing_paragraph'
-  - 'use text format accordion'
   - 'use text format entity_embed'
   - 'use text format full_html'
   - 'use text format wysiwyg'
@@ -115,15 +91,6 @@ permissions:
   - 'view individual penn entity entities'
   - 'view own unpublished content'
   - 'view own unpublished media'
-  - 'view paragraph content accordion_item_paragraph'
-  - 'view paragraph content fact_bar_item_paragraph'
-  - 'view paragraph content fact_item_paragraph'
-  - 'view paragraph content fact_list_item_paragraph'
-  - 'view paragraph content fact_sidebar_item_paragraph'
-  - 'view paragraph content layout_subpage_listing_paragraph'
-  - 'view paragraph content page_header_hero_paragraph'
-  - 'view paragraph content page_header_quote_hero_paragraph'
-  - 'view paragraph content subpage_listing_paragraph'
   - 'view published penn entity entities'
   - 'view the administration theme'
   - 'view unpublished penn entity entities'

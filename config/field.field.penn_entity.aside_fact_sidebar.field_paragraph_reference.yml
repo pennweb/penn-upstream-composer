@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.penn_entity.field_paragraph_reference
-    - paragraphs.paragraphs_type.fact_sidebar_item_paragraph
     - penn_entity.penn_entity_type.aside_fact_sidebar
   module:
     - entity_reference_revisions
@@ -21,8 +20,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles:
-      fact_sidebar_item_paragraph: fact_sidebar_item_paragraph
+    target_bundles: {  }
     negate: 0
     target_bundles_drag_drop:
       accordion_item_paragraph:
