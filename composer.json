@@ -34,7 +34,7 @@
         "drupal/externalauth": "^2.0",
         "drupal/fences": "^2.0@RC",
         "drupal/field_hidden": "^2.0",
-        "drupal/google_tag": "^1.4",
+        "drupal/google_tag": "^2.0",
         "drupal/image_widget_crop": "^2.3",
         "drupal/imagemagick": "^3.1",
         "drupal/inline_entity_form": "3.0.0-rc19",
