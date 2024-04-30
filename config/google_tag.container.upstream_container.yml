@@ -10,7 +10,7 @@ weight: 0
 tag_container_ids:
   - GTM-5X34LWC
 advanced_settings:
-  consent_mode: true
+  consent_mode: false
   gtm:
     GTM-5X34LWC:
       data_layer: dataLayer
