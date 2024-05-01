@@ -6,5 +6,6 @@ dependencies:
     - media
 id: media.subpage_listing_card
 label: 'Card - Subpage Listing Card (5:3)'
+description: ''
 targetEntityType: media
 cache: true

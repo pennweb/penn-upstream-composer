@@ -6,5 +6,6 @@ dependencies:
     - media
 id: media.hero_homepage_mobile
 label: 'Hero - Homepage Mobile (1:2)'
+description: ''
 targetEntityType: media
 cache: true

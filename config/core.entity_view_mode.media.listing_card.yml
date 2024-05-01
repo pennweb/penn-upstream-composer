@@ -6,5 +6,6 @@ dependencies:
     - media
 id: media.listing_card
 label: 'Card - Listing Card (3:2)'
+description: ''
 targetEntityType: media
 cache: true
