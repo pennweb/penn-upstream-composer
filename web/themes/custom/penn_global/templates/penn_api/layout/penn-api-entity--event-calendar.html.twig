@@ -1,9 +1,9 @@
-{% if content.items|length > 0 %}
+{% if penn_api_items|length > 0 %}
 
 <div class="event-calendar">
 	<h2 class="event-calendar__title">{{ content.field_title }}</h2>
 
-  {% for item in content.items %}
+  {% for item in penn_api_items %}
 		<div class="event-calendar__item">
       <time class="event-card__date" datetime="{{ item.start_date }}">
         <span class="event-card__month">{{ item.start_month }}</span>

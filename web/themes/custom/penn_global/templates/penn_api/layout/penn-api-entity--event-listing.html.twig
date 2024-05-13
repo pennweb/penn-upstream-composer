@@ -1,4 +1,4 @@
-{% if content.items|length > 0 %}
+{% if penn_api_items|length > 0 %}
   <section class="events-listing {{ content.field_borders }}">
     <div class="contain">
       <header class="section-header">
@@ -8,7 +8,7 @@
       <div class="events-listing__content">
         <div class="events-listing__grid" data-slider="single-small">
         
-          {% for item in content.items %}
+          {% for item in penn_api_items %}
             <article class="event-card{{ item.image is empty ? ' event-card--no-image' : '' }}">
               <time class="event-card__date" datetime="{{ item.start_date }}">
                 <span class="event-card__month">{{ item.start_month }}</span>

@@ -249,8 +249,7 @@ function penn_global_preprocess_breadcrumb(&$variables) {
 }
 
 function penn_global_preprocess_penn_entity(&$variables) {
-  $entity = $variables['content']['penn_entity'];
-
+  $entity = $variables['penn_entity'];
   switch ($entity->bundle()) {
     case 'hero_homepage':
     case 'hero_full_width':

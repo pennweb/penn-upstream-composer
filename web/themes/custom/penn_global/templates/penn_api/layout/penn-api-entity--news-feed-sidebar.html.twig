@@ -1,9 +1,9 @@
-{% if content.items|length > 0 %}
+{% if penn_api_items|length > 0 %}
 
 <div class="content-aside__aside">
   <div class="card-sidebar-slider">
     <div data-slider="single">
-      {% for item in content.items %}
+      {% for item in penn_api_items %}
       <article class="card ">
         <figure class="card__figure">
           <img src="{{ item.image }}" alt="{{ item.image_alt }}" class="card__image">
