@@ -1,17 +1,22 @@
 <?php
 
 function penn_ckeditor_preprocess_page(&$variables) {
-  $variables['#attached']['library'][] = 'penn_ckeditor/penn_ckeditor';
+  $route = \Drupal::routeMatch()->getRouteName();
+  // Add the wysiwyg class to ckeditor to penn_entity edit forms
+  if($route == 'entity.penn_entity.edit_form' || 'entity.penn_api_entity.edit_form ') {
+    $variables['#attached']['library'][] = 'penn_ckeditor/penn_ckeditor_add_wysiwyg_class';
+    $variables['#attached']['library'][] = 'penn_ckeditor/penn_ckeditor-change-bgcolor';
+  }
 }
 
-function penn_ckeditor_editor_js_settings_alter(array &$settings) {
+function penn_ckeditor_editor_js_settings_alter(array &$settings) { 
   if (isset($settings['editor']['formats']['wysiwyg'])) {
-    $settings['editor']['formats']['wysiwyg']['editorSettings']['bodyClass'] = 'wysiwyg';
+    // $settings['editor']['formats']['wysiwyg']['editorSettings']['bodyClass'] = 'wysiwyg';
     // $settings['editor']['formats']['wysiwyg']['editorSettings']['contentsCss'][] = '/' . drupal_get_path('module','penn_ckeditor') . '/css/penn-global-ckeditor.css';
   }
-  if (isset($settings['editor']['formats']['accordion'])) {
-    $settings['editor']['formats']['accordion']['editorSettings']['bodyClass'] = '.js-wikit-accordion ckeditor-accordion';
-  }
+  // if (isset($settings['editor']['formats']['accordion'])) {
+  //   $settings['editor']['formats']['accordion']['editorSettings']['bodyClass'] = '.js-wikit-accordion ckeditor-accordion';
+  // }
 
   foreach (array_keys($settings['editor']['formats']) as $text_format_id) {
     if ($settings['editor']['formats'][$text_format_id]['editor'] === 'ckeditor') {
@@ -27,47 +32,40 @@ function penn_ckeditor_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
     case 'penn_entity_layout_content_spotlight_add_form':
     case 'penn_entity_layout_content_spotlight_edit_form':
-      $form['#attached']['library'][] = 'penn_ckeditor/textarea_bgcolor';
+      // $form['#attached']['library'][] = 'penn_ckeditor/penn_ckeditor-change-bgcolor';
       $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['dropdownID'] = '#edit-field-background-color';
       break;
     case 'penn_entity_layout_content_aside_add_form':
     case 'penn_entity_layout_content_aside_edit_form':
     case 'penn_entity_layout_container_add_form':
     case 'penn_entity_layout_container_edit_form':
-      $form['#attached']['library'][] = 'penn_ckeditor/textarea_bgcolor';
+      // $form['#attached']['library'][] = 'penn_ckeditor/penn_ckeditor-change-bgcolor';
       $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['dropdownID'] = '#edit-field-background-color';
       $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['constantClasses'] = 'wysiwyg';
       break;
     case 'node_alert_add_form':
     case 'node_alert_edit_form':      
-      $form['#attached']['library'][] = 'penn_ckeditor/textarea_bgcolor';
+      // $form['#attached']['library'][] = 'penn_ckeditor/penn_ckeditor-change-bgcolor';
       $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['dropdownID'] = '#edit-field-alert-0-inline-entity-form-field-bg-color-full';
       $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['constantClasses'] = 'wysiwyg';
       break;
     case 'penn_entity_hero_full_width_add_form':
     case 'penn_entity_hero_full_width_edit_form':
-      $form['#attached']['library'][] = 'penn_ckeditor/textarea_bgcolor';
+      $form['#attached']['library'][] = 'penn_ckeditor/penn_ckeditor-change-bgcolor';
       $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['constantClasses'] = 'hero-full-width wysiwyg';
       break;
     case 'penn_entity_layout_callout_add_form':
     case 'penn_entity_layout_callout_edit_form':
-      $form['#attached']['library'][] = 'penn_ckeditor/textarea_bgcolor';
+      // $form['#attached']['library'][] = 'penn_ckeditor/penn_ckeditor-change-bgcolor';
       $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['dropdownID'] = '#edit-field-background-color';
       $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['constantClasses'] = 'callout__column';
       break;
     case 'penn_entity_card_contact_information_add_form':
     case 'penn_entity_card_contact_information_edit_form':
-      $form['#attached']['library'][] = 'penn_ckeditor/textarea_bgcolor';
+      // $form['#attached']['library'][] = 'penn_ckeditor/penn_ckeditor-change-bgcolor';
       $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['dropdownID'] = '#edit-field-contact-card-background';
       $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['constantClasses'] = 'contact-information';
       $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['dropdownClassPrefix'] = 'contact-information'; // all dropdown classes will be prepended with this
       break;
-    /*case 'example_entity_add_form':
-    case 'example_entity_edit_form':
-      $form['#attached']['library'][] = 'penn_ckeditor/textarea_bgcolor';
-      $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['dropdownID'] = '#edit-field-example-dropdown';
-      $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['dropdownClassPrefix'] = 'optional-prefix--';
-      $form['#attached']['drupalSettings']['penn_ckeditor']['textarea_bgcolor']['constantClasses'] = 'example-classes that-will-always-be-added';
-      break;*/
   }
 }
