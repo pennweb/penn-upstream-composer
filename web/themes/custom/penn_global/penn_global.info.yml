@@ -7,6 +7,10 @@ core_version_requirement: ^8 || ^9 || ^10
 ckeditor_stylesheets:
   - assets/dist/site.css
   # - assets/dist/site.js
+ckeditor5-stylesheets:
+  - assets/dist/ckeditor5-overrides.css
+  - assets/dist/ckeditor5-wysiwyg.css
+  - assets/dist/ckeditor5-entities.css
 libraries:
   - penn_global/global-styling
   - penn_global/global-scripts
