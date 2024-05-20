@@ -1,51 +1,42 @@
-uuid: e757f72d-56bd-4201-ad7b-3b1f3cf81885
+uuid: 684b1963-a7d4-4b47-9839-8bdf6585b061
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.accordion
   module:
-    - ckeditor
+    - ckeditor5
 format: accordion
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Format
-            - Styles
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-        -
-          name: Tools
-          items:
-            - Source
+    items:
+      - heading
+      - bold
+      - italic
+      - '|'
+      - blockQuote
+      - code
+      - bulletedList
+      - numberedList
+      - link
+      - insertTable
+      - sourceEditing
   plugins:
-    stylescombo:
-      styles: 'a.btn.btn--outline-white|Button Link (Outline White)'
-image_upload:
-  status: false
-  scheme: public
-  directory: inline-images
-  max_size: ''
-  max_dimensions:
-    width: null
-    height: null
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    media_media:
+      allow_view_mode_override: false
+image_upload: {  }
