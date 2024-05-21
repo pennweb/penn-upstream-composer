@@ -16,3 +16,11 @@ effects:
     data:
       crop_type: crop_1_1
       automatic_crop_provider: null
+  962a164a-9a3d-480e-9004-0099debee8a8:
+    uuid: 962a164a-9a3d-480e-9004-0099debee8a8
+    id: image_scale
+    weight: 2
+    data:
+      width: 600
+      height: null
+      upscale: false
