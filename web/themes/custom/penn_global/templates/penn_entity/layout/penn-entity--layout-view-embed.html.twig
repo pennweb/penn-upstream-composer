@@ -1,7 +1,7 @@
 <section class="{{ content.field_margins }} {{ content.field_borders }}">
   <div class="{{ content.field_container_width }} {{ content.field_padding }}"> 
-    {% if content.field_title_has_value or content.field_description_formatted_has_value %}    
-      <header class="section-header section-header--centered {{ content.section_header_class }}">
+    {% if field_title_has_value or field_description_formatted_has_value %}    
+      <header class="section-header section-header--centered {{ section_header_class }}">
         <h2 class="section-header__title">{{ content.field_title }}</h2>
       </header>
       <div class="wysiwyg">
@@ -10,7 +10,7 @@
     {% endif %}
     <div class="penn-entity__view-embed">
       {# drupal_view args are preprocessed in penn_entity.module #}
-      {{ drupal_view(content.view_name, content.view_display_name) }}
+      {{ drupal_view(view_name, view_display_name) }}
     </div>
   </div>
 </section>

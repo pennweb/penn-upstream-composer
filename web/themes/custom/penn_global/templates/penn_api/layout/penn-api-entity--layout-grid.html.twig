@@ -1,14 +1,14 @@
-{% if content.items|length > 0 %}
+{% if penn_api_items|length > 0 %}
 <section class="grid {{ content.padding }} {{ content.field_borders }} {{content.field_background_color }}">
   <div class="{{ content.field_container_width }}">
-    {% if content.field_title_has_value or content.field_description_formatted_has_value %}
-      <header class="section-header section-header--centered {{ content.section_header_class }}">
+    {% if field_title_has_value or field_description_formatted_has_value %}
+      <header class="section-header section-header--centered {{ section_header_class }}">
         <h2 class="section-header__title">{{ content.field_title }}</h2>
         {{ content.field_description_formatted }}
       </header>
     {% endif %}
     <div class="grid__content {{ content.field_grid_layout }} news-featured__grid">
-      {% for item in content.items %}
+      {% for item in penn_api_items %}
         <article class="grid-card grid-card--plain">
           <a href="{{ item.url }}" class="grid-card__image-link">
             <picture>

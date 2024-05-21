@@ -1,4 +1,4 @@
-<article class="faculty-card {{ content.field_image_class }}">
+<article class="faculty-card {{ field_image_class }}">
   {% set link = render_var(content.field_link) %}
   {% if link is not empty %}
     <a href="{{ content.field_link }}" class="faculty-card__link">
@@ -6,7 +6,7 @@
     {{ content.field_image }}
 
     {# <img src="/assets/temp/faculty-1.jpg" alt="Alt Text" class="faculty-card__image"> #}
-    {% if content.field_title_has_value %}
+    {% if field_title_has_value %}
       <h2 class="faculty-card__name">
         {{ content.field_title }}
       </h2>
@@ -14,7 +14,7 @@
     {% if link is not empty %}
     </a>
   {% endif %}
-  {% if content.field_subtitle_has_value %}
+  {% if field_subtitle_has_value %}
     <span class="faculty-card__title">{{ content.field_subtitle }}
 
       {% if content.field_faculty_department|render %}

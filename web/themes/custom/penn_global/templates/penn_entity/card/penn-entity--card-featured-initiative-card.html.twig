@@ -1,13 +1,13 @@
 <article class="featured-initiative-card {{ content.field_fi_background_color }}">
   <div class="featured-initiative-card__wrap">
-    {% if content.field_subtitle_has_value %}
+    {% if field_subtitle_has_value %}
       <h3 class="featured-initiative-card__category">{{ content.field_subtitle }}</h3>
     {% endif %}
         
     {# Component can have a text title or an image as a title #}
     {# Don't show the h2 if there is neither text or image title #}
     {% set image_title = render_var(content.field_image_title) %}
-    {% if content.field_title_has_value or image_title is not empty %}
+    {% if field_title_has_value or image_title is not empty %}
     <h2 class="featured-initiative-card__title">
       {% set link = render_var(content.field_link) %}
 
@@ -27,13 +27,13 @@
     </h2>
     {% endif %}
 
-    {% if content.field_description_formatted_has_value %}    
+    {% if field_description_formatted_has_value %}    
       <div class="wysiwyg">
         {{ content.field_description_formatted }}    
       </div>
     {% endif %}
     {{ content.field_description }} {# this unformatted text field is deprecated #}
-    {{ content.section_header_class }}
+    {{ section_header_class }}
     {{ content.field_button_link }}
   </div>
 </article>

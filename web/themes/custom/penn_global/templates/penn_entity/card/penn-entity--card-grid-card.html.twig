@@ -1,6 +1,6 @@
 {% set has_link = content.field_link|render is not empty ? true : false %}
 <article class="grid-card  {# {{ content.field_grid_borders }} #}">
-  {% if has_link and content.field_image_has_value %}
+  {% if has_link and field_image_has_value %}
     <a href="{{ content.field_link }}" class="grid-card__image-link">
       {{ content.field_image }}
     </a>

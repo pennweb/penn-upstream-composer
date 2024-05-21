@@ -41,7 +41,7 @@ function penn_api_entity_preprocess_field(&$variables, $hook) {
         break;
     }
     foreach ($variables['items'] as $delta => &$item) {
-      $item['content']['#button_link_class'] = $button_link_class;
+      $item['button_link_class'] = $button_link_class;
     }
   }
 }
@@ -54,8 +54,10 @@ function penn_api_preprocess_penn_api_entity(&$vars) {
     $penn_api_entity = $vars['elements']['#penn_api_entity'];
     $bundle = $penn_api_entity->bundle();
 
-    //Expose the Entity object to the templates
-    $vars['content']['penn_api_entity'] = $penn_api_entity;
+    //Expose the Entity object and ID to the templates
+    // $vars['content']['penn_api_entity'] = $penn_api_entity;
+    $vars['penn_api_entity'] = $penn_api_entity;
+    $vars['penn_api_entity_id'] = $penn_api_entity->id();
 
     //Set a <field>_has_value booleans for certain fields
     //This is a helper to prevent having to render fields in twig templates when determing to hide/show
@@ -72,18 +74,18 @@ function penn_api_preprocess_penn_api_entity(&$vars) {
     ];
     foreach($fields as $field) {
       if($penn_api_entity->hasField($field) && !empty($penn_api_entity->get($field)->getString())) {
-        $vars['content'][$field . "_has_value"] = true;
+        $vars[$field . "_has_value"] = true;
       }
     }
 
     //Check if images are populated
     //Set a helper variable for twig 
     if($penn_api_entity->hasField('field_image')) {
-      $vars['content']['field_image_class'] = 'with-image';
-      $vars['content']['field_image_has_value'] = true;
+      $vars['field_image_class'] = 'with-image';
+      $vars['field_image_has_value'] = true;
       if($penn_api_entity->get('field_image')->isEmpty()) {
-        $vars['content']['field_image_has_value'] = false;
-        $vars['content']['field_image_class'] = 'without-image';
+        $vars['field_image_has_value'] = false;
+        $vars['field_image_class'] = 'without-image';
       }
     }    
 
@@ -102,7 +104,7 @@ function penn_api_preprocess_penn_api_entity(&$vars) {
           $section_header_class = 'section-header--dark';
           break;
       }
-      $vars['content']['section_header_class'] = $section_header_class;
+      $vars['section_header_class'] = $section_header_class;
     }    
 
     //Add an items array for entities with a feed_url field
@@ -113,7 +115,8 @@ function penn_api_preprocess_penn_api_entity(&$vars) {
         $items = penn_api_get($feed_url)['items'];
         $items = penn_api_preprocess_penn_api_feed($items);
       }
-      $vars['content']['items'] = $items;
+      // $vars['content']['items'] = $items;
+      $vars['penn_api_items'] = $items;
     }
     //Add a secondary_items array for entities with a secondary_feed_url field
     if($penn_api_entity->hasField('field_secondary_feed_url')) {
@@ -123,7 +126,8 @@ function penn_api_preprocess_penn_api_entity(&$vars) {
         $secondary_items = penn_api_get($secondary_feed_url)['items'];
         $secondary_items = penn_api_preprocess_penn_api_feed($secondary_items);
       }
-      $vars['content']['secondary_items'] = $secondary_items;
+      // $vars['content']['secondary_items'] = $secondary_items;
+      $vars['penn_api_secondary_items'] = $secondary_items;
     }
   }
 }

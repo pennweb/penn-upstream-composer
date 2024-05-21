@@ -1,6 +1,6 @@
-{% if content.items|length > 0 %}
+{% if penn_api_items|length > 0 %}
 
-<button type="button" class="accordion-toggle-tab" aria-controls="tabpanel-{{ content.penn_api_entity.id() }}">
+<button type="button" class="accordion-toggle-tab" aria-controls="tabpanel-{{ penn_api_entity_id }}">
   <span class="accordion-toggle-tab__icon" aria-hidden="true">
     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewbox="0 0 14 9">
       <g>
@@ -11,7 +11,7 @@
   <span class="accordion-toggle-tab_text">{{ content.field_filter_title.0 }}</span>
 </button>
 
-<section class="wikit-tab" role="tabpanel" id="tabpanel-{{ content.penn_api_entity.id() }}" aria-labelledby="tab-{{ content.penn_api_entity.id() }}" tabindex="-1">
+<section class="wikit-tab" role="tabpanel" id="tabpanel-{{ penn_api_entity_id }}" aria-labelledby="tab-{{ penn_api_entity_id }}" tabindex="-1">
 
   {# Tab content #}
   {# This is the only unique part to this tab item template. 
@@ -21,7 +21,7 @@
 
 
     <div class="card-slider"> <div data-slider="three-across-cards">
-            {% for item in content.items %}
+            {% for item in penn_api_items %}
 
       <article class="card card--small" style="display:none">
         <figure class="card__figure">

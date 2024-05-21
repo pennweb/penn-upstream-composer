@@ -1,12 +1,12 @@
 {# Add a class for video if source url is set #}
-{% if content.field_video_source_url_has_value %}
+{% if field_video_source_url_has_value %}
   {% set hero_homepage_video_class = 'hero-homepage-video' %}
 {% endif %}
 
 <section class="hero-homepage {{ content.field_hero_style}} {{ content.field_text_align }} {{ content.field_background_position }} {{ hero_homepage_video_class }}" data-hero="hero1">
   <div class="hero__shadows"></div>
   {# show video if source url field is set #}
-  {% if content.field_video_source_url_has_value %}
+  {% if field_video_source_url_has_value %}
     <div class="video">
       <div class="video-inline video-autoplay">
         <video loop muted playsinline autoplay="autoplay" class="video-inline__video ">

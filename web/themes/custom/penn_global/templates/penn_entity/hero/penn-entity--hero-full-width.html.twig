@@ -1,13 +1,13 @@
 {# Add a class for video if source url is set #}
-{% if content.field_video_source_url_has_value %}
+{% if field_video_source_url_has_value %}
   {% set hero_full_width_video_class = 'hero-full-width-video' %}
 {% endif %}
-{% set entity_id = content.penn_entity.id() %}
+{% set entity_id = penn_entity_id %}
 
 <section class="hero hero-full-width {{ content.field_hero_size }} {{ content.field_hero_size_small }} {{ content.field_hero_style}} {{ content.field_text_align }} {{ content.field_background_position }} {{ hero_full_width_video_class }}" data-hero="{{ entity_id }}">
   <div class="hero__shadows {{ content.field_opacity }}"></div>
   {# show video if source url field is set #}
-  {% if content.field_video_source_url_has_value %}
+  {% if field_video_source_url_has_value %}
     <div class="video">
       <div class="video-inline video-autoplay">
         <video loop muted playsinline autoplay="autoplay" class="video-inline__video ">
@@ -31,10 +31,10 @@
           {{ content.field_description_formatted }}
       {# Quote #}
     
-    {% if content.field_quote_formatted_has_value %}
+    {% if field_quote_formatted_has_value %}
     <blockquote>
       {{ content.field_quote_formatted }}
-      {% if content.field_quote_author_has_value %}
+      {% if field_quote_author_has_value %}
       <cite>{{ content.field_quote_author }}</cite>
       {% endif %}
     </blockquote>
@@ -52,7 +52,7 @@
     background-image: url({{ content.field_image }});
   }
   {# They can configure whether or not to show the mobile image #}
-  {% if not content.field_boolean_has_value %}
+  {% if not field_boolean_has_value %}
     @media(max-width:639px) {
       .hero[data-hero="{{ entity_id }}"] {
         background-image: url({{ content.field_image_mobile }});

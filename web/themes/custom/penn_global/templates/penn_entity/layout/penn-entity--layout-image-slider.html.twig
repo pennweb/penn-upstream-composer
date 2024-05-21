@@ -1,7 +1,7 @@
 <section class="{{ content.field_borders }} {{ content.field_margins }} {{ content.field_padding }} {{content.field_background_color }}">
   <div class="contain contain--sm">
-    {% if content.field_title_has_value or content.field_description_formatted_has_value %}
-      <header class="section-header section-header--centered {{ content.section_header_class }}">
+    {% if field_title_has_value or field_description_formatted_has_value %}
+      <header class="section-header section-header--centered {{ section_header_class }}">
         <h2 class="section-header__title">{{ content.field_title }}</h2>
         {{ content.field_description_formatted }}
       </header>

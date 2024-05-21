@@ -63,8 +63,9 @@ function penn_entity_preprocess_penn_entity(&$vars) {
     $penn_entity = $vars['elements']['#penn_entity'];
     $bundle = $penn_entity->bundle();
 
-    //Expose the Entity object to the templates
-    $vars['content']['penn_entity'] = $penn_entity;
+    //Expose the Entity object and ID to the templates
+    $vars['penn_entity'] = $penn_entity;
+    $vars['penn_entity_id'] = $penn_entity->id();
 
     //Set a <field>_has_value boolean for certain TEXT fields
     //This is a helper to prevent having to render fields in twig templates when determing to hide/show
@@ -88,7 +89,7 @@ function penn_entity_preprocess_penn_entity(&$vars) {
     ];
     foreach($fields as $field) {
       if($penn_entity->hasField($field) && !empty($penn_entity->get($field)->getString())) {
-        $vars['content'][$field . "_has_value"] = true;
+        $vars[$field . "_has_value"] = true;
       }
     }
 
@@ -99,20 +100,20 @@ function penn_entity_preprocess_penn_entity(&$vars) {
       if(empty($total) || !is_numeric($total) || $total <= 0) {
         $total = 1;
       }
-      $vars['content']['total'] = $total;
+      $vars['content']['total']['#markup'] = $total;
 
       //Sanitize the bar_scale. This is used as a multiplier.
       $bar_scale = $penn_entity->get('field_bar_scale')->getString();
       if(empty($bar_scale) || !is_numeric($bar_scale) || $bar_scale <= 0) {
         $bar_scale = 1;
       }
-      $vars['content']['bar_scale'] = $bar_scale;      
+      $vars['fact_bar_scale'] = $bar_scale;
     }
 
     //Add a 'left-aligned' boolean for facts layout
     if($bundle == 'layout_facts') {
       $field_facts_style = $penn_entity->get('field_facts_style')->getString();
-      $vars['content']['left_aligned'] = $field_facts_style == 'left' ? true : false;
+      $vars['fact_left_aligned'] = $field_facts_style == 'left' ? true : false;
     }
 
     //Set appropriate header classes for entities with background colors. 
@@ -128,33 +129,33 @@ function penn_entity_preprocess_penn_entity(&$vars) {
           $bg_dark = true;
           break;
       }
-      $vars['content']['section_header_class'] = $section_header_class;
-      $vars['content']['bg_dark'] = $bg_dark;
+      $vars['section_header_class'] = $section_header_class;
+      $vars['bg_dark'] = $bg_dark;
     }
 
     //Check if images are populated
     //Set a helper variable for twig 
     if($penn_entity->hasField('field_image')) {
-      $vars['content']['field_image_class'] = 'with-image';
-      $vars['content']['field_image_has_value'] = true;
+      $vars['field_image_class'] = 'with-image';
+      $vars['field_image_has_value'] = true;
       if($penn_entity->get('field_image')->isEmpty()) {
-        $vars['content']['field_image_has_value'] = false;
-        $vars['content']['field_image_class'] = 'without-image';
+        $vars['field_image_has_value'] = false;
+        $vars['field_image_class'] = 'without-image';
       }
     }
 
     //For Layout - View Embed, set up the args as strings
     if($penn_entity->hasField('field_view_name')) {
-      $vars['content']['view_name'] = $penn_entity->get('field_view_name')->getString();
+      $vars['view_name'] = $penn_entity->get('field_view_name')->getString();
     }    
     if($penn_entity->hasField('field_view_display_name')) {
-      $vars['content']['view_display_name'] = $penn_entity->get('field_view_display_name')->getString();
+      $vars['view_display_name'] = $penn_entity->get('field_view_display_name')->getString();
     }    
     
     //TODO: Image Slider Card: Pass along total slides/current slide count
     if($bundle == 'card_image_slider_card') {
-      $vars['content']['total_slides'] = '00';
-      $vars['content']['current_slide'] = '00';
+      $vars['total_slides'] = '00';
+      $vars['current_slide'] = '00';
     }
 
   }
@@ -173,7 +174,7 @@ function penn_entity_preprocess_field(&$variables, $hook) {
     $field_facts_style = $entity->get('field_facts_style')->getString();
     if($field_facts_style == 'left') {
       foreach ($variables['items'] as $delta => &$item) {
-        $item['content']['#align'] = 'facts__button--left';
+        $item['button_align'] = 'facts__button--left';
       }
     }
   }
@@ -193,7 +194,7 @@ function penn_entity_preprocess_field(&$variables, $hook) {
         break;
     }
     foreach ($variables['items'] as $delta => &$item) {
-      $item['content']['#button_link_class'] = $button_link_class;
+      $item['button_link_class'] = $button_link_class;
     }
   }
 }

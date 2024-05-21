@@ -1,6 +1,6 @@
 {# /search is built by the penn_search module #}
 {# This entity is for arbitrarily embedding a search box on a page #}
-{% set heading_class = content.field_title_has_value or content.field_description_formatted_has_value ? 'page-heading page-heading--center' : '' %}
+{% set heading_class = field_title_has_value or field_description_formatted_has_value ? 'page-heading page-heading--center' : '' %}
 <div class="layout--search {{ content.field_borders }} {{ content.field_background_color }}">
   <div class="wysiwyg contain {{ content.field_padding }} {{ heading_class }} "> 
     {{ content.field_title }}

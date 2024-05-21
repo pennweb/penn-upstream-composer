@@ -1,15 +1,15 @@
-{% if content.field_image_has_value %}
+{% if field_image_has_value %}
   {% set with_image_class = 'card__with-image' %}
 {% endif %}
 
 <article class="card {{ with_image_class }} {{ content.field_card_text_align }}">
-  {% if content.field_image_has_value %}
+  {% if field_image_has_value %}
     <figure class="card__figure">
       {{ content.field_image }}
     </figure>
   {% endif %}
   <div class="card__content">
-    {% if content.field_title_has_value %}
+    {% if field_title_has_value %}
       <h2 class="card__title">
         {% set link = render_var(content.field_link) %}
         {% if link is empty %}

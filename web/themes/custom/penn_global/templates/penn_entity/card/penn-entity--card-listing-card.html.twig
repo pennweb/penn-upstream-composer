@@ -1,9 +1,9 @@
 {% set has_link = content.field_link|render is not empty ? true : false %}
 
 {% set link_class = has_link ? 'with-link' : 'without-link' %}
-<article class="listing-card listing-card--large  listing-card--{{ link_class }} listing-card--{{ content.field_image_class }} {{ content.field_borders }} {{ content.field_margins }}">
+<article class="listing-card listing-card--large  listing-card--{{ link_class }} listing-card--{{ field_image_class }} {{ content.field_borders }} {{ content.field_margins }}">
 
-  {% if content.field_image_has_value %}
+  {% if field_image_has_value %}
     <figure class="listing-card__figure">
     {% if has_link %}
       <a href="{{ content.field_link }}" class="list-card__figure__link">

@@ -1,7 +1,7 @@
 {# "#align" see penn_entity_preprocess_field #}
 
 {% for item in items %}
-  <div class="facts__button {{ item.content['#align'] }}">
+  <div class="facts__button {{ item.button_align }}">
     <a href="{{ item.content['#url'] }}" class="btn btn--outline">{{ item.content['#title'] }}</a>
   </div>
 {% endfor %}

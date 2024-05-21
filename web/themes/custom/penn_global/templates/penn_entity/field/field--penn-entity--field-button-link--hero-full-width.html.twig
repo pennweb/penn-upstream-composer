@@ -2,6 +2,6 @@
 {% for item in items %}
   <div class="hero-full-width__button-link">
 
-  <a href="{{ item.content['#url'] }}" class="btn btn--outline-white {{ item.content['#button_link_class']}}">{{ item.content['#title'] }}</a>
+  <a href="{{ item.content['#url'] }}" class="btn btn--outline-white {{ item.button_link_class}}">{{ item.content['#title'] }}</a>
   </div>
 {% endfor %}

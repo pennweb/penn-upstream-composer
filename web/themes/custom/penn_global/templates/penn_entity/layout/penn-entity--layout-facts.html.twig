@@ -1,10 +1,10 @@
-{# content.left_aligned, content.field_title_has_value: see penn_entity_preprocess_penn_entity #}
-{% set facts__25 = content.left_aligned ? 'facts--25' : '' %}
-{% set __small = content.left_aligned ? '--small' : '' %}
+{# fact_left_aligned, field_title_has_value: see penn_entity_preprocess_penn_entity #}
+{% set facts__25 = fact_left_aligned ? 'facts--25' : '' %}
+{% set __small = fact_left_aligned ? '--small' : '' %}
 
 <section class="facts {{ facts__25 }} {{ content.field_borders }}">
   <div class="contain">
-    {% if content.field_title_has_value %}
+    {% if field_title_has_value %}
       <header class="section-header section-header--centered{{ __small }}">
         <h2 class="section-header__title">{{ content.field_title }}</h2>
       </header>

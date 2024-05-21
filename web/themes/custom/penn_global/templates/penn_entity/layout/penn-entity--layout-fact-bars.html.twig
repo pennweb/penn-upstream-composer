@@ -14,7 +14,7 @@
 
     {# iterate through the "fact bar item" references and print the bar graph #}
     {% if (overall_total > 0 ) %}
-      {% set bar_scale = content.bar_scale %}
+      {% set bar_scale = fact_bar_scale %}
       {% for item in content.field_penn_entity_reference['#items'] %}
         <div class="fact-bar">
           <p class="fact-bar__fact">

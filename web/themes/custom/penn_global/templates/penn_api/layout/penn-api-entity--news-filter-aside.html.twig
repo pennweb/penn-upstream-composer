@@ -1,11 +1,11 @@
 {% if content.field_filter_page['#items']|length > 0 %}
 <section class="content-aside content-aside--divide">
 	<div class="contain {{ content.field_margins }}">
-    {% if content.field_title_has_value %}
+    {% if field_title_has_value %}
     <header class="section-header section-header--w-filter">
       <h2 class="section-header__title">{{content.field_title}}</h2>
       {# show the filter if a filter title is given #}
-      {% if content.field_filter_title_has_value %}
+      {% if field_filter_title_has_value %}
         <div class="filter">
           <button type="button" class="filter__toggle">
             <span class="filter__toggle__text">{{content.field_filter_title}}</span>

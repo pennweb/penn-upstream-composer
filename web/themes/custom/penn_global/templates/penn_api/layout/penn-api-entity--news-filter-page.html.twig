@@ -1,11 +1,11 @@
 
-{% if content.items|length > 0 %}
+{% if penn_api_items|length > 0 %}
 
 {% set active = ("On" in content.field_active.0) ? ' filter-section--active filter-section--showing' : '' %}
 
 {% set filter_title = content.field_filter_title %}
-<div id="nf-{{ content.penn_api_entity.id() }}" class="filter-section{{active}}" aria-labelledby="filter-nf-{{ content.penn_api_entity.id() }}">
-  {% if content.field_title_has_value %}
+<div id="nf-{{ penn_api_entity_id }}" class="filter-section{{active}}" aria-labelledby="filter-nf-{{ penn_api_entity_id }}">
+  {% if field_title_has_value %}
     <header class="section-header">
       <h2 class="section-header__title">{{ content.field_title }}</h2>
     </header>
@@ -14,7 +14,7 @@
   <div class="news-featured__grid">
 
     <div class="news-featured__articles news-featured__articles--full">
-    {% for item in content.items %}
+    {% for item in penn_api_items %}
       <article class="article-card">
         <picture class="article-card__figure">
           <source srcset="{{item.image}}" media="(min-width: 768px)">

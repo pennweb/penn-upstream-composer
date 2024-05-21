@@ -1,12 +1,12 @@
 {% set has_subtitle_link = content.field_subtitle_link|render is not empty ? true : false %}
 {% set has_link = content.field_link|render is not empty ? true : false %}
 {% set link_class = has_link ? 'with-link' : 'without-link' %}
-{% set decorative_borders_class = content.field_boolean_has_value ? 'article-card--without-borders' : 'article-card--with-borders' %}
+{% set decorative_borders_class = field_boolean_has_value ? 'article-card--without-borders' : 'article-card--with-borders' %}
 <div class="article-card-hero">
   <div class="contain">
     <article class="article-card article-card--featured article-card--full {{ decorative_borders_class }} article-card--{{ link_class }}">
       {# show video or image #}
-      {% if content.field_video_source_url_has_value %}
+      {% if field_video_source_url_has_value %}
         <div class="article-card__figure">
           <div class="video-inline video-autoplay">
             <video loop muted playsinline autoplay="autoplay" class="video-inline__video">

@@ -1,15 +1,15 @@
-{% if content.items|length > 0 %}
+{% if penn_api_items|length > 0 %}
 
   {% set active = ("On" in content.field_active.0) ? ' filter-section--active filter-section--showing' : '' %}
 
   {% set filter_title = content.field_filter_title %}
-  <div id="nf-{{ content.penn_api_entity.id() }}" class="filter-section{{active}}" aria-labelledby="filter--{{ content.penn_api_entity.id() }}">
+  <div id="nf-{{ penn_api_entity_id }}" class="filter-section{{active}}" aria-labelledby="filter--{{ penn_api_entity_id }}">
 
   <div class="contain content-aside__flex news-featured__grid">
     <div class="content-aside__content">
 
       <div class="listing-cards">
-        {% for item in content.items %}
+        {% for item in penn_api_items %}
         <article class="listing-card">
           <figure class="listing-card__figure">
             <a href="{{ item.url }}" class="list-card__figure__link">
@@ -24,7 +24,7 @@
             </h3>
             <p>{{ item.dek is empty ? item.summary : item.dek }}</p>
             <div class="listing-card__info">
-              {% if content.field_show_tags_has_value %}
+              {% if field_show_tags_has_value %}
                 {# print the topics #}
                 {% for topic in item.topic %}
                   <a href="{{topic.url}}" class="listing-card__category">{{ topic.name }},</a>
@@ -49,13 +49,13 @@
     <div class="content-aside__divide"></div>
 
     <div class="content-aside__aside">
-      {% if content.field_secondary_feed_title_has_value %}
+      {% if field_secondary_feed_title_has_value %}
         <div class="section-header">
           <h2 class="section-header__title section-header__title--small">{{content.field_secondary_feed_title}}</h2>
         </div>
       {% endif %}
       <div class="listing-cards">
-          {% for item in content.secondary_items %}
+          {% for item in penn_api_secondary_items %}
 
         <article class="listing-card listing-card--column">
           <div class="listing-card__detail">
