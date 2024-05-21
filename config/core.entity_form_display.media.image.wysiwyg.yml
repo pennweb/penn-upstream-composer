@@ -38,7 +38,7 @@ content:
       open: false
       selection_mode: selection_append
       view_mode: default
-      preview_image_style: large
+      preview_image_style: thumbnail
     third_party_settings: {  }
   name:
     type: string_textfield
