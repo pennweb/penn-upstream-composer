@@ -1,65 +1,174 @@
-uuid: 6dd2f1a8-b053-4687-afcc-700452c710a3
+uuid: 47c62fde-b626-4ac3-b999-d6038ce1799e
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.wysiwyg
   module:
-    - ckeditor
+    - ckeditor5
 format: wysiwyg
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - JustifyLeft
-            - JustifyCenter
-            - JustifyRight
-            - Format
-        -
-          name: Styles
-          items:
-            - Styles
-        -
-          name: Quote
-          items:
-            - Blockquote
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Table
-          items:
-            - Table
-        -
-          name: Media
-          items:
-            - media_entity_embed
-        -
-          name: 'Penn Entity'
-          items:
-            - penn_api
-            - penn_entity
-        -
-          name: Tools
-          items:
-            - Source
-            - Maximize
+    items:
+      - bold
+      - italic
+      - alignment
+      - heading
+      - '|'
+      - style
+      - removeFormat
+      - '|'
+      - blockQuote
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - insertTable
+      - '|'
+      - sourceEditing
+      - '|'
+      - penn_api
+      - media_entity_embed
+      - penn_entity
+      - '|'
   plugins:
-    stylescombo:
-      styles: "h1.plain|h1 no underline\r\nh1.text--margins--none|h1 no margins\r\nh1.plain.text--margins--none|h1 no underline, no margins\r\nh2.plain|h2 no underline\r\nh2.text--margins--none|h2 no margins\r\nh2.plain.text--margins--none|h2 no underline, no margins\r\nh3.text--margins--none|h3 no margins\r\nh4.text--margins--none|h4 no margins\r\nh5.text--margins--none|h5 no margins\r\nh6.text--margins--none|h6 no margins\r\nh3.subtitle|h3 subtitle\r\np.featured|Paragraph Featured\r\np.large|Paragraph Large\r\np.intro|Paragraph Intro\r\np.text--margins--none|Paragraph no margins\r\na.btn|Button (Blue, for light background)\r\na.btn.btn--secondary|Button (Red, for light backgrounds)\r\na.btn.btn--outline|Button (Outlined, Blue Hover, for light backgrounds)\r\na.btn.btn--outline-secondary|Button (Outlined, Red Hover, for light backgrounds)\r\na.btn.btn--outline-white|Button (Outlined, White Hover/Blue Text, for dark backgrounds)\r\na.btn.btn--outline-white-secondary|Button (Outlined, White Hover/Red Text, for dark backgrounds)\r\na.cta|Link (CTA)\r\na.cta.cta--arrow|Link (CTA with arrow)\r\nblockquote.text-cta__quote|CTA Blockquote\r\nul.list-blue|Blue List\r\nul.list-red|Red List\r\nspan.text--blue|Blue Text\r\nspan.text--red|Red Text\r\nspan.text--black|Black Text\r\nspan.text--white|White Text\r\nspan.text--light-gray|Light Gray Text\r\nspan.text--dark-gray|Dark Gray Text\r\nspan.text--light-blue|Light Blue Text\r\nspan.text--yellow|Yellow Text\r\nspan.text--sans-serif|Sans Serif Text\r\nspan.text--serif|Serif Text\r\nspan.text--x-large|X-Large Text"
+    ckeditor5_heading:
+      enabled_headings:
+        - heading1
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_style:
+      styles:
+        -
+          label: 'h1 no underline'
+          element: '<h1 class="plain">'
+        -
+          label: 'h1 no margins'
+          element: '<h1 class="text--margins--none">'
+        -
+          label: 'h1 no underline, no margins'
+          element: '<h1 class="plain text--margins--none">'
+        -
+          label: 'h2 no underline'
+          element: '<h2 class="plain">'
+        -
+          label: 'h2 no margins'
+          element: '<h2 class="text--margins--none">'
+        -
+          label: 'h2 no underline, no margins'
+          element: '<h2 class="plain text--margins--none">'
+        -
+          label: 'h3 no margins'
+          element: '<h3 class="text--margins--none">'
+        -
+          label: 'h4 no margins'
+          element: '<h4 class="text--margins--none">'
+        -
+          label: 'h5 no margins'
+          element: '<h5 class="text--margins--none">'
+        -
+          label: 'h6 no margins'
+          element: '<h6 class="text--margins--none">'
+        -
+          label: 'h3 subtitle'
+          element: '<h3 class="subtitle">'
+        -
+          label: 'Paragraph Featured'
+          element: '<p class="featured">'
+        -
+          label: 'Paragraph Large'
+          element: '<p class="large">'
+        -
+          label: 'Paragraph Intro'
+          element: '<p class="intro">'
+        -
+          label: 'Paragraph no margins'
+          element: '<p class="text--margins--none">'
+        -
+          label: 'Button (Solid Blue)'
+          element: '<a class="btn">'
+        -
+          label: 'Button (Solid Red)'
+          element: '<a class="btn btn--secondary">'
+        -
+          label: 'Button (Outline, Solid Blue Hover)'
+          element: '<a class="btn btn--outline">'
+        -
+          label: 'Button (Outline, Solid Red Hover)'
+          element: '<a class="btn btn--outline-secondary">'
+        -
+          label: 'Button (Outline, Blue Text)'
+          element: '<a class="btn btn--outline-white">'
+        -
+          label: 'Button (Outline, Red Text)'
+          element: '<a class="btn btn--outline-white-secondary">'
+        -
+          label: 'Link (CTA)'
+          element: '<a class="cta">'
+        -
+          label: 'Link (CTA with arrow)'
+          element: '<a class="cta cta--arrow">'
+        -
+          label: 'CTA Blockquote'
+          element: '<blockquote class="text-cta__quote">'
+        -
+          label: 'List - Blue Bullets'
+          element: '<ul class="list-blue">'
+        -
+          label: 'List - Red Bullets'
+          element: '<ul class="list-red">'
+        -
+          label: 'Blue Text'
+          element: '<span class="text--blue">'
+        -
+          label: 'Red Text'
+          element: '<span class="text--red">'
+        -
+          label: 'Black Text'
+          element: '<span class="text--black">'
+        -
+          label: 'White Text'
+          element: '<span class="text--white">'
+        -
+          label: 'Light Gray Text'
+          element: '<span class="text--light-gray">'
+        -
+          label: 'Dark Gray Text'
+          element: '<span class="text--dark-gray">'
+        -
+          label: 'Light Blue Text'
+          element: '<span class="text--light-blue">'
+        -
+          label: 'Yellow Text'
+          element: '<span class="text--yellow">'
+        -
+          label: 'Sans Serif Text'
+          element: '<span class="text--sans-serif">'
+        -
+          label: 'Serif Text'
+          element: '<span class="text--serif">'
+        -
+          label: 'X-Large Text'
+          element: '<span class="text--x-large">'
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<span class>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_alignment:
+      enabled_alignments:
+        - left
+        - center
+        - right
+    media_media:
+      allow_view_mode_override: false
 image_upload:
   status: false
   scheme: public
