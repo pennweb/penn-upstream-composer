@@ -14,7 +14,7 @@ field_name: body
 entity_type: node
 bundle: page
 label: Body
-description: "Manage entities by double clicking on them in the wysiwyg, or from the <a href=\"http://penn-flagship-ci.lndo.site/admin/structure/penn-entity-management\">Penn Entity Management</a> page.\r\n"
+description: "The body is where you embed Penn Entities to build out the page. Embed entities by clicking on the Penn Entity \"E\" icon. <a href=\"/admin/content/add-entity\">Click here to create a new Penn Entity</a>. Manage existing entities by clicking on them in the wysiwyg and choosing edit, or from the <a href=\"/admin/structure/penn-entity-management\">Penn Entity Management</a> page.\r\n"
 required: false
 translatable: true
 default_value: {  }
