@@ -1467,7 +1467,7 @@ hr {
   padding-left: 18px;
 }
 
-.wysiwyg ul li::before:not(.ck-list__item) {
+.wysiwyg ul li::before {
   content: '';
   display: block;
   position: absolute;
@@ -1492,7 +1492,11 @@ hr {
   counter-reset: section;
 }
 
-.wysiwyg ol li::before {
+/* Anything ordered list that is .ck-list-bogus-paragraph::before */
+/* was changed from li::before to li .ck-list-bogus-paragraph::before */
+/* To make ordered lists appear correctly in the wysiwyg */
+
+.wysiwyg ol li .ck-list-bogus-paragraph::before {
   counter-increment: section;
   content: counter(section) ". ";
   color: #990000;
@@ -1500,16 +1504,16 @@ hr {
   font-weight: 500;
 }
 
-.wysiwyg.bg-blue ol li::before,
-.wysiwyg.bg-red ol li::before {
+.wysiwyg.bg-blue ol li .ck-list-bogus-paragraph::before,
+.wysiwyg.bg-red ol li .ck-list-bogus-paragraph::before {
   color: #FFF;
 }
 
-.wysiwyg ol li li::before {
+.wysiwyg ol li li .ck-list-bogus-paragraph::before {
   font-size: 17px;
 }
 
-.wysiwyg ol.list-blue li::before {
+.wysiwyg ol.list-blue li .ck-list-bogus-paragraph::before {
   color: #011F5B;
 }
 

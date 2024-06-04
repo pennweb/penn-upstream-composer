@@ -53,6 +53,11 @@ ol, ul {
   background: inherit !important;
 }
 
+/* Set the default height on the textarea */
+.ck-editor__main>.ck-editor__editable {
+  min-height: 200px;
+}
+
 ck-content ol, ck-content ul {
   margin-top: 16px !important;
 }
@@ -99,4 +104,14 @@ ck-content ol, ck-content ul {
 
 .ck-content .video-inline__video {
   width: 100%;
+}
+
+/* Fix floated images in wysiwyg not being editable */
+/* float left */
+.drupal-entity.ck-widget:has([data-drupal-entity-preview="ready"]>figure.align-left) {
+  float: left;
+}
+/* float right */
+.drupal-entity.ck-widget:has([data-drupal-entity-preview="ready"]>figure.align-right) {
+  float: right;
 }
