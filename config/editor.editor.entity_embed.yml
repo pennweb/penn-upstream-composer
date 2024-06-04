@@ -1,54 +1,27 @@
-uuid: 12eaf065-231b-4d05-9740-9993b4707678
+uuid: 9d0a3bfd-1ca8-44d6-a4c0-7afacd76b74e
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.entity_embed
   module:
-    - ckeditor
+    - ckeditor5
 format: entity_embed
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Format
-            - Styles
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - media_entity_embed
-        -
-          name: 'Penn API Entity'
-          items:
-            - penn_api
-        -
-          name: 'Penn Entity'
-          items:
-            - penn_entity
-        -
-          name: Tools
-          items:
-            - Source
-            - Maximize
+    items:
+      - '|'
+      - link
+      - sourceEditing
+      - '|'
+      - penn_api
+      - penn_entity
   plugins:
-    stylescombo:
-      styles: "p.featured|Paragraph Featured\r\np.large|Paragraph Large\r\np.intro|Paragraph Intro\r\na.btn.btn--outline|Button (Outline)\r\na.btn.btn--outline-white|Button Outline (White)\r\na.btn|Button (Blue)\r\na.btn.btn--secondary|Button (Red)\r\na.cta|Link (CTA)\r\na.cta.cta--arrow|Link (CTA with arrow)\r\nblockquote.text-cta__quote|CTA Blockquote\r\nul.list-blue|Blue List\r\nul.list-red|Red List"
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    media_media:
+      allow_view_mode_override: false
 image_upload:
   status: false
   scheme: public

@@ -22,7 +22,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <em> <strong> <cite> <blockquote cite class="text-cta__quote"> <code> <ul class type> <ol start type> <li class> <dl> <dt> <dd> <h2 class id> <h3 class id> <h4 id> <h5 id> <h6 id> <a href hreflang class="btn btn--outline btn--outline-white btn--secondary cta cta--arrow a-to-z__link"> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p class="featured large intro"> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <div class data-letter> <section class><drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-langcode alt title>'
+      allowed_html: '<br> <p> <a href> <drupal-media data-entity-type data-entity-uuid alt> <drupal-entity alt title data-align data-caption data-entity-embed-display data-entity-embed-display-settings data-view-mode data-entity-uuid data-langcode data-embed-button="media_entity_embed node penn_api penn_entity" data-entity-type="media node penn_api_entity penn_entity">'
       filter_html_help: true
       filter_html_nofollow: false
   media_embed:

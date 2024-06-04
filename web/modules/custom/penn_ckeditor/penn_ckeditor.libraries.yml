@@ -4,10 +4,20 @@ penn_ckeditor:
     layout:
       css/penn-global-ckeditor.css: {}
 
-textarea_bgcolor:
+penn_ckeditor-change-bgcolor:
   version: 1.x
   js:
-    js/textarea-bgcolor.js: {}
+    js/penn_ckeditor-change-bgcolor.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+penn_ckeditor_add_wysiwyg_class:
+  version: 1.x
+  js:
+    js/penn_ckeditor-add-wysiwyg-class.js: {}
   dependencies:
     - core/jquery
     - core/drupal

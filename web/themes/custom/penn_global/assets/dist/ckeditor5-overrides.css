@@ -1,0 +1,102 @@
+/*
+ * This files is for further overrides of ckeditor 5
+ * that extend beyond the other stylesheets (which is a mirror of site.css)
+ * It is intended to fix styles in the wysiwyg and the ckeditor interface.
+ */
+
+ /* Remove this after developing. This makes it so we can dev inspect the html of entities in the editor*/
+ .ck .drupal-entity [data-drupal-entity-preview] {
+  /* pointer-events:all!important; */
+}
+
+:root {
+  /* --ck-color-base-background: white!important; */
+  /* --ck-color-toolbar-background:  white!important; */
+  /* font-size: 62.5%; */
+}
+
+ /* .ck-content body.modal-open {
+   overflow-y: hidden;
+ } */
+
+/* Various fixes for Claro and CKEditor breaking our code */
+
+li::marker {
+  /* content: ""; */
+}
+
+.ck-content li span.ck-list-bogus-paragraph { 
+  /* display: contents !important;  */
+}
+
+ol, ul {
+  margin-inline: inherit !important;
+}
+
+ .ck-content .card {
+  border: none;
+  border-radius: none;
+ }
+
+.ck-content h2 {
+  margin-top: 38px !important;
+  margin-bottom: 38px !important;
+}
+
+.ck-content h4 {
+  margin-top: 32px !important;
+}
+
+
+/* Stop ckeditor background color from overriding ours */
+.ck.ck-editor__main>.ck-editor__editable {
+  background: inherit !important;
+}
+
+ck-content ol, ck-content ul {
+  margin-top: 16px !important;
+}
+
+/* Fixes background colored item margins not looking right in the editor */
+.drupal-entity:has(.bg-color) + .drupal-entity .bg-color.wysiwyg-container {
+  margin-top: -50px !important;
+}
+
+@media (min-width: 1024px) {
+  .drupal-entity:has(.bg-color) + .drupal-entity .bg-color.wysiwyg-container {
+    margin-top: -80px !important;
+  }
+}
+
+/* Overrides for the Styles drop down in the editor */
+.ck.ck-style-panel .ck-style-grid .ck-style-grid__button {
+  height: var(--ck-style-panel-button-height);
+  height: 70px !important;
+  width: 180px !important;
+}
+
+.ck-style-grid__button__preview span.text--white {
+  background: #011F5B;
+}
+.ck-style-grid__button__preview span.text--light-gray {
+  background: #011F5B;
+}
+
+ /* This controls padding on the right and left of the editor */
+ .ck.ck-editor__editable_inline {
+  padding: 0 !important;
+}
+
+/* This makes the entity embed image dialog look better. Remove if it breaks something else */
+.entities-list td {
+  height: auto;
+}
+
+.ck-content figcaption {
+  text-align: left;
+  max-width: 500px;
+}
+
+.ck-content .video-inline__video {
+  width: 100%;
+}

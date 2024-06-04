@@ -5,7 +5,6 @@ dependencies:
   module:
     - editor
     - entity_embed
-    - media
 _core:
   default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
 name: 'Basic HTML'
@@ -18,7 +17,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <br> <img src alt data-entity-type data-entity-uuid data-align data-caption width height> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-langcode alt title> <p class="featured large"> <h1> <pre> <span class="derp"> <a href hreflang class=" btn btn--outline btn--outline-white btn--secondary cta cta--arrow"> <div class="wysiwyg">'
+      allowed_html: '<br> <p> <h1> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <span class="derp"> <div class="wysiwyg"> <blockquote cite> <ul type> <ol type start> <drupal-entity data-entity-type data-embed-button alt title data-align data-caption data-entity-embed-display data-entity-embed-display-settings data-view-mode data-entity-uuid data-langcode> <a hreflang href> <strong> <em> <code class="language-*"> <pre> <li>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:

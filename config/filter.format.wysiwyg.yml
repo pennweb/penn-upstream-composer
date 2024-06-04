@@ -2,6 +2,11 @@ uuid: 077d70a0-e11f-41f2-a93b-af48884d5437
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.align_center
+    - core.entity_view_mode.media.wysiwyg_align_left
+    - core.entity_view_mode.media.wysiwyg_align_right
+    - core.entity_view_mode.media.wysiwyg_default
   module:
     - entity_embed
     - media
@@ -15,7 +20,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <em> <strong> <cite> <blockquote cite class="text-cta__quote"> <code> <ul type class> <ol start type> <li class> <dl> <dt> <dd> <h1 id class> <h2 id class> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <div data-letter class> <section class> <span id class> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-langcode alt title> <p class="featured large intro text-align-left text-align-center text-align-right featured large intro text--margins--none featured large intro span text--margins--none"> <a href hreflang class="btn btn--outline btn--outline-white btn--secondary cta cta--arrow a-to-z__link btn btn--outline btn btn--outline-white btn--outline-secondary btn btn btn--secondary cta cta cta--arrow btn btn--outline btn btn--outline-white btn btn--outline-white-secondary btn btn btn--secondary cta cta cta--arrow">'
+      allowed_html: '<br> <p class="featured large intro text--margins--none text-align-left text-align-center text-align-right"> <h1 class="plain text--margins--none text-align-left text-align-center text-align-right"> <h2 class="plain text--margins--none text-align-left text-align-center text-align-right"> <h3 class="text--margins--none subtitle text-align-left text-align-center text-align-right"> <h4 class="text--margins--none text-align-left text-align-center text-align-right"> <h5 class="text--margins--none text-align-left text-align-center text-align-right"> <h6 class="text--margins--none text-align-left text-align-center text-align-right"> <a class="btn btn--secondary btn--outline btn--outline-secondary btn--outline-white btn--outline-white-secondary cta cta--arrow" href> <blockquote class="text-cta__quote"> <ul class="list-blue list-red"> <span class> <strong> <em> <ol start> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <drupal-media data-entity-type data-entity-uuid alt> <drupal-entity alt title data-align data-caption data-entity-embed-display data-entity-embed-display-settings data-view-mode data-entity-uuid data-langcode data-embed-button="media_entity_embed node penn_api penn_entity" data-entity-type="media node penn_api_entity penn_entity">'
       filter_html_help: true
       filter_html_nofollow: false
   media_embed:
@@ -25,7 +30,11 @@ filters:
     weight: 100
     settings:
       default_view_mode: default
-      allowed_view_modes: {  }
+      allowed_view_modes:
+        align_center: align_center
+        wysiwyg_align_left: wysiwyg_align_left
+        wysiwyg_align_right: wysiwyg_align_right
+        wysiwyg_default: wysiwyg_default
       allowed_media_types:
         image: image
   entity_embed:

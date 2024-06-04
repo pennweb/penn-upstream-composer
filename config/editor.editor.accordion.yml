@@ -1,51 +1,79 @@
-uuid: e757f72d-56bd-4201-ad7b-3b1f3cf81885
+uuid: adff9672-a19f-4e7a-9667-dc3cd37bf052
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.accordion
   module:
-    - ckeditor
+    - ckeditor5
 format: accordion
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Format
-            - Styles
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-        -
-          name: Tools
-          items:
-            - Source
+    items:
+      - bold
+      - italic
+      - heading
+      - style
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalInsertImage
+      - '|'
+      - sourceEditing
+      - '|'
+      - code
+      - insertTable
   plugins:
-    stylescombo:
-      styles: 'a.btn.btn--outline-white|Button Link (Outline White)'
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Button Link (Outline White)'
+          element: '<a class="btn btn--outline-white">'
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<div data-letter class>'
+        - '<blockquote cite class="text-cta__quote">'
+        - '<ul type class>'
+        - '<ol type>'
+        - '<li class>'
+        - '<h2 id>'
+        - '<h3 id class>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+        - '<a hreflang class="btn--outline btn--secondary cta cta--arrow a-to-z__link">'
+        - '<img data-entity-type data-entity-uuid data-align data-caption>'
+        - '<p class="featured large intro">'
+        - '<drupal-media data-align data-caption title>'
+        - '<drupal-entity data-entity-type data-embed-button>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_imageResize:
+      allow_resize: true
+    media_media:
+      allow_view_mode_override: false
 image_upload:
   status: false
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0
