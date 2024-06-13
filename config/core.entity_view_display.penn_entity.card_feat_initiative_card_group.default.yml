@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.field.penn_entity.card_feat_initiative_card_group.field_penn_entity_reference
     - penn_entity.penn_entity_type.card_feat_initiative_card_group
-  module:
-    - fences
 id: penn_entity.card_feat_initiative_card_group.default
 targetEntityType: penn_entity
 bundle: card_feat_initiative_card_group
@@ -18,14 +16,7 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:

@@ -9,7 +9,6 @@ dependencies:
     - field.field.penn_api_entity.static_sidebar.field_link
     - penn_api_entity.penn_api_entity_type.static_sidebar
   module:
-    - fences
     - link
     - text
 id: penn_api_entity.static_sidebar.default
@@ -26,14 +25,7 @@ content:
       url_plain: false
       rel: '0'
       target: '0'
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 1
     region: content
   field_description_formatted:
@@ -49,14 +41,7 @@ content:
     settings:
       view_mode: card_3x2
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 5
     region: content
   field_link:
@@ -68,14 +53,7 @@ content:
       url_plain: false
       rel: '0'
       target: '0'
-    third_party_settings:
-      fences:
-        fences_field_tag: div
-        fences_field_classes: ''
-        fences_field_item_tag: div
-        fences_field_item_classes: ''
-        fences_label_tag: div
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 2
     region: content
   name:

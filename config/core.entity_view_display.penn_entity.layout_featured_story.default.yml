@@ -10,7 +10,6 @@ dependencies:
     - field.field.penn_entity.layout_featured_story.field_image_mobile
     - penn_entity.penn_entity_type.layout_featured_story
   module:
-    - fences
     - options
 id: penn_entity.layout_featured_story.default
 targetEntityType: penn_entity
@@ -37,14 +36,7 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: div
-        fences_field_classes: ''
-        fences_field_item_tag: div
-        fences_field_item_classes: ''
-        fences_label_tag: div
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -1
     region: content
   field_image:
@@ -53,14 +45,7 @@ content:
     settings:
       view_mode: featured_story
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -3
     region: content
   field_image_mobile:
@@ -69,14 +54,7 @@ content:
     settings:
       view_mode: featured_story_mobile
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -2
     region: content
   name:

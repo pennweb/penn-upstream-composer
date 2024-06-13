@@ -13,7 +13,6 @@ dependencies:
     - field.field.penn_entity.layout_content_spotlight.field_video_source_url
     - penn_entity.penn_entity_type.layout_content_spotlight
   module:
-    - fences
     - link
     - options
     - text
@@ -61,14 +60,7 @@ content:
     settings:
       view_mode: card_3x2
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 4
     region: content
   field_subtitle:

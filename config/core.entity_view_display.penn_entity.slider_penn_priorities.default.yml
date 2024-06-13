@@ -7,8 +7,6 @@ dependencies:
     - field.field.penn_entity.slider_penn_priorities.field_penn_entity_reference
     - field.field.penn_entity.slider_penn_priorities.field_title
     - penn_entity.penn_entity_type.slider_penn_priorities
-  module:
-    - fences
 id: penn_entity.slider_penn_priorities.default
 targetEntityType: penn_entity
 bundle: slider_penn_priorities
@@ -18,14 +16,7 @@ content:
     type: basic_string
     label: hidden
     settings: {  }
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 2
     region: content
   field_penn_entity_reference:
@@ -34,14 +25,7 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 3
     region: content
   field_title:
@@ -49,14 +33,7 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 1
     region: content
   name:

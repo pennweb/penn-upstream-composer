@@ -11,7 +11,6 @@ dependencies:
     - field.field.penn_entity.layout_quote_overlay.field_quote_background_color
     - penn_entity.penn_entity_type.layout_quote_overlay
   module:
-    - fences
     - options
 id: penn_entity.layout_quote_overlay.default
 targetEntityType: penn_entity
@@ -31,14 +30,7 @@ content:
     settings:
       view_mode: quote_overlay
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: div
-        fences_field_classes: ''
-        fences_field_item_tag: div
-        fences_field_item_classes: ''
-        fences_label_tag: div
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 2
     region: content
   field_padding:

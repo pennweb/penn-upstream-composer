@@ -28,7 +28,6 @@ module:
   entity_reference_revisions: 1
   entity_usage: 1
   externalauth: 1
-  fences: 1
   field: 1
   field_hidden: 1
   field_ui: 1

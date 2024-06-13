@@ -8,7 +8,6 @@ dependencies:
     - field.field.penn_entity.layout_event_cards.field_title
     - penn_entity.penn_entity_type.layout_event_cards
   module:
-    - fences
     - link
 id: penn_entity.layout_event_cards.default
 targetEntityType: penn_entity
@@ -33,14 +32,7 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: div
-        fences_field_classes: ''
-        fences_field_item_tag: div
-        fences_field_item_classes: ''
-        fences_label_tag: div
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -3
     region: content
   field_title:

@@ -15,7 +15,6 @@ dependencies:
     - field.field.penn_entity.hero_homepage.field_video_source_url
     - penn_entity.penn_entity_type.hero_homepage
   module:
-    - fences
     - link
     - options
 id: penn_entity.hero_homepage.default
@@ -34,14 +33,7 @@ content:
     type: basic_string
     label: hidden
     settings: {  }
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -2
     region: content
   field_hero_style:
@@ -57,14 +49,7 @@ content:
     settings:
       view_mode: hero_homepage
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 0
     region: content
   field_image_mobile:
@@ -73,14 +58,7 @@ content:
     settings:
       view_mode: hero_homepage_mobile
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 1
     region: content
   field_link:
@@ -92,14 +70,7 @@ content:
       url_plain: true
       rel: '0'
       target: '0'
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 2
     region: content
   field_subtitle:
@@ -107,14 +78,7 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -1
     region: content
   field_text_align:
@@ -129,14 +93,7 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -3
     region: content
   field_video_source_url:
@@ -152,14 +109,7 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -4
     region: content
 hidden: {  }

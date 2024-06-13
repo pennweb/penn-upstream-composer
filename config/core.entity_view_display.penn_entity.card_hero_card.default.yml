@@ -11,7 +11,6 @@ dependencies:
     - field.field.penn_entity.card_hero_card.field_opacity
     - penn_entity.penn_entity_type.card_hero_card
   module:
-    - fences
     - link
     - options
     - text
@@ -40,14 +39,7 @@ content:
     settings:
       view_mode: card_hero_card
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -2
     region: content
   field_justify:
@@ -66,14 +58,7 @@ content:
       url_plain: true
       rel: '0'
       target: '0'
-    third_party_settings:
-      fences:
-        fences_field_tag: div
-        fences_field_classes: ''
-        fences_field_item_tag: div
-        fences_field_item_classes: ''
-        fences_label_tag: div
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 2
     region: content
   field_opacity:

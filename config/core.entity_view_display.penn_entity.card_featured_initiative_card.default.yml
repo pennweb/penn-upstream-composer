@@ -13,7 +13,6 @@ dependencies:
     - field.field.penn_entity.card_featured_initiative_card.field_title
     - penn_entity.penn_entity_type.card_featured_initiative_card
   module:
-    - fences
     - link
     - options
     - text
@@ -31,28 +30,14 @@ content:
       url_plain: false
       rel: '0'
       target: '0'
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 5
     region: content
   field_description:
     type: basic_string
     label: hidden
     settings: {  }
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 3
     region: content
   field_description_formatted:
@@ -75,14 +60,7 @@ content:
     settings:
       view_mode: url_to_image
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 2
     region: content
   field_link:
@@ -94,14 +72,7 @@ content:
       url_plain: true
       rel: '0'
       target: '0'
-    third_party_settings:
-      fences:
-        fences_field_tag: div
-        fences_field_classes: ''
-        fences_field_item_tag: div
-        fences_field_item_classes: ''
-        fences_label_tag: div
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 7
     region: content
   field_subtitle:
@@ -109,14 +80,7 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 4
     region: content
   field_title:
@@ -124,14 +88,7 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 1
     region: content
   name:

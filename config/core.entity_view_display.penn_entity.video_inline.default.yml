@@ -6,7 +6,6 @@ dependencies:
     - field.field.penn_entity.video_inline.field_video_source
     - penn_entity.penn_entity_type.video_inline
   module:
-    - fences
     - link
 id: penn_entity.video_inline.default
 targetEntityType: penn_entity
@@ -22,14 +21,7 @@ content:
       url_plain: true
       rel: '0'
       target: '0'
-    third_party_settings:
-      fences:
-        fences_field_tag: div
-        fences_field_classes: ''
-        fences_field_item_tag: div
-        fences_field_item_classes: ''
-        fences_label_tag: div
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -2
     region: content
   name:

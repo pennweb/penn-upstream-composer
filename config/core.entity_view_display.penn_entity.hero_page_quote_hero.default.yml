@@ -9,7 +9,6 @@ dependencies:
     - field.field.penn_entity.hero_page_quote_hero.field_select_list
     - penn_entity.penn_entity_type.hero_page_quote_hero
   module:
-    - fences
     - options
 id: penn_entity.hero_page_quote_hero.default
 targetEntityType: penn_entity
@@ -22,14 +21,7 @@ content:
     settings:
       view_mode: hero_page_hero
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 1
     region: content
   field_quote:

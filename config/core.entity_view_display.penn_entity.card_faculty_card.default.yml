@@ -14,7 +14,6 @@ dependencies:
     - field.field.penn_entity.card_faculty_card.field_title
     - penn_entity.penn_entity_type.card_faculty_card
   module:
-    - fences
     - link
     - text
 id: penn_entity.card_faculty_card.default
@@ -66,14 +65,7 @@ content:
     settings:
       view_mode: card_faculty_card
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 1
     region: content
   field_link:
@@ -85,14 +77,7 @@ content:
       url_plain: true
       rel: '0'
       target: '0'
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -1
     region: content
   field_subtitle:

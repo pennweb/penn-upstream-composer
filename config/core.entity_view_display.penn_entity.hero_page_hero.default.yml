@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.field.penn_entity.hero_page_hero.field_image
     - penn_entity.penn_entity_type.hero_page_hero
-  module:
-    - fences
 id: penn_entity.hero_page_hero.default
 targetEntityType: penn_entity
 bundle: hero_page_hero
@@ -18,14 +16,7 @@ content:
     settings:
       view_mode: hero_page_hero
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: none
-        fences_field_classes: ''
-        fences_field_item_tag: none
-        fences_field_item_classes: ''
-        fences_label_tag: none
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:

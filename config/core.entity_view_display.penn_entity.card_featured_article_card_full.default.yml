@@ -9,8 +9,6 @@ dependencies:
     - field.field.penn_entity.card_featured_article_card_full.field_title
     - field.field.penn_entity.card_featured_article_card_full.field_video_source_url
     - penn_entity.penn_entity_type.card_featured_article_card_full
-  module:
-    - fences
 id: penn_entity.card_featured_article_card_full.default
 targetEntityType: penn_entity
 bundle: card_featured_article_card_full
@@ -22,14 +20,7 @@ content:
     settings:
       view_mode: article_card
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: div
-        fences_field_classes: ''
-        fences_field_item_tag: div
-        fences_field_item_classes: ''
-        fences_label_tag: div
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: -1
     region: content
   field_image_mobile:
@@ -38,14 +29,7 @@ content:
     settings:
       view_mode: article_card_mobile
       link: false
-    third_party_settings:
-      fences:
-        fences_field_tag: div
-        fences_field_classes: ''
-        fences_field_item_tag: div
-        fences_field_item_classes: ''
-        fences_label_tag: div
-        fences_label_classes: ''
+    third_party_settings: {  }
     weight: 0
     region: content
   field_subtitle:
