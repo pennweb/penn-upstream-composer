@@ -1,6 +1,6 @@
 {% set has_link = content.field_link|render is not empty ? true : false %}
 
-<article class="event-card{{ field_image_has_value is false ? ' event-card--no-image' : '' }} event-card--static">
+<article class="event-card{{ field_image_has_value ? '' : ' event-card--no-image' }} event-card--static">
   
   {% if field_month_has_value and field_day_has_value %}
     <time class="event-card__date">
