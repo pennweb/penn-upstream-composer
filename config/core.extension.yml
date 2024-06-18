@@ -8,7 +8,6 @@ module:
   block: 1
   block_content: 1
   breakpoint: 1
-  ckeditor: 1
   comment: 1
   config: 1
   contact: 1
