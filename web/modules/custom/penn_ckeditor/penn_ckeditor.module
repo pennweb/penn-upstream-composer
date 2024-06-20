@@ -10,22 +10,7 @@ function penn_ckeditor_preprocess_page(&$variables) {
 }
 
 function penn_ckeditor_editor_js_settings_alter(array &$settings) { 
-  if (isset($settings['editor']['formats']['wysiwyg'])) {
-    // $settings['editor']['formats']['wysiwyg']['editorSettings']['bodyClass'] = 'wysiwyg';
-    // $settings['editor']['formats']['wysiwyg']['editorSettings']['contentsCss'][] = '/' . drupal_get_path('module','penn_ckeditor') . '/css/penn-global-ckeditor.css';
-  }
-  // if (isset($settings['editor']['formats']['accordion'])) {
-  //   $settings['editor']['formats']['accordion']['editorSettings']['bodyClass'] = '.js-wikit-accordion ckeditor-accordion';
-  // }
-
-  foreach (array_keys($settings['editor']['formats']) as $text_format_id) {
-    if ($settings['editor']['formats'][$text_format_id]['editor'] === 'ckeditor') {
-      // $settings['editor']['formats'][$text_format_id]['editorSettings']['height'] = '3000px';
-      // $settings['editor']['formats'][$text_format_id]['editorSettings']['autoGrow_onStartup'] = true;
-      // $settings['editor']['formats'][$text_format_id]['editorSettings']['autoParagraph'] = false;
-      // $settings['editor']['formats'][$text_format_id]['editorSettings']['bodyClass'] = 'wysiwyg';
-    }
-  }
+  //edit js settings
 }
 
 function penn_ckeditor_form_alter(&$form, &$form_state, $form_id) {
