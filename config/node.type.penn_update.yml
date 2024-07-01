@@ -12,7 +12,7 @@ third_party_settings:
 name: 'Penn Update'
 type: penn_update
 description: 'Use <em>Penn Update</em> for penn update content.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

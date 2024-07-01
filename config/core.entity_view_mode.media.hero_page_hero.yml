@@ -6,5 +6,6 @@ dependencies:
     - media
 id: media.hero_page_hero
 label: 'Hero - Page Hero (1:1)'
+description: ''
 targetEntityType: media
 cache: true

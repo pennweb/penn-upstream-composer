@@ -16,7 +16,7 @@ settings:
       label: 'Show grid borders'
     -
       value: grid-card--plain
-      label: 'Don''t show grid borders'
+      label: "Don't show grid borders"
   allowed_values_function: ''
 module: options
 locked: false

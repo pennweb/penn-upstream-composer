@@ -6,5 +6,6 @@ dependencies:
     - penn_entity
 id: penn_entity.featured_story_card
 label: 'Featured Story Card'
+description: ''
 targetEntityType: penn_entity
 cache: true

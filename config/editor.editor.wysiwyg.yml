@@ -35,6 +35,11 @@ settings:
       - penn_entity
       - '|'
   plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - left
+        - center
+        - right
     ckeditor5_heading:
       enabled_headings:
         - heading1
@@ -43,6 +48,14 @@ settings:
         - heading4
         - heading5
         - heading6
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<span class>'
     ckeditor5_style:
       styles:
         -
@@ -156,24 +169,7 @@ settings:
         -
           label: 'X-Large Text'
           element: '<span class="text--x-large">'
-    ckeditor5_sourceEditing:
-      allowed_tags:
-        - '<span class>'
-    ckeditor5_list:
-      reversed: false
-      startIndex: true
-    ckeditor5_alignment:
-      enabled_alignments:
-        - left
-        - center
-        - right
     media_media:
       allow_view_mode_override: false
 image_upload:
   status: false
-  scheme: public
-  directory: inline-images
-  max_size: '10 MB'
-  max_dimensions:
-    width: null
-    height: null

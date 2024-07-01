@@ -6,5 +6,6 @@ dependencies:
     - penn_api_entity
 id: penn_api_entity_type.token
 label: Token
+description: ''
 targetEntityType: penn_api_entity_type
 cache: true
