@@ -1,11 +1,12 @@
 <?php
 
-//Include the site-specific site.settings.php to set $primary_domain or a default
+//Set the primary live domain default
+$primary_domain = 'www.upenn.edu';
+
+//Include the site-specific site.settings.php to override $primary_domain
 $saml_settings = $_SERVER['DOCUMENT_ROOT'] . '/sites/default/settings.saml.php';
 if (file_exists($saml_settings)) {
   include $saml_settings;
-} else {
-  $primary_domain = 'www.upenn.edu';
 }
 
 // set entityID to primary live domain
