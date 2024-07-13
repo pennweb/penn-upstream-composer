@@ -6,5 +6,6 @@ dependencies:
     - media
 id: media.video_poster
 label: 'Video Poster (16:9)'
+description: ''
 targetEntityType: media
 cache: true

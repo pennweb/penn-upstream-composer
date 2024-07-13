@@ -6,5 +6,6 @@ dependencies:
     - media
 id: media.grid_card_landscape
 label: 'Card - Grid Card - Landscape (3:2)'
+description: ''
 targetEntityType: media
 cache: true

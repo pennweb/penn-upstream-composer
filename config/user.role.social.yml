@@ -8,7 +8,9 @@ dependencies:
   module:
     - dropzonejs
     - entity_browser
+    - file
     - filter
+    - help
     - media
     - penn_entity
     - shortcut
@@ -20,12 +22,14 @@ weight: 3
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access help pages'
   - 'access media_entity_browser entity browser pages'
   - 'access media_entity_browser_modal entity browser pages'
   - 'access shortcuts'
   - 'access toolbar'
   - 'create image media'
   - 'create media'
+  - 'delete own files'
   - 'dropzone upload files'
   - 'edit any image media'
   - 'edit own image media'

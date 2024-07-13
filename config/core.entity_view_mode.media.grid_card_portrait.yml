@@ -6,5 +6,6 @@ dependencies:
     - media
 id: media.grid_card_portrait
 label: 'Card - Grid Card - Portrait (3:4)'
+description: ''
 targetEntityType: media
 cache: true
