@@ -20,7 +20,5 @@ permissions:
   - 'search content'
   - use_penn_search
   - 'view media'
-  - 'view published accordion entities'
-  - 'view published card entity entities'
   - 'view published penn api entity entities'
   - 'view published penn entity entities'

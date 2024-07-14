@@ -14,6 +14,12 @@ name: WYSIWYG
 format: wysiwyg
 weight: -10
 filters:
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 100
+    settings: {  }
   filter_html:
     id: filter_html
     provider: filter
@@ -37,9 +43,3 @@ filters:
         wysiwyg_default: wysiwyg_default
       allowed_media_types:
         image: image
-  entity_embed:
-    id: entity_embed
-    provider: entity_embed
-    status: true
-    weight: 100
-    settings: {  }

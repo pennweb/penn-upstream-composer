@@ -1,3 +1,4 @@
+langcode: en
 blocks:
   -
     info: 'Footer Quote'
@@ -20,9 +21,9 @@ menus:
     uri: 'https://www.upenn.edu/about/contact'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
+    enabled: true
+    expanded: false
+    weight: 0
     langcode: en
     uuid: 60c8d4a6-88d0-4e5e-8798-39af64ddf404
   -
@@ -32,9 +33,9 @@ menus:
     uri: 'https://www.facilities.upenn.edu/maps'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
+    enabled: true
+    expanded: false
+    weight: 0
     langcode: en
     uuid: 3d5defe0-3b06-41c0-97ee-b88be9941dcd
   -
@@ -44,9 +45,9 @@ menus:
     uri: 'https://cms.business-services.upenn.edu/transportation/'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
+    enabled: true
+    expanded: false
+    weight: 0
     langcode: en
     uuid: 8e47da53-3be3-456b-ab0c-58dd9680a9a2
   -
@@ -56,9 +57,9 @@ menus:
     uri: 'https://www.publicsafety.upenn.edu/contact/'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
+    enabled: true
+    expanded: false
+    weight: -49
     langcode: en
     uuid: dc60a8e6-dba9-40c6-ac7b-5d7c21da3702
   -
@@ -68,9 +69,9 @@ menus:
     uri: 'https://www.upenn.edu/about/disclaimer'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-50'
+    enabled: true
+    expanded: false
+    weight: -50
     langcode: en
     uuid: 7f6901ac-807e-4a1b-ba8f-f9be3c1b5f99
   -
@@ -80,9 +81,9 @@ menus:
     uri: 'https://www.upenn.edu/about/privacy-policy'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-48'
+    enabled: true
+    expanded: false
+    weight: -48
     langcode: en
     uuid: 66369815-4a8c-43de-80c0-f8cce19f728c
   -
@@ -92,9 +93,9 @@ menus:
     uri: 'https://accessibility.web-resources.upenn.edu/get-help'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-47'
+    enabled: true
+    expanded: false
+    weight: -47
     langcode: en
     uuid: 9ff617b6-6829-4ea2-908a-4320438defc4
   -
@@ -104,9 +105,9 @@ menus:
     uri: 'https://www.upenn.edu/about/report-copyright-infringement'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-46'
+    enabled: true
+    expanded: false
+    weight: -46
     langcode: en
     uuid: 11462be1-afc7-4c79-a4b2-e5ccd85299f0
   -
@@ -116,9 +117,9 @@ menus:
     uri: 'https://portal.apps.upenn.edu/penn_portal/student.php'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-50'
+    enabled: true
+    expanded: false
+    weight: -50
     langcode: en
     uuid: 4753148e-a63e-47b8-92aa-bc0f91fa79aa
   -
@@ -128,9 +129,9 @@ menus:
     uri: 'https://portal.apps.upenn.edu/penn_portal/u@penn.php'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
+    enabled: true
+    expanded: false
+    weight: -49
     langcode: en
     uuid: 9e0acc78-de02-4cf4-8b69-81ad63363f33
   -
@@ -140,9 +141,9 @@ menus:
     uri: 'https://www.upenn.edu/parents'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-48'
+    enabled: true
+    expanded: false
+    weight: -48
     langcode: en
     uuid: c764b79f-70ec-4630-99f8-4dc07e369f8a
   -
@@ -152,9 +153,9 @@ menus:
     uri: 'https://www.alumni.upenn.edu'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-47'
+    enabled: true
+    expanded: false
+    weight: -47
     langcode: en
     uuid: 0a00faeb-7d1d-46db-856c-dffed5273758
   -
@@ -164,9 +165,9 @@ menus:
     uri: 'https://www.upenn.edu/visitors'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-46'
+    enabled: true
+    expanded: false
+    weight: -46
     langcode: en
     uuid: 652b1dad-cc44-4869-8912-813750f95d74
   -
@@ -176,9 +177,9 @@ menus:
     uri: 'https://www.upenn.edu/penn-a-z'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-45'
+    enabled: true
+    expanded: false
+    weight: -45
     langcode: en
     uuid: 3a4a206a-8951-4374-baca-743fc8784d5e
   -
@@ -188,9 +189,9 @@ menus:
     uri: 'https://www.upenn.edu/directories'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-44'
+    enabled: true
+    expanded: false
+    weight: -44
     langcode: en
     uuid: 6166bc88-2ef4-4237-afa4-070c029f9fc5
   -
@@ -200,9 +201,9 @@ menus:
     uri: 'https://provider.www.upenn.edu/computing/webmail/index.php'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-43'
+    enabled: true
+    expanded: false
+    weight: -43
     langcode: en
     uuid: 36dd23c4-47c5-4718-b539-8b9ca096cca1
   -
@@ -212,9 +213,9 @@ menus:
     uri: 'https://www.upenn.edu/services'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-42'
+    enabled: true
+    expanded: false
+    weight: -42
     langcode: en
     uuid: 7814dcaf-02bd-4654-a8ec-b62b7fb6a85f
   -
@@ -224,9 +225,9 @@ menus:
     uri: 'https://www.upenn.edu/about'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-45'
+    enabled: true
+    expanded: false
+    weight: -45
     langcode: en
     uuid: defe4d0b-900a-437b-8422-01e429ed8baf
   -
@@ -236,9 +237,9 @@ menus:
     uri: 'https://pennathletics.com/'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
+    enabled: true
+    expanded: false
+    weight: 0
     langcode: en
     uuid: a2fbfa82-c489-4bd9-a0e9-e953df09e5c7
   -
@@ -248,9 +249,9 @@ menus:
     uri: 'https://diversity.upenn.edu/'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
+    enabled: true
+    expanded: false
+    weight: 0
     langcode: en
     uuid: be5a3e51-879f-4ab5-8ded-97818875273c
   -
@@ -260,9 +261,9 @@ menus:
     uri: 'https://www.upenn.edu/life-at-penn/health-and-wellness'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
+    enabled: true
+    expanded: false
+    weight: 0
     langcode: en
     uuid: 1dff2ca1-e18d-4db4-9188-870f969cd7ba
   -
@@ -272,9 +273,9 @@ menus:
     uri: 'https://www.library.upenn.edu/'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
+    enabled: true
+    expanded: false
+    weight: 0
     langcode: en
     uuid: 0070d75f-868c-49f4-a364-ce5830b2d594
   -
@@ -284,9 +285,9 @@ menus:
     uri: 'https://www.onlinelearning.upenn.edu/'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
+    enabled: true
+    expanded: false
+    weight: 0
     langcode: en
     uuid: 606a15d0-2931-4983-8382-cf5403f1523e
   -
@@ -296,9 +297,9 @@ menus:
     uri: 'https://global.upenn.edu/'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
+    enabled: true
+    expanded: false
+    weight: 0
     langcode: en
     uuid: cddccd2e-0cc2-41c2-81e1-5c64c23a53ad
   -
@@ -308,8 +309,8 @@ menus:
     uri: 'https://www.alumni.upenn.edu'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
+    enabled: true
+    expanded: false
+    weight: 0
     langcode: en
     uuid: c951ed23-b9df-4647-9cdb-66a57e951124

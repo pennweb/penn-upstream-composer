@@ -10,6 +10,12 @@ name: 'Entity Embed'
 format: entity_embed
 weight: 0
 filters:
+  emptyparagraphkiller:
+    id: emptyparagraphkiller
+    provider: emptyparagraphkiller
+    status: true
+    weight: 0
+    settings: {  }
   entity_embed:
     id: entity_embed
     provider: entity_embed
@@ -35,9 +41,3 @@ filters:
       allowed_view_modes: {  }
       allowed_media_types:
         image: image
-  emptyparagraphkiller:
-    id: emptyparagraphkiller
-    provider: emptyparagraphkiller
-    status: true
-    weight: 0
-    settings: {  }
