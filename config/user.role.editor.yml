@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.media_entity_browser
+    - entity_browser.browser.media_entity_browser_modal
     - filter.format.entity_embed
     - filter.format.full_html
     - filter.format.wysiwyg
