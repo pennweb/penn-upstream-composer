@@ -12275,6 +12275,12 @@ a.text-cta__taxonomy:hover, a.text-cta__taxonomy:focus {
   fill: #FFF;
 }
 
+@media (min-width: 960px) {
+  .alert--closable .alert__message {
+    padding-right: 100px;
+  }
+}
+
 /**
  * General
  */

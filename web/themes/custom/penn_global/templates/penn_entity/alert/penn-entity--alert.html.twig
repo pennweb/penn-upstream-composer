@@ -1,13 +1,13 @@
-{% set alert_type = content.field_alert_type_2 %}
-{% set data_alert = "On" in content.field_boolean.0 ? alert_type : '' %}
-<div class="alert alert--{{ alert_type }} {{ content.field_bg_color_full }}" data-alert="{{ data_alert }}" style="display: none;">
+{% set alert_type = content.field_alert_type_2 %} {# primary (banner) or secondary (fullscreen) #}
+{% set closeable_class = field_alert_close_has_value ? "alert--closable" : '' %}
+<div class="alert alert--{{ alert_type }} {{ content.field_bg_color_full }} {{ closeable_class }}" data-alert="{{ alert_type }}" style="display: none;">
   <div class="{{ content.field_container_width }}">
     <div class="alert__message">
     <div class="wysiwyg {{ content.field_bg_color_full }}">
       {{ content.field_description_formatted }}
     </div>
     </div>
-    {% if "On" in content.field_alert_close.0 %}
+    {% if field_alert_close_has_value %}
       <button class="alert__close" type="button">
         <svg class="toggle-close" width="20" height="20">
           <use xlink:href="#icon-close" href="#icon-close"></use>

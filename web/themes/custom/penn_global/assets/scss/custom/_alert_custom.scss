@@ -45,6 +45,10 @@
     .toggle-close {
       fill: #FFF;
     }
-    
+  }
+  &--closable .alert__message {
+    @media #{$medium-up} {
+      padding-right: 100px;
+    }
   }
 }
