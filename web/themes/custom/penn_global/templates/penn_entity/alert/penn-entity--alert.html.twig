@@ -1,6 +1,8 @@
 {% set alert_type = content.field_alert_type_2 %} {# primary (banner) or secondary (fullscreen) #}
 {% set closeable_class = field_alert_close_has_value ? "alert--closable" : '' %}
-<div class="alert alert--{{ alert_type }} {{ content.field_bg_color_full }} {{ closeable_class }}" data-alert="{{ alert_type }}" style="display: none;">
+{# For persistent close, set "data-alert" to alert_type, else set to empty string #}
+{% set data_alert = field_boolean_has_value ? alert_type : "" %}
+<div class="alert alert--{{ alert_type }} {{ content.field_bg_color_full }} {{ closeable_class }}" data-alert="{{ data_alert }}" style="display: none;">
   <div class="{{ content.field_container_width }}">
     <div class="alert__message">
     <div class="wysiwyg {{ content.field_bg_color_full }}">
