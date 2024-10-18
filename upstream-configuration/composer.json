@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php": "8.1",
+        "php": "8.3 ",
         "drupal/admin_toolbar": "^3.4",
         "drupal/ckeditor": "^1.0",        
         "drupal/config_direct_save": "^3.0",
