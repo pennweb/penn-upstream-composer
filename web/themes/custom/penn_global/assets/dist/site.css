@@ -14144,7 +14144,8 @@ select {
 /**
  * Video
  */
-.video-inline:not(.video-autoplay) .video-button__circle {
+.video-inline:not(.video-autoplay) .video-button__circle,
+.video-vimeo .video-button__circle {
   background: rgba(0, 0, 0, 0.75);
   border: 2px solid rgba(255, 255, 255, 0.9);
   border-radius: 100%;
@@ -14153,10 +14154,13 @@ select {
   position: absolute;
   top: calc(50% - 41px);
   width: 80px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 @media (min-width: 640px) {
-  .video-inline:not(.video-autoplay) .video-button__circle {
+  .video-inline:not(.video-autoplay) .video-button__circle,
+  .video-vimeo .video-button__circle {
     border: 3px solid rgba(255, 255, 255, 0.9);
     height: 140px;
     left: calc(50% - 72px);
@@ -14166,20 +14170,26 @@ select {
   }
 }
 
-.video-inline:not(.video-autoplay) .video-button--play .icon {
+.video-inline:not(.video-autoplay) .video-button--play .icon,
+.video-vimeo .video-button--play .icon {
   background: url(/themes/custom/penn_global/assets/img/svg/icon-play.svg) no-repeat 53% 50%;
   background-size: 30px 30px;
 }
 
 @media (min-width: 640px) {
-  .video-inline:not(.video-autoplay) .video-button--play .icon {
+  .video-inline:not(.video-autoplay) .video-button--play .icon,
+  .video-vimeo .video-button--play .icon {
     background-size: 35px 50px;
   }
 }
 
 .video-inline:not(.video-autoplay) .video-button:hover .video-button__circle,
-.video-inline:not(.video-autoplay) .video-button:focus .video-button__circle {
-  background: rgba(0, 0, 0, 0.75);
+.video-inline:not(.video-autoplay) .video-button:focus .video-button__circle,
+.video-vimeo .video-button:hover .video-button__circle,
+.video-vimeo .video-button:focus .video-button__circle {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  background: rgba(0, 0, 0, 0.85);
 }
 
 .video-w-card__icons__circle {
@@ -14200,6 +14210,43 @@ select {
 
 .video-w-card__button:hover .video-w-card__icons__circle, .video-w-card__button:focus .video-w-card__icons__circle {
   background: rgba(0, 0, 0, 0.25);
+}
+
+/* Video Card */
+.card__video .video {
+  margin: 0;
+}
+
+.card__video .video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+.card-listing--3 .video-vimeo--poster {
+  max-height: 238px;
+}
+
+.card-listing--2 .video-vimeo--poster {
+  max-height: 354px;
+}
+
+/* hack to make the video the same height as neighboring cards with images */
+/* but don't use because it crops the video horizontally */
+@media (min-width: 640px) {
+  .card-listing--3 .card__video .video-button__circle,
+  .card-listing--2 .card__video .video-button__circle {
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    height: 100px;
+    left: calc(50% - 50px);
+    position: absolute;
+    top: calc(50% - 50px);
+    width: 100px;
+  }
+  .card-listing--3 .card__video .video-button__circle .icon,
+  .card-listing--2 .card__video .video-button__circle .icon {
+    background-size: 30px 35px;
+  }
 }
 
 /**

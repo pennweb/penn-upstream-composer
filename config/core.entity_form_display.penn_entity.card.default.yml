@@ -9,6 +9,7 @@ dependencies:
     - field.field.penn_entity.card.field_image
     - field.field.penn_entity.card.field_link
     - field.field.penn_entity.card.field_title
+    - field.field.penn_entity.card.field_video_source_url
     - penn_entity.penn_entity_type.card
   module:
     - link
@@ -21,7 +22,7 @@ mode: default
 content:
   field_button_link:
     type: link_default
-    weight: 5
+    weight: 7
     region: content
     settings:
       placeholder_url: ''
@@ -29,7 +30,7 @@ content:
     third_party_settings: {  }
   field_card_text_align:
     type: options_select
-    weight: 6
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -43,14 +44,14 @@ content:
     third_party_settings: {  }
   field_image:
     type: media_library_widget
-    weight: 4
+    weight: 5
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_link:
     type: link_default
-    weight: 3
+    weight: 4
     region: content
     settings:
       placeholder_url: ''
@@ -59,6 +60,14 @@ content:
   field_title:
     type: string_textfield
     weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video_source_url:
+    type: string_textfield
+    weight: 6
     region: content
     settings:
       size: 60

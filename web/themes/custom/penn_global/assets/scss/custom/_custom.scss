@@ -1768,7 +1768,8 @@ select {
  */
 
  //Modify the video button to be larger for non-autoplay videos
-.video-inline:not(.video-autoplay) {
+.video-inline:not(.video-autoplay), 
+.video-vimeo {
   .video-button__circle {
     background: rgba(0, 0, 0, 0.75);
     border: 2px solid rgba(255, 255, 255, 0.9);
@@ -1778,6 +1779,7 @@ select {
     position: absolute;
     top: calc(50% - 41px);
     width: 80px;
+    transition: all 0.25s ease;    
     @media #{$small-up} {
       border: 3px solid rgba(255, 255, 255, 0.9);
       height: 140px;
@@ -1799,7 +1801,8 @@ select {
 
   .video-button:hover .video-button__circle,
   .video-button:focus .video-button__circle {
-    background: rgba(0, 0, 0, 0.75);
+    transition: all 0.25s ease;
+    background: rgba(0, 0, 0, 0.85);
   }
 }
 
@@ -1822,6 +1825,47 @@ select {
   &__button:hover &__icons__circle,
   &__button:focus &__icons__circle {
     background: rgba(0, 0, 0, 0.25);
+  }
+}
+/* Video Card */
+
+.card__video .video {
+  margin: 0;
+}
+
+.card__video .video {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+// Hack to get the backround expanding while loading
+.card-listing--3 .video-vimeo--poster {
+  max-height: 238px;
+}
+.card-listing--2 .video-vimeo--poster {
+  max-height: 354px;
+}
+
+/* hack to make the video the same height as neighboring cards with images */
+/* but don't use because it crops the video horizontally */
+.card__video .fitvid {
+  // padding-top: 66.25% !important;
+}
+
+.card-listing--3 .card__video, 
+.card-listing--2 .card__video {
+  .video-button__circle {
+    @media #{$small-up} {
+      border: 3px solid rgba(255, 255, 255, 0.9);
+      height: 100px;
+      left: calc(50% - 50px);
+      position: absolute;
+      top: calc(50% - 50px);
+      width: 100px;
+      .icon {
+        background-size: 30px 35px;
+      }
+    }
   }
 }
 

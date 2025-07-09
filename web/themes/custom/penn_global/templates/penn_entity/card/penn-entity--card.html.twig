@@ -1,21 +1,67 @@
-{% if field_image_has_value %}
-  {% set with_image_class = 'card__with-image' %}
-{% endif %}
-
-<article class="card {{ with_image_class }} {{ content.field_card_text_align }}">
-  {% if field_image_has_value %}
+{% set has_image = penn_entity.field_image.value %}
+{% set has_video = penn_entity.field_video_source_url.value %}
+{% set field_image_uri = has_image ? penn_entity.field_image|file_uri : null %}
+{# {% set field_image_style_url = field_image_uri ? field_image_uri|image_style('card_3x2') : '' %} #}
+{# This ratio is needed to make the poster fit the space, even though cards have a 3X2 ratio, video cards have to be 16:9 #}
+{% set field_image_style_url = field_image_uri ? field_image_uri|image_style('video_poster_16x9') : '' %}
+{% set with_image_class = has_image ? 'card__with-image' : '' %}
+{% set video_card_class = has_video ? 'card__video' : '' %}
+{% set video_source = content.field_video_source_url %}
+{% set video_style = 'player' %}
+{# {% set video_source = '413692024' %} #}
+{# Don't link the whole card if there is a video because it interferes with video controls #}
+{% set card_link_class = has_video ? '' : 'card__title__link' %}
+{# {{ field_image_style_url }} #}
+<article class="card {{ video_card_class }} {{ with_image_class }} {{ content.field_card_text_align }}">
+  {# Show image #}
+  {% if has_image and not has_video %}
     <figure class="card__figure">
-      {{ content.field_image }}
+        {{ content.field_image }}
     </figure>
   {% endif %}
+  {# Show video #}
+  {% if has_video %}
+    {% if video_style == "player" %}
+    <figure class="card__figure">
+      {# <div class="video">
+          <div class="video-inline">
+            <video poster="{{ field_image_style_url }}" class="video-inline__video video-inline__video--controls">
+              <source src="{{ video_source }}" type="video/mp4"/>
+            </video>
+            <button class="video-button video-button--play-toggle video-button--play">
+              <span class="video-button__circle">
+                <span class="icon"></span>
+              </span>
+              <span class="a11y">Play</span>
+            </button>
+            {{ content.field_video_transcript }}
+          </div>
+      </div> #}
+      <div class="video">
+        <div class="contain contain--no-padding">
+          <div class="video-vimeo video-vimeo--poster" data-vimeo="{{ video_source }}" style="{{ "background-image:url(" ~ field_image_style_url ~ ")" }}">
+            <div class="video-vimeo__vimeo"></div>
+              <button class="video-button video-button--play">
+                <span class="video-button__circle">
+                  <span class="icon"></span>
+                </span>
+                <span class="a11y">Play</span>
+              </button>
+          </div>
+        </div>
+      </div>
+    </figure>
+    {% elseif video_style == "looping" %}
+      {# inline looping here #}
+    {% endif %}
+  {% endif %}
   <div class="card__content">
-    {% if field_title_has_value %}
+    {% if penn_entity.field_title.value %}
       <h2 class="card__title">
-        {% set link = render_var(content.field_link) %}
-        {% if link is empty %}
-          {{ content.field_title }}
+        {% if penn_entity.field_link.value  %}
+          <a href="{{ content.field_link }}" class="{{ card_link_class }}">{{ content.field_title }}</a>
         {% else %}
-          <a href="{{ content.field_link }}" class="card__title__link">{{ content.field_title }}</a>
+          {{ content.field_title }}
         {% endif %}
       </h2>
     {% endif %}

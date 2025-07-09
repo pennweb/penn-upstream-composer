@@ -15270,3 +15270,40 @@ body {
    color: #FFF;
  }
  
+ /* Video Card */
+ .ck-content .card__video .video {
+  margin: 0;
+}
+
+.ck-content .card__video video {
+  -o-object-fit: cover;
+     object-fit: cover;
+     max-width: 100%;     
+}
+
+/* hack to make the video the same height as neighboring cards with images */
+.ck-content .card__video .fitvid {
+  /* padding-top: 66.25% !important; */
+}
+
+@media (min-width: 640px) {
+  .ck-content .card-listing--3 .card__video .video-button__circle {
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    height: 100px;
+    left: calc(50% - 50px);
+    position: absolute;
+    top: calc(50% - 50px);
+    width: 100px;
+  }
+  .ck-content .card-listing--3 .card__video .video-button__circle .icon {
+    background-size: 30px 45px;
+  }
+}
+
+.ck-content .card-listing--3 .video-vimeo--poster {
+  max-height: 238px;
+}
+
+.ck-content .card-listing--2 .video-vimeo--poster {
+  max-height: 354px;
+}
