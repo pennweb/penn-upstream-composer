@@ -60,6 +60,9 @@
         "patches": {
             "drupal/inline_entity_form": {
                 "Can't add more than two items with simple inline entity form widget under some circumstances": "https://www.drupal.org/files/issues/2023-03-27/3088901-16.patch"
+            },
+            "drupal/entity_embed": {
+                "Fix CKEditor icon path for Drupal 10.5/11.2": "https://www.drupal.org/files/issues/2025-06-30/entity_embed--2025-06-30--3531672--mr-62.patch"
             }
         }
     }
