@@ -43,6 +43,7 @@
         "drupal/simplesamlphp_auth": "^4.0",
         "drupal/simplify_menu": "^3.1",
         "drupal/structure_sync": "^2.0",
+        "drupal/tac_lite": "^2.0",
         "drupal/twig_tweak": "^3.2",
         "drupal/webform": "^6.0",
         "drupal/xmlsitemap": "^1.0",
