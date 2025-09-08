@@ -14234,7 +14234,6 @@ select {
 /* hack to make the video the same height as neighboring cards with images */
 /* but don't use because it crops the video horizontally */
 @media (min-width: 640px) {
-  .card-listing--3 .card__video .video-button__circle,
   .card-listing--2 .card__video .video-button__circle {
     border: 3px solid rgba(255, 255, 255, 0.9);
     height: 100px;
@@ -14243,10 +14242,22 @@ select {
     top: calc(50% - 50px);
     width: 100px;
   }
-  .card-listing--3 .card__video .video-button__circle .icon,
   .card-listing--2 .card__video .video-button__circle .icon {
     background-size: 30px 35px;
   }
+}
+
+.card-listing--3 .card__video .video-button__circle {
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  height: 60px;
+  left: calc(54% - 50px);
+  position: absolute;
+  top: calc(60% - 50px);
+  width: 60px;
+}
+
+.card-listing--3 .card__video .video-button__circle .icon {
+  background-size: 15px 35px;
 }
 
 /**

@@ -1852,7 +1852,6 @@ select {
   // padding-top: 66.25% !important;
 }
 
-.card-listing--3 .card__video, 
 .card-listing--2 .card__video {
   .video-button__circle {
     @media #{$small-up} {
@@ -1865,6 +1864,20 @@ select {
       .icon {
         background-size: 30px 35px;
       }
+    }
+  }
+}
+
+.card-listing--3 .card__video {
+  .video-button__circle {
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    height: 60px;
+    left: calc(54% - 50px);
+    position: absolute;
+    top: calc(60% - 50px);
+    width: 60px;
+    .icon {
+      background-size: 15px 35px;
     }
   }
 }
