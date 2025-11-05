@@ -1,6 +1,6 @@
 uuid: 2b2c49eb-a5db-49d1-9fea-3b58c659aee6
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - field.storage.penn_entity.field_title
@@ -99,7 +99,18 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<p class="intro"><strong>This index will be removed Nov 15</strong>.</p>'
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -195,6 +206,19 @@ display:
         style: false
         row: false
         fields: false
+        header: false
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<div class="bg-color bg-blue"><p class="intro" align="center"><br /><strong>Please note: The Penn A-Z index will be discontinued and removed on Nov 10, 2025</strong>.</p></div>'
+          tokenize: false
       display_extenders: {  }
       displays:
         page_1: page_1
@@ -211,6 +235,9 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      defaults:
+        header: false
+      header: {  }
       display_extenders: {  }
       path: penn-a-z
     cache_metadata:
