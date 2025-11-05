@@ -127,7 +127,7 @@
 <div class="contain">
   <form>
     <select onChange="window.location.href=this.value">
-      <option value="/penn-update">Previous issues</option>
+      <option value="/penn-update">Previous Issues</option>
       {% for menu_item in items.menu_tree %}
       <option value="{{ menu_item.url }}">{{ menu_item.text }}</option>
       {% endfor %}
