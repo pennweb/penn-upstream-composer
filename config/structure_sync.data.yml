@@ -925,6 +925,58 @@ menus:
     uuid: 2214d353-4185-4b89-b980-56893672cf3b
     options: {  }
   -
+    menu_name: penn-update
+    title: 'November 2025'
+    parent: null
+    uri: 'entity:node/219'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: -108
+    langcode: en
+    uuid: 4f81cc18-3bc8-43ed-8f26-21b22750a9eb
+    options: {  }
+  -
+    menu_name: footer-utility
+    title: 'Contact Us'
+    parent: null
+    uri: 'entity:node/109'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 60c8d4a6-88d0-4e5e-8798-39af64ddf404
+    options: {  }
+  -
+    menu_name: footer-utility
+    title: Maps
+    parent: null
+    uri: 'https://www.facilities.upenn.edu/maps'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 3d5defe0-3b06-41c0-97ee-b88be9941dcd
+    options: {  }
+  -
+    menu_name: footer-utility
+    title: Parking
+    parent: null
+    uri: 'https://cms.business-services.upenn.edu/transportation/'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 8e47da53-3be3-456b-ab0c-58dd9680a9a2
+    options: {  }
+  -
     menu_name: legal
     title: 'Report Copyright Infringement'
     parent: null
@@ -980,7 +1032,7 @@ menus:
     menu_name: legal
     title: Nondiscrimination
     parent: null
-    uri: 'https://oaaeop.upenn.edu/resources/policies-handbooks-procedures'
+    uri: 'https://oeop.upenn.edu/resources/policies-handbooks-procedures'
     link_title: ''
     description: null
     enabled: true
@@ -988,19 +1040,6 @@ menus:
     weight: 0
     langcode: en
     uuid: 1b400d1c-7dca-481a-b1b8-a6a667959da9
-    options: {  }
-  -
-    menu_name: legal
-    title: 'Emergency Services'
-    parent: null
-    uri: 'https://www.publicsafety.upenn.edu/contact/'
-    link_title: ''
-    description: null
-    enabled: true
-    expanded: false
-    weight: 0
-    langcode: en
-    uuid: 4c5866b5-7080-4cb6-8193-7aee5afb2680
     options: {  }
   -
     menu_name: resources
@@ -1066,6 +1105,19 @@ menus:
     weight: -46
     langcode: en
     uuid: 652b1dad-cc44-4869-8912-813750f95d74
+    options: {  }
+  -
+    menu_name: resources
+    title: A-Z
+    parent: null
+    uri: 'internal:/penn-a-z'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -44
+    langcode: en
+    uuid: 3a4a206a-8951-4374-baca-743fc8784d5e
     options: {  }
   -
     menu_name: resources
