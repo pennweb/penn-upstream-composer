@@ -2127,3 +2127,37 @@ $i: 0;
     background-position: center bottom;
   }
 }
+
+
+// Target the Penn Update archives pager
+.view-penn-update.view-display-id-archives {
+  nav[role="navigation"][aria-labelledby="pagination-heading"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+
+    .js-pager__items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+
+      li {
+        display: inline-block;
+        margin: 0;
+
+        a,
+        span {
+          display: inline-block;
+          padding: 5px 10px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
