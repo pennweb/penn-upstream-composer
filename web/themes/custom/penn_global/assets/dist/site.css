@@ -14673,6 +14673,30 @@ select {
   text-decoration: none;
 }
 
+/*************
+ * Link Grid 
+ *************/
+.link-grid .wysiwyg {
+  width: 750px;
+}
+
+@media (max-width: 1023px) {
+  .link-grid .wysiwyg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .link-grid .wysiwyg {
+    text-align: center;
+  }
+}
+
+.link-grid .wysiwyg p, .link-grid .wysiwyg h1, .link-grid .wysiwyg h2, .link-grid .wysiwyg h3, .link-grid .wysiwyg h4, .link-grid .wysiwyg h5, .link-grid .wysiwyg h6 {
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+}
+
 .featured-initiative-card__wrap {
   height: 100%;
 }

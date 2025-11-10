@@ -10,7 +10,14 @@
   </style>
 
   <div class="contain">
-    <h2 class="link-grid__title">{{ content.field_title }}</h2>
+    {% if penn_entity.field_title.value %}
+      <h2 class="link-grid__title">{{ content.field_title }}</h2>
+    {% endif %}
+    {% if penn_entity.field_description_formatted.value %}
+      <div class="wysiwyg">
+        {{ content.field_description_formatted }} 
+      </div>
+    {% endif %}
     <ul class="link-grid__items">
       {{ content.field_penn_entity_reference }}
     </ul>

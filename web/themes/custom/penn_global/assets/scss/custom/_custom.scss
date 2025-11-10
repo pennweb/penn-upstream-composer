@@ -2161,3 +2161,22 @@ $i: 0;
     }
   }
 }
+
+/*************
+ * Link Grid 
+ *************/
+ .link-grid {
+  .wysiwyg { 
+    width: 750px; //copies the link grid visible width
+    @media #{$large-down} {
+      width: 100%;
+    }
+    @media #{$tablet-down} {
+      text-align: center;
+    }
+    p, h1, h2, h3, h4, h5, h6 {
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+    }
+  }
+ }

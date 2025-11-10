@@ -3,19 +3,29 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.penn_entity.layout_link_grid.field_description_formatted
     - field.field.penn_entity.layout_link_grid.field_penn_entity_reference
     - field.field.penn_entity.layout_link_grid.field_title
     - penn_entity.penn_entity_type.layout_link_grid
   module:
     - inline_entity_form
+    - text
 id: penn_entity.layout_link_grid.default
 targetEntityType: penn_entity
 bundle: layout_link_grid
 mode: default
 content:
+  field_description_formatted:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_penn_entity_reference:
     type: inline_entity_form_complex
-    weight: 4
+    weight: 3
     region: content
     settings:
       form_mode: default
@@ -29,10 +39,11 @@ content:
       collapsible: false
       collapsed: false
       revision: false
+      removed_reference: optional
     third_party_settings: {  }
   field_title:
     type: string_textfield
-    weight: 3
+    weight: 1
     region: content
     settings:
       size: 60
@@ -40,7 +51,7 @@ content:
     third_party_settings: {  }
   name:
     type: string_textfield
-    weight: -4
+    weight: 0
     region: content
     settings:
       size: 60
