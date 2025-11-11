@@ -14692,7 +14692,7 @@ select {
   }
 }
 
-.link-grid .wysiwyg p, .link-grid .wysiwyg h1, .link-grid .wysiwyg h2, .link-grid .wysiwyg h3, .link-grid .wysiwyg h4, .link-grid .wysiwyg h5, .link-grid .wysiwyg h6 {
+.link-grid .wysiwyg p, .link-grid .wysiwyg a, .link-grid .wysiwyg h1, .link-grid .wysiwyg h2, .link-grid .wysiwyg h3, .link-grid .wysiwyg h4, .link-grid .wysiwyg h5, .link-grid .wysiwyg h6 {
   color: white;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
 }
