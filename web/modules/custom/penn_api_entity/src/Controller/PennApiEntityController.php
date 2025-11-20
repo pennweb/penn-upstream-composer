@@ -124,7 +124,7 @@ class PennApiEntityController extends ControllerBase implements ContainerInjecti
           ]));
         }
         else {
-          $link = $penn_api_entity->link($date);
+          $link = $penn_api_entity->toLink($date)->toString();
         }
 
         $row = [];
