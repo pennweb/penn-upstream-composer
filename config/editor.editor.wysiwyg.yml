@@ -37,8 +37,8 @@ settings:
   plugins:
     ckeditor5_alignment:
       enabled_alignments:
-        - left
         - center
+        - left
         - right
     ckeditor5_heading:
       enabled_headings:
@@ -127,6 +127,12 @@ settings:
         -
           label: 'Link (CTA with arrow)'
           element: '<a class="cta cta--arrow">'
+        -
+          label: 'External Link - Border'
+          element: '<a class="cta--arrow">'
+        -
+          label: 'External Link - No Border'
+          element: '<a class="cta--arrow arrow-no-border">'
         -
           label: 'CTA Blockquote'
           element: '<blockquote class="text-cta__quote">'

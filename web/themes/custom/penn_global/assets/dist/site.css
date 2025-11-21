@@ -13866,6 +13866,55 @@ figure.align-center {
   max-width: 200px;
 }
 
+/***********************
+ * External Link Styles
+ ***********************/
+.footer .contain a.cta--arrow::after {
+  background: url(/themes/custom/penn_global/assets/img/svg/icon-cta-link-hover.svg) no-repeat 50% 50%;
+  background-color: none;
+  opacity: .75;
+}
+
+a.cta--arrow.arrow-no-border::after {
+  border: none;
+  margin-left: 2px;
+}
+
+/* override the default margin for most items */
+a.cta--arrow::after {
+  margin-left: 10px;
+}
+
+.btn.cta--arrow.arrow-no-border::after {
+  margin-bottom: -16px;
+  top: -10px;
+  margin-left: 5px;
+}
+
+.bg-color:not(.bg-gray) .btn.cta--arrow.arrow-no-border::after {
+  background: url(/themes/custom/penn_global/assets/img/svg/icon-cta-link-hover.svg) no-repeat 50% 50%;
+  background-color: none;
+}
+
+.bg-color:not(.bg-gray) .btn.cta--arrow.arrow-no-border:hover::after {
+  background: url(/themes/custom/penn_global/assets/img/svg/icon-cta-link.svg) no-repeat 50% 50%;
+  background-color: none;
+}
+
+.bg-color .card-listing .btn.cta--arrow.arrow-no-border::after {
+  background: url(/themes/custom/penn_global/assets/img/svg/icon-cta-link.svg) no-repeat 50% 50%;
+  background-color: none;
+}
+
+.bg-color .card-listing .btn.cta--arrow.arrow-no-border:hover::after {
+  background: url(/themes/custom/penn_global/assets/img/svg/icon-cta-link-hover.svg) no-repeat 50% 50%;
+  background-color: none;
+}
+
+.penn-update .listing-card__title .cta--arrow::after {
+  display: none;
+}
+
 /**
  * Social Grid
  */
