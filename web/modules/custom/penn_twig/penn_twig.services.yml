@@ -1,0 +1,5 @@
+services:
+  penn_twig.twig.extension:
+    class: Drupal\penn_twig\Template\TwigExtension
+    tags:
+      - { name: twig.extension }
