@@ -1,0 +1,21 @@
+uuid: 52fca782-e0f1-4e6f-887c-f5d4f9da4ca2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_entity.field_margins
+    - penn_entity.penn_entity_type.layout_contact_information
+  module:
+    - options
+id: penn_entity.layout_contact_information.field_margins
+field_name: field_margins
+entity_type: penn_entity
+bundle: layout_contact_information
+label: Margins
+description: 'Add margins'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.penn_entity.layout_contact_information.field_contact_background_color
     - field.field.penn_entity.layout_contact_information.field_container_width
+    - field.field.penn_entity.layout_contact_information.field_margins
     - field.field.penn_entity.layout_contact_information.field_padding
     - field.field.penn_entity.layout_contact_information.field_penn_entity_reference
     - penn_entity.penn_entity_type.layout_contact_information
@@ -27,6 +28,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_margins:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_padding:
     type: options_select
     weight: 3
@@ -35,7 +42,7 @@ content:
     third_party_settings: {  }
   field_penn_entity_reference:
     type: inline_entity_form_complex
-    weight: 4
+    weight: 5
     region: content
     settings:
       form_mode: default
@@ -49,6 +56,7 @@ content:
       collapsible: false
       collapsed: false
       revision: false
+      removed_reference: optional
     third_party_settings: {  }
   name:
     type: string_textfield
