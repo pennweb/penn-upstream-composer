@@ -1535,6 +1535,10 @@ a.cta--arrow::after {
   display: none;
 }
 
+.footer.footer__upstream .contain a.cta--arrow::after,
+.footer--legal a.cta--arrow::after {
+  margin-top: -5px;
+}
 /**
  * Social Grid
  */
