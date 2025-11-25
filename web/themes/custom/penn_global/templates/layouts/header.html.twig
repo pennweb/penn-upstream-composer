@@ -1,6 +1,7 @@
 {% set navigation = simplify_menu('navigation') %}
 {% set has_primary_nav = navigation.menu_tree is not empty ? true : false %}
 {% set has_primary_nav_class = has_primary_nav ? ' with-primary-nav ' : ' without-primary-nav ' %}
+{% set external_link_class = 'cta--arrow' %}
 <header id="header" class="header ">
   <div class="contain contain--xl">
     <a href="/" class="header__logo">
@@ -45,6 +46,7 @@
                   {% set submenus = navigation.submenu %}
                   {# {% set count = (submenu.length/ 3)|round %} #}
                   {% for submenuitems in submenus %}
+                    {% set link_class = penn_twig_is_link_external(submenuitems) ? external_link_class : '' %}
                     {% set position = (loop.length /3)|number_format(2, '.') %}
                     {% if 33 in position %}
                       {% if loop.first or loop.index == (((loop.length /3)|round) + 2) or loop.index == ((((loop.length /3)|round) * 2) + 2) %}
@@ -56,7 +58,7 @@
                       {% endif %}
                     {% endif %}
                         <li class="nav__menu-item" role="none">
-                          <a href="{{ submenuitems.url }}" class="nav__menu-link" role="menuitem">{{ submenuitems.text }}</a>
+                          <a href="{{ submenuitems.url }}" class="nav__menu-link {{ link_class }}" role="menuitem">{{ submenuitems.text }}</a>
                           {% if submenuitems.submenu %}
                             <button type="button" aria-haspopup="true" aria-expanded="false" class="nav__menu-button nav__menu-button--level-1">
                               <span class="a11y">More {{ submenuitems.text }}</span>
@@ -66,8 +68,9 @@
                             </button>
                             <ul class="nav__menu nav__menu--level-2" role="menu" aria-label="{{submenuitems.text}}">
                               {% for tertiary in submenuitems.submenu %}
+                                {% set link_class = penn_twig_is_link_external(tertiary) ? external_link_class : '' %}
                                 <li class="nav__menu-item" role="none">
-                                  <a href="{{tertiary.url }}" class="nav__menu-link" role="menuitem">{{tertiary.text}}</a>
+                                  <a href="{{tertiary.url }}" class="nav__menu-link {{ link_class }}" role="menuitem">{{tertiary.text}}</a>
                                 </li>
                               {% endfor %}
                             </ul>

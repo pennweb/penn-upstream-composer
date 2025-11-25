@@ -1,3 +1,4 @@
+{% set external_link_class = 'cta--arrow arrow-no-border' %}
 <footer class="footer">
   <div class="contain contain--wide">
     <div class="footer__columns">
@@ -8,9 +9,10 @@
           {% set footer_utility = simplify_menu('footer-utility') %}
           <ul class="footer__list">
             {% for footer_utility in footer_utility.menu_tree %}
-            <li class="footer__item">
-              <a href="{{ footer_utility.url }}" class="footer__link">{{ footer_utility.text }}</a>
-            </li>
+              {% set link_class = penn_twig_is_link_external(footer_utility) ? external_link_class : '' %}
+              <li class="footer__item">
+                <a href="{{ footer_utility.url }}" class="footer__link {{ link_class }}">{{ footer_utility.text }}</a>
+              </li>
             {% endfor %}
           </ul>
       </div>
@@ -20,9 +22,10 @@
           <ul class="footer__list">
             {% set footer_links = simplify_menu('footer-links') %}
             {% for footer_links in footer_links.menu_tree %}
-            <li class="footer__item">
-              <a href="{{ footer_links.url }}" class="footer__link">{{ footer_links.text }}</a>
-            </li>
+              {% set link_class = penn_twig_is_link_external(footer_links) ? external_link_class : '' %}
+              <li class="footer__item">
+                <a href="{{ footer_links.url }}" class="footer__link {{ link_class }}">{{ footer_links.text }}</a>
+              </li>
             {% endfor %}
           </ul>
         </section>
@@ -35,9 +38,10 @@
         <ul class="footer__list footer__list--full">
           {% set legal = simplify_menu('legal') %}
           {% for legal in legal.menu_tree %}
-          <li class="footer__item">
-            <a href="{{ legal.url }}" class="footer__link">{{ legal.text }}</a>
-          </li>
+            {% set link_class = penn_twig_is_link_external(legal) ? external_link_class : '' %}
+            <li class="footer__item">
+              <a href="{{ legal.url }}" class="footer__link {{ link_class }}">{{ legal.text }}</a>
+            </li>
           {% endfor %}
         </ul>
       </div>
