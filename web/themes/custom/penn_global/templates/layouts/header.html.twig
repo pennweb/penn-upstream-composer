@@ -2,6 +2,7 @@
 {% set has_primary_nav = navigation.menu_tree is not empty ? true : false %}
 {% set has_primary_nav_class = has_primary_nav ? ' with-primary-nav ' : ' without-primary-nav ' %}
 {% set external_link_class = 'cta--arrow' %}
+{% set show_external_link_class = false %}
 <header id="header" class="header ">
   <div class="contain contain--xl">
     <a href="/" class="header__logo">
@@ -46,7 +47,7 @@
                   {% set submenus = navigation.submenu %}
                   {# {% set count = (submenu.length/ 3)|round %} #}
                   {% for submenuitems in submenus %}
-                    {% set link_class = penn_twig_is_link_external(submenuitems) ? external_link_class : '' %}
+                    {% set link_class = show_external_link_class and penn_twig_is_link_external(submenuitems) ? external_link_class : '' %}
                     {% set position = (loop.length /3)|number_format(2, '.') %}
                     {% if 33 in position %}
                       {% if loop.first or loop.index == (((loop.length /3)|round) + 2) or loop.index == ((((loop.length /3)|round) * 2) + 2) %}
@@ -68,7 +69,7 @@
                             </button>
                             <ul class="nav__menu nav__menu--level-2" role="menu" aria-label="{{submenuitems.text}}">
                               {% for tertiary in submenuitems.submenu %}
-                                {% set link_class = penn_twig_is_link_external(tertiary) ? external_link_class : '' %}
+                                {% set link_class = show_external_link_class and penn_twig_is_link_external(tertiary) ? external_link_class : '' %}
                                 <li class="nav__menu-item" role="none">
                                   <a href="{{tertiary.url }}" class="nav__menu-link {{ link_class }}" role="menuitem">{{tertiary.text}}</a>
                                 </li>
