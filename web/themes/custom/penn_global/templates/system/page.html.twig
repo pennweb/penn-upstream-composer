@@ -3,7 +3,10 @@
     {{ page.alert }}
   </div>
 {% endif %}
-{% include '@penn_global/layouts/header.html.twig' %}
+{# External link vars come from penn_global.theme/preprocess_page #}
+{% include '@penn_global/layouts/header.html.twig' 
+  with { 'header_show_external_links' : header_show_external_links } 
+%}
 <main id="content">
   {% if page.prefix %}
   {{ page.prefix }}
@@ -15,4 +18,10 @@
   {{ page.suffix }}
   {% endif %}
 </main>
-{% include '@penn_global/layouts/footer-upstream.html.twig' %}
+{% include '@penn_global/layouts/footer-upstream.html.twig' 
+  with { 
+    'footer_utility_show_external_links' : footer_utility_show_external_links,
+    'footer_links_show_external_links' : footer_links_show_external_links,
+    'footer_legal_show_external_links' : footer_legal_show_external_links
+   } 
+%}
