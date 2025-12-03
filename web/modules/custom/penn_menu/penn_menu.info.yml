@@ -1,0 +1,5 @@
+name: 'Penn Menu'
+description: 'Configuration settings for menu external link icon display.'
+package: 'Penn Custom Modules'
+core_version_requirement: ^9 || ^10
+type: module

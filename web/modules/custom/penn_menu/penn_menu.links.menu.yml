@@ -1,0 +1,5 @@
+penn_menu.admin:
+  route_name: penn_menu.admin
+  title: 'Penn Menu'
+  description: 'Configure external link icon display for menus.'
+  parent: system.admin_config_ui

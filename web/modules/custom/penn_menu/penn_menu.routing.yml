@@ -1,0 +1,7 @@
+penn_menu.admin:
+  path: /admin/config/user-interface/penn-menu
+  defaults:
+    _title: 'Penn Menu Settings'
+    _form: \Drupal\penn_menu\Form\PennMenuAdmin
+  requirements:
+    _permission: administer_penn_menu

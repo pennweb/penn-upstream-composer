@@ -1,0 +1,4 @@
+administer_penn_menu:
+  title: 'Administer Penn Menu'
+  description: 'Grants access to the Penn Menu Settings page.'
+  'restrict access': true
