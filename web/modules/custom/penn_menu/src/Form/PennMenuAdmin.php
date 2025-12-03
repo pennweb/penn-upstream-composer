@@ -53,7 +53,7 @@ class PennMenuAdmin extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['description'] = [
       '#type' => 'markup',
-      '#markup' => '<p>' . $this->t('Show External Link Icons for the following menus. These settings only apply to the current site.') . '</p>',
+      '#markup' => '<p>' . $this->t('Show external link icons for the following menus. These settings only apply to the current site.') . '</p><p><a href="/admin/config/development/performance" target="_blank">' . $this->t('Clear the cache after saving your settings.') . '</a></p><br>',
     ];
 
     $form['header_main_navigation'] = [
