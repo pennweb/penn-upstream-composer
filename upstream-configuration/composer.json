@@ -25,12 +25,12 @@
         "drupal/fences": "^3.0",
         "drupal/field_hidden": "^2.0",
         "drupal/google_tag": "^2.0",
-        "drupal/image_widget_crop": "^2.3",
+        "drupal/image_widget_crop": "^3.0",
         "drupal/imagemagick": "^4.0",
-        "drupal/inline_entity_form": "3.0.0-rc19",
+        "drupal/inline_entity_form": "^3.0@RC",
         "drupal/mailsystem": "^4.4",
-        "drupal/media_entity_browser": "^2.0@alpha",
-        "drupal/meta_position": "^1.0",
+        "drupal/media_entity_browser": "^3.0",
+        "drupal/meta_position": "^2.0",
         "drupal/metatag": "^2.0",
         "drupal/multiple_fields_remove_button": "^2.2",
         "drupal/paragraphs": "^1.11",
@@ -46,7 +46,7 @@
         "drupal/tac_lite": "^2.0",
         "drupal/twig_tweak": "^3.2",
         "drupal/webform": "^6.0",
-        "drupal/xmlsitemap": "^1.0",
+        "drupal/xmlsitemap": "^2.0",
         "enyo/dropzone": "^5.7",
         "oomphinc/composer-installers-extender": "^2.0",
         "pantheon-systems/quicksilver-pushback": "^2",
@@ -58,9 +58,6 @@
     },
     "extra": {
         "patches": {
-            "drupal/inline_entity_form": {
-                "Can't add more than two items with simple inline entity form widget under some circumstances": "https://www.drupal.org/files/issues/2023-03-27/3088901-16.patch"
-            },
             "drupal/entity_embed": {
                 "Fix CKEditor icon path for Drupal 10.5/11.2": "https://www.drupal.org/files/issues/2025-06-30/entity_embed--2025-06-30--3531672--mr-62.patch"
             }
