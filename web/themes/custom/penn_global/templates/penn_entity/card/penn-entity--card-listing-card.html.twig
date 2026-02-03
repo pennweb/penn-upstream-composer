@@ -1,9 +1,13 @@
-{% set has_link = content.field_link|render is not empty ? true : false %}
-
+{% set has_link = penn_entity.field_link.value %}
+{% set has_image = penn_entity.field_image.value %}
 {% set link_class = has_link ? 'with-link' : 'without-link' %}
+{% set show_external_link_icon = false %}
+{# {% set show_external_link_icon = penn_entity.field_show_external_link_icon.value %} #}
+{% set external_link_class = show_external_link_icon and has_link and penn_twig_is_link_external(penn_entity.field_link.value) ? 'cta--arrow arrow-no-border' : '' %}
+
 <article class="listing-card listing-card--large  listing-card--{{ link_class }} listing-card--{{ field_image_class }} {{ content.field_borders }} {{ content.field_margins }}">
 
-  {% if field_image_has_value %}
+  {% if has_image %}
     <figure class="listing-card__figure">
     {% if has_link %}
       <a href="{{ content.field_link }}" class="list-card__figure__link">
@@ -18,7 +22,7 @@
   <div class="listing-card__detail">
     <h3 class="listing-card__title ">
       {% if has_link %}
-        <a href="{{ content.field_link }}" class="listing-card__title__link">{{ content.field_title }}</a>
+        <a href="{{ content.field_link }}" class="listing-card__title__link {{ external_link_class }}">{{ content.field_title }}</a>
       {% else %}
         {{ content.field_title }}
       {% endif %}
