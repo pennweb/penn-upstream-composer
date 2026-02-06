@@ -12539,6 +12539,14 @@ a.text-cta__taxonomy:hover, a.text-cta__taxonomy:focus {
   border-top: none;
 }
 
+.grid:not(.bg-color) .grid-card .grid-card__content p a {
+  color: rgba(1, 31, 91, 0.68);
+}
+
+.grid.bg-color .grid-card .grid-card__content p a {
+  color: white;
+}
+
 /** 
  * Listing Cards
  */

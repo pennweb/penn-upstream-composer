@@ -23,6 +23,10 @@
         {{ content.field_title }}
       {% endif %}
     </h3>
-  {{ content.field_description }}
+    {% if penn_entity.field_description_formatted.value %}
+        {{ content.field_description_formatted }}
+    {% endif %}
+    {# Deprecated unformatted description #}
+    {{ content.field_description }}
 </div>
 </article>

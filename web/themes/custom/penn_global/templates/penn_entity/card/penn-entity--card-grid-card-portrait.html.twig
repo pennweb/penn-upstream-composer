@@ -1,12 +1,14 @@
-{% set has_link = content.field_link|render is not empty ? true : false %}
-<article class="grid-card  {# {{ content.field_grid_borders }} #}">  {% if has_link %}
+{% set has_link = penn_entity.field_link.value %}
+<article class="grid-card  {# {{ content.field_grid_borders }} #}">  
+  {% if has_link and has_image %}
     <a href="{{ content.field_link }}" class="grid-card__image-link">
-  {% endif %}
+      {{ content.field_image }}
+    </a>
+  {% else %}
     {{ content.field_image }}
-    {% if has_link %}
-      </a>
-    {% endif %}
-    <div class="grid-card__content"> <h3 class="grid-card__title">
+  {% endif %}
+  <div class="grid-card__content"> 
+    <h3 class="grid-card__title">
       {% if has_link %}
         <a href="{{ content.field_link }}" class="grid-card__link">
           {{ content.field_title }}
@@ -15,6 +17,10 @@
         {{ content.field_title }}
       {% endif %}
     </h3>
+    {% if penn_entity.field_description_formatted.value %}
+      {{ content.field_description_formatted }}
+    {% endif %}
+    {# Deprecated unformatted description #}
     {{ content.field_description }}
   </div>
 </article>

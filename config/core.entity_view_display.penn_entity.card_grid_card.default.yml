@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.penn_entity.card_grid_card.field_description
+    - field.field.penn_entity.card_grid_card.field_description_formatted
     - field.field.penn_entity.card_grid_card.field_grid_borders
     - field.field.penn_entity.card_grid_card.field_image
     - field.field.penn_entity.card_grid_card.field_link
@@ -11,6 +12,7 @@ dependencies:
     - penn_entity.penn_entity_type.card_grid_card
   module:
     - link
+    - text
 id: penn_entity.card_grid_card.default
 targetEntityType: penn_entity
 bundle: card_grid_card
@@ -22,6 +24,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_description_formatted:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_image:
     type: entity_reference_entity_view

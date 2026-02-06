@@ -9,8 +9,8 @@ id: penn_entity.card_grid_card_portrait.field_description
 field_name: field_description
 entity_type: penn_entity
 bundle: card_grid_card_portrait
-label: Description
-description: ''
+label: 'Description (deprecated)'
+description: 'Do not use this description field for new content. Use the description above with the full wysiwyg instead.'
 required: false
 translatable: true
 default_value: {  }
