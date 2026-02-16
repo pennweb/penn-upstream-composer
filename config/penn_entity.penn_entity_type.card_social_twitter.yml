@@ -3,4 +3,4 @@ langcode: en
 status: true
 dependencies: {  }
 id: card_social_twitter
-label: 'Social Card - Twitter'
+label: 'Social Card - Threads'

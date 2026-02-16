@@ -1609,6 +1609,11 @@ a.cta--arrow::after {
   }
 }
 
+//Twitter/X logo switched threads.
+.social-card__twitter .social-card__icon img {
+  width: 15px;
+}
+
 //Instagram cards, background colors
 .social-card--image {
   &.bg-color {

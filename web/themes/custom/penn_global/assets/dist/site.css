@@ -13997,6 +13997,10 @@ a.cta--arrow::after {
   color: #011F5B;
 }
 
+.social-card__twitter .social-card__icon img {
+  width: 15px;
+}
+
 .social-card--image.bg-color {
   margin: 0;
 }

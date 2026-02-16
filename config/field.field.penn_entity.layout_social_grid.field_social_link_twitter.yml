@@ -9,7 +9,7 @@ id: penn_entity.layout_social_grid.field_social_link_twitter
 field_name: field_social_link_twitter
 entity_type: penn_entity
 bundle: layout_social_grid
-label: 'Social Link - Twitter'
+label: 'Social Link - Threads'
 description: ''
 required: false
 translatable: false
