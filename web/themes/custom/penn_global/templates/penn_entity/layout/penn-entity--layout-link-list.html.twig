@@ -1,8 +1,10 @@
 <div class="link-list">
+  {% if penn_entity.field_title.value %}
     <h3 class="link-list__title">
-		{{ content.field_title }}
-	</h3>
-    <ul class="link-list__list">
-      {{ content.field_list_link }}
-    </ul>
+      {{ content.field_title }}
+    </h3>
+  {% endif %}
+  <ul class="link-list__list">
+    {{ content.field_list_link }}
+  </ul>
 </div>
