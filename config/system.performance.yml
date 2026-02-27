@@ -3,7 +3,6 @@ _core:
 cache:
   page:
     max_age: 3600
-    use_internal: true
 css:
   preprocess: true
   gzip: true
@@ -15,5 +14,4 @@ fast_404:
 js:
   preprocess: true
   gzip: true
-response:
-  gzip: true
+
