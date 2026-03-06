@@ -12729,6 +12729,24 @@ a.text-cta__taxonomy:hover, a.text-cta__taxonomy:focus {
   }
 }
 
+@media (min-width: 640px) {
+  .grid__content--5 .grid-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid__content--5 .grid-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 20%;
+    flex: 0 1 20%;
+    width: 20%;
+  }
+}
+
 /**
  * Main Nav Menu
  */

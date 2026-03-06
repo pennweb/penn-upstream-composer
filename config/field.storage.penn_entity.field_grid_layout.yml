@@ -20,6 +20,9 @@ settings:
     -
       value: grid__content--4
       label: '4 items per row'
+    -
+      value: grid__content--5
+      label: '5 items per row'
   allowed_values_function: ''
 module: options
 locked: false
