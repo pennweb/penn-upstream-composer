@@ -76,7 +76,7 @@ class PennApiEntityRevisionRevertTranslationForm extends PennApiEntityRevisionRe
     $revert_untranslated_fields = $form_state->getValue('revert_untranslated_fields');
 
     /** @var \Drupal\penn_api_entity\Entity\PennApiEntityInterface $default_revision */
-    $latest_revision = $this->PennApiEntityStorage->load($revision->id());
+    $latest_revision = $this->pennApiEntityStorage->load($revision->id());
     $latest_revision_translation = $latest_revision->getTranslation($this->langcode);
 
     $revision_translation = $revision->getTranslation($this->langcode);
@@ -89,8 +89,7 @@ class PennApiEntityRevisionRevertTranslationForm extends PennApiEntityRevisionRe
 
     $latest_revision_translation->setNewRevision();
     $latest_revision_translation->isDefaultRevision(TRUE);
-    $revision->setRevisionCreationTime(REQUEST_TIME);
-
+    $revision->setRevisionCreationTime(\Drupal::time()->getRequestTime());
     return $latest_revision_translation;
   }
 

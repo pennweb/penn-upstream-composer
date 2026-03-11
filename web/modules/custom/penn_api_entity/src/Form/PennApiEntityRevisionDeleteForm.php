@@ -6,6 +6,8 @@ use Drupal\Core\Form\ConfirmFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Datetime\DateFormatterInterface;
+use Drupal\Core\Entity\RevisionableStorageInterface;
 
 /**
  * Provides a form for deleting a Penn API Entity revision.
@@ -24,7 +26,7 @@ class PennApiEntityRevisionDeleteForm extends ConfirmFormBase {
   /**
    * The Penn API Entity storage.
    *
-   * @var \Drupal\Core\Entity\EntityStorageInterface
+   * @var \Drupal\Core\Entity\RevisionableStorageInterface
    */
   protected $pennApiEntityStorage;
 
@@ -36,11 +38,19 @@ class PennApiEntityRevisionDeleteForm extends ConfirmFormBase {
   protected $connection;
 
   /**
+   * @var \Drupal\Core\Datetime\DateFormatterInterface
+   */
+  protected $dateFormatter;
+
+  /**
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container) {
     $instance = parent::create($container);
-    $instance->pennApiEntityStorage = $container->get('entity_type.manager')->getStorage('penn_api_entity');
+    /** @var \Drupal\Core\Entity\RevisionableStorageInterface $storage */
+    $storage = $instance->pennApiEntityStorage;
+    $instance->pennApiEntityStorage = $storage;
+    $instance->dateFormatter = $container->get('date.formatter');
     $instance->connection = $container->get('database');
     return $instance;
   }
@@ -57,8 +67,7 @@ class PennApiEntityRevisionDeleteForm extends ConfirmFormBase {
    */
   public function getQuestion() {
     return $this->t('Are you sure you want to delete the revision from %revision-date?', [
-      '%revision-date' => format_date($this->revision->getRevisionCreationTime()),
-    ]);
+      '%revision-date' => $this->dateFormatter->format($this->revision->getRevisionCreationTime(), 'short'),    ]);
   }
 
   /**
@@ -79,8 +88,7 @@ class PennApiEntityRevisionDeleteForm extends ConfirmFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state, $penn_api_entity_revision = NULL) {
-    $this->revision = $this->PennApiEntityStorage->loadRevision($penn_api_entity_revision);
-    $form = parent::buildForm($form, $form_state);
+    $this->revision = $this->pennApiEntityStorage->loadRevision($penn_api_entity_revision);    $form = parent::buildForm($form, $form_state);
 
     return $form;
   }
@@ -89,13 +97,16 @@ class PennApiEntityRevisionDeleteForm extends ConfirmFormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $this->PennApiEntityStorage->deleteRevision($this->revision->getRevisionId());
+    $this->pennApiEntityStorage->deleteRevision($this->revision->getRevisionId());
 
     $this->logger('content')->notice('Penn API Entity: deleted %title revision %revision.', ['%title' => $this->revision->label(), '%revision' => $this->revision->getRevisionId()]);
-    $this->messenger()->addMessage(t('Revision from %revision-date of Penn API Entity %title has been deleted.', ['%revision-date' => format_date($this->revision->getRevisionCreationTime()), '%title' => $this->revision->label()]));
+    $this->messenger()->addMessage($this->t('Revision from %revision-date of Penn API Entity %title has been deleted.', [
+      '%revision-date' => $this->dateFormatter->format($this->revision->getRevisionCreationTime(), 'short'),
+      '%title' => $this->revision->label(),
+    ]));
     $form_state->setRedirect(
-      'entity.penn_api_entity.canonical',
-       ['penn_api_entity' => $this->revision->id()]
+    'entity.penn_api_entity.canonical',
+      ['penn_api_entity' => $this->revision->id()]
     );
     if ($this->connection->query('SELECT COUNT(DISTINCT vid) FROM {penn_api_entity_field_revision} WHERE id = :id', [':id' => $this->revision->id()])->fetchField() > 1) {
       $form_state->setRedirect(

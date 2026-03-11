@@ -60,6 +60,7 @@ class PennApiEntityTypeForm extends EntityForm {
         ]));
     }
     $form_state->setRedirectUrl($penn_api_entity_type->toUrl('collection'));
+    return $status;
   }
 
 }

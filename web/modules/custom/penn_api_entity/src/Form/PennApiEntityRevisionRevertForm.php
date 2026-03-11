@@ -7,6 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 use Drupal\penn_api_entity\Entity\PennApiEntityInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Entity\RevisionableStorageInterface;
 
 /**
  * Provides a form for reverting a Penn API Entity revision.
@@ -25,7 +26,7 @@ class PennApiEntityRevisionRevertForm extends ConfirmFormBase {
   /**
    * The Penn API Entity storage.
    *
-   * @var \Drupal\Core\Entity\EntityStorageInterface
+   * @var \Drupal\Core\Entity\RevisionableStorageInterface
    */
   protected $pennApiEntityStorage;
 
@@ -87,7 +88,7 @@ class PennApiEntityRevisionRevertForm extends ConfirmFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state, $penn_api_entity_revision = NULL) {
-    $this->revision = $this->PennApiEntityStorage->loadRevision($penn_api_entity_revision);
+    $this->revision = $this->pennApiEntityStorage->loadRevision($penn_api_entity_revision);
     $form = parent::buildForm($form, $form_state);
 
     return $form;
@@ -129,8 +130,7 @@ class PennApiEntityRevisionRevertForm extends ConfirmFormBase {
   protected function prepareRevertedRevision(PennApiEntityInterface $revision, FormStateInterface $form_state) {
     $revision->setNewRevision();
     $revision->isDefaultRevision(TRUE);
-    $revision->setRevisionCreationTime(REQUEST_TIME);
-
+    $revision->setRevisionCreationTime(\Drupal::time()->getRequestTime());
     return $revision;
   }
 
