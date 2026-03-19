@@ -8,7 +8,8 @@ use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Url;
 use Drupal\penn_api_entity\Entity\PennApiEntityInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-
+use Drupal\Core\Link;
+use Drupal\Core\Entity\RevisionableStorageInterface;
 /**
  * Class PennApiEntityController.
  *
@@ -50,8 +51,9 @@ class PennApiEntityController extends ControllerBase implements ContainerInjecti
    *   An array suitable for drupal_render().
    */
   public function revisionShow($penn_api_entity_revision) {
-    $penn_api_entity = $this->entityTypeManager()->getStorage('penn_api_entity')
-      ->loadRevision($penn_api_entity_revision);
+    /** @var \Drupal\Core\Entity\RevisionableStorageInterface $storage */
+    $storage = $this->entityTypeManager()->getStorage('penn_api_entity');
+    $penn_api_entity = $storage->loadRevision($penn_api_entity_revision);
     $view_builder = $this->entityTypeManager()->getViewBuilder('penn_api_entity');
 
     return $view_builder->view($penn_api_entity);
@@ -67,8 +69,9 @@ class PennApiEntityController extends ControllerBase implements ContainerInjecti
    *   The page title.
    */
   public function revisionPageTitle($penn_api_entity_revision) {
-    $penn_api_entity = $this->entityTypeManager()->getStorage('penn_api_entity')
-      ->loadRevision($penn_api_entity_revision);
+    /** @var \Drupal\Core\Entity\RevisionableStorageInterface $storage */
+    $storage = $this->entityTypeManager()->getStorage('penn_api_entity');
+    $penn_api_entity = $storage->loadRevision($penn_api_entity_revision);
     return $this->t('Revision of %title from %date', [
       '%title' => $penn_api_entity->label(),
       '%date' => $this->dateFormatter->format($penn_api_entity->getRevisionCreationTime()),
@@ -85,8 +88,11 @@ class PennApiEntityController extends ControllerBase implements ContainerInjecti
    *   An array as expected by drupal_render().
    */
   public function revisionOverview(PennApiEntityInterface $penn_api_entity) {
+    /** @var \Drupal\Core\Entity\RevisionableStorageInterface $storage */
+    $storage = $this->entityTypeManager()->getStorage('penn_api_entity');
     $account = $this->currentUser();
-    $penn_api_entity_storage = $this->entityTypeManager()->getStorage('penn_api_entity');
+
+    $penn_api_entity_storage = $storage;
 
     $langcode = $penn_api_entity->language()->getId();
     $langname = $penn_api_entity->language()->getName();
@@ -106,7 +112,7 @@ class PennApiEntityController extends ControllerBase implements ContainerInjecti
 
     foreach (array_reverse($vids) as $vid) {
       /** @var \Drupal\penn_api_entity\PennApiEntityInterface $revision */
-      $revision = $penn_api_entity_storage->loadRevision($vid);
+      $revision = $storage->loadRevision($vid);
       // Only show revisions that are affected by the language that is being
       // displayed.
       if ($revision->hasTranslation($langcode) && $revision->getTranslation($langcode)->isRevisionTranslationAffected()) {
@@ -118,10 +124,10 @@ class PennApiEntityController extends ControllerBase implements ContainerInjecti
         // Use revision link to link to revisions that are not active.
         $date = $this->dateFormatter->format($revision->getRevisionCreationTime(), 'short');
         if ($vid != $penn_api_entity->getRevisionId()) {
-          $link = $this->l($date, new Url('entity.penn_api_entity.revision', [
+          $link = Link::fromTextAndUrl($date, Url::fromRoute('entity.penn_api_entity.revision', [
             'penn_api_entity' => $penn_api_entity->id(),
             'penn_api_entity_revision' => $vid,
-          ]));
+          ]))->toString();
         }
         else {
           $link = $penn_api_entity->toLink($date)->toString();
@@ -134,8 +140,7 @@ class PennApiEntityController extends ControllerBase implements ContainerInjecti
             '#template' => '{% trans %}{{ date }} by {{ username }}{% endtrans %}{% if message %}<p class="revision-log">{{ message }}</p>{% endif %}',
             '#context' => [
               'date' => $link,
-              'username' => $this->renderer->renderPlain($username),
-              'message' => [
+              'username' => $this->renderer->renderInIsolation($username),              'message' => [
                 '#markup' => $revision->getRevisionLogMessage(),
                 '#allowed_tags' => Xss::getHtmlTagList(),
               ],

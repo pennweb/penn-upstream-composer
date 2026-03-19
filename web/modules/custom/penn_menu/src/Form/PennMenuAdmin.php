@@ -34,8 +34,9 @@ class PennMenuAdmin extends FormBase {
   /**
    * {@inheritdoc}
    */
-  public static function create(ContainerInterface $container) {
-    return new static(
+  public static function create(ContainerInterface $container)
+  {
+    return new self(
       $container->get('state')
     );
   }

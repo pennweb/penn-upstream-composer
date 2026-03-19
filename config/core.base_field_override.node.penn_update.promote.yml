@@ -1,0 +1,22 @@
+uuid: 64742e62-b538-4716-91e7-daa5036d9284
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.penn_update
+id: node.penn_update.promote
+field_name: promote
+entity_type: node
+bundle: penn_update
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

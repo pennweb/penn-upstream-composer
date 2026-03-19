@@ -6,6 +6,6 @@ dependencies:
     - media
 id: media.wysiwyg
 label: Wysiwyg
-description: ''
+description: null
 targetEntityType: media
 cache: true

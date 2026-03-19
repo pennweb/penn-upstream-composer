@@ -82,6 +82,7 @@ class PennApiEntityForm extends ContentEntityForm {
         ]));
     }
     $form_state->setRedirect('entity.penn_api_entity.canonical', ['penn_api_entity' => $entity->id()]);
+    return $status;
   }
 
 }
