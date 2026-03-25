@@ -1,0 +1,21 @@
+uuid: 12838652-2b9a-40e1-8b13-6bd90202f7f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_margins
+    - penn_api_entity.penn_api_entity_type.layout_vertical_listing_cards
+  module:
+    - options
+id: penn_api_entity.layout_vertical_listing_cards.field_margins
+field_name: field_margins
+entity_type: penn_api_entity
+bundle: layout_vertical_listing_cards
+label: Margins
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

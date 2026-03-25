@@ -10,6 +10,7 @@ dependencies:
     - penn_api_entity.penn_api_entity_type.layout_card_listing
     - penn_api_entity.penn_api_entity_type.layout_grid
     - penn_api_entity.penn_api_entity_type.layout_tabs
+    - penn_api_entity.penn_api_entity_type.layout_vertical_listing_cards
     - penn_api_entity.penn_api_entity_type.listing_with_sidebar
     - penn_api_entity.penn_api_entity_type.news_feed_sidebar
     - penn_api_entity.penn_api_entity_type.news_filter_aside
@@ -33,6 +34,7 @@ type_settings:
     - news_filter_aside
     - listing_with_sidebar
     - layout_tabs
+    - layout_vertical_listing_cards
   display_plugins:
     - 'view_mode:penn_api_entity.full'
   entity_browser: ''

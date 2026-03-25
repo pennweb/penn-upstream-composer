@@ -1,0 +1,6 @@
+uuid: 8f2fb6c6-fa15-40c2-a00c-00dd4cdd1e3a
+langcode: en
+status: true
+dependencies: {  }
+id: layout_vertical_listing_cards
+label: 'Layout - Vertical Listing Cards'

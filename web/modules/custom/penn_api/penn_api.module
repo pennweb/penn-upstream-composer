@@ -67,7 +67,9 @@ function penn_api_preprocess_penn_api_entity(&$vars) {
       'field_description_formatted',
       'field_filter_title',
       'field_secondary_feed_title',
-      'field_show_tags', //this is a boolean, but is compatible      
+      'field_show_tags', //this is a boolean, but is compatible      ,
+      'field_show_date', //boolean
+      'field_show_summary', //boolean
       'field_subtitle',
       'field_title',
       'field_video_source_url',

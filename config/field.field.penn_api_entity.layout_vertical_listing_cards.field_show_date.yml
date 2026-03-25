@@ -1,0 +1,23 @@
+uuid: 1f3dea0d-53e5-4888-a60d-2b07e217df13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_show_date
+    - penn_api_entity.penn_api_entity_type.layout_vertical_listing_cards
+id: penn_api_entity.layout_vertical_listing_cards.field_show_date
+field_name: field_show_date
+entity_type: penn_api_entity
+bundle: layout_vertical_listing_cards
+label: 'Show Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
