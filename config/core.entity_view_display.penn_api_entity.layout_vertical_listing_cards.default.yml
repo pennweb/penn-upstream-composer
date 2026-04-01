@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.penn_api_entity.layout_vertical_listing_cards.field_button_link
+    - field.field.penn_api_entity.layout_vertical_listing_cards.field_container_width
     - field.field.penn_api_entity.layout_vertical_listing_cards.field_description_formatted
     - field.field.penn_api_entity.layout_vertical_listing_cards.field_feed_url
     - field.field.penn_api_entity.layout_vertical_listing_cards.field_margins
@@ -33,6 +34,13 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_container_width:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_description_formatted:
     type: text_default
