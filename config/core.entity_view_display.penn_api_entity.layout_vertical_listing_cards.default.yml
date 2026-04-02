@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.penn_api_entity.layout_vertical_listing_cards.field_background_color
+    - field.field.penn_api_entity.layout_vertical_listing_cards.field_borders
     - field.field.penn_api_entity.layout_vertical_listing_cards.field_button_link
     - field.field.penn_api_entity.layout_vertical_listing_cards.field_container_width
     - field.field.penn_api_entity.layout_vertical_listing_cards.field_description_formatted
@@ -23,6 +25,20 @@ targetEntityType: penn_api_entity
 bundle: layout_vertical_listing_cards
 mode: default
 content:
+  field_background_color:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_borders:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_button_link:
     type: link
     label: above

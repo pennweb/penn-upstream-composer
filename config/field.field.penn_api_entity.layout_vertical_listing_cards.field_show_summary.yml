@@ -10,7 +10,7 @@ field_name: field_show_summary
 entity_type: penn_api_entity
 bundle: layout_vertical_listing_cards
 label: 'Show Summary'
-description: ''
+description: 'Check the box in order to show the summary of stories under the title'
 required: false
 translatable: false
 default_value:

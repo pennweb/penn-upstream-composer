@@ -1,5 +1,6 @@
 {% if penn_api_items|length > 0 %}
-  <div class=" {{ content.field_padding }} {{ content.field_margins }}">
+<div class=" {{ content.field_padding }} {{ content.field_margins }} {{ content.field_background_color }} {{ content.field_borders }}">
+
     <div class="{{ content.field_container_width }}">
       {% if field_title_has_value or field_description_formatted_has_value %}
         <header class="section-header section-header--centered {{ section_header_class }}">

@@ -1,0 +1,21 @@
+uuid: 46c677c6-8c29-4453-a4fb-1f14ab66beff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.penn_api_entity.field_borders
+    - penn_api_entity.penn_api_entity_type.layout_vertical_listing_cards
+  module:
+    - options
+id: penn_api_entity.layout_vertical_listing_cards.field_borders
+field_name: field_borders
+entity_type: penn_api_entity
+bundle: layout_vertical_listing_cards
+label: Borders
+description: 'Add borders to the item.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
