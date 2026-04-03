@@ -1,6 +1,5 @@
-
 {% if penn_api_items|length > 0 %}
-<div class=" {{ content.field_padding }} {{ content.field_margins }} {{ content.field_background_color }} {{ content.field_borders }}">
+  <div class=" {{ content.field_padding }} {{ content.field_margins }} {{ content.field_background_color }} {{ content.field_borders }}">
     <div class="{{ content.field_container_width }}">
       {% if penn_api_entity.field_title.value or penn_api_entity.field_description_formatted.value %}
         <header class="section-header section-header--centered {{ section_header_class }}">
@@ -25,7 +24,6 @@
                 </a>
               </figure>
             {% endif %}
-
             <div class="listing-card__detail">
               <h3 class="listing-card__title">
                 <a href="{{ item.url }}" class="listing-card__title__link">
@@ -41,14 +39,15 @@
                 <p>{{ item.dek is empty ? item.summary : item.dek }}</p>
               {% endif %}
             </div>
-
           </article>
         {% endfor %}
-
       </div>
-      <footer class="section-footer section-footer--centered">
-        {{ content.field_button_link }}
-      </footer>
+      {% if penn_api_entity.field_button_link.value %}
+        <footer class="section-footer section-footer--centered">
+          {{ content.field_button_link }}
+        </footer>
+      {% endif %}
     </div>
   </div>
 {% endif %}
+
