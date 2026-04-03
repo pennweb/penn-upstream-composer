@@ -19,7 +19,6 @@ dependencies:
     - link
     - options
     - text
-    - user
 id: penn_api_entity.layout_vertical_listing_cards.default
 targetEntityType: penn_api_entity
 bundle: layout_vertical_listing_cards
@@ -30,14 +29,14 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 6
     region: content
   field_borders:
     type: list_key
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 7
     region: content
   field_button_link:
     type: link
@@ -49,21 +48,21 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 4
+    weight: 11
     region: content
   field_container_width:
     type: list_key
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 8
     region: content
   field_description_formatted:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 11
+    weight: 2
     region: content
   field_feed_url:
     type: string
@@ -71,21 +70,21 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_margins:
     type: list_key
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: content
   field_padding:
     type: list_key
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 9
+    weight: 10
     region: content
   field_show_date:
     type: boolean
@@ -95,7 +94,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 12
+    weight: 4
     region: content
   field_show_summary:
     type: boolean
@@ -105,7 +104,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 13
+    weight: 5
     region: content
   field_title:
     type: string
@@ -121,13 +120,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: -4
-    region: content
-  user_id:
-    type: author
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  user_id: true
