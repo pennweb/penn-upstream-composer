@@ -1,0 +1,14 @@
+{# Background colors #}
+{% set bg_color = ['bg-color bg-blue', 'bg-color bg-red'] %}
+{% set bg_color_value = penn_api_entity.field_background_color.value %}
+{% set has_bg_color = bg_color_value in bg_color %}
+{% set section_header_class = has_bg_color ? 'section-header--dark' : '' %}
+
+{# Button link #}
+{% set has_button_link = penn_api_entity.field_button_link.0.url %}
+{% set button_link_url = penn_api_entity.field_button_link.0.url %}
+{% set button_link_title = penn_api_entity.field_button_link.title %}
+{% set button_link_class = has_bg_color ? 'btn btn--outline-white' : 'btn' %}
+
+{% block content %}
+{% endblock %}
