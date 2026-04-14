@@ -14,6 +14,9 @@ settings:
     -
       value: section-padding
       label: 'Padding top and bottom'
+    -
+      value: section-padding--sm
+      label: 'Padding top and bottom - small'
   allowed_values_function: ''
 module: options
 locked: false

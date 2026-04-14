@@ -14781,6 +14781,13 @@ select {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
 }
 
+/**
+ * Custom Padding
+ */
+.section-padding--sm {
+  padding: 28px 0;
+}
+
 .featured-initiative-card__wrap {
   height: 100%;
 }
