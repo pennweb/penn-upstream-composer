@@ -14788,6 +14788,13 @@ select {
   padding: 28px 0;
 }
 
+/**
+  * Custom Margins
+  */
+.section-margin--sm {
+  margin: 28px 0;
+}
+
 .featured-initiative-card__wrap {
   height: 100%;
 }

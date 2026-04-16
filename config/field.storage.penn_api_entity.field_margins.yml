@@ -20,6 +20,9 @@ settings:
     -
       value: section-margin
       label: 'Margins top and bottom'
+    -
+      value: section-margin--sm
+      label: 'Margins top and bottom - small'
   allowed_values_function: ''
 module: options
 locked: false
