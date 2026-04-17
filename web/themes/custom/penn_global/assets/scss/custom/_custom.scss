@@ -2284,3 +2284,7 @@ $i: 0;
   margin-top: 28px;
   margin-bottom: 28px;
 }
+
+.bg-color.section-margin--sm + .bg-color {
+  margin-top: -28px;
+}

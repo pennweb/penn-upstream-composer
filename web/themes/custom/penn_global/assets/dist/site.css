@@ -14797,6 +14797,10 @@ select {
   margin-bottom: 28px;
 }
 
+.bg-color.section-margin--sm + .bg-color {
+  margin-top: -28px;
+}
+
 .featured-initiative-card__wrap {
   height: 100%;
 }
