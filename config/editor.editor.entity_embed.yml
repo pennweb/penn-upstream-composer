@@ -12,6 +12,7 @@ settings:
   toolbar:
     items:
       - '|'
+      - bookmark
       - link
       - sourceEditing
       - '|'

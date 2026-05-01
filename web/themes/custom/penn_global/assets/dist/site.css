@@ -14801,6 +14801,13 @@ select {
   margin-top: -28px;
 }
 
+/**
+  * Target anchors with ID in order to stop nav from getting in the way of anchor links
+  */
+a[id] {
+  scroll-margin-top: 40px;
+}
+
 .featured-initiative-card__wrap {
   height: 100%;
 }

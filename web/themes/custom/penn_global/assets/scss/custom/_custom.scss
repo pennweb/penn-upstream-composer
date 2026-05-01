@@ -2288,3 +2288,10 @@ $i: 0;
 .bg-color.section-margin--sm + .bg-color {
   margin-top: -28px;
 }
+
+  /**
+  * Target anchors with ID in order to stop nav from getting in the way of anchor links
+  */
+a[id] {
+  scroll-margin-top: 40px;
+}
