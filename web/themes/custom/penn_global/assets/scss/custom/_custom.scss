@@ -2293,5 +2293,14 @@ $i: 0;
   * Target anchors with ID in order to stop nav from getting in the way of anchor links
   */
 a[id] {
-  scroll-margin-top: 40px;
+  scroll-margin-top: 100px;
+
+  /* Smaller screens and mobile */
+  @media all and (max-width: 1400px) {
+      scroll-margin-top: 128px;
+  }
+
+  @media all and (max-width: 1024px) {
+      scroll-margin-top: 75px;
+  }
 }
