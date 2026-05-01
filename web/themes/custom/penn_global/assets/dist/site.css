@@ -14821,6 +14821,12 @@ a[id] {
   }
 }
 
+@media all and (max-width: 768px) {
+  a[id] {
+    scroll-margin-top: 60px;
+  }
+}
+
 .featured-initiative-card__wrap {
   height: 100%;
 }
