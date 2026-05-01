@@ -11,6 +11,7 @@
     "require": {
         "php": "8.3 ",
         "drupal/admin_toolbar": "^3.6",
+        "drupal/ckeditor5_plugin_pack": "^1.5",
         "drupal/config_direct_save": "^3.0",
         "drupal/config_split": "^2.0",
         "drupal/config_filter": "^1.13",
