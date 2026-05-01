@@ -11,10 +11,10 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
-      - bookmark
       - link
       - sourceEditing
       - '|'
+      - bookmark
       - penn_api
       - penn_entity
   plugins:
