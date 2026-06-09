@@ -23,6 +23,10 @@
       context = context || document;
       settings = settings || Drupal.settings;
 
+      // Fix undefined error
+      if(settings.penn_ckeditor === undefined)
+        return;
+
       // Check if there are constant classes that should always be in the editor.
       if (settings.penn_ckeditor.textarea_bgcolor.constantClasses) {
         constantClasses = settings.penn_ckeditor.textarea_bgcolor.constantClasses;
