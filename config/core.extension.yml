@@ -7,6 +7,8 @@ module:
   penn_menu: 0
   penn_twig: 0
   phpass: 0
+  search_help: 0
+  search_node: 0
   admin_toolbar: 1
   automated_cron: 1
   big_pipe: 1
