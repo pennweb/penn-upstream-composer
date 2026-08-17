@@ -11749,6 +11749,15 @@ body {
  .ck-content .video-inline {
    position: relative;
  }
+
+ .ck-content .video-vimeo {
+  height: 300px;
+  background-color: lightgray;
+  background-image: url(/themes/custom/penn_global/assets/img/svg/icon-youtube-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+}
  
  .ck-content .video-inline__video {
    pointer-events: none;
