@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.penn_entity.video_vimeo.field_margins
     - field.field.penn_entity.video_vimeo.field_video_source_url
     - penn_entity.penn_entity_type.video_vimeo
 id: penn_entity.video_vimeo.default
@@ -10,6 +11,12 @@ targetEntityType: penn_entity
 bundle: video_vimeo
 mode: default
 content:
+  field_margins:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_video_source_url:
     type: string_textfield
     weight: 1

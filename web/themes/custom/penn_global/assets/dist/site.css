@@ -14344,6 +14344,12 @@ select {
   background-size: 15px 35px;
 }
 
+/* Vimeo Player Video */
+/* Remove default margins, use margins field instead */
+.video.vimeo-player:not(.section-margin) {
+  margin: 0;
+}
+
 /**
  * 404
  */
