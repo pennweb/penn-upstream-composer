@@ -1314,6 +1314,16 @@ drupal-entity {
     &--x-large {
       font-size: 10rem;
     }
+    &--caption {
+      line-height: 1.4;
+      color: #656565;
+      font-size: 18px;
+    }
+    &--caption-small {
+      color: #656565;
+      font-size: 15px;
+      line-height: 1.4;
+    }
   }
 
   //Deprecated

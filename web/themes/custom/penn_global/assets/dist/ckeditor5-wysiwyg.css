@@ -13338,6 +13338,18 @@ drupal-entity {
   font-size: 100px;
 }
 
+.wysiwyg .text--caption {
+  line-height: 1.4;
+  color: #656565;
+  font-size: 18px;
+}
+
+.wysiwyg .text--caption-small {
+  color: #656565;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
 .wysiwyg ul.horizontal-link {
   padding: 0;
   margin: 50px auto;

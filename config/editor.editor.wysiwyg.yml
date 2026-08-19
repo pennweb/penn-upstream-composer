@@ -178,6 +178,12 @@ settings:
         -
           label: 'X-Large Text'
           element: '<span class="text--x-large">'
+        -
+          label: 'Caption Text'
+          element: '<span class="text--caption">'
+        -
+          label: 'Caption Text Small'
+          element: '<span class="text--caption-small">'
     media_media:
       allow_view_mode_override: false
 image_upload:

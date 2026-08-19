@@ -13717,6 +13717,18 @@ drupal-entity {
   font-size: 10rem;
 }
 
+.wysiwyg .text--caption {
+  line-height: 1.4;
+  color: #656565;
+  font-size: 18px;
+}
+
+.wysiwyg .text--caption-small {
+  color: #656565;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
 .wysiwyg .text__light-blue {
   color: #82AFD3;
 }
