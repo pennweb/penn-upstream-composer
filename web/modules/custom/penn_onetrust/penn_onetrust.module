@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function penn_onetrust_page_attachments_alter(array &$attachments) {
+  
+  $cookie_banner_tag = [
+    '#tag' => 'script',
+    '#attributes' => [
+      'type' => 'text/javascript',
+      'src' => 'https://cdn.cookielaw.org/consent/019efefd-a67f-723b-a8f3-c265c8af6b83/OtAutoBlock.js',
+    ],
+    '#weight' => -10000, // Place before any other tags
+    '#prefix' => "\n<!-- OneTrust Cookies Consent Notice start for upenn.edu -->\n",
+  ];
+  $attachments['#attached']['html_head'][] = [$cookie_banner_tag, 'OtAutoBlock'];
+
+  $cookie_banner_tag = [
+    '#tag' => 'script',
+    '#attributes' => [
+      'type' => 'text/javascript',
+      'src' => 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js',
+      'data-domain-script' => '019efefd-a67f-723b-a8f3-c265c8af6b83',
+      'charset' => 'UTF-8'
+    ],
+    '#weight' => -9999,
+  ];
+  $attachments['#attached']['html_head'][] = [$cookie_banner_tag, 'otSDKStub'];
+
+  // 2. Your Inline Function Call Script Tag
+  $inline_function_tag = [
+    '#tag' => 'script',
+    '#attributes' => [
+      'type' => 'text/javascript',
+    ],
+    // #value inserts raw text content directly inside the <script></script> tags
+    '#value' => '
+      function OptanonWrapper() { }
+    ',
+    '#weight' => -9998,
+    '#suffix' => "\n<!-- OneTrust Cookies Consent Notice end for upenn.edu -->\n"
+  ];
+  $attachments['#attached']['html_head'][] = [$inline_function_tag, 'OptanonWrapper'];
+}

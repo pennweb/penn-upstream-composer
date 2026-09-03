@@ -13904,6 +13904,16 @@ figure.align-center {
   max-width: 200px;
 }
 
+/* OpenTrust manage cookies link */
+.ot-sdk-show-settings {
+  text-transform: uppercase;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
 /***********************
  * External Link Styles
  ***********************/

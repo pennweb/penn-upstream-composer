@@ -1,0 +1,6 @@
+name: 'Penn OneTrust'
+type: module
+description: 'Adds OneTrust Cookies Consent Notice'
+core: 11.x
+core_version_requirement: ^11
+package: 'Penn'
