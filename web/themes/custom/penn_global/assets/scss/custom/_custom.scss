@@ -843,6 +843,12 @@ drupal-entity {
   }
 }
 
+@media #{$large-up} {
+  .fact__figure {
+    margin-bottom: 0;
+  }
+}
+
 //mimics "fact--50" class in a column layout
 .layout__column {
   .facts {
