@@ -2119,7 +2119,8 @@
 			var options = {
 				id: vimeo_id,
 				width: 1450,
-				autoplay: false
+				autoplay: false,
+				dnt: true
 			};
 
 
