@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.penn_entity.layout_facts.field_borders
     - field.field.penn_entity.layout_facts.field_button_link
+    - field.field.penn_entity.layout_facts.field_description_formatted
     - field.field.penn_entity.layout_facts.field_facts_style
     - field.field.penn_entity.layout_facts.field_penn_entity_reference
     - field.field.penn_entity.layout_facts.field_title
@@ -12,6 +13,7 @@ dependencies:
   module:
     - link
     - options
+    - text
 id: penn_entity.layout_facts.default
 targetEntityType: penn_entity
 bundle: layout_facts
@@ -35,6 +37,13 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_description_formatted:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_facts_style:
     type: list_key
