@@ -23,6 +23,9 @@ settings:
     -
       value: section-margin--sm
       label: 'Margins top and bottom - small'
+    -
+      value: section-margin--none
+      label: 'No Margins'
   allowed_values_function: ''
 module: options
 locked: false
