@@ -4,7 +4,14 @@
  * Implements hook_page_attachments_alter().
  */
 function penn_onetrust_page_attachments_alter(array &$attachments) {
-  
+
+  // Only load OneTrust on the Pantheon live environment. The OneTrust domain
+  // script is only configured for live, and OtAutoBlock blocks embeds such as
+  // Vimeo on dev/test/multidev/local.
+  if (!isset($_ENV['PANTHEON_ENVIRONMENT']) || $_ENV['PANTHEON_ENVIRONMENT'] !== 'live') {
+    return;
+  }
+
   $cookie_banner_tag = [
     '#tag' => 'script',
     '#attributes' => [
