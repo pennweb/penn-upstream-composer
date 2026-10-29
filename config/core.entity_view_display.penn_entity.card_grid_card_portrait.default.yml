@@ -45,7 +45,7 @@ content:
     type: link
     label: above
     settings:
-      trim_length: 80
+      trim_length: null
       url_only: true
       url_plain: true
       rel: '0'
@@ -58,6 +58,7 @@ content:
     label: above
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 1
     region: content
@@ -66,6 +67,7 @@ content:
     label: above
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 0
     region: content
